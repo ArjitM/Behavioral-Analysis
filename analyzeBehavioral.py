@@ -57,7 +57,6 @@ class PokeEvent:
 		self._image = image
 
 	def isSuccess(self):
-		print(self._pumpStates)
 		successful = False
 		for p in self._pumpStates:
 			if p is PumpStates.On:
@@ -81,7 +80,6 @@ class Image:
 
 def cumulativeSuccess(poke_events):
 	outcomes = [int(pe.isSuccess()) for pe in poke_events]
-	print(outcomes)
 	cumulative_success = 0
 	total = 0
 	cumulative_probabilities = []
