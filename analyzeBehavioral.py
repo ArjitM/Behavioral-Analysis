@@ -2,8 +2,10 @@
 import os
 import subprocess
 import re
-
+import matplotlib.pyplot as plt
 from enum import Enum, auto
+
+filename = 'Results - 2019-04-18 9c907df8daad9f581330d99873708e27.txt'
 
 class ImageTypes(Enum):
 	Reward = auto()
@@ -69,11 +71,26 @@ class Image:
 
 	def __init__(self, name, imageType):
 		self.name = name
-		assert instantanceof(imageType, ImageTypes), 'use ImageType enum to assign images'
+		assert isinstance(imageType, ImageTypes), 'use ImageType enum to assign images'
 		self.imageType = imageType
 
 	def __eq__(self, other):
 		return self.name == other.name and self.imageType == other.imageType
+
+def cumulativeSuccess(poke_events):
+	outcomes = [int(pe.isSuccess) for pe in poke_events]
+	cumulative_success = 0
+	total = 0
+	cumulative_probabilities = []
+	for outcome in outcomes:
+		cumulative_success += outcome
+		total += 1
+		cumulative_probabilities.append(cumulative_success / total)
+	plt.plot(cumulative_probabilities)
+
+
+def rpmTimeLapse():
+	pass
 
 
 def endRun(wheelHalfTimes, image, rotation_intervals):
@@ -88,11 +105,11 @@ def endPoke(doorStates, doorTimes, pumpTimes, pumpStates, image, poke_events):
 	del pumpTimes[:]
 	del poke_events[:]
 	
-
+print(os.listdir('.'))
 with open(filename, 'r') as resultFile:
 	allInput = resultFile.readlines()
 	currentImg = None
-	images = set() #similar to a list, prevents duplication
+	images = []
 	currentState = None
 	findFloat = re.compile("[+-]?([0-9]*[.])?[0-9]+") #regex to search for a number
 	wheelHalfTimes = []
@@ -105,10 +122,10 @@ with open(filename, 'r') as resultFile:
 	for line in allInput:
 		if 'Control image set:' in line:
 			for img in line[line.find('[')+1:line.rfind(']')].split(','):
-				images.add(Image(img.strip(), ImageTypes.Control))
+				images.append(Image(img.strip(), ImageTypes.Control))
 		elif 'Reward image set:' in line:
 			for img in line[line.find('[')+1:line.rfind(']')].split(','):
-				images.add(Image(img.strip(), ImageTypes.Reward))
+				images.append(Image(img.strip(), ImageTypes.Reward))
 		elif 'Image' in line and 'Name:' in line:
 			curImgName = line[line.find('Name:') + 5: line.find(',')].strip()
 			currentImg = next((img for img in images if img.name == curImgName), None)
@@ -123,7 +140,7 @@ with open(filename, 'r') as resultFile:
 			if currentState is Activity.Running:
 				endRun(wheelHalfTimes, currentImg, rotation_intervals)
 				currentState = Activity.Poking
-			pump_state = PumpState.On if re.search("State: (.*), Time", line) == 'On' else PumpState.Off
+			pump_state = PumpStates.On if re.search("State: (.*), Time", line) == 'On' else PumpStates.Off
 			pumpStates.append(pump_state) 
 			pumpTimes.append(float(findFloat.search(line).group(0)))
 		elif 'Door' in line:
