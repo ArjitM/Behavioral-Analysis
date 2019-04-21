@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from enum import Enum, auto
 from itertools import groupby
 import seaborn
+import math
 
 filename = 'Results - 2019-04-18 9c907df8daad9f581330d99873708e27.txt'
 
@@ -28,6 +29,7 @@ class RotationInterval:
 	def __init__(self, halfTimes, image):
 		self._halfTimes = []
 		self._image = image
+		self.viable = True
 		self._rpms = [] #instantaneous speeds in rotations per minute
 		raw_rpms = [] #prone to error
 		for i in range(1, len(halfTimes) -1):
@@ -43,6 +45,8 @@ class RotationInterval:
 			if i not in erratic:
 				self._rpms.append(raw_rpms[i])
 				self._halfTimes.append(halfTimes[i])
+		if len(self._halfTimes) < 2:
+			self.viable = False
 
 
 	def numRotations(self):
@@ -50,7 +54,7 @@ class RotationInterval:
 
 	def avgSpeed(self):
 		#average speed in RPM
-		return self.numRotations * 60 / (self._halfTimes[-1] - self._halfTimes[0])
+		return self.numRotations() * 60 / (self._halfTimes[-1] - self._halfTimes[0])
 
 	@property
 	def speeds(self):
@@ -59,6 +63,10 @@ class RotationInterval:
 	@property
 	def startTime(self):
 		return self._halfTimes[0]
+
+	@property
+	def midTime(self):
+		return (self._halfTimes[-1] + self.halfTimes[0]) / 2
 
 	@property
 	def halfTimes(self):
@@ -123,8 +131,11 @@ def cumulativeSuccess(poke_events):
 	plt.show()
 
 
-def rpmTimeLapse(rotation_intervals, hour=1):
-	secondCutOffs = (hour-1) * 60**2, hour * 60**2
+def rpmTimeLapse(rotation_intervals, hour=None):
+	if hour is not None:
+		secondCutOffs = (hour-1) * 60**2, hour * 60**2
+	else:
+		secondCutOffs = 0, math.inf
 	rot_intervals_subset = list(filter(lambda pe: pe.startTime >= secondCutOffs[0] and pe.startTime < secondCutOffs[1], rotation_intervals))
 	#these are rotation intervals that occured within specified hour
 	rot_ints_byImage = [list(g[1]) for g in groupby(sorted(rot_intervals_subset, key=lambda ri: ri.image.name), key=lambda ri: ri.image.name)]
@@ -133,14 +144,17 @@ def rpmTimeLapse(rotation_intervals, hour=1):
 	for rot_ints_eachImage in rot_ints_byImage:
 		allSpeeds, allTimes = [], []
 		for rot_int in rot_ints_eachImage:
-			allSpeeds += rot_int.speeds
-			allTimes += rot_int.halfTimes
+			# allSpeeds += rot_int.speeds
+			# allTimes += rot_int.halfTimes
+			allSpeeds.append(rot_int.avgSpeed())
+			allTimes.append(rot_int.midTime)
 		img = rot_ints_eachImage[0].image
 		datum, = plt.plot(allTimes, allSpeeds, marker='.', linestyle='None', label='{0} ({1})'.format(img.name, img.imageType.value))
 		data.append(datum)
 		# print('***', rot_int.halfTimes)
 	plt.xlabel('Time')
 	plt.ylabel('Speed in RPM')
+	# plt.xlim(0, 500)
 	plt.legend(handles=data)
 	plt.show()
 
@@ -152,6 +166,14 @@ def endRun(wheelHalfTimes, image, rotation_intervals):
 
 def endPoke(doorStates, doorTimes, pumpTimes, pumpStates, image, poke_events):
 	poke_events.append(PokeEvent(doorStates, doorTimes, pumpTimes, pumpStates, image))
+
+def pruneRotationIntervals(rotation_intervals):
+	erratic = []
+	for ri in rotation_intervals:
+		if not ri.viable:
+			erratic.append(ri)
+	for ri in erratic:
+		rotation_intervals.remove(ri)
 	
 with open(filename, 'r') as resultFile:
 	allInput = resultFile.readlines()
@@ -212,10 +234,9 @@ with open(filename, 'r') as resultFile:
 			doorStates.append(door_state)
 			doorTimes.append(float(findFloat.search(line).group(0)))
 		skipLine = False
+	pruneRotationIntervals(rotation_intervals)
 	cumulativeSuccess(poke_events)
-	rpmTimeLapse(rotation_intervals, 1)
-
-
+	rpmTimeLapse(rotation_intervals)
 
 
 			
