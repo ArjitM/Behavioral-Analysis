@@ -1,0 +1,99 @@
+Date: 2019-04-29 20:12:51.598239
+Experiment preset: Day #1
+USB drive ID: CAGE TEST Aiecjiecnjenjh
+Control image set: []
+Reward image set: [Checkerboard.png]
+Minimum wheel revolutions for reward: 0.0
+Maximum wheel revolutions for reward: 0.0
+Maximum duration of reward state (seconds): 43200.0
+Duration of pump "on" state (seconds): 3.0
+Maximum time between wheel events (seconds): 43200.0
+Total duration of the experiment (hours): 12.0
+Pattern frequency for images: 16.0
+Duration of each reward frame (seconds): 43200.0
+Metadata: Type metadata here...
+Protocol hash: ca4530c23b54b3a9e97ff586a28dd302
+Image hashes: 
+Checkerboard.png - c7ef3652d905b84f028e8d3bac85b83b
+
+-------------------------------Start of experiment-----------------------------------------------
+
+Image starting at: 0.014
+Wheel starting at: 0.020
+Door starting at: 0.019
+Image - Name: Checkerboard.png, Hash: c7ef3652d905b84f028e8d3bac85b83b, Time: 0.230
+Wheel - State: Low, Time: 1506.568
+Wheel - State: High, Time: 1531.144
+Wheel - State: Low, Time: 1531.166
+Door - State: Low, Time: 1563.457
+Pump - State: On, Time: 1563.460
+Door - State: High, Time: 1563.671
+Pump - State: Off, Time: 1563.674
+Door - State: Low, Time: 1564.053
+Pump - State: On, Time: 1564.056
+Door - State: High, Time: 1564.160
+Pump - State: Off, Time: 1564.163
+Door - State: Low, Time: 1568.475
+Pump - State: On, Time: 1568.478
+Door - State: High, Time: 1569.075
+Pump - State: Off, Time: 1569.078
+Door - State: Low, Time: 1569.164
+Pump - State: On, Time: 1569.167
+Door - State: High, Time: 1569.806
+Pump - State: Off, Time: 1569.809
+Door - State: Low, Time: 1572.495
+Pump - State: On, Time: 1572.498
+Door - State: High, Time: 1572.557
+Pump - State: Off, Time: 1572.560
+Door - State: Low, Time: 1581.481
+Pump - State: On, Time: 1581.484
+Door - State: High, Time: 1582.237
+Pump - State: Off, Time: 1582.240
+Door - State: Low, Time: 3509.409
+Pump - State: On, Time: 3509.412
+Door - State: High, Time: 3509.471
+Pump - State: Off, Time: 3509.474
+Door - State: Low, Time: 3510.563
+Pump - State: On, Time: 3510.566
+Door - State: High, Time: 3510.810
+Pump - State: Off, Time: 3510.812
+Door - State: Low, Time: 3510.868
+Pump - State: On, Time: 3510.871
+Door - State: High, Time: 3510.914
+Pump - State: Off, Time: 3510.917
+Door - State: Low, Time: 3511.032
+Pump - State: On, Time: 3511.035
+Door - State: High, Time: 3511.077
+Pump - State: Off, Time: 3511.080
+Door - State: Low, Time: 3511.128
+Pump - State: On, Time: 3511.131
+Door - State: High, Time: 3511.263
+Pump - State: Off, Time: 3511.266
+Door - State: Low, Time: 3512.485
+Pump - State: On, Time: 3512.488
+Door - State: High, Time: 3512.733
+Pump - State: Off, Time: 3512.736
+Door - State: Low, Time: 3513.061
+Pump - State: On, Time: 3513.064
+Door - State: High, Time: 3513.204
+Pump - State: Off, Time: 3513.207
+Door - State: Low, Time: 3515.253
+Pump - State: On, Time: 3515.256
+Door - State: High, Time: 3515.340
+Pump - State: Off, Time: 3515.343
+Door - State: Low, Time: 3515.595
+Pump - State: On, Time: 3515.598
+Door - State: High, Time: 3515.712
+Pump - State: Off, Time: 3515.715
+Door - State: Low, Time: 3519.571
+Pump - State: On, Time: 3519.574
+Door - State: High, Time: 3519.727
+Pump - State: Off, Time: 3519.730
+Door - State: Low, Time: 3522.041
+Pump - State: On, Time: 3522.044
+Door - State: High, Time: 3522.089
+Pump - State: Off, Time: 3522.092
+Door - State: Low, Time: 3525.093
+Pump - State: On, Time: 3525.096
+Door - State: High, Time: 3525.828
+Pump - State: Off, Time: 3525.831

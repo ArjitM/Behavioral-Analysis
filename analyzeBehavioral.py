@@ -342,6 +342,11 @@ for filename in getFileNames('Data/'):
 				doorStates.append(door_state)
 				doorTimes.append(float(findFloat.search(line).group(0)))
 			skipLine = False
+		if currentState is Activity.Poking:
+			endPoke(doorStates, doorTimes, pumpTimes, pumpStates, currentImg, poke_events)
+		else:
+			endRun(wheelHalfTimes, currentImg, rotation_intervals)
+
 	pruneRotationIntervals(rotation_intervals)
 	######### ANALYSIS PART BEGINS; DO NOT EDIT ABOVE FOR ANALYSIS MODES ONLY##############
 	# cumulativeSuccess(poke_events)
