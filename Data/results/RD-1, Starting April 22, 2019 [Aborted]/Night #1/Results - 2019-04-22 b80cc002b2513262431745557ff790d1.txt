@@ -1,0 +1,43 @@
+Date: 2019-04-22 18:53:27.226651
+Experiment preset: Day #1
+USB drive ID: CAGE 1A
+Control image set: []
+Reward image set: [Checkerboard.png]
+Minimum wheel revolutions for reward: 0.0
+Maximum wheel revolutions for reward: 0.0
+Maximum duration of reward state (seconds): 43200.0
+Duration of pump "on" state (seconds): 3.0
+Maximum time between wheel events (seconds): 43200.0
+Total duration of the experiment (hours): 12.0
+Pattern frequency for images: 16.0
+Duration of each reward frame (seconds): 43200.0
+Metadata: Type metadata here...
+Protocol hash: b80cc002b2513262431745557ff790d1
+Image hashes: 
+Checkerboard.png - c7ef3652d905b84f028e8d3bac85b83b
+
+-------------------------------Start of experiment-----------------------------------------------
+
+Door starting at: 0.014
+Image starting at: 0.015
+Wheel starting at: 0.022
+Image - Name: Checkerboard.png, Hash: c7ef3652d905b84f028e8d3bac85b83b, Time: 1.457
+Wheel - State: High, Time: 143.118
+Wheel - State: Low, Time: 143.141
+Wheel - State: High, Time: 152.942
+Wheel - State: Low, Time: 152.965
+Door - State: Low, Time: 204.668
+Pump - State: On, Time: 204.671
+Door - State: High, Time: 204.715
+Pump - State: Off, Time: 204.719
+Wheel - State: High, Time: 764.721
+Wheel - State: Low, Time: 764.744
+Wheel - State: High, Time: 6748.506
+Wheel - State: Low, Time: 6748.528
+Wheel - State: High, Time: 16060.834
+Wheel - State: Low, Time: 16060.857
+Door - State: Low, Time: 20009.532
+Pump - State: On, Time: 20009.536
+Door - State: High, Time: 20009.850
+Pump - State: Off, Time: 20009.853
+Successful termination at: 43202.44828248024

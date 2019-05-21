@@ -8,8 +8,6 @@ from itertools import groupby
 import seaborn
 import math
 
-filenames = ['Results - 2019-04-18 9c907df8daad9f581330d99873708e27.txt']
-
 class ImageTypes(Enum):
 	Reward = "Reward"
 	Control = "Control"
@@ -119,6 +117,27 @@ class PokeEvent:
 	def totalPokes(self):
 		return len(self._doorStates) // 2
 
+	def totalPokesNoTimeout(self):
+		#returns total number of pokes EXCLUDING those that are failed due to image timeout
+		##i.e. after pump success
+		critical_time = None
+		for p, t in zip(self._pumpStates, self._pumpTimes):
+			if p is PumpStates.On:
+				critical_time = t 
+		if critical_time is None or self.successfulPokes() > 1:
+			return self.totalPokes()
+		else:
+			beforeSuccessful = 0
+			for dt in self._doorTimes:
+				if dt <= critical_time:
+					beforeSuccessful += 1
+				else:
+					break
+			return int(math.ceil(beforeSuccessful / 2)) 
+			#two door states constitute a full poke
+			##ceil necessary because only door opening documented before poke
+
+
 	def drinkTimes(self):
 		drinkStart = 0
 		drinkTimes = []
@@ -151,6 +170,7 @@ class Image:
 
 def cumulativeSuccess(poke_events):
 	outcomes = [int(pe.isSuccess()) for pe in poke_events]
+	print("Successful Poke Events: {0}".format(sum(outcomes)))
 	#times = [pe.startTime for pe in poke_events]
 	cumulative_success = 0
 	total = 0
@@ -223,10 +243,41 @@ def pruneRotationIntervals(rotation_intervals):
 			erratic.append(ri)
 	for ri in erratic:
 		rotation_intervals.remove(ri)
+
+def pokeStatistics(poke_events):
+	successful = 0
+	total = 0
+	for pe in poke_events:
+		successful += pe.successfulPokes()
+		total += pe.totalPokesNoTimeout()
+	print("Successful {0}".format(successful))
+	print("Failed {0}".format(total - successful))
+	print("total {0}".format(total))
 	
+def getFileNames(location):
+    prefixes = []
+    fileNames = []
+
+    def recursiveDirectories(loc):
+        nonlocal prefixes
+        try:
+            for d in next(os.walk(loc))[1]:
+                if 'Night' in d:
+                    prefixes.append(loc + d + '/')
+                else:
+                    recursiveDirectories(loc + d + '/')
+        except StopIteration:
+            pass
+
+    recursiveDirectories(location)
+    for p in prefixes:
+    	for f in next(os.walk(p))[2]:
+    		if 'Results' in f and '.txt' in f:
+    			fileNames.append(p + f)
+    return fileNames
 
 
-for filename in filenames:
+for filename in getFileNames('Data/'):
 	with open(filename, 'r') as resultFile:
 		allInput = resultFile.readlines()
 		currentImg = None
@@ -242,14 +293,20 @@ for filename in filenames:
 		rotation_intervals = []
 		skipLine = False
 		for line in allInput:
-			if 'starting' in line:
-				continue
-			if 'Control image set:' in line:
+			if 'USB drive ID: ' in line:
+				print("***********************************")
+				print(filename, line)
+			elif 'Control image set:' in line:
 				for img in line[line.find('[')+1:line.rfind(']')].split(','):
 					images.append(Image(img.strip(), ImageTypes.Control))
 			elif 'Reward image set:' in line:
 				for img in line[line.find('[')+1:line.rfind(']')].split(','):
 					images.append(Image(img.strip(), ImageTypes.Reward))
+			elif "Start of experiment" in line:
+				break ##this initial loop is to initialize some values only. Data extraction in the next loop.
+		for line in allInput:
+			if 'starting' in line:
+				continue
 			elif 'Image' in line and 'Name:' in line:
 				curImgName = line[line.find('Name:') + 5: line.find(',')].strip()
 				currentImg = next((img for img in images if img.name == curImgName), None)
@@ -285,15 +342,15 @@ for filename in filenames:
 				doorStates.append(door_state)
 				doorTimes.append(float(findFloat.search(line).group(0)))
 			skipLine = False
-		pruneRotationIntervals(rotation_intervals)
-		cumulativeSuccess(poke_events)
-		rpmTimeLapse(rotation_intervals)
-		numPokes(poke_events)
-		drinkLengths(poke_events)
+	pruneRotationIntervals(rotation_intervals)
+	######### ANALYSIS PART BEGINS; DO NOT EDIT ABOVE FOR ANALYSIS MODES ONLY##############
+	# cumulativeSuccess(poke_events)
+	# rpmTimeLapse(rotation_intervals)
+	# numPokes(poke_events)
+	# drinkLengths(poke_events)
+	#print(len(poke_events))
+	pokeStatistics(poke_events)
 
-
-				
-
-
-
+#filenames = ['Results - 2019-04-18 9c907df8daad9f581330d99873708e27.txt']
+##['/Users/arjitmisra/Documents/Kramer_Lab/Behavioral-Analysis/Data/results/WT-1, Starting April 15 2019/Night #2/Results - 2019-04-16 45052a5be1d4db39f2ce5267bc96da00.txt']: #
 
