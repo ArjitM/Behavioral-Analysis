@@ -19,15 +19,54 @@ Checkerboard.png - c7ef3652d905b84f028e8d3bac85b83b
 -------------------------------Start of experiment-----------------------------------------------
 
 Image starting at: 0.014
-Wheel starting at: 0.020
-Door starting at: 0.019
-Image - Name: Checkerboard.png, Hash: c7ef3652d905b84f028e8d3bac85b83b, Time: 0.230
-Door - State: Low, Time: 21509.776
-Pump - State: On, Time: 21509.779
-Door - State: High, Time: 21509.956
-Pump - State: Off, Time: 21509.959
-Door - State: Low, Time: 21510.149
-Pump - State: On, Time: 21510.152
-Wheel - State: High, Time: 21510.200
-Wheel - State: Low, Time: 21510.223
-Successful termination at: 43201.266092062
+Door starting at: 0.014
+Wheel starting at: 0.023
+Image - Name: Checkerboard.png, Hash: c7ef3652d905b84f028e8d3bac85b83b, Time: 0.244
+Door - State: Low, Time: 10658.340
+Pump - State: On, Time: 10658.343
+Door - State: High, Time: 10658.538
+Pump - State: Off, Time: 10658.540
+Door - State: Low, Time: 10658.861
+Pump - State: On, Time: 10658.865
+Door - State: High, Time: 10658.933
+Pump - State: Off, Time: 10658.936
+Door - State: Low, Time: 10665.577
+Pump - State: On, Time: 10665.581
+Door - State: High, Time: 10665.774
+Pump - State: Off, Time: 10665.777
+Door - State: Low, Time: 10666.035
+Pump - State: On, Time: 10666.038
+Door - State: High, Time: 10666.100
+Pump - State: Off, Time: 10666.102
+Door - State: Low, Time: 10666.816
+Pump - State: On, Time: 10666.819
+Door - State: High, Time: 10667.256
+Pump - State: Off, Time: 10667.259
+Door - State: Low, Time: 10667.889
+Pump - State: On, Time: 10667.892
+Wheel - State: High, Time: 10668.186
+Wheel - State: Low, Time: 10668.209
+Door - State: High, Time: 10668.742
+Pump - State: Off, Time: 10668.745
+Door - State: Low, Time: 10668.816
+Pump - State: On, Time: 10668.818
+Door - State: High, Time: 10669.277
+Pump - State: Off, Time: 10669.280
+Door - State: Low, Time: 10680.785
+Pump - State: On, Time: 10680.787
+Door - State: High, Time: 10681.307
+Pump - State: Off, Time: 10681.311
+Door - State: Low, Time: 10681.412
+Pump - State: On, Time: 10681.415
+Door - State: High, Time: 10681.747
+Pump - State: Off, Time: 10681.750
+Wheel - State: High, Time: 10903.551
+Wheel - State: Low, Time: 10903.574
+Wheel - State: High, Time: 10907.298
+Wheel - State: Low, Time: 10907.322
+Wheel - State: High, Time: 10908.510
+Wheel - State: Low, Time: 10908.533
+Wheel - State: High, Time: 10909.810
+Wheel - State: Low, Time: 10909.833
+Wheel - State: High, Time: 10911.732
+Wheel - State: Low, Time: 10911.755
