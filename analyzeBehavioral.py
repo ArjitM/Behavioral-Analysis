@@ -115,7 +115,9 @@ class PokeEvent:
 		return num
 
 	def totalPokes(self):
-		return len(self._doorStates) // 2
+		return int(math.ceil(len(self._doorStates) / 2))
+		#two door states constitute a full poke
+		##ceil necessary because only door opening documented before poke
 
 	def totalPokesNoTimeout(self):
 		#returns total number of pokes EXCLUDING those that are failed due to image timeout
@@ -129,10 +131,8 @@ class PokeEvent:
 		else:
 			beforeSuccessful = 0
 			for dt in self._doorTimes:
-				if dt <= critical_time:
+				if dt <= critical_time or dt > critical_time + 30: #30 seconds grace period
 					beforeSuccessful += 1
-				else:
-					break
 			return int(math.ceil(beforeSuccessful / 2)) 
 			#two door states constitute a full poke
 			##ceil necessary because only door opening documented before poke
@@ -155,6 +155,12 @@ class PokeEvent:
 	@property
 	def image(self):
 		return self._image
+
+	@property
+	def doorTimes(self):
+		return self._doorTimes
+	
+
 	
 	
 
@@ -247,9 +253,14 @@ def pruneRotationIntervals(rotation_intervals):
 def pokeStatistics(poke_events):
 	successful = 0
 	total = 0
+	i=0
 	for pe in poke_events:
+		i += 1
 		successful += pe.successfulPokes()
 		total += pe.totalPokesNoTimeout()
+		if successful > total:
+			print(i)
+
 	print("Successful {0}".format(successful))
 	print("Failed {0}".format(total - successful))
 	print("total {0}".format(total))
@@ -277,7 +288,7 @@ def getFileNames(location):
     return fileNames
 
 
-for filename in getFileNames('Data/'):
+for filename in getFileNames('Data/'):  #['Results-TEST.txt']:
 	with open(filename, 'r') as resultFile:
 		allInput = resultFile.readlines()
 		currentImg = None
