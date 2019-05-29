@@ -112,6 +112,9 @@ class PokeEvent:
         for p in self._pumpStates:
             if p is PumpStates.On:
                 num += 1
+        if num > 0:
+            if self.image.imageType == ImageTypes.Control:
+                print("wtf is happening? ", self._pumpTimes)
         return num
 
     def totalPokes(self):
@@ -119,7 +122,7 @@ class PokeEvent:
         #two door states constitute a full poke
         ##ceil necessary because only door opening documented before poke
 
-    def totalPokesNoTimeout(self):
+    def totalPokesNoTimeout(self, grace=30):
         #returns total number of pokes EXCLUDING those that are failed due to image timeout
         ##i.e. after pump success
         critical_time = None
@@ -131,12 +134,11 @@ class PokeEvent:
         else:
             beforeSuccessful = 0
             for dt in self._doorTimes:
-                if dt <= critical_time or dt > critical_time + 30: #30 seconds grace period
+                if dt <= critical_time or dt > critical_time + grace: #30 seconds grace period
                     beforeSuccessful += 1
             return int(math.ceil(beforeSuccessful / 2)) 
             #two door states constitute a full poke
             ##ceil necessary because only door opening documented before poke
-
 
     def drinkTimes(self):
         drinkStart = 0
@@ -159,20 +161,42 @@ class PokeEvent:
     @property
     def doorTimes(self):
         return self._doorTimes
-    
 
+    @staticmethod
+    def missedRewards(poke_events, rewardImgs):
+        misses = {}
+        for ri in rewardImgs:
+            hits = 0
+            for pe in poke_events:
+                if pe.image == ri:
+                    hits += 1 #poke events that occured in the presence of the reward image
+            print(ri.appearances, ' << reward image appearances')
+            print(hits, ' << hits')
+            misses[ri] = ri.appearances - hits
+        print(len(poke_events), ' << total poke_events')
+        return misses
     
-    
-
 class Image:
 
     def __init__(self, name, imageType):
         self.name = name
         assert isinstance(imageType, ImageTypes), 'use ImageType enum to assign images'
         self.imageType = imageType
+        self._appearances = 0
 
     def __eq__(self, other):
         return self.name == other.name and self.imageType == other.imageType
+
+    def __hash__(self):
+        return hash(self.name)
+
+    def incrementAppearances(self):
+        self._appearances += 1
+
+    @property
+    def appearances(self):
+        return self._appearances
+    
 
 def cumulativeSuccess(poke_events):
     outcomes = [int(pe.isSuccess()) for pe in poke_events]
@@ -250,7 +274,7 @@ def pruneRotationIntervals(rotation_intervals):
     for ri in erratic:
         rotation_intervals.remove(ri)
 
-def pokeStatistics(poke_events):
+def pokeStatistics(poke_events, images):
     successful = 0
     total = 0
     i=0
@@ -258,9 +282,13 @@ def pokeStatistics(poke_events):
         i += 1
         successful += pe.successfulPokes()
         total += pe.totalPokesNoTimeout()
-    print("Successful {0}".format(successful))
-    print("Failed {0}".format(total - successful))
-    print("total {0}".format(total))
+    rewardImgs = list(filter(lambda im: im.imageType is ImageTypes.Reward, images))
+    misses = PokeEvent.missedRewards(poke_events, rewardImgs)
+    print("Successful Pokes {0}".format(successful))
+    print("Unsuccesfull Pokes {0}".format(total - successful))
+    print("Total {0}".format(total))
+    for ri in rewardImgs:
+        print("Missed Reward Pokes for image: {0} are {1}".format(ri.name, misses[ri]))
     
 def getFileNames(location):
     prefixes = []
@@ -278,11 +306,28 @@ def getFileNames(location):
     recursiveDirectories(location)
     return fileNames
 
+def initializeImages(allInput, filename):
+    images = []
+    for line in allInput:
+        if 'USB drive ID: ' in line:
+            print("***********************************")
+            print(filename, line)
+        elif 'Control image set:' in line:
+            for img in line[line.find('[')+1:line.rfind(']')].split(','):
+                images.append(Image(img.strip(), ImageTypes.Control))
+        elif 'Reward image set:' in line:
+            for img in line[line.find('[')+1:line.rfind(']')].split(','):
+                images.append(Image(img.strip(), ImageTypes.Reward))
+        elif "Start of experiment" in line:
+            return images
+
+
 for filename in getFileNames('Data/'):  #['Results-TEST.txt']: #
     with open(filename, 'r') as resultFile:
         allInput = resultFile.readlines()
         currentImg = None
-        images = []
+        pokeImg = None
+        runImg = None
         currentState = None
         findFloat = re.compile("[+-]?([0-9]*[.])?[0-9]+") #regex to search for a number (float)
         wheelHalfTimes = []
@@ -293,18 +338,7 @@ for filename in getFileNames('Data/'):  #['Results-TEST.txt']: #
         poke_events = []
         rotation_intervals = []
         skipLine = False
-        for line in allInput:
-            if 'USB drive ID: ' in line:
-                print("***********************************")
-                print(filename, line)
-            elif 'Control image set:' in line:
-                for img in line[line.find('[')+1:line.rfind(']')].split(','):
-                    images.append(Image(img.strip(), ImageTypes.Control))
-            elif 'Reward image set:' in line:
-                for img in line[line.find('[')+1:line.rfind(']')].split(','):
-                    images.append(Image(img.strip(), ImageTypes.Reward))
-            elif "Start of experiment" in line:
-                break ##this initial loop is to initialize some values only. Data extraction in the next loop.
+        images = set(initializeImages(allInput, filename)) #convert to set to avoid accidental duplication
         for line in allInput:
             if 'starting' in line:
                 continue
@@ -312,12 +346,13 @@ for filename in getFileNames('Data/'):  #['Results-TEST.txt']: #
                 curImgName = line[line.find('Name:') + 5: line.find(',')].strip()
                 currentImg = next((img for img in images if img.name == curImgName), None)
                 assert currentImg is not None, 'Unrecognized image: {0}'.format(curImgName)
+                currentImg.incrementAppearances()
             elif 'Wheel' in line:
                 if skipLine:
                     skipLine = False
                     continue
                 if currentState is Activity.Poking:
-                    endPoke(doorStates, doorTimes, pumpTimes, pumpStates, currentImg, poke_events)
+                    endPoke(doorStates, doorTimes, pumpTimes, pumpStates, pokeImg, poke_events)
                     doorStates, doorTimes, pumpTimes, pumpStates = [], [], [], []
                 currentState = Activity.Running
                 if 'State:' in line:
@@ -331,20 +366,26 @@ for filename in getFileNames('Data/'):  #['Results-TEST.txt']: #
                     endRun(wheelHalfTimes, currentImg, rotation_intervals)
                     wheelHalfTimes = []
                     currentState = Activity.Poking
-                pump_state = PumpStates.On if re.search("State: (.*), Time", line).group(1) == 'On' else PumpStates.Off
+                if re.search("State: (.*), Time", line).group(1) == 'On':
+                    pump_state = PumpStates.On 
+                    pokeImg = currentImg #the poke event's image should be the image when the pump is on (ie reward image)
+                else:
+                    pump_state = PumpStates.Off
                 pumpStates.append(pump_state) 
                 pumpTimes.append(float(findFloat.search(line).group(0)))
             elif 'Door' in line:
                 if currentState is Activity.Running:
                     endRun(wheelHalfTimes, currentImg, rotation_intervals)
                     wheelHalfTimes = []
+                if currentState is not Activity.Poking:
+                    pokeImg = currentImg #record image when poke event starts
                 currentState = Activity.Poking
                 door_state = DoorStates.High if re.search("State: (.*), Time", line).group(1) == 'High' else DoorStates.Low
                 doorStates.append(door_state)
                 doorTimes.append(float(findFloat.search(line).group(0)))
             skipLine = False
         if currentState is Activity.Poking:
-            endPoke(doorStates, doorTimes, pumpTimes, pumpStates, currentImg, poke_events)
+            endPoke(doorStates, doorTimes, pumpTimes, pumpStates, pokeImg, poke_events)
         else:
             endRun(wheelHalfTimes, currentImg, rotation_intervals)
 
@@ -355,8 +396,21 @@ for filename in getFileNames('Data/'):  #['Results-TEST.txt']: #
     # numPokes(poke_events)
     # drinkLengths(poke_events)
     #print(len(poke_events))
-    pokeStatistics(poke_events)
+    pokeStatistics(poke_events, images)
+    for pe in poke_events:
+        try:
+            print(pe.startTime)
+        except IndexError:
+            print(pe.doorTimes)
 
-#filenames = ['Results - 2019-04-18 9c907df8daad9f581330d99873708e27.txt']
-##['/Users/arjitmisra/Documents/Kramer_Lab/Behavioral-Analysis/Data/results/WT-1, Starting April 15 2019/Night #2/Results - 2019-04-16 45052a5be1d4db39f2ce5267bc96da00.txt']: #
+
+
+
+
+
+
+
+
+
+
 
