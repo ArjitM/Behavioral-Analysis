@@ -94,6 +94,8 @@ class PokeEvent:
     #series of repeated pokes
 
     def __init__(self, doorStates, doorTimes, pumpTimes, pumpStates, image):
+        if not doorTimes:
+            print('pumpStates >> ', pumpStates, pumpTimes)
         self._doorStates = doorStates
         self._doorTimes = doorTimes
         self._pumpTimes = pumpTimes
@@ -162,19 +164,27 @@ class PokeEvent:
     def doorTimes(self):
         return self._doorTimes
 
+    @property
+    def pumpStates(self):
+        return self._pumpStates
+    
+
     @staticmethod
     def missedRewards(poke_events, rewardImgs):
         misses = {}
         for ri in rewardImgs:
             hits = 0
             for pe in poke_events:
-                if pe.image == ri:
+                if pe.image == ri and pe.isSuccess():
                     hits += 1 #poke events that occured in the presence of the reward image
             print(ri.appearances, ' << reward image appearances')
             print(hits, ' << hits')
             misses[ri] = ri.appearances - hits
         print(len(poke_events), ' << total poke_events')
         return misses
+
+class SubPoke(PokeEvent):
+    pass
     
 class Image:
 
@@ -281,11 +291,13 @@ def pokeStatistics(poke_events, images):
     for pe in poke_events:
         i += 1
         successful += pe.successfulPokes()
+        # if pe.isSuccess():
+        #     print("*", pe.startTime, '; pokes --> ', pe.successfulPokes(), pe.pumpStates)
         total += pe.totalPokesNoTimeout()
     rewardImgs = list(filter(lambda im: im.imageType is ImageTypes.Reward, images))
     misses = PokeEvent.missedRewards(poke_events, rewardImgs)
     print("Successful Pokes {0}".format(successful))
-    print("Unsuccesfull Pokes {0}".format(total - successful))
+    print("Unsuccesful Pokes {0}".format(total - successful))
     print("Total {0}".format(total))
     for ri in rewardImgs:
         print("Missed Reward Pokes for image: {0} are {1}".format(ri.name, misses[ri]))
@@ -362,13 +374,13 @@ for filename in getFileNames('Data/'):  #['Results-TEST.txt']: #
                     skipLine = True
                     continue #do NOT reset skipLine boolean
             elif 'Pump' in line:
-                if currentState is Activity.Running:
-                    endRun(wheelHalfTimes, currentImg, rotation_intervals)
-                    wheelHalfTimes = []
-                    currentState = Activity.Poking
                 if re.search("State: (.*), Time", line).group(1) == 'On':
                     pump_state = PumpStates.On 
                     pokeImg = currentImg #the poke event's image should be the image when the pump is on (ie reward image)
+                    # if currentState is Activity.Running:
+                    #     endRun(wheelHalfTimes, currentImg, rotation_intervals)
+                    #     wheelHalfTimes = []
+                    #     currentState = Activity.Poking
                 else:
                     pump_state = PumpStates.Off
                 pumpStates.append(pump_state) 
@@ -397,11 +409,11 @@ for filename in getFileNames('Data/'):  #['Results-TEST.txt']: #
     # drinkLengths(poke_events)
     #print(len(poke_events))
     pokeStatistics(poke_events, images)
-    for pe in poke_events:
-        try:
-            print(pe.startTime)
-        except IndexError:
-            print(pe.doorTimes)
+    # for pe in poke_events:
+    #     try:
+    #         print(pe.startTime)
+    #     except IndexError:
+    #         print(pe.doorTimes)
 
 
 
