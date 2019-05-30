@@ -94,8 +94,6 @@ class PokeEvent:
     #series of repeated pokes
 
     def __init__(self, doorStates, doorTimes, pumpTimes, pumpStates, image):
-        if not doorTimes:
-            print('pumpStates >> ', pumpStates, pumpTimes)
         self._doorStates = doorStates
         self._doorTimes = doorTimes
         self._pumpTimes = pumpTimes
@@ -114,9 +112,6 @@ class PokeEvent:
         for p in self._pumpStates:
             if p is PumpStates.On:
                 num += 1
-        if num > 0:
-            if self.image.imageType == ImageTypes.Control:
-                print("wtf is happening? ", self._pumpTimes)
         return num
 
     def totalPokes(self):
@@ -165,6 +160,14 @@ class PokeEvent:
         return self._doorTimes
 
     @property
+    def doorStates(self):
+        return self._doorStates
+    
+    @property
+    def pumpTimes(self):
+        return self._pumpTimes
+
+    @property
     def pumpStates(self):
         return self._pumpStates
     
@@ -177,10 +180,9 @@ class PokeEvent:
             for pe in poke_events:
                 if pe.image == ri and pe.isSuccess():
                     hits += 1 #poke events that occured in the presence of the reward image
-            print(ri.appearances, ' << reward image appearances')
-            print(hits, ' << hits')
+            print('Reward image appearances for {0} >> {1}'.format(ri.name, ri.appearances))
+            print('Hits/Successful Pokes >> ', hits)
             misses[ri] = ri.appearances - hits
-        print(len(poke_events), ' << total poke_events')
         return misses
 
 class SubPoke(PokeEvent):
@@ -252,6 +254,16 @@ def rpmTimeLapse(rotation_intervals, hour=None):
     plt.legend(handles=data)
     plt.show()
 
+def pokesPerHour(poke_events):
+    hourlyPokes = {} #dictionary stores pokes for each hour
+    for pe in poke_events:
+        for t, s in zip(pe.pumpTimes, pe.pumpStates): 
+            if s is PumpStates.On:
+                hr = int(t / 3600) + 1 #convert t to hours, round up for nth hour
+                hourlyPokes[hr] = hourlyPokes.get(hr, 0) + 1 #increment pokes for each hour, default value of 0 supplied to initialize
+    for k in range(1, 13):
+        print("Successful pokes in hour #{0} >> {1}".format(k, hourlyPokes.get(k, 0)))
+
 def numPokes(poke_events):
     totalPokes = [pe.totalPokes() for pe in poke_events]
     plt.hist(totalPokes)
@@ -284,23 +296,23 @@ def pruneRotationIntervals(rotation_intervals):
     for ri in erratic:
         rotation_intervals.remove(ri)
 
-def pokeStatistics(poke_events, images):
+def pokeStatistics(poke_events, images, filename):
     successful = 0
     total = 0
     i=0
     for pe in poke_events:
         i += 1
         successful += pe.successfulPokes()
-        # if pe.isSuccess():
-        #     print("*", pe.startTime, '; pokes --> ', pe.successfulPokes(), pe.pumpStates)
         total += pe.totalPokesNoTimeout()
     rewardImgs = list(filter(lambda im: im.imageType is ImageTypes.Reward, images))
     misses = PokeEvent.missedRewards(poke_events, rewardImgs)
-    print("Successful Pokes {0}".format(successful))
-    print("Unsuccesful Pokes {0}".format(total - successful))
-    print("Total {0}".format(total))
+    # print("Successful Pokes {0}".format(successful))
+    # print("Unsuccesful Pokes {0}".format(total - successful))
+    # print("Total {0}".format(total))
+    if 'Night #1' in filename or 'Night 1' in filename:
+        return
     for ri in rewardImgs:
-        print("Missed Reward Pokes for image: {0} are {1}".format(ri.name, misses[ri]))
+        print("Missed Reward Pokes for image: {0} are {1}\n".format(ri.name, misses[ri]))
     
 def getFileNames(location):
     prefixes = []
@@ -322,8 +334,9 @@ def initializeImages(allInput, filename):
     images = []
     for line in allInput:
         if 'USB drive ID: ' in line:
-            print("***********************************")
-            print(filename, line)
+            print("\n***********************************\n")
+            print(filename)
+            print(line)
         elif 'Control image set:' in line:
             for img in line[line.find('[')+1:line.rfind(']')].split(','):
                 images.append(Image(img.strip(), ImageTypes.Control))
@@ -400,28 +413,15 @@ for filename in getFileNames('Data/'):  #['Results-TEST.txt']: #
             endPoke(doorStates, doorTimes, pumpTimes, pumpStates, pokeImg, poke_events)
         else:
             endRun(wheelHalfTimes, currentImg, rotation_intervals)
-
     pruneRotationIntervals(rotation_intervals)
-    ######### ANALYSIS PART BEGINS; DO NOT EDIT ABOVE FOR ANALYSIS MODES ONLY##############
+
+    ######### ANALYSIS FUNCTION CALLS BEGIN HERE; DO NOT EDIT ABOVE WHEN RUNNING ANALYSIS##############
     # cumulativeSuccess(poke_events)
     # rpmTimeLapse(rotation_intervals)
     # numPokes(poke_events)
     # drinkLengths(poke_events)
-    #print(len(poke_events))
-    pokeStatistics(poke_events, images)
-    # for pe in poke_events:
-    #     try:
-    #         print(pe.startTime)
-    #     except IndexError:
-    #         print(pe.doorTimes)
-
-
-
-
-
-
-
-
+    pokeStatistics(poke_events, images, filename)
+    pokesPerHour(poke_events)
 
 
 
