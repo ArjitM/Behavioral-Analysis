@@ -310,9 +310,11 @@ def pokeStatistics(poke_events, images, filename):
     # print("Unsuccesful Pokes {0}".format(total - successful))
     # print("Total {0}".format(total))
     if 'Night #1' in filename or 'Night 1' in filename:
+        print('\n')
         return
     for ri in rewardImgs:
-        print("Missed Reward Pokes for image: {0} are {1}\n".format(ri.name, misses[ri]))
+        print("Missed Reward Pokes for image: {0} are {1}".format(ri.name, misses[ri]))
+    print('\n')
     
 def getFileNames(location):
     prefixes = []
@@ -328,6 +330,7 @@ def getFileNames(location):
         except StopIteration:
             pass
     recursiveDirectories(location)
+    fileNames.sort()
     return fileNames
 
 def initializeImages(allInput, filename):
