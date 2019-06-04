@@ -1,0 +1,2983 @@
+Date: 2019-05-24 12:02:46.513960
+Experiment preset: Test
+
+USB drive ID: CAGE 1A
+
+Control image set: [Solid.png]
+
+Reward image set: [Checkerboard-contrast_1.png, Checkerboard-contrast_2.png, Checkerboard-contrast_4.png, Checkerboard-contrast_7.png, Checkerboard-contrast_14.png, Checkerboard-contrast_27.png, Checkerboard-contrast_52.png, Checkerboard-contrast_100.png]
+
+Minimum wheel revolutions for reward: 10.0
+
+Maximum wheel revolutions for reward: 50.0
+
+Maximum duration of reward state (seconds): 30.0
+
+Duration of pump "on" state (seconds): 3.0
+
+Maximum time between wheel events (seconds): 5.0
+
+Total duration of the experiment (hours): 4.0
+
+Pattern frequency for images: 16.0
+
+Duration of each reward frame (seconds): 30.0
+
+Number of contrast steps: 8.0
+
+Minimum time between contrast increments: 5.0
+
+Maximum time between contrast increments: 5.0
+
+Minimum contrast ratio (0-100): 1.0
+
+Maximum contrast ratio (0-100): 100.0
+
+Calculated contrast step ratio: 0.5179474679231212
+
+Metadata: Type metadata here...
+Protocol hash: 05ec3267367e55f4427e98cf0aec347b
+Image hashes: 
+Checkerboard-contrast_1.png - fc32dedaf5bb8c361864dee8534809d9
+Checkerboard-contrast_100.png - c7ef3652d905b84f028e8d3bac85b83b
+Checkerboard-contrast_14.png - c27e015b73ca8ec209474c2d0925b795
+Checkerboard-contrast_2.png - c1f727703e1104d4451dacd014f5967c
+Checkerboard-contrast_27.png - 6f5e3c659abf49a84e858f13669e3cbe
+Checkerboard-contrast_4.png - 63e3721c14ce35da5fab4b61b1c484d7
+Checkerboard-contrast_52.png - 97a6298e164c0493c3cf6b9c8806607f
+Checkerboard-contrast_7.png - 2db84a7fb7009f5884ba302c5a994f59
+Solid.png - 64930c698c01ce4f704551ce6db48ab5
+
+-------------------------------Start of experiment-----------------------------------------------
+
+Door starting at: 0.013
+Image starting at: 0.014
+Wheel starting at: 0.020
+Image - Name: Solid.png, Hash: 64930c698c01ce4f704551ce6db48ab5, Duration: 5.000, Time: 0.489
+Door - State: Low, Time: 13.313
+Door - State: High, Time: 13.451
+Door - State: Low, Time: 13.520
+Door - State: High, Time: 14.016
+Wheel - State: High, Time: 23.250
+Wheel revolution 1 of 13
+Wheel - State: Low, Time: 23.273
+Wheel - State: High, Time: 31.497
+Wheel revolution 1 of 16
+Wheel - State: Low, Time: 31.520
+Wheel - State: High, Time: 32.662
+Wheel revolution 2 of 16
+Wheel - State: Low, Time: 32.684
+Wheel - State: High, Time: 34.279
+Wheel revolution 3 of 16
+Wheel - State: Low, Time: 34.301
+Wheel - State: High, Time: 35.457
+Wheel revolution 4 of 16
+Wheel - State: Low, Time: 35.479
+Wheel - State: High, Time: 58.483
+Wheel revolution 1 of 14
+Wheel - State: Low, Time: 58.505
+Wheel - State: High, Time: 59.574
+Wheel revolution 2 of 14
+Wheel - State: Low, Time: 59.597
+Wheel - State: High, Time: 60.669
+Wheel revolution 3 of 14
+Wheel - State: Low, Time: 60.691
+Wheel - State: High, Time: 61.939
+Wheel revolution 4 of 14
+Wheel - State: Low, Time: 61.961
+Wheel - State: High, Time: 63.158
+Wheel revolution 5 of 14
+Wheel - State: Low, Time: 63.180
+Wheel - State: High, Time: 65.053
+Wheel revolution 6 of 14
+Wheel - State: Low, Time: 65.075
+Wheel - State: High, Time: 66.318
+Wheel revolution 7 of 14
+Wheel - State: Low, Time: 66.340
+Wheel - State: High, Time: 67.630
+Wheel revolution 8 of 14
+Wheel - State: Low, Time: 67.652
+Wheel - State: High, Time: 68.948
+Wheel revolution 9 of 14
+Wheel - State: Low, Time: 68.971
+Wheel - State: High, Time: 71.643
+Wheel revolution 10 of 14
+Wheel - State: Low, Time: 71.665
+Wheel - State: High, Time: 73.017
+Wheel revolution 11 of 14
+Wheel - State: Low, Time: 73.041
+Wheel - State: High, Time: 76.106
+Wheel revolution 12 of 14
+Wheel - State: Low, Time: 76.129
+Wheel - State: High, Time: 77.483
+Wheel revolution 13 of 14
+Wheel - State: Low, Time: 77.506
+Wheel - State: High, Time: 78.679
+Wheel revolution 14 of 14
+Wheel - State: Low, Time: 78.703
+Image - Name: Checkerboard-contrast_1.png, Hash: fc32dedaf5bb8c361864dee8534809d9, Duration: 5.000, Time: 78.765
+Wheel - State: High, Time: 79.987
+Wheel - State: Low, Time: 80.009
+Wheel - State: High, Time: 81.269
+Wheel - State: Low, Time: 81.292
+Wheel - State: High, Time: 82.505
+Wheel - State: Low, Time: 82.528
+Wheel - State: High, Time: 83.912
+Wheel - State: Low, Time: 83.935
+Image - Name: Checkerboard-contrast_2.png, Hash: c1f727703e1104d4451dacd014f5967c, Duration: 5.000, Time: 84.024
+Wheel - State: High, Time: 85.171
+Wheel - State: Low, Time: 85.194
+Wheel - State: High, Time: 86.555
+Wheel - State: Low, Time: 86.579
+Wheel - State: High, Time: 87.806
+Wheel - State: Low, Time: 87.829
+Wheel - State: High, Time: 89.252
+Wheel - State: Low, Time: 89.275
+Image - Name: Checkerboard-contrast_4.png, Hash: 63e3721c14ce35da5fab4b61b1c484d7, Duration: 5.000, Time: 89.306
+Wheel - State: High, Time: 90.442
+Wheel - State: Low, Time: 90.465
+Wheel - State: High, Time: 105.993
+Wheel - State: Low, Time: 106.016
+Image - Name: Checkerboard-contrast_7.png, Hash: 2db84a7fb7009f5884ba302c5a994f59, Duration: 5.000, Time: 106.100
+Wheel - State: High, Time: 107.703
+Wheel - State: Low, Time: 107.726
+Wheel - State: High, Time: 108.997
+Wheel - State: Low, Time: 109.019
+Wheel - State: High, Time: 110.617
+Wheel - State: Low, Time: 110.639
+Wheel - State: High, Time: 112.146
+Wheel - State: Low, Time: 112.168
+Image - Name: Checkerboard-contrast_14.png, Hash: c27e015b73ca8ec209474c2d0925b795, Duration: 5.000, Time: 112.244
+Wheel - State: High, Time: 113.553
+Wheel - State: Low, Time: 113.576
+Wheel - State: High, Time: 116.194
+Wheel - State: Low, Time: 116.217
+Wheel - State: High, Time: 117.490
+Wheel - State: Low, Time: 117.513
+Image - Name: Checkerboard-contrast_27.png, Hash: 6f5e3c659abf49a84e858f13669e3cbe, Duration: 5.000, Time: 117.590
+Wheel - State: High, Time: 118.633
+Wheel - State: Low, Time: 118.656
+Wheel - State: High, Time: 119.781
+Wheel - State: Low, Time: 119.804
+Wheel - State: High, Time: 120.909
+Wheel - State: Low, Time: 120.932
+Wheel - State: High, Time: 122.265
+Wheel - State: Low, Time: 122.287
+Wheel - State: High, Time: 123.358
+Wheel - State: Low, Time: 123.381
+Image - Name: Checkerboard-contrast_52.png, Hash: 97a6298e164c0493c3cf6b9c8806607f, Duration: 5.000, Time: 123.438
+Wheel - State: High, Time: 124.506
+Wheel - State: Low, Time: 124.530
+Wheel - State: High, Time: 130.323
+Wheel - State: Low, Time: 130.345
+Image - Name: Checkerboard-contrast_100.png, Hash: c7ef3652d905b84f028e8d3bac85b83b, Duration: 5.000, Time: 130.439
+Wheel - State: High, Time: 142.877
+Wheel - State: Low, Time: 142.900
+Image - Name: Solid.png, Hash: 64930c698c01ce4f704551ce6db48ab5, Duration: 5.000, Time: 160.527
+Wheel - State: High, Time: 163.563
+Wheel revolution 1 of 27
+Wheel - State: Low, Time: 163.586
+Wheel - State: High, Time: 164.770
+Wheel revolution 2 of 27
+Wheel - State: Low, Time: 164.793
+Wheel - State: High, Time: 165.959
+Wheel revolution 3 of 27
+Wheel - State: Low, Time: 165.982
+Wheel - State: High, Time: 167.822
+Wheel revolution 4 of 27
+Wheel - State: Low, Time: 167.845
+Wheel - State: High, Time: 168.983
+Wheel revolution 5 of 27
+Wheel - State: Low, Time: 169.006
+Wheel - State: High, Time: 171.734
+Wheel revolution 6 of 27
+Wheel - State: Low, Time: 171.757
+Wheel - State: High, Time: 172.959
+Wheel revolution 7 of 27
+Wheel - State: Low, Time: 172.981
+Wheel - State: High, Time: 174.145
+Wheel revolution 8 of 27
+Wheel - State: Low, Time: 174.168
+Wheel - State: High, Time: 176.109
+Wheel revolution 9 of 27
+Wheel - State: Low, Time: 176.131
+Wheel - State: High, Time: 177.747
+Wheel revolution 10 of 27
+Wheel - State: Low, Time: 177.771
+Wheel - State: High, Time: 178.886
+Wheel revolution 11 of 27
+Wheel - State: Low, Time: 178.909
+Wheel - State: High, Time: 180.085
+Wheel revolution 12 of 27
+Wheel - State: Low, Time: 180.109
+Wheel - State: High, Time: 181.251
+Wheel revolution 13 of 27
+Wheel - State: Low, Time: 181.273
+Wheel - State: High, Time: 182.369
+Wheel revolution 14 of 27
+Wheel - State: Low, Time: 182.392
+Wheel - State: High, Time: 183.487
+Wheel revolution 15 of 27
+Wheel - State: Low, Time: 183.509
+Wheel - State: High, Time: 184.494
+Wheel revolution 16 of 27
+Wheel - State: Low, Time: 184.517
+Door - State: Low, Time: 195.103
+Door - State: High, Time: 195.213
+Wheel - State: High, Time: 211.680
+Wheel revolution 1 of 38
+Wheel - State: Low, Time: 211.702
+Wheel - State: High, Time: 213.767
+Wheel revolution 2 of 38
+Wheel - State: Low, Time: 213.789
+Wheel - State: High, Time: 217.033
+Wheel revolution 3 of 38
+Wheel - State: Low, Time: 217.055
+Wheel - State: High, Time: 236.157
+Wheel revolution 1 of 46
+Wheel - State: Low, Time: 236.180
+Wheel - State: High, Time: 238.756
+Wheel revolution 2 of 46
+Wheel - State: Low, Time: 238.779
+Wheel - State: High, Time: 241.517
+Wheel revolution 3 of 46
+Wheel - State: Low, Time: 241.541
+Wheel - State: High, Time: 242.722
+Wheel revolution 4 of 46
+Wheel - State: Low, Time: 242.743
+Wheel - State: High, Time: 243.970
+Wheel revolution 5 of 46
+Wheel - State: Low, Time: 243.993
+Wheel - State: High, Time: 245.126
+Wheel revolution 6 of 46
+Wheel - State: Low, Time: 245.149
+Wheel - State: High, Time: 246.209
+Wheel revolution 7 of 46
+Wheel - State: Low, Time: 246.232
+Wheel - State: High, Time: 247.519
+Wheel revolution 8 of 46
+Wheel - State: Low, Time: 247.542
+Wheel - State: High, Time: 248.584
+Wheel revolution 9 of 46
+Wheel - State: Low, Time: 248.607
+Wheel - State: High, Time: 249.766
+Wheel revolution 10 of 46
+Wheel - State: Low, Time: 249.788
+Wheel - State: High, Time: 250.806
+Wheel revolution 11 of 46
+Wheel - State: Low, Time: 250.828
+Wheel - State: High, Time: 252.659
+Wheel revolution 12 of 46
+Wheel - State: Low, Time: 252.683
+Wheel - State: High, Time: 264.460
+Wheel revolution 1 of 14
+Wheel - State: Low, Time: 264.483
+Wheel - State: High, Time: 265.686
+Wheel revolution 2 of 14
+Wheel - State: Low, Time: 265.709
+Wheel - State: High, Time: 266.908
+Wheel revolution 3 of 14
+Wheel - State: Low, Time: 266.930
+Wheel - State: High, Time: 268.252
+Wheel revolution 4 of 14
+Wheel - State: Low, Time: 268.276
+Wheel - State: High, Time: 270.359
+Wheel revolution 5 of 14
+Wheel - State: Low, Time: 270.383
+Wheel - State: High, Time: 271.416
+Wheel revolution 6 of 14
+Wheel - State: Low, Time: 271.440
+Wheel - State: High, Time: 272.516
+Wheel revolution 7 of 14
+Wheel - State: Low, Time: 272.539
+Wheel - State: High, Time: 273.851
+Wheel revolution 8 of 14
+Wheel - State: Low, Time: 273.875
+Wheel - State: High, Time: 279.508
+Wheel revolution 1 of 11
+Wheel - State: Low, Time: 279.531
+Wheel - State: High, Time: 282.753
+Wheel revolution 2 of 11
+Wheel - State: Low, Time: 282.775
+Wheel - State: High, Time: 284.033
+Wheel revolution 3 of 11
+Wheel - State: Low, Time: 284.055
+Wheel - State: High, Time: 285.155
+Wheel revolution 4 of 11
+Wheel - State: Low, Time: 285.177
+Wheel - State: High, Time: 286.273
+Wheel revolution 5 of 11
+Wheel - State: Low, Time: 286.296
+Wheel - State: High, Time: 287.424
+Wheel revolution 6 of 11
+Wheel - State: Low, Time: 287.448
+Wheel - State: High, Time: 288.612
+Wheel revolution 7 of 11
+Wheel - State: Low, Time: 288.635
+Wheel - State: High, Time: 289.719
+Wheel revolution 8 of 11
+Wheel - State: Low, Time: 289.742
+Wheel - State: High, Time: 291.711
+Wheel revolution 9 of 11
+Wheel - State: Low, Time: 291.733
+Wheel - State: High, Time: 292.991
+Wheel revolution 10 of 11
+Wheel - State: Low, Time: 293.015
+Wheel - State: High, Time: 294.164
+Wheel revolution 11 of 11
+Wheel - State: Low, Time: 294.187
+Image - Name: Checkerboard-contrast_1.png, Hash: fc32dedaf5bb8c361864dee8534809d9, Duration: 5.000, Time: 294.242
+Wheel - State: High, Time: 295.343
+Wheel - State: Low, Time: 295.366
+Image - Name: Solid.png, Hash: 64930c698c01ce4f704551ce6db48ab5, Duration: 5.000, Time: 324.306
+Wheel - State: High, Time: 343.069
+Wheel revolution 1 of 23
+Wheel - State: Low, Time: 343.092
+Wheel - State: High, Time: 345.346
+Wheel revolution 2 of 23
+Wheel - State: Low, Time: 345.368
+Wheel - State: High, Time: 354.257
+Wheel revolution 1 of 40
+Wheel - State: Low, Time: 354.280
+Wheel - State: High, Time: 355.440
+Wheel revolution 2 of 40
+Wheel - State: Low, Time: 355.463
+Wheel - State: High, Time: 356.660
+Wheel revolution 3 of 40
+Wheel - State: Low, Time: 356.683
+Wheel - State: High, Time: 357.878
+Wheel revolution 4 of 40
+Wheel - State: Low, Time: 357.901
+Wheel - State: High, Time: 362.614
+Wheel revolution 5 of 40
+Wheel - State: Low, Time: 362.637
+Wheel - State: High, Time: 364.151
+Wheel revolution 6 of 40
+Wheel - State: Low, Time: 364.174
+Wheel - State: High, Time: 365.232
+Wheel revolution 7 of 40
+Wheel - State: Low, Time: 365.254
+Wheel - State: High, Time: 366.257
+Wheel revolution 8 of 40
+Wheel - State: Low, Time: 366.279
+Wheel - State: High, Time: 367.449
+Wheel revolution 9 of 40
+Wheel - State: Low, Time: 367.471
+Wheel - State: High, Time: 368.506
+Wheel revolution 10 of 40
+Wheel - State: Low, Time: 368.529
+Wheel - State: High, Time: 369.596
+Wheel revolution 11 of 40
+Wheel - State: Low, Time: 369.619
+Wheel - State: High, Time: 370.747
+Wheel revolution 12 of 40
+Wheel - State: Low, Time: 370.770
+Wheel - State: High, Time: 371.842
+Wheel revolution 13 of 40
+Wheel - State: Low, Time: 371.865
+Wheel - State: High, Time: 376.400
+Wheel revolution 14 of 40
+Wheel - State: Low, Time: 376.422
+Wheel - State: High, Time: 388.039
+Wheel revolution 1 of 29
+Wheel - State: Low, Time: 388.062
+Door - State: Low, Time: 458.598
+Door - State: High, Time: 459.367
+Wheel - State: High, Time: 467.157
+Wheel revolution 1 of 43
+Wheel - State: Low, Time: 467.181
+Wheel - State: High, Time: 468.370
+Wheel revolution 2 of 43
+Wheel - State: Low, Time: 468.394
+Wheel - State: High, Time: 469.583
+Wheel revolution 3 of 43
+Wheel - State: Low, Time: 469.606
+Wheel - State: High, Time: 471.017
+Wheel revolution 4 of 43
+Wheel - State: Low, Time: 471.040
+Wheel - State: High, Time: 474.551
+Wheel revolution 5 of 43
+Wheel - State: Low, Time: 474.574
+Wheel - State: High, Time: 475.617
+Wheel revolution 6 of 43
+Wheel - State: Low, Time: 475.639
+Wheel - State: High, Time: 480.084
+Wheel revolution 7 of 43
+Wheel - State: Low, Time: 480.106
+Wheel - State: High, Time: 481.320
+Wheel revolution 8 of 43
+Wheel - State: Low, Time: 481.344
+Wheel - State: High, Time: 482.465
+Wheel revolution 9 of 43
+Wheel - State: Low, Time: 482.488
+Wheel - State: High, Time: 483.597
+Wheel revolution 10 of 43
+Wheel - State: Low, Time: 483.620
+Wheel - State: High, Time: 484.775
+Wheel revolution 11 of 43
+Wheel - State: Low, Time: 484.798
+Wheel - State: High, Time: 485.946
+Wheel revolution 12 of 43
+Wheel - State: Low, Time: 485.968
+Wheel - State: High, Time: 488.872
+Wheel revolution 13 of 43
+Wheel - State: Low, Time: 488.895
+Wheel - State: High, Time: 489.994
+Wheel revolution 14 of 43
+Wheel - State: Low, Time: 490.016
+Wheel - State: High, Time: 491.057
+Wheel revolution 15 of 43
+Wheel - State: Low, Time: 491.079
+Wheel - State: High, Time: 492.205
+Wheel revolution 16 of 43
+Wheel - State: Low, Time: 492.228
+Wheel - State: High, Time: 493.341
+Wheel revolution 17 of 43
+Wheel - State: Low, Time: 493.364
+Wheel - State: High, Time: 494.550
+Wheel revolution 18 of 43
+Wheel - State: Low, Time: 494.573
+Wheel - State: High, Time: 497.418
+Wheel revolution 19 of 43
+Wheel - State: Low, Time: 497.441
+Wheel - State: High, Time: 502.089
+Wheel revolution 20 of 43
+Wheel - State: Low, Time: 502.111
+Wheel - State: High, Time: 503.384
+Wheel revolution 21 of 43
+Wheel - State: Low, Time: 503.407
+Wheel - State: High, Time: 504.598
+Wheel revolution 22 of 43
+Wheel - State: Low, Time: 504.621
+Wheel - State: High, Time: 505.818
+Wheel revolution 23 of 43
+Wheel - State: Low, Time: 505.842
+Wheel - State: High, Time: 507.287
+Wheel revolution 24 of 43
+Wheel - State: Low, Time: 507.309
+Wheel - State: High, Time: 508.357
+Wheel revolution 25 of 43
+Wheel - State: Low, Time: 508.379
+Wheel - State: High, Time: 509.525
+Wheel revolution 26 of 43
+Wheel - State: Low, Time: 509.547
+Wheel - State: High, Time: 510.625
+Wheel revolution 27 of 43
+Wheel - State: Low, Time: 510.648
+Wheel - State: High, Time: 514.120
+Wheel revolution 28 of 43
+Wheel - State: Low, Time: 514.143
+Wheel - State: High, Time: 515.326
+Wheel revolution 29 of 43
+Wheel - State: Low, Time: 515.348
+Wheel - State: High, Time: 516.501
+Wheel revolution 30 of 43
+Wheel - State: Low, Time: 516.524
+Wheel - State: High, Time: 538.019
+Wheel revolution 1 of 45
+Wheel - State: Low, Time: 538.041
+Wheel - State: High, Time: 557.833
+Wheel revolution 1 of 40
+Wheel - State: Low, Time: 557.855
+Wheel - State: High, Time: 559.534
+Wheel revolution 2 of 40
+Wheel - State: Low, Time: 559.557
+Wheel - State: High, Time: 560.641
+Wheel revolution 3 of 40
+Wheel - State: Low, Time: 560.664
+Wheel - State: High, Time: 561.912
+Wheel revolution 4 of 40
+Wheel - State: Low, Time: 561.935
+Wheel - State: High, Time: 565.686
+Wheel revolution 5 of 40
+Wheel - State: Low, Time: 565.709
+Wheel - State: High, Time: 566.787
+Wheel revolution 6 of 40
+Wheel - State: Low, Time: 566.810
+Wheel - State: High, Time: 567.876
+Wheel revolution 7 of 40
+Wheel - State: Low, Time: 567.898
+Wheel - State: High, Time: 568.942
+Wheel revolution 8 of 40
+Wheel - State: Low, Time: 568.964
+Wheel - State: High, Time: 570.198
+Wheel revolution 9 of 40
+Wheel - State: Low, Time: 570.221
+Wheel - State: High, Time: 571.380
+Wheel revolution 10 of 40
+Wheel - State: Low, Time: 571.404
+Wheel - State: High, Time: 572.421
+Wheel revolution 11 of 40
+Wheel - State: Low, Time: 572.444
+Wheel - State: High, Time: 604.186
+Wheel revolution 1 of 40
+Wheel - State: Low, Time: 604.210
+Wheel - State: High, Time: 607.048
+Wheel revolution 2 of 40
+Wheel - State: Low, Time: 607.071
+Wheel - State: High, Time: 608.731
+Wheel revolution 3 of 40
+Wheel - State: Low, Time: 608.755
+Wheel - State: High, Time: 609.996
+Wheel revolution 4 of 40
+Wheel - State: Low, Time: 610.018
+Wheel - State: High, Time: 610.962
+Wheel revolution 5 of 40
+Wheel - State: Low, Time: 610.985
+Wheel - State: High, Time: 612.105
+Wheel revolution 6 of 40
+Wheel - State: Low, Time: 612.127
+Wheel - State: High, Time: 613.299
+Wheel revolution 7 of 40
+Wheel - State: Low, Time: 613.323
+Wheel - State: High, Time: 615.124
+Wheel revolution 8 of 40
+Wheel - State: Low, Time: 615.147
+Wheel - State: High, Time: 616.212
+Wheel revolution 9 of 40
+Wheel - State: Low, Time: 616.236
+Wheel - State: High, Time: 617.723
+Wheel revolution 10 of 40
+Wheel - State: Low, Time: 617.745
+Wheel - State: High, Time: 618.820
+Wheel revolution 11 of 40
+Wheel - State: Low, Time: 618.842
+Wheel - State: High, Time: 622.998
+Wheel revolution 12 of 40
+Wheel - State: Low, Time: 623.021
+Wheel - State: High, Time: 624.209
+Wheel revolution 13 of 40
+Wheel - State: Low, Time: 624.233
+Wheel - State: High, Time: 625.289
+Wheel revolution 14 of 40
+Wheel - State: Low, Time: 625.313
+Wheel - State: High, Time: 626.307
+Wheel revolution 15 of 40
+Wheel - State: Low, Time: 626.330
+Wheel - State: High, Time: 627.371
+Wheel revolution 16 of 40
+Wheel - State: Low, Time: 627.393
+Wheel - State: High, Time: 628.381
+Wheel revolution 17 of 40
+Wheel - State: Low, Time: 628.405
+Wheel - State: High, Time: 629.416
+Wheel revolution 18 of 40
+Wheel - State: Low, Time: 629.438
+Wheel - State: High, Time: 630.444
+Wheel revolution 19 of 40
+Wheel - State: Low, Time: 630.467
+Wheel - State: High, Time: 631.485
+Wheel revolution 20 of 40
+Wheel - State: Low, Time: 631.507
+Wheel - State: High, Time: 635.594
+Wheel revolution 21 of 40
+Wheel - State: Low, Time: 635.618
+Wheel - State: High, Time: 636.703
+Wheel revolution 22 of 40
+Wheel - State: Low, Time: 636.725
+Wheel - State: High, Time: 637.685
+Wheel revolution 23 of 40
+Wheel - State: Low, Time: 637.708
+Wheel - State: High, Time: 638.776
+Wheel revolution 24 of 40
+Wheel - State: Low, Time: 638.799
+Wheel - State: High, Time: 639.774
+Wheel revolution 25 of 40
+Wheel - State: Low, Time: 639.796
+Wheel - State: High, Time: 640.803
+Wheel revolution 26 of 40
+Wheel - State: Low, Time: 640.825
+Wheel - State: High, Time: 642.420
+Wheel revolution 27 of 40
+Wheel - State: Low, Time: 642.442
+Wheel - State: High, Time: 643.547
+Wheel revolution 28 of 40
+Wheel - State: Low, Time: 643.571
+Wheel - State: High, Time: 644.623
+Wheel revolution 29 of 40
+Wheel - State: Low, Time: 644.646
+Wheel - State: High, Time: 646.510
+Wheel revolution 30 of 40
+Wheel - State: Low, Time: 646.532
+Wheel - State: High, Time: 647.751
+Wheel revolution 31 of 40
+Wheel - State: Low, Time: 647.773
+Wheel - State: High, Time: 651.745
+Wheel revolution 32 of 40
+Wheel - State: Low, Time: 651.767
+Wheel - State: High, Time: 653.101
+Wheel revolution 33 of 40
+Wheel - State: Low, Time: 653.123
+Wheel - State: High, Time: 654.132
+Wheel revolution 34 of 40
+Wheel - State: Low, Time: 654.154
+Wheel - State: High, Time: 655.479
+Wheel revolution 35 of 40
+Wheel - State: Low, Time: 655.503
+Wheel - State: High, Time: 656.505
+Wheel revolution 36 of 40
+Wheel - State: Low, Time: 656.528
+Wheel - State: High, Time: 657.632
+Wheel revolution 37 of 40
+Wheel - State: Low, Time: 657.654
+Wheel - State: High, Time: 658.663
+Wheel revolution 38 of 40
+Wheel - State: Low, Time: 658.686
+Wheel - State: High, Time: 659.733
+Wheel revolution 39 of 40
+Wheel - State: Low, Time: 659.756
+Wheel - State: High, Time: 660.849
+Wheel revolution 40 of 40
+Wheel - State: Low, Time: 660.872
+Image - Name: Checkerboard-contrast_1.png, Hash: fc32dedaf5bb8c361864dee8534809d9, Duration: 5.000, Time: 660.976
+Wheel - State: High, Time: 662.024
+Wheel - State: Low, Time: 662.046
+Wheel - State: High, Time: 663.397
+Wheel - State: Low, Time: 663.420
+Wheel - State: High, Time: 664.454
+Wheel - State: Low, Time: 664.477
+Wheel - State: High, Time: 665.579
+Wheel - State: Low, Time: 665.602
+Wheel - State: High, Time: 669.024
+Wheel - State: Low, Time: 669.046
+Image - Name: Checkerboard-contrast_2.png, Hash: c1f727703e1104d4451dacd014f5967c, Duration: 5.000, Time: 669.126
+Wheel - State: High, Time: 669.939
+Wheel - State: Low, Time: 669.962
+Wheel - State: High, Time: 670.897
+Wheel - State: Low, Time: 670.920
+Wheel - State: High, Time: 671.903
+Wheel - State: Low, Time: 671.926
+Wheel - State: High, Time: 672.963
+Wheel - State: Low, Time: 672.987
+Wheel - State: High, Time: 674.007
+Wheel - State: Low, Time: 674.030
+Wheel - State: High, Time: 675.113
+Wheel - State: Low, Time: 675.135
+Image - Name: Checkerboard-contrast_4.png, Hash: 63e3721c14ce35da5fab4b61b1c484d7, Duration: 5.000, Time: 675.189
+Wheel - State: High, Time: 676.202
+Wheel - State: Low, Time: 676.225
+Wheel - State: High, Time: 677.199
+Wheel - State: Low, Time: 677.221
+Wheel - State: High, Time: 678.209
+Wheel - State: Low, Time: 678.232
+Image - Name: Solid.png, Hash: 64930c698c01ce4f704551ce6db48ab5, Duration: 5.000, Time: 705.238
+Wheel - State: High, Time: 740.564
+Wheel revolution 1 of 23
+Wheel - State: Low, Time: 740.588
+Wheel - State: High, Time: 743.694
+Wheel revolution 2 of 23
+Wheel - State: Low, Time: 743.717
+Wheel - State: High, Time: 745.517
+Wheel revolution 3 of 23
+Wheel - State: Low, Time: 745.539
+Wheel - State: High, Time: 747.273
+Wheel revolution 4 of 23
+Wheel - State: Low, Time: 747.295
+Wheel - State: High, Time: 750.569
+Wheel revolution 5 of 23
+Wheel - State: Low, Time: 750.593
+Wheel - State: High, Time: 761.555
+Wheel revolution 1 of 20
+Wheel - State: Low, Time: 761.577
+Wheel - State: High, Time: 856.016
+Wheel revolution 1 of 25
+Wheel - State: Low, Time: 856.039
+Wheel - State: High, Time: 870.467
+Wheel revolution 1 of 33
+Wheel - State: Low, Time: 870.491
+Wheel - State: High, Time: 873.602
+Wheel revolution 2 of 33
+Wheel - State: Low, Time: 873.626
+Wheel - State: High, Time: 874.834
+Wheel revolution 3 of 33
+Wheel - State: Low, Time: 874.856
+Wheel - State: High, Time: 876.977
+Wheel revolution 4 of 33
+Wheel - State: Low, Time: 877.000
+Wheel - State: High, Time: 879.143
+Wheel revolution 5 of 33
+Wheel - State: Low, Time: 879.165
+Wheel - State: High, Time: 880.502
+Wheel revolution 6 of 33
+Wheel - State: Low, Time: 880.525
+Wheel - State: High, Time: 881.428
+Wheel revolution 7 of 33
+Wheel - State: Low, Time: 881.451
+Wheel - State: High, Time: 882.424
+Wheel revolution 8 of 33
+Wheel - State: Low, Time: 882.446
+Wheel - State: High, Time: 883.447
+Wheel revolution 9 of 33
+Wheel - State: Low, Time: 883.469
+Wheel - State: High, Time: 884.509
+Wheel revolution 10 of 33
+Wheel - State: Low, Time: 884.531
+Wheel - State: High, Time: 885.495
+Wheel revolution 11 of 33
+Wheel - State: Low, Time: 885.517
+Wheel - State: High, Time: 886.673
+Wheel revolution 12 of 33
+Wheel - State: Low, Time: 886.696
+Wheel - State: High, Time: 887.763
+Wheel revolution 13 of 33
+Wheel - State: Low, Time: 887.786
+Wheel - State: High, Time: 888.689
+Wheel revolution 14 of 33
+Wheel - State: Low, Time: 888.712
+Wheel - State: High, Time: 892.800
+Wheel revolution 15 of 33
+Wheel - State: Low, Time: 892.823
+Wheel - State: High, Time: 893.817
+Wheel revolution 16 of 33
+Wheel - State: Low, Time: 893.839
+Wheel - State: High, Time: 896.900
+Wheel revolution 17 of 33
+Wheel - State: Low, Time: 896.922
+Wheel - State: High, Time: 898.033
+Wheel revolution 18 of 33
+Wheel - State: Low, Time: 898.056
+Wheel - State: High, Time: 904.557
+Wheel revolution 1 of 48
+Wheel - State: Low, Time: 904.581
+Wheel - State: High, Time: 909.103
+Wheel revolution 2 of 48
+Wheel - State: Low, Time: 909.127
+Wheel - State: High, Time: 973.228
+Wheel revolution 1 of 14
+Wheel - State: Low, Time: 973.252
+Wheel - State: High, Time: 974.883
+Wheel revolution 2 of 14
+Wheel - State: Low, Time: 974.905
+Wheel - State: High, Time: 987.471
+Wheel revolution 1 of 36
+Wheel - State: Low, Time: 987.494
+Wheel - State: High, Time: 988.577
+Wheel revolution 2 of 36
+Wheel - State: Low, Time: 988.599
+Wheel - State: High, Time: 1005.665
+Wheel revolution 1 of 20
+Wheel - State: Low, Time: 1005.689
+Wheel - State: High, Time: 1010.335
+Wheel revolution 2 of 20
+Wheel - State: Low, Time: 1010.357
+Wheel - State: High, Time: 1011.468
+Wheel revolution 3 of 20
+Wheel - State: Low, Time: 1011.491
+Wheel - State: High, Time: 1014.766
+Wheel revolution 4 of 20
+Wheel - State: Low, Time: 1014.788
+Wheel - State: High, Time: 1016.033
+Wheel revolution 5 of 20
+Wheel - State: Low, Time: 1016.056
+Wheel - State: High, Time: 1017.869
+Wheel revolution 6 of 20
+Wheel - State: Low, Time: 1017.892
+Wheel - State: High, Time: 1071.100
+Wheel revolution 1 of 35
+Wheel - State: Low, Time: 1071.122
+Wheel - State: High, Time: 1073.022
+Wheel revolution 2 of 35
+Wheel - State: Low, Time: 1073.045
+Wheel - State: High, Time: 1078.645
+Wheel revolution 1 of 20
+Wheel - State: Low, Time: 1078.667
+Wheel - State: High, Time: 1086.966
+Wheel revolution 1 of 38
+Wheel - State: Low, Time: 1086.988
+Wheel - State: High, Time: 1088.246
+Wheel revolution 2 of 38
+Wheel - State: Low, Time: 1088.268
+Wheel - State: High, Time: 1092.992
+Wheel revolution 3 of 38
+Wheel - State: Low, Time: 1093.014
+Wheel - State: High, Time: 1094.160
+Wheel revolution 4 of 38
+Wheel - State: Low, Time: 1094.182
+Door - State: Low, Time: 1104.513
+Door - State: High, Time: 1105.212
+Wheel - State: High, Time: 1149.503
+Wheel revolution 1 of 35
+Wheel - State: Low, Time: 1149.526
+Wheel - State: High, Time: 1186.764
+Wheel revolution 1 of 17
+Wheel - State: Low, Time: 1186.786
+Wheel - State: High, Time: 1188.077
+Wheel revolution 2 of 17
+Wheel - State: Low, Time: 1188.100
+Wheel - State: High, Time: 1190.944
+Wheel revolution 3 of 17
+Wheel - State: Low, Time: 1190.967
+Wheel - State: High, Time: 1205.597
+Wheel revolution 1 of 19
+Wheel - State: Low, Time: 1205.619
+Wheel - State: High, Time: 1221.422
+Wheel revolution 1 of 26
+Wheel - State: Low, Time: 1221.446
+Wheel - State: High, Time: 1240.579
+Wheel revolution 1 of 18
+Wheel - State: Low, Time: 1240.603
+Wheel - State: High, Time: 1269.141
+Wheel revolution 1 of 40
+Wheel - State: Low, Time: 1269.163
+Wheel - State: High, Time: 1272.552
+Wheel revolution 2 of 40
+Wheel - State: Low, Time: 1272.575
+Wheel - State: High, Time: 1277.820
+Wheel revolution 1 of 40
+Wheel - State: Low, Time: 1277.842
+Wheel - State: High, Time: 1279.411
+Wheel revolution 2 of 40
+Wheel - State: Low, Time: 1279.433
+Wheel - State: High, Time: 1283.634
+Wheel revolution 3 of 40
+Wheel - State: Low, Time: 1283.657
+Wheel - State: High, Time: 1285.876
+Wheel revolution 4 of 40
+Wheel - State: Low, Time: 1285.899
+Wheel - State: High, Time: 1286.982
+Wheel revolution 5 of 40
+Wheel - State: Low, Time: 1287.005
+Wheel - State: High, Time: 1289.939
+Wheel revolution 6 of 40
+Wheel - State: Low, Time: 1289.963
+Wheel - State: High, Time: 1309.384
+Wheel revolution 1 of 46
+Wheel - State: Low, Time: 1309.407
+Wheel - State: High, Time: 1310.705
+Wheel revolution 2 of 46
+Wheel - State: Low, Time: 1310.728
+Wheel - State: High, Time: 1312.078
+Wheel revolution 3 of 46
+Wheel - State: Low, Time: 1312.102
+Wheel - State: High, Time: 1314.990
+Wheel revolution 4 of 46
+Wheel - State: Low, Time: 1315.013
+Wheel - State: High, Time: 1316.014
+Wheel revolution 5 of 46
+Wheel - State: Low, Time: 1316.037
+Wheel - State: High, Time: 1318.717
+Wheel revolution 6 of 46
+Wheel - State: Low, Time: 1318.739
+Wheel - State: High, Time: 1320.520
+Wheel revolution 7 of 46
+Wheel - State: Low, Time: 1320.543
+Wheel - State: High, Time: 1321.951
+Wheel revolution 8 of 46
+Wheel - State: Low, Time: 1321.975
+Wheel - State: High, Time: 1322.959
+Wheel revolution 9 of 46
+Wheel - State: Low, Time: 1322.983
+Wheel - State: High, Time: 1376.319
+Wheel revolution 1 of 29
+Wheel - State: Low, Time: 1376.343
+Wheel - State: High, Time: 1380.038
+Wheel revolution 2 of 29
+Wheel - State: Low, Time: 1380.061
+Wheel - State: High, Time: 1382.198
+Wheel revolution 3 of 29
+Wheel - State: Low, Time: 1382.221
+Wheel - State: High, Time: 1383.989
+Wheel revolution 4 of 29
+Wheel - State: Low, Time: 1384.013
+Wheel - State: High, Time: 1386.201
+Wheel revolution 5 of 29
+Wheel - State: Low, Time: 1386.224
+Wheel - State: High, Time: 1387.888
+Wheel revolution 6 of 29
+Wheel - State: Low, Time: 1387.910
+Wheel - State: High, Time: 1389.388
+Wheel revolution 7 of 29
+Wheel - State: Low, Time: 1389.410
+Wheel - State: High, Time: 1392.529
+Wheel revolution 8 of 29
+Wheel - State: Low, Time: 1392.552
+Wheel - State: High, Time: 1393.926
+Wheel revolution 9 of 29
+Wheel - State: Low, Time: 1393.950
+Wheel - State: High, Time: 1395.239
+Wheel revolution 10 of 29
+Wheel - State: Low, Time: 1395.261
+Wheel - State: High, Time: 1396.561
+Wheel revolution 11 of 29
+Wheel - State: Low, Time: 1396.585
+Wheel - State: High, Time: 1397.785
+Wheel revolution 12 of 29
+Wheel - State: Low, Time: 1397.807
+Wheel - State: High, Time: 1399.063
+Wheel revolution 13 of 29
+Wheel - State: Low, Time: 1399.085
+Wheel - State: High, Time: 1400.294
+Wheel revolution 14 of 29
+Wheel - State: Low, Time: 1400.316
+Wheel - State: High, Time: 1401.568
+Wheel revolution 15 of 29
+Wheel - State: Low, Time: 1401.590
+Wheel - State: High, Time: 1428.663
+Wheel revolution 1 of 29
+Wheel - State: Low, Time: 1428.685
+Wheel - State: High, Time: 1429.994
+Wheel revolution 2 of 29
+Wheel - State: Low, Time: 1430.016
+Wheel - State: High, Time: 1431.382
+Wheel revolution 3 of 29
+Wheel - State: Low, Time: 1431.406
+Wheel - State: High, Time: 1434.121
+Wheel revolution 4 of 29
+Wheel - State: Low, Time: 1434.144
+Wheel - State: High, Time: 1435.204
+Wheel revolution 5 of 29
+Wheel - State: Low, Time: 1435.225
+Wheel - State: High, Time: 1436.667
+Wheel revolution 6 of 29
+Wheel - State: Low, Time: 1436.689
+Wheel - State: High, Time: 1437.846
+Wheel revolution 7 of 29
+Wheel - State: Low, Time: 1437.869
+Wheel - State: High, Time: 1439.009
+Wheel revolution 8 of 29
+Wheel - State: Low, Time: 1439.032
+Wheel - State: High, Time: 1440.810
+Wheel revolution 9 of 29
+Wheel - State: Low, Time: 1440.834
+Wheel - State: High, Time: 1442.914
+Wheel revolution 10 of 29
+Wheel - State: Low, Time: 1442.936
+Wheel - State: High, Time: 1444.582
+Wheel revolution 11 of 29
+Wheel - State: Low, Time: 1444.605
+Wheel - State: High, Time: 1445.766
+Wheel revolution 12 of 29
+Wheel - State: Low, Time: 1445.789
+Wheel - State: High, Time: 1447.834
+Wheel revolution 13 of 29
+Wheel - State: Low, Time: 1447.857
+Wheel - State: High, Time: 1448.898
+Wheel revolution 14 of 29
+Wheel - State: Low, Time: 1448.920
+Wheel - State: High, Time: 1450.579
+Wheel revolution 15 of 29
+Wheel - State: Low, Time: 1450.602
+Wheel - State: High, Time: 1453.025
+Wheel revolution 16 of 29
+Wheel - State: Low, Time: 1453.048
+Wheel - State: High, Time: 1454.027
+Wheel revolution 17 of 29
+Wheel - State: Low, Time: 1454.051
+Wheel - State: High, Time: 1455.091
+Wheel revolution 18 of 29
+Wheel - State: Low, Time: 1455.115
+Wheel - State: High, Time: 1456.045
+Wheel revolution 19 of 29
+Wheel - State: Low, Time: 1456.068
+Wheel - State: High, Time: 1457.018
+Wheel revolution 20 of 29
+Wheel - State: Low, Time: 1457.041
+Wheel - State: High, Time: 1458.016
+Wheel revolution 21 of 29
+Wheel - State: Low, Time: 1458.039
+Wheel - State: High, Time: 1459.017
+Wheel revolution 22 of 29
+Wheel - State: Low, Time: 1459.039
+Wheel - State: High, Time: 1460.036
+Wheel revolution 23 of 29
+Wheel - State: Low, Time: 1460.059
+Wheel - State: High, Time: 1461.047
+Wheel revolution 24 of 29
+Wheel - State: Low, Time: 1461.069
+Wheel - State: High, Time: 1462.044
+Wheel revolution 25 of 29
+Wheel - State: Low, Time: 1462.067
+Wheel - State: High, Time: 1465.951
+Wheel revolution 26 of 29
+Wheel - State: Low, Time: 1465.974
+Wheel - State: High, Time: 1468.687
+Wheel revolution 27 of 29
+Wheel - State: Low, Time: 1468.709
+Wheel - State: High, Time: 1469.595
+Wheel revolution 28 of 29
+Wheel - State: Low, Time: 1469.619
+Wheel - State: High, Time: 1470.706
+Wheel revolution 29 of 29
+Wheel - State: Low, Time: 1470.729
+Image - Name: Checkerboard-contrast_1.png, Hash: fc32dedaf5bb8c361864dee8534809d9, Duration: 5.000, Time: 1470.758
+Wheel - State: High, Time: 1474.863
+Wheel - State: Low, Time: 1474.886
+Wheel - State: High, Time: 1475.772
+Wheel - State: Low, Time: 1475.795
+Image - Name: Checkerboard-contrast_2.png, Hash: c1f727703e1104d4451dacd014f5967c, Duration: 5.000, Time: 1475.884
+Wheel - State: High, Time: 1476.666
+Wheel - State: Low, Time: 1476.689
+Wheel - State: High, Time: 1477.593
+Wheel - State: Low, Time: 1477.616
+Wheel - State: High, Time: 1478.554
+Wheel - State: Low, Time: 1478.577
+Wheel - State: High, Time: 1479.560
+Wheel - State: Low, Time: 1479.582
+Wheel - State: High, Time: 1480.687
+Wheel - State: Low, Time: 1480.711
+Wheel - State: High, Time: 1481.683
+Wheel - State: Low, Time: 1481.707
+Image - Name: Checkerboard-contrast_4.png, Hash: 63e3721c14ce35da5fab4b61b1c484d7, Duration: 5.000, Time: 1481.740
+Wheel - State: High, Time: 1482.673
+Wheel - State: Low, Time: 1482.696
+Wheel - State: High, Time: 1483.647
+Wheel - State: Low, Time: 1483.670
+Wheel - State: High, Time: 1484.823
+Wheel - State: Low, Time: 1484.846
+Wheel - State: High, Time: 1487.830
+Wheel - State: Low, Time: 1487.853
+Image - Name: Checkerboard-contrast_7.png, Hash: 2db84a7fb7009f5884ba302c5a994f59, Duration: 5.000, Time: 1487.894
+Wheel - State: High, Time: 1488.908
+Wheel - State: Low, Time: 1488.930
+Wheel - State: High, Time: 1489.815
+Wheel - State: Low, Time: 1489.837
+Wheel - State: High, Time: 1490.798
+Wheel - State: Low, Time: 1490.820
+Wheel - State: High, Time: 1491.722
+Wheel - State: Low, Time: 1491.744
+Wheel - State: High, Time: 1492.698
+Wheel - State: Low, Time: 1492.721
+Wheel - State: High, Time: 1493.694
+Wheel - State: Low, Time: 1493.715
+Image - Name: Checkerboard-contrast_14.png, Hash: c27e015b73ca8ec209474c2d0925b795, Duration: 5.000, Time: 1493.793
+Wheel - State: High, Time: 1494.783
+Wheel - State: Low, Time: 1494.806
+Wheel - State: High, Time: 1495.786
+Wheel - State: Low, Time: 1495.809
+Wheel - State: High, Time: 1496.709
+Wheel - State: Low, Time: 1496.731
+Door - State: Low, Time: 1508.350
+Pump - State: On, Time: 1508.353
+Door - State: High, Time: 1508.647
+Door - State: Low, Time: 1508.695
+Door - State: High, Time: 1509.813
+Door - State: Low, Time: 1509.986
+Door - State: High, Time: 1510.305
+Pump - State: Off, Time: 1511.355
+Image - Name: Solid.png, Hash: 64930c698c01ce4f704551ce6db48ab5, Duration: 5.000, Time: 1511.407
+Door - State: Low, Time: 1530.528
+Door - State: High, Time: 1530.570
+Wheel - State: High, Time: 1592.383
+Wheel revolution 1 of 13
+Wheel - State: Low, Time: 1592.405
+Wheel - State: High, Time: 1593.969
+Wheel revolution 2 of 13
+Wheel - State: Low, Time: 1593.993
+Wheel - State: High, Time: 1595.440
+Wheel revolution 3 of 13
+Wheel - State: Low, Time: 1595.462
+Wheel - State: High, Time: 1621.013
+Wheel revolution 1 of 27
+Wheel - State: Low, Time: 1621.036
+Wheel - State: High, Time: 1622.215
+Wheel revolution 2 of 27
+Wheel - State: Low, Time: 1622.237
+Wheel - State: High, Time: 1624.524
+Wheel revolution 3 of 27
+Wheel - State: Low, Time: 1624.548
+Wheel - State: High, Time: 1625.556
+Wheel revolution 4 of 27
+Wheel - State: Low, Time: 1625.579
+Wheel - State: High, Time: 1626.541
+Wheel revolution 5 of 27
+Wheel - State: Low, Time: 1626.564
+Wheel - State: High, Time: 1627.786
+Wheel revolution 6 of 27
+Wheel - State: Low, Time: 1627.808
+Wheel - State: High, Time: 1628.835
+Wheel revolution 7 of 27
+Wheel - State: Low, Time: 1628.859
+Wheel - State: High, Time: 1630.143
+Wheel revolution 8 of 27
+Wheel - State: Low, Time: 1630.166
+Wheel - State: High, Time: 1632.936
+Wheel revolution 9 of 27
+Wheel - State: Low, Time: 1632.960
+Wheel - State: High, Time: 1635.602
+Wheel revolution 10 of 27
+Wheel - State: Low, Time: 1635.624
+Wheel - State: High, Time: 1637.129
+Wheel revolution 11 of 27
+Wheel - State: Low, Time: 1637.152
+Wheel - State: High, Time: 1638.356
+Wheel revolution 12 of 27
+Wheel - State: Low, Time: 1638.379
+Wheel - State: High, Time: 1640.041
+Wheel revolution 13 of 27
+Wheel - State: Low, Time: 1640.064
+Wheel - State: High, Time: 1641.269
+Wheel revolution 14 of 27
+Wheel - State: Low, Time: 1641.292
+Wheel - State: High, Time: 1643.834
+Wheel revolution 15 of 27
+Wheel - State: Low, Time: 1643.857
+Wheel - State: High, Time: 1645.024
+Wheel revolution 16 of 27
+Wheel - State: Low, Time: 1645.047
+Wheel - State: High, Time: 1646.103
+Wheel revolution 17 of 27
+Wheel - State: Low, Time: 1646.126
+Wheel - State: High, Time: 1647.345
+Wheel revolution 18 of 27
+Wheel - State: Low, Time: 1647.368
+Wheel - State: High, Time: 1648.514
+Wheel revolution 19 of 27
+Wheel - State: Low, Time: 1648.537
+Wheel - State: High, Time: 1649.549
+Wheel revolution 20 of 27
+Wheel - State: Low, Time: 1649.571
+Wheel - State: High, Time: 1650.932
+Wheel revolution 21 of 27
+Wheel - State: Low, Time: 1650.955
+Wheel - State: High, Time: 1652.016
+Wheel revolution 22 of 27
+Wheel - State: Low, Time: 1652.038
+Wheel - State: High, Time: 1653.138
+Wheel revolution 23 of 27
+Wheel - State: Low, Time: 1653.160
+Wheel - State: High, Time: 1657.038
+Wheel revolution 24 of 27
+Wheel - State: Low, Time: 1657.061
+Wheel - State: High, Time: 1658.075
+Wheel revolution 25 of 27
+Wheel - State: Low, Time: 1658.098
+Wheel - State: High, Time: 1659.186
+Wheel revolution 26 of 27
+Wheel - State: Low, Time: 1659.208
+Wheel - State: High, Time: 1660.386
+Wheel revolution 27 of 27
+Wheel - State: Low, Time: 1660.408
+Image - Name: Checkerboard-contrast_1.png, Hash: fc32dedaf5bb8c361864dee8534809d9, Duration: 5.000, Time: 1660.500
+Wheel - State: High, Time: 1661.537
+Wheel - State: Low, Time: 1661.560
+Wheel - State: High, Time: 1665.018
+Wheel - State: Low, Time: 1665.040
+Wheel - State: High, Time: 1666.029
+Wheel - State: Low, Time: 1666.052
+Image - Name: Checkerboard-contrast_2.png, Hash: c1f727703e1104d4451dacd014f5967c, Duration: 5.000, Time: 1666.133
+Wheel - State: High, Time: 1667.138
+Wheel - State: Low, Time: 1667.161
+Wheel - State: High, Time: 1668.199
+Wheel - State: Low, Time: 1668.221
+Wheel - State: High, Time: 1669.332
+Wheel - State: Low, Time: 1669.355
+Wheel - State: High, Time: 1670.385
+Wheel - State: Low, Time: 1670.408
+Wheel - State: High, Time: 1671.636
+Wheel - State: Low, Time: 1671.658
+Image - Name: Checkerboard-contrast_4.png, Hash: 63e3721c14ce35da5fab4b61b1c484d7, Duration: 5.000, Time: 1671.744
+Wheel - State: High, Time: 1672.711
+Wheel - State: Low, Time: 1672.734
+Wheel - State: High, Time: 1673.773
+Wheel - State: Low, Time: 1673.796
+Wheel - State: High, Time: 1674.828
+Wheel - State: Low, Time: 1674.851
+Wheel - State: High, Time: 1675.860
+Wheel - State: Low, Time: 1675.883
+Wheel - State: High, Time: 1676.864
+Wheel - State: Low, Time: 1676.888
+Image - Name: Checkerboard-contrast_7.png, Hash: 2db84a7fb7009f5884ba302c5a994f59, Duration: 5.000, Time: 1676.975
+Wheel - State: High, Time: 1678.022
+Wheel - State: Low, Time: 1678.045
+Wheel - State: High, Time: 1679.124
+Wheel - State: Low, Time: 1679.147
+Wheel - State: High, Time: 1680.187
+Wheel - State: Low, Time: 1680.211
+Wheel - State: High, Time: 1681.217
+Wheel - State: Low, Time: 1681.239
+Wheel - State: High, Time: 1682.320
+Wheel - State: Low, Time: 1682.343
+Image - Name: Checkerboard-contrast_14.png, Hash: c27e015b73ca8ec209474c2d0925b795, Duration: 5.000, Time: 1682.407
+Wheel - State: High, Time: 1683.411
+Wheel - State: Low, Time: 1683.433
+Wheel - State: High, Time: 1684.628
+Wheel - State: Low, Time: 1684.651
+Wheel - State: High, Time: 1688.889
+Wheel - State: Low, Time: 1688.913
+Image - Name: Checkerboard-contrast_27.png, Hash: 6f5e3c659abf49a84e858f13669e3cbe, Duration: 5.000, Time: 1688.965
+Wheel - State: High, Time: 1689.852
+Wheel - State: Low, Time: 1689.875
+Wheel - State: High, Time: 1691.461
+Wheel - State: Low, Time: 1691.484
+Wheel - State: High, Time: 1692.414
+Wheel - State: Low, Time: 1692.437
+Wheel - State: High, Time: 1693.974
+Wheel - State: Low, Time: 1693.997
+Image - Name: Checkerboard-contrast_52.png, Hash: 97a6298e164c0493c3cf6b9c8806607f, Duration: 5.000, Time: 1694.069
+Wheel - State: High, Time: 1695.232
+Wheel - State: Low, Time: 1695.254
+Wheel - State: High, Time: 1696.120
+Wheel - State: Low, Time: 1696.142
+Wheel - State: High, Time: 1697.109
+Wheel - State: Low, Time: 1697.132
+Wheel - State: High, Time: 1699.782
+Wheel - State: Low, Time: 1699.805
+Image - Name: Checkerboard-contrast_100.png, Hash: c7ef3652d905b84f028e8d3bac85b83b, Duration: 5.000, Time: 1699.883
+Wheel - State: High, Time: 1700.706
+Wheel - State: Low, Time: 1700.729
+Wheel - State: High, Time: 1703.857
+Wheel - State: Low, Time: 1703.880
+Wheel - State: High, Time: 1704.817
+Wheel - State: Low, Time: 1704.839
+Wheel - State: High, Time: 1705.702
+Wheel - State: Low, Time: 1705.724
+Wheel - State: High, Time: 1706.563
+Wheel - State: Low, Time: 1706.586
+Wheel - State: High, Time: 1707.670
+Wheel - State: Low, Time: 1707.693
+Wheel - State: High, Time: 1710.103
+Wheel - State: Low, Time: 1710.126
+Wheel - State: High, Time: 1711.099
+Wheel - State: Low, Time: 1711.122
+Wheel - State: High, Time: 1712.472
+Wheel - State: Low, Time: 1712.495
+Wheel - State: High, Time: 1713.458
+Wheel - State: Low, Time: 1713.481
+Wheel - State: High, Time: 1714.363
+Wheel - State: Low, Time: 1714.387
+Wheel - State: High, Time: 1715.254
+Wheel - State: Low, Time: 1715.277
+Wheel - State: High, Time: 1716.991
+Wheel - State: Low, Time: 1717.014
+Wheel - State: High, Time: 1719.098
+Wheel - State: Low, Time: 1719.121
+Wheel - State: High, Time: 1719.990
+Wheel - State: Low, Time: 1720.013
+Wheel - State: High, Time: 1720.999
+Wheel - State: Low, Time: 1721.022
+Wheel - State: High, Time: 1722.034
+Wheel - State: Low, Time: 1722.057
+Wheel - State: High, Time: 1722.926
+Wheel - State: Low, Time: 1722.949
+Wheel - State: High, Time: 1723.910
+Wheel - State: Low, Time: 1723.933
+Wheel - State: High, Time: 1726.384
+Wheel - State: Low, Time: 1726.406
+Wheel - State: High, Time: 1727.283
+Wheel - State: Low, Time: 1727.306
+Wheel - State: High, Time: 1728.210
+Wheel - State: Low, Time: 1728.233
+Wheel - State: High, Time: 1729.116
+Wheel - State: Low, Time: 1729.140
+Image - Name: Solid.png, Hash: 64930c698c01ce4f704551ce6db48ab5, Duration: 5.000, Time: 1729.956
+Wheel - State: High, Time: 1730.203
+Wheel revolution 1 of 44
+Wheel - State: Low, Time: 1730.225
+Wheel - State: High, Time: 1731.420
+Wheel revolution 2 of 44
+Wheel - State: Low, Time: 1731.443
+Wheel - State: High, Time: 1732.418
+Wheel revolution 3 of 44
+Wheel - State: Low, Time: 1732.441
+Wheel - State: High, Time: 1733.385
+Wheel revolution 4 of 44
+Wheel - State: Low, Time: 1733.407
+Wheel - State: High, Time: 1734.251
+Wheel revolution 5 of 44
+Wheel - State: Low, Time: 1734.273
+Wheel - State: High, Time: 1735.345
+Wheel revolution 6 of 44
+Wheel - State: Low, Time: 1735.367
+Wheel - State: High, Time: 1737.082
+Wheel revolution 7 of 44
+Wheel - State: Low, Time: 1737.104
+Wheel - State: High, Time: 1737.995
+Wheel revolution 8 of 44
+Wheel - State: Low, Time: 1738.019
+Wheel - State: High, Time: 1741.873
+Wheel revolution 9 of 44
+Wheel - State: Low, Time: 1741.897
+Wheel - State: High, Time: 1742.962
+Wheel revolution 10 of 44
+Wheel - State: Low, Time: 1742.984
+Wheel - State: High, Time: 1743.894
+Wheel revolution 11 of 44
+Wheel - State: Low, Time: 1743.917
+Wheel - State: High, Time: 1744.805
+Wheel revolution 12 of 44
+Wheel - State: Low, Time: 1744.828
+Wheel - State: High, Time: 1745.652
+Wheel revolution 13 of 44
+Wheel - State: Low, Time: 1745.675
+Wheel - State: High, Time: 1746.750
+Wheel revolution 14 of 44
+Wheel - State: Low, Time: 1746.772
+Wheel - State: High, Time: 1759.745
+Wheel revolution 1 of 36
+Wheel - State: Low, Time: 1759.768
+Wheel - State: High, Time: 1768.813
+Wheel revolution 1 of 10
+Wheel - State: Low, Time: 1768.835
+Wheel - State: High, Time: 1771.331
+Wheel revolution 2 of 10
+Wheel - State: Low, Time: 1771.354
+Wheel - State: High, Time: 1772.587
+Wheel revolution 3 of 10
+Wheel - State: Low, Time: 1772.610
+Wheel - State: High, Time: 1779.808
+Wheel revolution 1 of 41
+Wheel - State: Low, Time: 1779.831
+Wheel - State: High, Time: 1783.328
+Wheel revolution 2 of 41
+Wheel - State: Low, Time: 1783.351
+Wheel - State: High, Time: 1789.848
+Wheel revolution 1 of 11
+Wheel - State: Low, Time: 1789.871
+Wheel - State: High, Time: 1790.866
+Wheel revolution 2 of 11
+Wheel - State: Low, Time: 1790.889
+Wheel - State: High, Time: 1797.971
+Wheel revolution 1 of 35
+Wheel - State: Low, Time: 1797.994
+Wheel - State: High, Time: 1859.502
+Wheel revolution 1 of 39
+Wheel - State: Low, Time: 1859.525
+Wheel - State: High, Time: 1885.376
+Wheel revolution 1 of 21
+Wheel - State: Low, Time: 1885.399
+Wheel - State: High, Time: 1886.546
+Wheel revolution 2 of 21
+Wheel - State: Low, Time: 1886.569
+Wheel - State: High, Time: 1888.289
+Wheel revolution 3 of 21
+Wheel - State: Low, Time: 1888.313
+Wheel - State: High, Time: 1892.152
+Wheel revolution 4 of 21
+Wheel - State: Low, Time: 1892.175
+Wheel - State: High, Time: 1893.464
+Wheel revolution 5 of 21
+Wheel - State: Low, Time: 1893.487
+Wheel - State: High, Time: 1917.936
+Wheel revolution 1 of 26
+Wheel - State: Low, Time: 1917.958
+Wheel - State: High, Time: 1918.981
+Wheel revolution 2 of 26
+Wheel - State: Low, Time: 1919.003
+Wheel - State: High, Time: 1920.049
+Wheel revolution 3 of 26
+Wheel - State: Low, Time: 1920.072
+Wheel - State: High, Time: 1921.234
+Wheel revolution 4 of 26
+Wheel - State: Low, Time: 1921.257
+Wheel - State: High, Time: 1922.460
+Wheel revolution 5 of 26
+Wheel - State: Low, Time: 1922.484
+Wheel - State: High, Time: 1926.373
+Wheel revolution 6 of 26
+Wheel - State: Low, Time: 1926.396
+Wheel - State: High, Time: 1937.266
+Wheel revolution 1 of 49
+Wheel - State: Low, Time: 1937.289
+Wheel - State: High, Time: 1944.086
+Wheel revolution 1 of 27
+Wheel - State: Low, Time: 1944.108
+Wheel - State: High, Time: 1945.125
+Wheel revolution 2 of 27
+Wheel - State: Low, Time: 1945.147
+Wheel - State: High, Time: 1946.433
+Wheel revolution 3 of 27
+Wheel - State: Low, Time: 1946.456
+Wheel - State: High, Time: 1947.426
+Wheel revolution 4 of 27
+Wheel - State: Low, Time: 1947.448
+Wheel - State: High, Time: 1948.957
+Wheel revolution 5 of 27
+Wheel - State: Low, Time: 1948.979
+Wheel - State: High, Time: 1949.984
+Wheel revolution 6 of 27
+Wheel - State: Low, Time: 1950.006
+Wheel - State: High, Time: 1952.462
+Wheel revolution 7 of 27
+Wheel - State: Low, Time: 1952.485
+Wheel - State: High, Time: 1953.502
+Wheel revolution 8 of 27
+Wheel - State: Low, Time: 1953.525
+Wheel - State: High, Time: 1954.899
+Wheel revolution 9 of 27
+Wheel - State: Low, Time: 1954.921
+Wheel - State: High, Time: 1956.566
+Wheel revolution 10 of 27
+Wheel - State: Low, Time: 1956.589
+Wheel - State: High, Time: 1957.729
+Wheel revolution 11 of 27
+Wheel - State: Low, Time: 1957.751
+Wheel - State: High, Time: 1958.928
+Wheel revolution 12 of 27
+Wheel - State: Low, Time: 1958.950
+Wheel - State: High, Time: 1962.572
+Wheel revolution 13 of 27
+Wheel - State: Low, Time: 1962.595
+Wheel - State: High, Time: 1963.671
+Wheel revolution 14 of 27
+Wheel - State: Low, Time: 1963.695
+Wheel - State: High, Time: 1964.748
+Wheel revolution 15 of 27
+Wheel - State: Low, Time: 1964.771
+Wheel - State: High, Time: 1965.802
+Wheel revolution 16 of 27
+Wheel - State: Low, Time: 1965.824
+Wheel - State: High, Time: 1967.708
+Wheel revolution 17 of 27
+Wheel - State: Low, Time: 1967.731
+Wheel - State: High, Time: 1968.734
+Wheel revolution 18 of 27
+Wheel - State: Low, Time: 1968.757
+Wheel - State: High, Time: 1969.911
+Wheel revolution 19 of 27
+Wheel - State: Low, Time: 1969.934
+Wheel - State: High, Time: 1970.939
+Wheel revolution 20 of 27
+Wheel - State: Low, Time: 1970.962
+Wheel - State: High, Time: 1972.010
+Wheel revolution 21 of 27
+Wheel - State: Low, Time: 1972.034
+Wheel - State: High, Time: 1973.097
+Wheel revolution 22 of 27
+Wheel - State: Low, Time: 1973.119
+Wheel - State: High, Time: 1974.617
+Wheel revolution 23 of 27
+Wheel - State: Low, Time: 1974.639
+Wheel - State: High, Time: 1975.934
+Wheel revolution 24 of 27
+Wheel - State: Low, Time: 1975.957
+Wheel - State: High, Time: 1976.983
+Wheel revolution 25 of 27
+Wheel - State: Low, Time: 1977.006
+Wheel - State: High, Time: 1977.993
+Wheel revolution 26 of 27
+Wheel - State: Low, Time: 1978.017
+Wheel - State: High, Time: 1979.008
+Wheel revolution 27 of 27
+Wheel - State: Low, Time: 1979.030
+Image - Name: Checkerboard-contrast_1.png, Hash: fc32dedaf5bb8c361864dee8534809d9, Duration: 5.000, Time: 1979.127
+Wheel - State: High, Time: 1980.097
+Wheel - State: Low, Time: 1980.121
+Wheel - State: High, Time: 1981.132
+Wheel - State: Low, Time: 1981.156
+Wheel - State: High, Time: 1982.204
+Wheel - State: Low, Time: 1982.227
+Wheel - State: High, Time: 1983.490
+Wheel - State: Low, Time: 1983.511
+Wheel - State: High, Time: 1985.269
+Wheel - State: Low, Time: 1985.293
+Image - Name: Checkerboard-contrast_2.png, Hash: c1f727703e1104d4451dacd014f5967c, Duration: 5.000, Time: 1985.360
+Wheel - State: High, Time: 1986.764
+Wheel - State: Low, Time: 1986.786
+Wheel - State: High, Time: 1988.013
+Wheel - State: Low, Time: 1988.037
+Wheel - State: High, Time: 1989.336
+Wheel - State: Low, Time: 1989.359
+Wheel - State: High, Time: 1990.391
+Wheel - State: Low, Time: 1990.413
+Image - Name: Checkerboard-contrast_4.png, Hash: 63e3721c14ce35da5fab4b61b1c484d7, Duration: 5.000, Time: 1990.479
+Wheel - State: High, Time: 1991.543
+Wheel - State: Low, Time: 1991.566
+Wheel - State: High, Time: 1992.601
+Wheel - State: Low, Time: 1992.623
+Wheel - State: High, Time: 1993.864
+Wheel - State: Low, Time: 1993.887
+Wheel - State: High, Time: 1994.936
+Wheel - State: Low, Time: 1994.958
+Wheel - State: High, Time: 1995.934
+Wheel - State: Low, Time: 1995.957
+Image - Name: Checkerboard-contrast_7.png, Hash: 2db84a7fb7009f5884ba302c5a994f59, Duration: 5.000, Time: 1996.013
+Wheel - State: High, Time: 1997.032
+Wheel - State: Low, Time: 1997.055
+Wheel - State: High, Time: 1999.270
+Wheel - State: Low, Time: 1999.293
+Wheel - State: High, Time: 2003.521
+Wheel - State: Low, Time: 2003.544
+Image - Name: Checkerboard-contrast_14.png, Hash: c27e015b73ca8ec209474c2d0925b795, Duration: 5.000, Time: 2003.623
+Wheel - State: High, Time: 2014.345
+Wheel - State: Low, Time: 2014.367
+Image - Name: Checkerboard-contrast_27.png, Hash: 6f5e3c659abf49a84e858f13669e3cbe, Duration: 5.000, Time: 2014.398
+Wheel - State: High, Time: 2015.471
+Wheel - State: Low, Time: 2015.494
+Wheel - State: High, Time: 2016.341
+Wheel - State: Low, Time: 2016.365
+Wheel - State: High, Time: 2017.868
+Wheel - State: Low, Time: 2017.890
+Wheel - State: High, Time: 2018.910
+Wheel - State: Low, Time: 2018.933
+Wheel - State: High, Time: 2019.816
+Wheel - State: Low, Time: 2019.839
+Image - Name: Checkerboard-contrast_52.png, Hash: 97a6298e164c0493c3cf6b9c8806607f, Duration: 5.000, Time: 2019.905
+Wheel - State: High, Time: 2020.780
+Wheel - State: Low, Time: 2020.803
+Wheel - State: High, Time: 2021.833
+Wheel - State: Low, Time: 2021.856
+Wheel - State: High, Time: 2023.769
+Wheel - State: Low, Time: 2023.792
+Wheel - State: High, Time: 2024.743
+Wheel - State: Low, Time: 2024.766
+Wheel - State: High, Time: 2025.696
+Wheel - State: Low, Time: 2025.719
+Image - Name: Checkerboard-contrast_100.png, Hash: c7ef3652d905b84f028e8d3bac85b83b, Duration: 5.000, Time: 2025.806
+Wheel - State: High, Time: 2026.696
+Wheel - State: Low, Time: 2026.718
+Wheel - State: High, Time: 2027.698
+Wheel - State: Low, Time: 2027.721
+Wheel - State: High, Time: 2028.753
+Wheel - State: Low, Time: 2028.776
+Wheel - State: High, Time: 2029.728
+Wheel - State: Low, Time: 2029.750
+Image - Name: Solid.png, Hash: 64930c698c01ce4f704551ce6db48ab5, Duration: 5.000, Time: 2055.889
+Wheel - State: High, Time: 2115.318
+Wheel revolution 1 of 49
+Wheel - State: Low, Time: 2115.340
+Wheel - State: High, Time: 2121.605
+Wheel revolution 1 of 41
+Wheel - State: Low, Time: 2121.628
+Wheel - State: High, Time: 2123.102
+Wheel revolution 2 of 41
+Wheel - State: Low, Time: 2123.125
+Wheel - State: High, Time: 2124.017
+Wheel revolution 3 of 41
+Wheel - State: Low, Time: 2124.041
+Wheel - State: High, Time: 2126.864
+Wheel revolution 4 of 41
+Wheel - State: Low, Time: 2126.888
+Wheel - State: High, Time: 2128.540
+Wheel revolution 5 of 41
+Wheel - State: Low, Time: 2128.562
+Wheel - State: High, Time: 2129.522
+Wheel revolution 6 of 41
+Wheel - State: Low, Time: 2129.544
+Wheel - State: High, Time: 2130.461
+Wheel revolution 7 of 41
+Wheel - State: Low, Time: 2130.483
+Wheel - State: High, Time: 2156.544
+Wheel revolution 1 of 35
+Wheel - State: Low, Time: 2156.567
+Wheel - State: High, Time: 2171.389
+Wheel revolution 1 of 42
+Wheel - State: Low, Time: 2171.412
+Wheel - State: High, Time: 2172.952
+Wheel revolution 2 of 42
+Wheel - State: Low, Time: 2172.975
+Wheel - State: High, Time: 2177.106
+Wheel revolution 3 of 42
+Wheel - State: Low, Time: 2177.128
+Wheel - State: High, Time: 2178.162
+Wheel revolution 4 of 42
+Wheel - State: Low, Time: 2178.185
+Wheel - State: High, Time: 2181.190
+Wheel revolution 5 of 42
+Wheel - State: Low, Time: 2181.212
+Wheel - State: High, Time: 2182.230
+Wheel revolution 6 of 42
+Wheel - State: Low, Time: 2182.253
+Wheel - State: High, Time: 2185.715
+Wheel revolution 7 of 42
+Wheel - State: Low, Time: 2185.737
+Wheel - State: High, Time: 2188.819
+Wheel revolution 8 of 42
+Wheel - State: Low, Time: 2188.841
+Wheel - State: High, Time: 2189.712
+Wheel revolution 9 of 42
+Wheel - State: Low, Time: 2189.735
+Wheel - State: High, Time: 2231.733
+Wheel revolution 1 of 21
+Wheel - State: Low, Time: 2231.756
+Wheel - State: High, Time: 2252.379
+Wheel revolution 1 of 10
+Wheel - State: Low, Time: 2252.402
+Wheel - State: High, Time: 2267.788
+Wheel revolution 1 of 43
+Wheel - State: Low, Time: 2267.810
+Wheel - State: High, Time: 2268.799
+Wheel revolution 2 of 43
+Wheel - State: Low, Time: 2268.823
+Wheel - State: High, Time: 2271.941
+Wheel revolution 3 of 43
+Wheel - State: Low, Time: 2271.963
+Wheel - State: High, Time: 2274.683
+Wheel revolution 4 of 43
+Wheel - State: Low, Time: 2274.705
+Wheel - State: High, Time: 2275.618
+Wheel revolution 5 of 43
+Wheel - State: Low, Time: 2275.640
+Wheel - State: High, Time: 2278.873
+Wheel revolution 6 of 43
+Wheel - State: Low, Time: 2278.896
+Wheel - State: High, Time: 2281.924
+Wheel revolution 7 of 43
+Wheel - State: Low, Time: 2281.946
+Wheel - State: High, Time: 2283.342
+Wheel revolution 8 of 43
+Wheel - State: Low, Time: 2283.365
+Wheel - State: High, Time: 2287.986
+Wheel revolution 9 of 43
+Wheel - State: Low, Time: 2288.008
+Wheel - State: High, Time: 2288.911
+Wheel revolution 10 of 43
+Wheel - State: Low, Time: 2288.934
+Wheel - State: High, Time: 2289.891
+Wheel revolution 11 of 43
+Wheel - State: Low, Time: 2289.914
+Wheel - State: High, Time: 2292.632
+Wheel revolution 12 of 43
+Wheel - State: Low, Time: 2292.654
+Wheel - State: High, Time: 2293.574
+Wheel revolution 13 of 43
+Wheel - State: Low, Time: 2293.597
+Wheel - State: High, Time: 2294.608
+Wheel revolution 14 of 43
+Wheel - State: Low, Time: 2294.631
+Wheel - State: High, Time: 2295.703
+Wheel revolution 15 of 43
+Wheel - State: Low, Time: 2295.725
+Wheel - State: High, Time: 2297.042
+Wheel revolution 16 of 43
+Wheel - State: Low, Time: 2297.065
+Door - State: Low, Time: 2309.395
+Door - State: High, Time: 2313.129
+Door - State: Low, Time: 2313.348
+Door - State: High, Time: 2314.336
+Door - State: Low, Time: 2412.654
+Door - State: High, Time: 2413.377
+Wheel - State: High, Time: 2453.534
+Wheel revolution 1 of 43
+Wheel - State: Low, Time: 2453.556
+Wheel - State: High, Time: 2454.641
+Wheel revolution 2 of 43
+Wheel - State: Low, Time: 2454.664
+Wheel - State: High, Time: 2455.604
+Wheel revolution 3 of 43
+Wheel - State: Low, Time: 2455.627
+Wheel - State: High, Time: 2459.680
+Wheel revolution 4 of 43
+Wheel - State: Low, Time: 2459.704
+Wheel - State: High, Time: 2460.596
+Wheel revolution 5 of 43
+Wheel - State: Low, Time: 2460.618
+Wheel - State: High, Time: 2461.579
+Wheel revolution 6 of 43
+Wheel - State: Low, Time: 2461.601
+Wheel - State: High, Time: 2462.576
+Wheel revolution 7 of 43
+Wheel - State: Low, Time: 2462.599
+Wheel - State: High, Time: 2463.460
+Wheel revolution 8 of 43
+Wheel - State: Low, Time: 2463.482
+Wheel - State: High, Time: 2466.688
+Wheel revolution 9 of 43
+Wheel - State: Low, Time: 2466.711
+Wheel - State: High, Time: 2467.635
+Wheel revolution 10 of 43
+Wheel - State: Low, Time: 2467.658
+Wheel - State: High, Time: 2468.674
+Wheel revolution 11 of 43
+Wheel - State: Low, Time: 2468.697
+Wheel - State: High, Time: 2470.224
+Wheel revolution 12 of 43
+Wheel - State: Low, Time: 2470.247
+Wheel - State: High, Time: 2471.181
+Wheel revolution 13 of 43
+Wheel - State: Low, Time: 2471.205
+Wheel - State: High, Time: 2472.731
+Wheel revolution 14 of 43
+Wheel - State: Low, Time: 2472.755
+Wheel - State: High, Time: 2473.683
+Wheel revolution 15 of 43
+Wheel - State: Low, Time: 2473.706
+Wheel - State: High, Time: 2474.924
+Wheel revolution 16 of 43
+Wheel - State: Low, Time: 2474.948
+Wheel - State: High, Time: 2475.925
+Wheel revolution 17 of 43
+Wheel - State: Low, Time: 2475.948
+Wheel - State: High, Time: 2477.390
+Wheel revolution 18 of 43
+Wheel - State: Low, Time: 2477.412
+Wheel - State: High, Time: 2478.483
+Wheel revolution 19 of 43
+Wheel - State: Low, Time: 2478.505
+Wheel - State: High, Time: 2479.380
+Wheel revolution 20 of 43
+Wheel - State: Low, Time: 2479.402
+Wheel - State: High, Time: 2480.280
+Wheel revolution 21 of 43
+Wheel - State: Low, Time: 2480.304
+Wheel - State: High, Time: 2481.169
+Wheel revolution 22 of 43
+Wheel - State: Low, Time: 2481.192
+Wheel - State: High, Time: 2482.209
+Wheel revolution 23 of 43
+Wheel - State: Low, Time: 2482.231
+Wheel - State: High, Time: 2491.026
+Wheel revolution 1 of 30
+Wheel - State: Low, Time: 2491.050
+Wheel - State: High, Time: 2491.879
+Wheel revolution 2 of 30
+Wheel - State: Low, Time: 2491.902
+Wheel - State: High, Time: 2492.704
+Wheel revolution 3 of 30
+Wheel - State: Low, Time: 2492.726
+Wheel - State: High, Time: 2493.608
+Wheel revolution 4 of 30
+Wheel - State: Low, Time: 2493.631
+Wheel - State: High, Time: 2494.443
+Wheel revolution 5 of 30
+Wheel - State: Low, Time: 2494.466
+Wheel - State: High, Time: 2495.723
+Wheel revolution 6 of 30
+Wheel - State: Low, Time: 2495.746
+Wheel - State: High, Time: 2496.587
+Wheel revolution 7 of 30
+Wheel - State: Low, Time: 2496.611
+Wheel - State: High, Time: 2497.615
+Wheel revolution 8 of 30
+Wheel - State: Low, Time: 2497.637
+Wheel - State: High, Time: 2498.617
+Wheel revolution 9 of 30
+Wheel - State: Low, Time: 2498.639
+Wheel - State: High, Time: 2499.727
+Wheel revolution 10 of 30
+Wheel - State: Low, Time: 2499.750
+Wheel - State: High, Time: 2500.717
+Wheel revolution 11 of 30
+Wheel - State: Low, Time: 2500.740
+Wheel - State: High, Time: 2501.664
+Wheel revolution 12 of 30
+Wheel - State: Low, Time: 2501.688
+Wheel - State: High, Time: 2503.171
+Wheel revolution 13 of 30
+Wheel - State: Low, Time: 2503.194
+Wheel - State: High, Time: 2504.086
+Wheel revolution 14 of 30
+Wheel - State: Low, Time: 2504.109
+Wheel - State: High, Time: 2504.967
+Wheel revolution 15 of 30
+Wheel - State: Low, Time: 2504.989
+Wheel - State: High, Time: 2505.911
+Wheel revolution 16 of 30
+Wheel - State: Low, Time: 2505.933
+Wheel - State: High, Time: 2506.770
+Wheel revolution 17 of 30
+Wheel - State: Low, Time: 2506.793
+Wheel - State: High, Time: 2507.815
+Wheel revolution 18 of 30
+Wheel - State: Low, Time: 2507.839
+Wheel - State: High, Time: 2508.731
+Wheel revolution 19 of 30
+Wheel - State: Low, Time: 2508.754
+Wheel - State: High, Time: 2509.691
+Wheel revolution 20 of 30
+Wheel - State: Low, Time: 2509.714
+Wheel - State: High, Time: 2510.586
+Wheel revolution 21 of 30
+Wheel - State: Low, Time: 2510.609
+Wheel - State: High, Time: 2511.729
+Wheel revolution 22 of 30
+Wheel - State: Low, Time: 2511.751
+Wheel - State: High, Time: 2512.605
+Wheel revolution 23 of 30
+Wheel - State: Low, Time: 2512.629
+Wheel - State: High, Time: 2513.769
+Wheel revolution 24 of 30
+Wheel - State: Low, Time: 2513.791
+Wheel - State: High, Time: 2514.700
+Wheel revolution 25 of 30
+Wheel - State: Low, Time: 2514.724
+Wheel - State: High, Time: 2517.817
+Wheel revolution 26 of 30
+Wheel - State: Low, Time: 2517.839
+Wheel - State: High, Time: 2518.814
+Wheel revolution 27 of 30
+Wheel - State: Low, Time: 2518.836
+Wheel - State: High, Time: 2519.649
+Wheel revolution 28 of 30
+Wheel - State: Low, Time: 2519.671
+Wheel - State: High, Time: 2520.513
+Wheel revolution 29 of 30
+Wheel - State: Low, Time: 2520.536
+Wheel - State: High, Time: 2521.692
+Wheel revolution 30 of 30
+Wheel - State: Low, Time: 2521.715
+Image - Name: Checkerboard-contrast_1.png, Hash: fc32dedaf5bb8c361864dee8534809d9, Duration: 5.000, Time: 2521.790
+Wheel - State: High, Time: 2522.951
+Wheel - State: Low, Time: 2522.974
+Wheel - State: High, Time: 2523.800
+Wheel - State: Low, Time: 2523.823
+Wheel - State: High, Time: 2524.899
+Wheel - State: Low, Time: 2524.923
+Wheel - State: High, Time: 2525.761
+Wheel - State: Low, Time: 2525.782
+Wheel - State: High, Time: 2526.622
+Wheel - State: Low, Time: 2526.645
+Wheel - State: High, Time: 2529.339
+Wheel - State: Low, Time: 2529.362
+Image - Name: Checkerboard-contrast_2.png, Hash: c1f727703e1104d4451dacd014f5967c, Duration: 5.000, Time: 2529.388
+Wheel - State: High, Time: 2530.285
+Wheel - State: Low, Time: 2530.308
+Wheel - State: High, Time: 2531.141
+Wheel - State: Low, Time: 2531.164
+Wheel - State: High, Time: 2532.026
+Wheel - State: Low, Time: 2532.049
+Wheel - State: High, Time: 2532.901
+Wheel - State: Low, Time: 2532.923
+Wheel - State: High, Time: 2533.765
+Wheel - State: Low, Time: 2533.788
+Wheel - State: High, Time: 2534.689
+Wheel - State: Low, Time: 2534.711
+Image - Name: Checkerboard-contrast_4.png, Hash: 63e3721c14ce35da5fab4b61b1c484d7, Duration: 5.000, Time: 2534.765
+Wheel - State: High, Time: 2535.653
+Wheel - State: Low, Time: 2535.676
+Wheel - State: High, Time: 2536.762
+Wheel - State: Low, Time: 2536.784
+Wheel - State: High, Time: 2537.633
+Wheel - State: Low, Time: 2537.655
+Wheel - State: High, Time: 2538.528
+Wheel - State: Low, Time: 2538.550
+Wheel - State: High, Time: 2539.452
+Wheel - State: Low, Time: 2539.474
+Wheel - State: High, Time: 2540.422
+Wheel - State: Low, Time: 2540.444
+Image - Name: Checkerboard-contrast_7.png, Hash: 2db84a7fb7009f5884ba302c5a994f59, Duration: 5.000, Time: 2540.472
+Wheel - State: High, Time: 2541.418
+Wheel - State: Low, Time: 2541.441
+Wheel - State: High, Time: 2542.375
+Wheel - State: Low, Time: 2542.397
+Wheel - State: High, Time: 2545.423
+Wheel - State: Low, Time: 2545.447
+Wheel - State: High, Time: 2546.654
+Wheel - State: Low, Time: 2546.678
+Image - Name: Checkerboard-contrast_14.png, Hash: c27e015b73ca8ec209474c2d0925b795, Duration: 5.000, Time: 2546.725
+Wheel - State: High, Time: 2547.486
+Wheel - State: Low, Time: 2547.509
+Wheel - State: High, Time: 2548.318
+Wheel - State: Low, Time: 2548.340
+Wheel - State: High, Time: 2549.163
+Wheel - State: Low, Time: 2549.186
+Wheel - State: High, Time: 2550.058
+Wheel - State: Low, Time: 2550.080
+Wheel - State: High, Time: 2550.926
+Wheel - State: Low, Time: 2550.947
+Wheel - State: High, Time: 2551.763
+Wheel - State: Low, Time: 2551.787
+Image - Name: Checkerboard-contrast_27.png, Hash: 6f5e3c659abf49a84e858f13669e3cbe, Duration: 5.000, Time: 2551.849
+Wheel - State: High, Time: 2552.682
+Wheel - State: Low, Time: 2552.705
+Wheel - State: High, Time: 2553.669
+Wheel - State: Low, Time: 2553.692
+Wheel - State: High, Time: 2554.523
+Wheel - State: Low, Time: 2554.545
+Wheel - State: High, Time: 2555.517
+Wheel - State: Low, Time: 2555.540
+Wheel - State: High, Time: 2556.604
+Wheel - State: Low, Time: 2556.627
+Wheel - State: High, Time: 2557.621
+Wheel - State: Low, Time: 2557.644
+Image - Name: Checkerboard-contrast_52.png, Hash: 97a6298e164c0493c3cf6b9c8806607f, Duration: 5.000, Time: 2557.690
+Wheel - State: High, Time: 2558.579
+Wheel - State: Low, Time: 2558.602
+Wheel - State: High, Time: 2559.687
+Wheel - State: Low, Time: 2559.711
+Wheel - State: High, Time: 2560.782
+Wheel - State: Low, Time: 2560.803
+Wheel - State: High, Time: 2562.107
+Wheel - State: Low, Time: 2562.130
+Wheel - State: High, Time: 2563.013
+Wheel - State: Low, Time: 2563.037
+Image - Name: Checkerboard-contrast_100.png, Hash: c7ef3652d905b84f028e8d3bac85b83b, Duration: 5.000, Time: 2563.066
+Wheel - State: High, Time: 2563.839
+Wheel - State: Low, Time: 2563.861
+Wheel - State: High, Time: 2564.712
+Wheel - State: Low, Time: 2564.735
+Wheel - State: High, Time: 2565.613
+Wheel - State: Low, Time: 2565.635
+Wheel - State: High, Time: 2566.829
+Wheel - State: Low, Time: 2566.851
+Wheel - State: High, Time: 2567.826
+Wheel - State: Low, Time: 2567.848
+Wheel - State: High, Time: 2568.963
+Wheel - State: Low, Time: 2568.986
+Wheel - State: High, Time: 2569.864
+Wheel - State: Low, Time: 2569.887
+Wheel - State: High, Time: 2581.295
+Wheel - State: Low, Time: 2581.317
+Wheel - State: High, Time: 2583.245
+Wheel - State: Low, Time: 2583.267
+Wheel - State: High, Time: 2584.115
+Wheel - State: Low, Time: 2584.138
+Wheel - State: High, Time: 2585.178
+Wheel - State: Low, Time: 2585.200
+Wheel - State: High, Time: 2586.212
+Wheel - State: Low, Time: 2586.235
+Wheel - State: High, Time: 2587.033
+Wheel - State: Low, Time: 2587.056
+Wheel - State: High, Time: 2587.830
+Wheel - State: Low, Time: 2587.853
+Wheel - State: High, Time: 2588.778
+Wheel - State: Low, Time: 2588.800
+Wheel - State: High, Time: 2589.634
+Wheel - State: Low, Time: 2589.657
+Wheel - State: High, Time: 2591.849
+Wheel - State: Low, Time: 2591.872
+Wheel - State: High, Time: 2592.835
+Wheel - State: Low, Time: 2592.858
+Image - Name: Solid.png, Hash: 64930c698c01ce4f704551ce6db48ab5, Duration: 5.000, Time: 2593.149
+Wheel - State: High, Time: 2593.831
+Wheel revolution 1 of 36
+Wheel - State: Low, Time: 2593.853
+Wheel - State: High, Time: 2594.965
+Wheel revolution 2 of 36
+Wheel - State: Low, Time: 2594.988
+Wheel - State: High, Time: 2596.008
+Wheel revolution 3 of 36
+Wheel - State: Low, Time: 2596.031
+Wheel - State: High, Time: 2596.953
+Wheel revolution 4 of 36
+Wheel - State: Low, Time: 2596.975
+Wheel - State: High, Time: 2597.975
+Wheel revolution 5 of 36
+Wheel - State: Low, Time: 2597.998
+Wheel - State: High, Time: 2598.808
+Wheel revolution 6 of 36
+Wheel - State: Low, Time: 2598.831
+Wheel - State: High, Time: 2599.614
+Wheel revolution 7 of 36
+Wheel - State: Low, Time: 2599.636
+Wheel - State: High, Time: 2601.017
+Wheel revolution 8 of 36
+Wheel - State: Low, Time: 2601.041
+Wheel - State: High, Time: 2602.011
+Wheel revolution 9 of 36
+Wheel - State: Low, Time: 2602.034
+Wheel - State: High, Time: 2602.890
+Wheel revolution 10 of 36
+Wheel - State: Low, Time: 2602.912
+Wheel - State: High, Time: 2603.782
+Wheel revolution 11 of 36
+Wheel - State: Low, Time: 2603.805
+Wheel - State: High, Time: 2604.752
+Wheel revolution 12 of 36
+Wheel - State: Low, Time: 2604.775
+Wheel - State: High, Time: 2605.654
+Wheel revolution 13 of 36
+Wheel - State: Low, Time: 2605.677
+Wheel - State: High, Time: 2607.131
+Wheel revolution 14 of 36
+Wheel - State: Low, Time: 2607.154
+Wheel - State: High, Time: 2608.221
+Wheel revolution 15 of 36
+Wheel - State: Low, Time: 2608.244
+Wheel - State: High, Time: 2609.058
+Wheel revolution 16 of 36
+Wheel - State: Low, Time: 2609.081
+Wheel - State: High, Time: 2609.953
+Wheel revolution 17 of 36
+Wheel - State: Low, Time: 2609.977
+Wheel - State: High, Time: 2610.886
+Wheel revolution 18 of 36
+Wheel - State: Low, Time: 2610.910
+Wheel - State: High, Time: 2611.886
+Wheel revolution 19 of 36
+Wheel - State: Low, Time: 2611.909
+Wheel - State: High, Time: 2615.602
+Wheel revolution 20 of 36
+Wheel - State: Low, Time: 2615.625
+Wheel - State: High, Time: 2616.477
+Wheel revolution 21 of 36
+Wheel - State: Low, Time: 2616.500
+Wheel - State: High, Time: 2617.477
+Wheel revolution 22 of 36
+Wheel - State: Low, Time: 2617.500
+Wheel - State: High, Time: 2618.388
+Wheel revolution 23 of 36
+Wheel - State: Low, Time: 2618.411
+Wheel - State: High, Time: 2619.247
+Wheel revolution 24 of 36
+Wheel - State: Low, Time: 2619.271
+Wheel - State: High, Time: 2620.040
+Wheel revolution 25 of 36
+Wheel - State: Low, Time: 2620.064
+Wheel - State: High, Time: 2620.971
+Wheel revolution 26 of 36
+Wheel - State: Low, Time: 2620.995
+Wheel - State: High, Time: 2622.158
+Wheel revolution 27 of 36
+Wheel - State: Low, Time: 2622.181
+Wheel - State: High, Time: 2623.017
+Wheel revolution 28 of 36
+Wheel - State: Low, Time: 2623.040
+Wheel - State: High, Time: 2623.990
+Wheel revolution 29 of 36
+Wheel - State: Low, Time: 2624.012
+Wheel - State: High, Time: 2624.891
+Wheel revolution 30 of 36
+Wheel - State: Low, Time: 2624.915
+Wheel - State: High, Time: 2648.356
+Wheel revolution 1 of 35
+Wheel - State: Low, Time: 2648.379
+Wheel - State: High, Time: 2784.369
+Wheel revolution 1 of 22
+Wheel - State: Low, Time: 2784.393
+Door - State: Low, Time: 2865.946
+Door - State: High, Time: 2866.832
+Door - State: Low, Time: 2866.957
+Door - State: High, Time: 2877.496
+Door - State: Low, Time: 2877.552
+Door - State: High, Time: 2892.591
+Wheel - State: High, Time: 3048.622
+Wheel revolution 1 of 41
+Wheel - State: Low, Time: 3048.644
+Door - State: Low, Time: 3068.593
+Door - State: High, Time: 3087.360
+Wheel - State: High, Time: 3172.143
+Wheel revolution 1 of 45
+Wheel - State: Low, Time: 3172.166
+Wheel - State: High, Time: 3173.870
+Wheel revolution 2 of 45
+Wheel - State: Low, Time: 3173.891
+Wheel - State: High, Time: 3176.970
+Wheel revolution 3 of 45
+Wheel - State: Low, Time: 3176.993
+Wheel - State: High, Time: 3178.069
+Wheel revolution 4 of 45
+Wheel - State: Low, Time: 3178.092
+Wheel - State: High, Time: 3183.027
+Wheel revolution 5 of 45
+Wheel - State: Low, Time: 3183.050
+Wheel - State: High, Time: 3186.871
+Wheel revolution 6 of 45
+Wheel - State: Low, Time: 3186.895
+Wheel - State: High, Time: 3187.905
+Wheel revolution 7 of 45
+Wheel - State: Low, Time: 3187.927
+Wheel - State: High, Time: 3191.168
+Wheel revolution 8 of 45
+Wheel - State: Low, Time: 3191.191
+Wheel - State: High, Time: 3192.273
+Wheel revolution 9 of 45
+Wheel - State: Low, Time: 3192.296
+Wheel - State: High, Time: 3197.861
+Wheel revolution 1 of 16
+Wheel - State: Low, Time: 3197.884
+Wheel - State: High, Time: 3200.625
+Wheel revolution 2 of 16
+Wheel - State: Low, Time: 3200.647
+Wheel - State: High, Time: 3201.553
+Wheel revolution 3 of 16
+Wheel - State: Low, Time: 3201.577
+Wheel - State: High, Time: 3205.099
+Wheel revolution 4 of 16
+Wheel - State: Low, Time: 3205.121
+Wheel - State: High, Time: 3208.671
+Wheel revolution 5 of 16
+Wheel - State: Low, Time: 3208.693
+Wheel - State: High, Time: 3209.910
+Wheel revolution 6 of 16
+Wheel - State: Low, Time: 3209.933
+Wheel - State: High, Time: 3210.892
+Wheel revolution 7 of 16
+Wheel - State: Low, Time: 3210.915
+Wheel - State: High, Time: 3213.615
+Wheel revolution 8 of 16
+Wheel - State: Low, Time: 3213.638
+Wheel - State: High, Time: 3217.993
+Wheel revolution 9 of 16
+Wheel - State: Low, Time: 3218.016
+Wheel - State: High, Time: 3219.097
+Wheel revolution 10 of 16
+Wheel - State: Low, Time: 3219.119
+Door - State: Low, Time: 3224.826
+Door - State: High, Time: 3228.907
+Wheel - State: High, Time: 3234.119
+Wheel revolution 1 of 19
+Wheel - State: Low, Time: 3234.142
+Wheel - State: High, Time: 3235.132
+Wheel revolution 2 of 19
+Wheel - State: Low, Time: 3235.156
+Wheel - State: High, Time: 3236.097
+Wheel revolution 3 of 19
+Wheel - State: Low, Time: 3236.120
+Wheel - State: High, Time: 3237.056
+Wheel revolution 4 of 19
+Wheel - State: Low, Time: 3237.080
+Wheel - State: High, Time: 3238.922
+Wheel revolution 5 of 19
+Wheel - State: Low, Time: 3238.944
+Wheel - State: High, Time: 3239.933
+Wheel revolution 6 of 19
+Wheel - State: Low, Time: 3239.955
+Wheel - State: High, Time: 3242.372
+Wheel revolution 7 of 19
+Wheel - State: Low, Time: 3242.395
+Wheel - State: High, Time: 3243.356
+Wheel revolution 8 of 19
+Wheel - State: Low, Time: 3243.379
+Wheel - State: High, Time: 3245.156
+Wheel revolution 9 of 19
+Wheel - State: Low, Time: 3245.178
+Wheel - State: High, Time: 3248.341
+Wheel revolution 10 of 19
+Wheel - State: Low, Time: 3248.364
+Wheel - State: High, Time: 3249.232
+Wheel revolution 11 of 19
+Wheel - State: Low, Time: 3249.255
+Wheel - State: High, Time: 3250.569
+Wheel revolution 12 of 19
+Wheel - State: Low, Time: 3250.592
+Wheel - State: High, Time: 3251.702
+Wheel revolution 13 of 19
+Wheel - State: Low, Time: 3251.725
+Wheel - State: High, Time: 3252.593
+Wheel revolution 14 of 19
+Wheel - State: Low, Time: 3252.616
+Wheel - State: High, Time: 3253.685
+Wheel revolution 15 of 19
+Wheel - State: Low, Time: 3253.708
+Wheel - State: High, Time: 3254.655
+Wheel revolution 16 of 19
+Wheel - State: Low, Time: 3254.677
+Wheel - State: High, Time: 3255.537
+Wheel revolution 17 of 19
+Wheel - State: Low, Time: 3255.559
+Wheel - State: High, Time: 3256.988
+Wheel revolution 18 of 19
+Wheel - State: Low, Time: 3257.011
+Wheel - State: High, Time: 3257.945
+Wheel revolution 19 of 19
+Wheel - State: Low, Time: 3257.969
+Image - Name: Checkerboard-contrast_1.png, Hash: fc32dedaf5bb8c361864dee8534809d9, Duration: 5.000, Time: 3258.058
+Wheel - State: High, Time: 3258.927
+Wheel - State: Low, Time: 3258.951
+Wheel - State: High, Time: 3259.800
+Wheel - State: Low, Time: 3259.824
+Wheel - State: High, Time: 3261.105
+Wheel - State: Low, Time: 3261.128
+Wheel - State: High, Time: 3262.280
+Wheel - State: Low, Time: 3262.304
+Wheel - State: High, Time: 3263.313
+Wheel - State: Low, Time: 3263.337
+Image - Name: Checkerboard-contrast_2.png, Hash: c1f727703e1104d4451dacd014f5967c, Duration: 5.000, Time: 3263.408
+Wheel - State: High, Time: 3264.346
+Wheel - State: Low, Time: 3264.369
+Wheel - State: High, Time: 3265.257
+Wheel - State: Low, Time: 3265.281
+Wheel - State: High, Time: 3268.297
+Wheel - State: Low, Time: 3268.320
+Wheel - State: High, Time: 3269.163
+Wheel - State: Low, Time: 3269.185
+Image - Name: Checkerboard-contrast_4.png, Hash: 63e3721c14ce35da5fab4b61b1c484d7, Duration: 5.000, Time: 3269.214
+Wheel - State: High, Time: 3270.305
+Wheel - State: Low, Time: 3270.328
+Wheel - State: High, Time: 3271.216
+Wheel - State: Low, Time: 3271.238
+Wheel - State: High, Time: 3272.106
+Wheel - State: Low, Time: 3272.128
+Wheel - State: High, Time: 3272.977
+Wheel - State: Low, Time: 3273.001
+Wheel - State: High, Time: 3276.099
+Wheel - State: Low, Time: 3276.121
+Image - Name: Checkerboard-contrast_7.png, Hash: 2db84a7fb7009f5884ba302c5a994f59, Duration: 5.000, Time: 3276.146
+Wheel - State: High, Time: 3276.967
+Wheel - State: Low, Time: 3276.989
+Wheel - State: High, Time: 3278.383
+Wheel - State: Low, Time: 3278.405
+Wheel - State: High, Time: 3279.365
+Wheel - State: Low, Time: 3279.389
+Wheel - State: High, Time: 3280.780
+Wheel - State: Low, Time: 3280.803
+Wheel - State: High, Time: 3281.800
+Wheel - State: Low, Time: 3281.823
+Image - Name: Checkerboard-contrast_14.png, Hash: c27e015b73ca8ec209474c2d0925b795, Duration: 5.000, Time: 3281.901
+Wheel - State: High, Time: 3282.672
+Wheel - State: Low, Time: 3282.695
+Wheel - State: High, Time: 3283.538
+Wheel - State: Low, Time: 3283.561
+Wheel - State: High, Time: 3284.665
+Wheel - State: Low, Time: 3284.687
+Wheel - State: High, Time: 3285.617
+Wheel - State: Low, Time: 3285.639
+Wheel - State: High, Time: 3286.575
+Wheel - State: Low, Time: 3286.599
+Wheel - State: High, Time: 3287.475
+Wheel - State: Low, Time: 3287.497
+Image - Name: Checkerboard-contrast_27.png, Hash: 6f5e3c659abf49a84e858f13669e3cbe, Duration: 5.000, Time: 3287.549
+Wheel - State: High, Time: 3289.159
+Wheel - State: Low, Time: 3289.182
+Wheel - State: High, Time: 3290.074
+Wheel - State: Low, Time: 3290.097
+Wheel - State: High, Time: 3293.453
+Wheel - State: Low, Time: 3293.475
+Image - Name: Checkerboard-contrast_52.png, Hash: 97a6298e164c0493c3cf6b9c8806607f, Duration: 5.000, Time: 3293.557
+Wheel - State: High, Time: 3294.343
+Wheel - State: Low, Time: 3294.366
+Wheel - State: High, Time: 3295.847
+Wheel - State: Low, Time: 3295.870
+Wheel - State: High, Time: 3296.803
+Wheel - State: Low, Time: 3296.825
+Wheel - State: High, Time: 3297.670
+Wheel - State: Low, Time: 3297.693
+Wheel - State: High, Time: 3298.771
+Wheel - State: Low, Time: 3298.794
+Image - Name: Checkerboard-contrast_100.png, Hash: c7ef3652d905b84f028e8d3bac85b83b, Duration: 5.000, Time: 3298.879
+Wheel - State: High, Time: 3299.686
+Wheel - State: Low, Time: 3299.709
+Wheel - State: High, Time: 3300.823
+Wheel - State: Low, Time: 3300.846
+Wheel - State: High, Time: 3302.015
+Wheel - State: Low, Time: 3302.037
+Wheel - State: High, Time: 3303.194
+Wheel - State: Low, Time: 3303.218
+Wheel - State: High, Time: 3304.287
+Wheel - State: Low, Time: 3304.310
+Wheel - State: High, Time: 3305.192
+Wheel - State: Low, Time: 3305.214
+Wheel - State: High, Time: 3306.094
+Wheel - State: Low, Time: 3306.116
+Wheel - State: High, Time: 3309.448
+Wheel - State: Low, Time: 3309.470
+Wheel - State: High, Time: 3310.513
+Wheel - State: Low, Time: 3310.537
+Wheel - State: High, Time: 3311.322
+Wheel - State: Low, Time: 3311.345
+Wheel - State: High, Time: 3312.166
+Wheel - State: Low, Time: 3312.189
+Wheel - State: High, Time: 3313.033
+Wheel - State: Low, Time: 3313.055
+Wheel - State: High, Time: 3314.075
+Wheel - State: Low, Time: 3314.097
+Wheel - State: High, Time: 3314.917
+Wheel - State: Low, Time: 3314.939
+Wheel - State: High, Time: 3315.988
+Wheel - State: Low, Time: 3316.011
+Wheel - State: High, Time: 3316.885
+Wheel - State: Low, Time: 3316.908
+Wheel - State: High, Time: 3320.165
+Wheel - State: Low, Time: 3320.188
+Wheel - State: High, Time: 3321.141
+Wheel - State: Low, Time: 3321.164
+Wheel - State: High, Time: 3322.013
+Wheel - State: Low, Time: 3322.036
+Wheel - State: High, Time: 3323.142
+Wheel - State: Low, Time: 3323.165
+Wheel - State: High, Time: 3324.194
+Wheel - State: Low, Time: 3324.217
+Wheel - State: High, Time: 3325.112
+Wheel - State: Low, Time: 3325.135
+Wheel - State: High, Time: 3326.179
+Wheel - State: Low, Time: 3326.202
+Wheel - State: High, Time: 3327.170
+Wheel - State: Low, Time: 3327.192
+Wheel - State: High, Time: 3328.092
+Wheel - State: Low, Time: 3328.115
+Image - Name: Solid.png, Hash: 64930c698c01ce4f704551ce6db48ab5, Duration: 5.000, Time: 3328.956
+Wheel - State: High, Time: 3329.057
+Wheel revolution 1 of 15
+Wheel - State: Low, Time: 3329.080
+Wheel - State: High, Time: 3330.307
+Wheel revolution 2 of 15
+Wheel - State: Low, Time: 3330.330
+Wheel - State: High, Time: 3331.270
+Wheel revolution 3 of 15
+Wheel - State: Low, Time: 3331.293
+Wheel - State: High, Time: 3332.232
+Wheel revolution 4 of 15
+Wheel - State: Low, Time: 3332.254
+Wheel - State: High, Time: 3337.002
+Wheel revolution 5 of 15
+Wheel - State: Low, Time: 3337.025
+Wheel - State: High, Time: 3338.106
+Wheel revolution 6 of 15
+Wheel - State: Low, Time: 3338.128
+Wheel - State: High, Time: 3339.047
+Wheel revolution 7 of 15
+Wheel - State: Low, Time: 3339.071
+Wheel - State: High, Time: 3339.953
+Wheel revolution 8 of 15
+Wheel - State: Low, Time: 3339.976
+Wheel - State: High, Time: 3340.882
+Wheel revolution 9 of 15
+Wheel - State: Low, Time: 3340.904
+Wheel - State: High, Time: 3341.803
+Wheel revolution 10 of 15
+Wheel - State: Low, Time: 3341.825
+Wheel - State: High, Time: 3342.692
+Wheel revolution 11 of 15
+Wheel - State: Low, Time: 3342.714
+Wheel - State: High, Time: 3346.180
+Wheel revolution 12 of 15
+Wheel - State: Low, Time: 3346.202
+Wheel - State: High, Time: 3347.057
+Wheel revolution 13 of 15
+Wheel - State: Low, Time: 3347.079
+Wheel - State: High, Time: 3348.281
+Wheel revolution 14 of 15
+Wheel - State: Low, Time: 3348.304
+Wheel - State: High, Time: 3349.455
+Wheel revolution 15 of 15
+Wheel - State: Low, Time: 3349.478
+Image - Name: Checkerboard-contrast_1.png, Hash: fc32dedaf5bb8c361864dee8534809d9, Duration: 5.000, Time: 3349.512
+Wheel - State: High, Time: 3350.412
+Wheel - State: Low, Time: 3350.435
+Wheel - State: High, Time: 3351.555
+Wheel - State: Low, Time: 3351.579
+Wheel - State: High, Time: 3352.615
+Wheel - State: Low, Time: 3352.638
+Wheel - State: High, Time: 3353.639
+Wheel - State: Low, Time: 3353.661
+Wheel - State: High, Time: 3355.123
+Wheel - State: Low, Time: 3355.147
+Image - Name: Checkerboard-contrast_2.png, Hash: c1f727703e1104d4451dacd014f5967c, Duration: 5.000, Time: 3355.188
+Wheel - State: High, Time: 3356.034
+Wheel - State: Low, Time: 3356.057
+Wheel - State: High, Time: 3356.955
+Wheel - State: Low, Time: 3356.977
+Wheel - State: High, Time: 3357.985
+Wheel - State: Low, Time: 3358.007
+Wheel - State: High, Time: 3359.003
+Wheel - State: Low, Time: 3359.026
+Wheel - State: High, Time: 3364.133
+Wheel - State: Low, Time: 3364.156
+Image - Name: Checkerboard-contrast_4.png, Hash: 63e3721c14ce35da5fab4b61b1c484d7, Duration: 5.000, Time: 3364.210
+Wheel - State: High, Time: 3364.976
+Wheel - State: Low, Time: 3364.998
+Wheel - State: High, Time: 3365.971
+Wheel - State: Low, Time: 3365.995
+Wheel - State: High, Time: 3366.843
+Wheel - State: Low, Time: 3366.865
+Wheel - State: High, Time: 3367.752
+Wheel - State: Low, Time: 3367.775
+Wheel - State: High, Time: 3368.793
+Wheel - State: Low, Time: 3368.816
+Wheel - State: High, Time: 3369.741
+Wheel - State: Low, Time: 3369.764
+Image - Name: Checkerboard-contrast_7.png, Hash: 2db84a7fb7009f5884ba302c5a994f59, Duration: 5.000, Time: 3369.830
+Wheel - State: High, Time: 3370.732
+Wheel - State: Low, Time: 3370.756
+Wheel - State: High, Time: 3371.827
+Wheel - State: Low, Time: 3371.849
+Wheel - State: High, Time: 3372.798
+Wheel - State: Low, Time: 3372.821
+Wheel - State: High, Time: 3373.745
+Wheel - State: Low, Time: 3373.768
+Wheel - State: High, Time: 3378.873
+Wheel - State: Low, Time: 3378.896
+Image - Name: Checkerboard-contrast_14.png, Hash: c27e015b73ca8ec209474c2d0925b795, Duration: 5.000, Time: 3378.964
+Wheel - State: High, Time: 3379.752
+Wheel - State: Low, Time: 3379.775
+Wheel - State: High, Time: 3380.885
+Wheel - State: Low, Time: 3380.909
+Wheel - State: High, Time: 3383.959
+Wheel - State: Low, Time: 3383.982
+Image - Name: Checkerboard-contrast_27.png, Hash: 6f5e3c659abf49a84e858f13669e3cbe, Duration: 5.000, Time: 3384.013
+Wheel - State: High, Time: 3384.834
+Wheel - State: Low, Time: 3384.857
+Wheel - State: High, Time: 3386.187
+Wheel - State: Low, Time: 3386.209
+Wheel - State: High, Time: 3387.297
+Wheel - State: Low, Time: 3387.319
+Wheel - State: High, Time: 3388.261
+Wheel - State: Low, Time: 3388.284
+Wheel - State: High, Time: 3389.159
+Wheel - State: Low, Time: 3389.182
+Image - Name: Checkerboard-contrast_52.png, Hash: 97a6298e164c0493c3cf6b9c8806607f, Duration: 5.000, Time: 3389.207
+Wheel - State: High, Time: 3390.283
+Wheel - State: Low, Time: 3390.306
+Wheel - State: High, Time: 3391.190
+Wheel - State: Low, Time: 3391.213
+Wheel - State: High, Time: 3392.403
+Wheel - State: Low, Time: 3392.425
+Wheel - State: High, Time: 3393.343
+Wheel - State: Low, Time: 3393.365
+Wheel - State: High, Time: 3403.656
+Wheel - State: Low, Time: 3403.678
+Image - Name: Checkerboard-contrast_100.png, Hash: c7ef3652d905b84f028e8d3bac85b83b, Duration: 5.000, Time: 3403.765
+Wheel - State: High, Time: 3406.266
+Wheel - State: Low, Time: 3406.288
+Wheel - State: High, Time: 3409.752
+Wheel - State: Low, Time: 3409.775
+Wheel - State: High, Time: 3413.899
+Wheel - State: Low, Time: 3413.922
+Wheel - State: High, Time: 3416.805
+Wheel - State: Low, Time: 3416.828
+Wheel - State: High, Time: 3420.918
+Wheel - State: Low, Time: 3420.941
+Door - State: Low, Time: 3427.784
+Pump - State: On, Time: 3427.787
+Door - State: High, Time: 3430.258
+Pump - State: Off, Time: 3430.788
+Image - Name: Solid.png, Hash: 64930c698c01ce4f704551ce6db48ab5, Duration: 5.000, Time: 3430.896
+Door - State: Low, Time: 3449.103
+Door - State: High, Time: 3454.926
+Door - State: Low, Time: 3455.017
+Door - State: High, Time: 3456.869
+Door - State: Low, Time: 3456.985
+Door - State: High, Time: 3457.401
+Door - State: Low, Time: 3458.005
+Door - State: High, Time: 3459.751
+Wheel - State: High, Time: 3615.880
+Wheel revolution 1 of 36
+Wheel - State: Low, Time: 3615.903
+Wheel - State: High, Time: 3619.196
+Wheel revolution 2 of 36
+Wheel - State: Low, Time: 3619.218
+Wheel - State: High, Time: 3621.565
+Wheel revolution 3 of 36
+Wheel - State: Low, Time: 3621.587
+Wheel - State: High, Time: 3624.993
+Wheel revolution 4 of 36
+Wheel - State: Low, Time: 3625.015
+Wheel - State: High, Time: 3630.953
+Wheel revolution 1 of 33
+Wheel - State: Low, Time: 3630.976
+Wheel - State: High, Time: 3632.253
+Wheel revolution 2 of 33
+Wheel - State: Low, Time: 3632.275
+Wheel - State: High, Time: 3633.787
+Wheel revolution 3 of 33
+Wheel - State: Low, Time: 3633.811
+Wheel - State: High, Time: 3634.837
+Wheel revolution 4 of 33
+Wheel - State: Low, Time: 3634.860
+Wheel - State: High, Time: 3637.695
+Wheel revolution 5 of 33
+Wheel - State: Low, Time: 3637.718
+Wheel - State: High, Time: 3638.800
+Wheel revolution 6 of 33
+Wheel - State: Low, Time: 3638.823
+Wheel - State: High, Time: 3642.276
+Wheel revolution 7 of 33
+Wheel - State: Low, Time: 3642.300
+Wheel - State: High, Time: 3643.485
+Wheel revolution 8 of 33
+Wheel - State: Low, Time: 3643.507
+Wheel - State: High, Time: 3645.164
+Wheel revolution 9 of 33
+Wheel - State: Low, Time: 3645.188
+Wheel - State: High, Time: 3646.460
+Wheel revolution 10 of 33
+Wheel - State: Low, Time: 3646.483
+Wheel - State: High, Time: 3648.144
+Wheel revolution 11 of 33
+Wheel - State: Low, Time: 3648.168
+Wheel - State: High, Time: 3649.118
+Wheel revolution 12 of 33
+Wheel - State: Low, Time: 3649.141
+Wheel - State: High, Time: 3650.398
+Wheel revolution 13 of 33
+Wheel - State: Low, Time: 3650.420
+Wheel - State: High, Time: 3651.319
+Wheel revolution 14 of 33
+Wheel - State: Low, Time: 3651.341
+Wheel - State: High, Time: 3652.843
+Wheel revolution 15 of 33
+Wheel - State: Low, Time: 3652.865
+Wheel - State: High, Time: 3653.768
+Wheel revolution 16 of 33
+Wheel - State: Low, Time: 3653.790
+Wheel - State: High, Time: 3655.413
+Wheel revolution 17 of 33
+Wheel - State: Low, Time: 3655.434
+Wheel - State: High, Time: 3656.513
+Wheel revolution 18 of 33
+Wheel - State: Low, Time: 3656.535
+Wheel - State: High, Time: 3657.480
+Wheel revolution 19 of 33
+Wheel - State: Low, Time: 3657.503
+Wheel - State: High, Time: 3661.007
+Wheel revolution 20 of 33
+Wheel - State: Low, Time: 3661.029
+Wheel - State: High, Time: 3662.069
+Wheel revolution 21 of 33
+Wheel - State: Low, Time: 3662.092
+Door - State: Low, Time: 3666.926
+Door - State: High, Time: 3667.723
+Wheel - State: High, Time: 3671.644
+Wheel revolution 1 of 37
+Wheel - State: Low, Time: 3671.667
+Wheel - State: High, Time: 3674.088
+Wheel revolution 2 of 37
+Wheel - State: Low, Time: 3674.111
+Wheel - State: High, Time: 3675.029
+Wheel revolution 3 of 37
+Wheel - State: Low, Time: 3675.052
+Wheel - State: High, Time: 3676.420
+Wheel revolution 4 of 37
+Wheel - State: Low, Time: 3676.443
+Wheel - State: High, Time: 3681.247
+Wheel revolution 5 of 37
+Wheel - State: Low, Time: 3681.269
+Wheel - State: High, Time: 3683.042
+Wheel revolution 6 of 37
+Wheel - State: Low, Time: 3683.064
+Wheel - State: High, Time: 3687.782
+Wheel revolution 7 of 37
+Wheel - State: Low, Time: 3687.805
+Wheel - State: High, Time: 3689.926
+Wheel revolution 8 of 37
+Wheel - State: Low, Time: 3689.950
+Wheel - State: High, Time: 3690.856
+Wheel revolution 9 of 37
+Wheel - State: Low, Time: 3690.878
+Wheel - State: High, Time: 3711.387
+Wheel revolution 1 of 33
+Wheel - State: Low, Time: 3711.409
+Wheel - State: High, Time: 3715.716
+Wheel revolution 2 of 33
+Wheel - State: Low, Time: 3715.738
+Wheel - State: High, Time: 3739.650
+Wheel revolution 1 of 22
+Wheel - State: Low, Time: 3739.674
+Wheel - State: High, Time: 3743.769
+Wheel revolution 2 of 22
+Wheel - State: Low, Time: 3743.791
+Wheel - State: High, Time: 3744.854
+Wheel revolution 3 of 22
+Wheel - State: Low, Time: 3744.876
+Wheel - State: High, Time: 3748.962
+Wheel revolution 4 of 22
+Wheel - State: Low, Time: 3748.985
+Wheel - State: High, Time: 3750.094
+Wheel revolution 5 of 22
+Wheel - State: Low, Time: 3750.117
+Wheel - State: High, Time: 3751.570
+Wheel revolution 6 of 22
+Wheel - State: Low, Time: 3751.593
+Wheel - State: High, Time: 3752.659
+Wheel revolution 7 of 22
+Wheel - State: Low, Time: 3752.682
+Wheel - State: High, Time: 3753.825
+Wheel revolution 8 of 22
+Wheel - State: Low, Time: 3753.848
+Wheel - State: High, Time: 3755.147
+Wheel revolution 9 of 22
+Wheel - State: Low, Time: 3755.169
+Wheel - State: High, Time: 3756.333
+Wheel revolution 10 of 22
+Wheel - State: Low, Time: 3756.356
+Wheel - State: High, Time: 3757.708
+Wheel revolution 11 of 22
+Wheel - State: Low, Time: 3757.730
+Wheel - State: High, Time: 3758.859
+Wheel revolution 12 of 22
+Wheel - State: Low, Time: 3758.883
+Wheel - State: High, Time: 3761.100
+Wheel revolution 13 of 22
+Wheel - State: Low, Time: 3761.122
+Wheel - State: High, Time: 3762.511
+Wheel revolution 14 of 22
+Wheel - State: Low, Time: 3762.534
+Wheel - State: High, Time: 3763.482
+Wheel revolution 15 of 22
+Wheel - State: Low, Time: 3763.506
+Wheel - State: High, Time: 3770.937
+Wheel revolution 1 of 14
+Wheel - State: Low, Time: 3770.960
+Wheel - State: High, Time: 3771.931
+Wheel revolution 2 of 14
+Wheel - State: Low, Time: 3771.955
+Wheel - State: High, Time: 3772.860
+Wheel revolution 3 of 14
+Wheel - State: Low, Time: 3772.882
+Wheel - State: High, Time: 3773.840
+Wheel revolution 4 of 14
+Wheel - State: Low, Time: 3773.862
+Wheel - State: High, Time: 3776.086
+Wheel revolution 5 of 14
+Wheel - State: Low, Time: 3776.108
+Wheel - State: High, Time: 3777.286
+Wheel revolution 6 of 14
+Wheel - State: Low, Time: 3777.308
+Wheel - State: High, Time: 3778.257
+Wheel revolution 7 of 14
+Wheel - State: Low, Time: 3778.279
+Wheel - State: High, Time: 3779.303
+Wheel revolution 8 of 14
+Wheel - State: Low, Time: 3779.327
+Wheel - State: High, Time: 3782.307
+Wheel revolution 9 of 14
+Wheel - State: Low, Time: 3782.330
+Wheel - State: High, Time: 3785.053
+Wheel revolution 10 of 14
+Wheel - State: Low, Time: 3785.075
+Wheel - State: High, Time: 3786.134
+Wheel revolution 11 of 14
+Wheel - State: Low, Time: 3786.157
+Wheel - State: High, Time: 3787.111
+Wheel revolution 12 of 14
+Wheel - State: Low, Time: 3787.134
+Wheel - State: High, Time: 3789.315
+Wheel revolution 13 of 14
+Wheel - State: Low, Time: 3789.339
+Wheel - State: High, Time: 3790.503
+Wheel revolution 14 of 14
+Wheel - State: Low, Time: 3790.527
+Image - Name: Checkerboard-contrast_1.png, Hash: fc32dedaf5bb8c361864dee8534809d9, Duration: 5.000, Time: 3790.590
+Wheel - State: High, Time: 3792.478
+Wheel - State: Low, Time: 3792.500
+Wheel - State: High, Time: 3793.968
+Wheel - State: Low, Time: 3793.991
+Wheel - State: High, Time: 3795.311
+Wheel - State: Low, Time: 3795.334
+Wheel - State: High, Time: 3796.407
+Wheel - State: Low, Time: 3796.430
+Image - Name: Checkerboard-contrast_2.png, Hash: c1f727703e1104d4451dacd014f5967c, Duration: 5.000, Time: 3796.509
+Wheel - State: High, Time: 3797.522
+Wheel - State: Low, Time: 3797.544
+Wheel - State: High, Time: 3798.646
+Wheel - State: Low, Time: 3798.669
+Wheel - State: High, Time: 3799.828
+Wheel - State: Low, Time: 3799.851
+Wheel - State: High, Time: 3800.851
+Wheel - State: Low, Time: 3800.874
+Wheel - State: High, Time: 3802.704
+Wheel - State: Low, Time: 3802.726
+Image - Name: Checkerboard-contrast_4.png, Hash: 63e3721c14ce35da5fab4b61b1c484d7, Duration: 5.000, Time: 3802.796
+Wheel - State: High, Time: 3803.993
+Wheel - State: Low, Time: 3804.015
+Wheel - State: High, Time: 3805.008
+Wheel - State: Low, Time: 3805.031
+Wheel - State: High, Time: 3806.132
+Wheel - State: Low, Time: 3806.155
+Wheel - State: High, Time: 3809.393
+Wheel - State: Low, Time: 3809.416
+Image - Name: Checkerboard-contrast_7.png, Hash: 2db84a7fb7009f5884ba302c5a994f59, Duration: 5.000, Time: 3809.472
+Wheel - State: High, Time: 3810.419
+Wheel - State: Low, Time: 3810.442
+Wheel - State: High, Time: 3811.621
+Wheel - State: Low, Time: 3811.645
+Wheel - State: High, Time: 3812.813
+Wheel - State: Low, Time: 3812.836
+Wheel - State: High, Time: 3813.961
+Wheel - State: Low, Time: 3813.984
+Wheel - State: High, Time: 3815.026
+Wheel - State: Low, Time: 3815.049
+Image - Name: Checkerboard-contrast_14.png, Hash: c27e015b73ca8ec209474c2d0925b795, Duration: 5.000, Time: 3815.105
+Wheel - State: High, Time: 3816.323
+Wheel - State: Low, Time: 3816.345
+Wheel - State: High, Time: 3817.414
+Wheel - State: Low, Time: 3817.437
+Wheel - State: High, Time: 3818.473
+Wheel - State: Low, Time: 3818.496
+Wheel - State: High, Time: 3819.497
+Wheel - State: Low, Time: 3819.520
+Wheel - State: High, Time: 3820.552
+Wheel - State: Low, Time: 3820.575
+Image - Name: Checkerboard-contrast_27.png, Hash: 6f5e3c659abf49a84e858f13669e3cbe, Duration: 5.000, Time: 3820.639
+Wheel - State: High, Time: 3821.683
+Wheel - State: Low, Time: 3821.706
+Wheel - State: High, Time: 3824.555
+Wheel - State: Low, Time: 3824.579
+Wheel - State: High, Time: 3825.952
+Wheel - State: Low, Time: 3825.975
+Image - Name: Checkerboard-contrast_52.png, Hash: 97a6298e164c0493c3cf6b9c8806607f, Duration: 5.000, Time: 3825.999
+Wheel - State: High, Time: 3827.184
+Wheel - State: Low, Time: 3827.207
+Wheel - State: High, Time: 3828.194
+Wheel - State: Low, Time: 3828.216
+Wheel - State: High, Time: 3829.222
+Wheel - State: Low, Time: 3829.245
+Wheel - State: High, Time: 3830.273
+Wheel - State: Low, Time: 3830.296
+Wheel - State: High, Time: 3831.322
+Wheel - State: Low, Time: 3831.345
+Image - Name: Checkerboard-contrast_100.png, Hash: c7ef3652d905b84f028e8d3bac85b83b, Duration: 5.000, Time: 3831.370
+Wheel - State: High, Time: 3834.074
+Wheel - State: Low, Time: 3834.097
+Wheel - State: High, Time: 3835.090
+Wheel - State: Low, Time: 3835.113
+Wheel - State: High, Time: 3836.191
+Wheel - State: Low, Time: 3836.213
+Wheel - State: High, Time: 3837.151
+Wheel - State: Low, Time: 3837.174
+Wheel - State: High, Time: 3838.145
+Wheel - State: Low, Time: 3838.169
+Wheel - State: High, Time: 3839.254
+Wheel - State: Low, Time: 3839.276
+Wheel - State: High, Time: 3840.314
+Wheel - State: Low, Time: 3840.338
+Wheel - State: High, Time: 3841.327
+Wheel - State: Low, Time: 3841.349
+Wheel - State: High, Time: 3845.600
+Wheel - State: Low, Time: 3845.624
+Wheel - State: High, Time: 3846.705
+Wheel - State: Low, Time: 3846.727
+Wheel - State: High, Time: 3849.567
+Wheel - State: Low, Time: 3849.589
+Wheel - State: High, Time: 3850.575
+Wheel - State: Low, Time: 3850.598
+Wheel - State: High, Time: 3851.684
+Wheel - State: Low, Time: 3851.707
+Wheel - State: High, Time: 3852.619
+Wheel - State: Low, Time: 3852.642
+Wheel - State: High, Time: 3853.686
+Wheel - State: Low, Time: 3853.709
+Wheel - State: High, Time: 3854.654
+Wheel - State: Low, Time: 3854.677
+Wheel - State: High, Time: 3855.846
+Wheel - State: Low, Time: 3855.868
+Wheel - State: High, Time: 3856.808
+Wheel - State: Low, Time: 3856.830
+Wheel - State: High, Time: 3857.886
+Wheel - State: Low, Time: 3857.908
+Wheel - State: High, Time: 3858.903
+Wheel - State: Low, Time: 3858.925
+Wheel - State: High, Time: 3859.851
+Wheel - State: Low, Time: 3859.875
+Wheel - State: High, Time: 3860.855
+Wheel - State: Low, Time: 3860.878
+Image - Name: Solid.png, Hash: 64930c698c01ce4f704551ce6db48ab5, Duration: 5.000, Time: 3861.422
+Wheel - State: High, Time: 3861.864
+Wheel revolution 1 of 21
+Wheel - State: Low, Time: 3861.887
+Wheel - State: High, Time: 3865.268
+Wheel revolution 2 of 21
+Wheel - State: Low, Time: 3865.291
+Wheel - State: High, Time: 3866.632
+Wheel revolution 3 of 21
+Wheel - State: Low, Time: 3866.654
+Wheel - State: High, Time: 3867.522
+Wheel revolution 4 of 21
+Wheel - State: Low, Time: 3867.545
+Wheel - State: High, Time: 3868.415
+Wheel revolution 5 of 21
+Wheel - State: Low, Time: 3868.437
+Wheel - State: High, Time: 3869.406
+Wheel revolution 6 of 21
+Wheel - State: Low, Time: 3869.428
+Wheel - State: High, Time: 3870.320
+Wheel revolution 7 of 21
+Wheel - State: Low, Time: 3870.343
+Wheel - State: High, Time: 3872.535
+Wheel revolution 8 of 21
+Wheel - State: Low, Time: 3872.557
+Wheel - State: High, Time: 3873.915
+Wheel revolution 9 of 21
+Wheel - State: Low, Time: 3873.937
+Wheel - State: High, Time: 3875.004
+Wheel revolution 10 of 21
+Wheel - State: Low, Time: 3875.026
+Wheel - State: High, Time: 3876.091
+Wheel revolution 11 of 21
+Wheel - State: Low, Time: 3876.115
+Wheel - State: High, Time: 3877.030
+Wheel revolution 12 of 21
+Wheel - State: Low, Time: 3877.054
+Wheel - State: High, Time: 3878.267
+Wheel revolution 13 of 21
+Wheel - State: Low, Time: 3878.289
+Wheel - State: High, Time: 3879.184
+Wheel revolution 14 of 21
+Wheel - State: Low, Time: 3879.207
+Wheel - State: High, Time: 3880.316
+Wheel revolution 15 of 21
+Wheel - State: Low, Time: 3880.340
+Wheel - State: High, Time: 3881.371
+Wheel revolution 16 of 21
+Wheel - State: Low, Time: 3881.395
+Wheel - State: High, Time: 3882.488
+Wheel revolution 17 of 21
+Wheel - State: Low, Time: 3882.512
+Wheel - State: High, Time: 3883.424
+Wheel revolution 18 of 21
+Wheel - State: Low, Time: 3883.447
+Wheel - State: High, Time: 3884.871
+Wheel revolution 19 of 21
+Wheel - State: Low, Time: 3884.895
+Wheel - State: High, Time: 3885.862
+Wheel revolution 20 of 21
+Wheel - State: Low, Time: 3885.886
+Wheel - State: High, Time: 3886.876
+Wheel revolution 21 of 21
+Wheel - State: Low, Time: 3886.899
+Image - Name: Checkerboard-contrast_1.png, Hash: fc32dedaf5bb8c361864dee8534809d9, Duration: 5.000, Time: 3886.988
+Wheel - State: High, Time: 3887.810
+Wheel - State: Low, Time: 3887.833
+Wheel - State: High, Time: 3889.680
+Wheel - State: Low, Time: 3889.703
+Wheel - State: High, Time: 3893.377
+Wheel - State: Low, Time: 3893.400
+Image - Name: Checkerboard-contrast_2.png, Hash: c1f727703e1104d4451dacd014f5967c, Duration: 5.000, Time: 3893.450
+Wheel - State: High, Time: 3894.288
+Wheel - State: Low, Time: 3894.311
+Wheel - State: High, Time: 3895.353
+Wheel - State: Low, Time: 3895.376
+Wheel - State: High, Time: 3896.202
+Wheel - State: Low, Time: 3896.225
+Wheel - State: High, Time: 3897.453
+Wheel - State: Low, Time: 3897.476
+Wheel - State: High, Time: 3898.402
+Wheel - State: Low, Time: 3898.424
+Image - Name: Checkerboard-contrast_4.png, Hash: 63e3721c14ce35da5fab4b61b1c484d7, Duration: 5.000, Time: 3898.473
+Wheel - State: High, Time: 3899.831
+Wheel - State: Low, Time: 3899.854
+Wheel - State: High, Time: 3900.786
+Wheel - State: Low, Time: 3900.808
+Wheel - State: High, Time: 3902.028
+Wheel - State: Low, Time: 3902.051
+Wheel - State: High, Time: 3903.210
+Wheel - State: Low, Time: 3903.233
+Wheel - State: High, Time: 3904.116
+Wheel - State: Low, Time: 3904.139
+Image - Name: Checkerboard-contrast_7.png, Hash: 2db84a7fb7009f5884ba302c5a994f59, Duration: 5.000, Time: 3904.192
+Wheel - State: High, Time: 3905.165
+Wheel - State: Low, Time: 3905.189
+Wheel - State: High, Time: 3906.062
+Wheel - State: Low, Time: 3906.085
+Image - Name: Solid.png, Hash: 64930c698c01ce4f704551ce6db48ab5, Duration: 5.000, Time: 3934.308
+Door - State: Low, Time: 3952.350
+Door - State: High, Time: 3953.008
+Wheel - State: High, Time: 3989.488
+Wheel revolution 1 of 47
+Wheel - State: Low, Time: 3989.512
+Wheel - State: High, Time: 3990.634
+Wheel revolution 2 of 47
+Wheel - State: Low, Time: 3990.656
+Door - State: Low, Time: 4000.541
+Door - State: High, Time: 4010.646
+Wheel - State: High, Time: 4261.547
+Wheel revolution 1 of 10
+Wheel - State: Low, Time: 4261.570
+Wheel - State: High, Time: 4267.222
+Wheel revolution 1 of 36
+Wheel - State: Low, Time: 4267.246
+Wheel - State: High, Time: 4290.703
+Wheel revolution 1 of 48
+Wheel - State: Low, Time: 4290.725
+Wheel - State: High, Time: 4294.618
+Wheel revolution 2 of 48
+Wheel - State: Low, Time: 4294.642
+Wheel - State: High, Time: 4299.309
+Wheel revolution 3 of 48
+Wheel - State: Low, Time: 4299.333
+Wheel - State: High, Time: 9452.516
+Wheel revolution 1 of 41
+Wheel - State: Low, Time: 9452.538
+Wheel - State: High, Time: 9457.319
+Wheel revolution 2 of 41
+Wheel - State: Low, Time: 9457.342
+Wheel - State: High, Time: 9461.642
+Wheel revolution 3 of 41
+Wheel - State: Low, Time: 9461.664
+Wheel - State: High, Time: 9468.311
+Wheel revolution 1 of 50
+Wheel - State: Low, Time: 9468.334
+Wheel - State: High, Time: 9652.165
+Wheel revolution 1 of 41
+Wheel - State: Low, Time: 9652.188
+Wheel - State: High, Time: 9653.693
+Wheel revolution 2 of 41
+Wheel - State: Low, Time: 9653.715
+Wheel - State: High, Time: 9657.894
+Wheel revolution 3 of 41
+Wheel - State: Low, Time: 9657.916
+Wheel - State: High, Time: 9659.309
+Wheel revolution 4 of 41
+Wheel - State: Low, Time: 9659.331
+Wheel - State: High, Time: 9664.780
+Wheel revolution 1 of 41
+Wheel - State: Low, Time: 9664.803
+Wheel - State: High, Time: 9665.889
+Wheel revolution 2 of 41
+Wheel - State: Low, Time: 9665.913
+Wheel - State: High, Time: 9669.449
+Wheel revolution 3 of 41
+Wheel - State: Low, Time: 9669.472
+Wheel - State: High, Time: 9670.599
+Wheel revolution 4 of 41
+Wheel - State: Low, Time: 9670.621
+Wheel - State: High, Time: 9671.990
+Wheel revolution 5 of 41
+Wheel - State: Low, Time: 9672.013
+Wheel - State: High, Time: 9673.475
+Wheel revolution 6 of 41
+Wheel - State: Low, Time: 9673.499
+Wheel - State: High, Time: 9676.082
+Wheel revolution 7 of 41
+Wheel - State: Low, Time: 9676.105
+Wheel - State: High, Time: 9677.185
+Wheel revolution 8 of 41
+Wheel - State: Low, Time: 9677.209
+Wheel - State: High, Time: 9679.079
+Wheel revolution 9 of 41
+Wheel - State: Low, Time: 9679.101
+Wheel - State: High, Time: 9681.376
+Wheel revolution 10 of 41
+Wheel - State: Low, Time: 9681.398
+Wheel - State: High, Time: 9685.759
+Wheel revolution 11 of 41
+Wheel - State: Low, Time: 9685.783
+Wheel - State: High, Time: 9687.020
+Wheel revolution 12 of 41
+Wheel - State: Low, Time: 9687.042
+Wheel - State: High, Time: 9702.575
+Wheel revolution 1 of 30
+Wheel - State: Low, Time: 9702.598
+Wheel - State: High, Time: 9705.095
+Wheel revolution 2 of 30
+Wheel - State: Low, Time: 9705.118
+Wheel - State: High, Time: 9706.474
+Wheel revolution 3 of 30
+Wheel - State: Low, Time: 9706.497
+Wheel - State: High, Time: 9707.725
+Wheel revolution 4 of 30
+Wheel - State: Low, Time: 9707.747
+Wheel - State: High, Time: 9712.127
+Wheel revolution 5 of 30
+Wheel - State: Low, Time: 9712.150
+Wheel - State: High, Time: 9714.194
+Wheel revolution 6 of 30
+Wheel - State: Low, Time: 9714.216
+Wheel - State: High, Time: 9716.251
+Wheel revolution 7 of 30
+Wheel - State: Low, Time: 9716.273
+Wheel - State: High, Time: 9717.516
+Wheel revolution 8 of 30
+Wheel - State: Low, Time: 9717.538
+Wheel - State: High, Time: 9720.134
+Wheel revolution 9 of 30
+Wheel - State: Low, Time: 9720.157
+Wheel - State: High, Time: 9731.645
+Wheel revolution 1 of 12
+Wheel - State: Low, Time: 9731.668
+Wheel - State: High, Time: 9732.875
+Wheel revolution 2 of 12
+Wheel - State: Low, Time: 9732.899
+Wheel - State: High, Time: 9734.081
+Wheel revolution 3 of 12
+Wheel - State: Low, Time: 9734.103
+Wheel - State: High, Time: 9735.283
+Wheel revolution 4 of 12
+Wheel - State: Low, Time: 9735.306
+Wheel - State: High, Time: 9736.692
+Wheel revolution 5 of 12
+Wheel - State: Low, Time: 9736.714
+Wheel - State: High, Time: 9737.654
+Wheel revolution 6 of 12
+Wheel - State: Low, Time: 9737.676
+Wheel - State: High, Time: 9741.147
+Wheel revolution 7 of 12
+Wheel - State: Low, Time: 9741.169
+Wheel - State: High, Time: 9742.117
+Wheel revolution 8 of 12
+Wheel - State: Low, Time: 9742.140
+Wheel - State: High, Time: 9743.301
+Wheel revolution 9 of 12
+Wheel - State: Low, Time: 9743.325
+Wheel - State: High, Time: 9754.674
+Wheel revolution 1 of 45
+Wheel - State: Low, Time: 9754.696
+Wheel - State: High, Time: 9762.221
+Wheel revolution 1 of 49
+Wheel - State: Low, Time: 9762.243
+Wheel - State: High, Time: 9767.932
+Wheel revolution 1 of 19
+Wheel - State: Low, Time: 9767.954
+Wheel - State: High, Time: 9789.004
+Wheel revolution 1 of 34
+Wheel - State: Low, Time: 9789.027
+Wheel - State: High, Time: 9793.507
+Wheel revolution 2 of 34
+Wheel - State: Low, Time: 9793.530
+Wheel - State: High, Time: 9799.630
+Wheel revolution 1 of 44
+Wheel - State: Low, Time: 9799.654
+Wheel - State: High, Time: 9806.117
+Wheel revolution 1 of 20
+Wheel - State: Low, Time: 9806.139
+Successful termination at: 14401.55379319191

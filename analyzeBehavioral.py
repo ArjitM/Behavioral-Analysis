@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
+
 import os
 import subprocess
 import re
 import matplotlib.pyplot as plt
 from enum import Enum, auto
 from itertools import groupby
-import seaborn
 import math
 
 class ImageTypes(Enum):
@@ -99,6 +99,12 @@ class PokeEvent:
         self._pumpTimes = pumpTimes
         self._pumpStates = pumpStates
         self._image = image
+        s, t = self.successfulPokes()
+        if s == 1:
+            self.latency = t[0] - image.latestAppearance()
+        else:
+            self.latency = None
+
 
     def isSuccess(self):
         successful = False
@@ -109,10 +115,12 @@ class PokeEvent:
 
     def successfulPokes(self):
         num = 0
-        for p in self._pumpStates:
+        times = []
+        for p, t in zip(self._pumpStates, self._pumpTimes):
             if p is PumpStates.On:
                 num += 1
-        return num
+                times.append(t)
+        return num, times
 
     def totalPokes(self):
         return int(math.ceil(len(self._doorStates) / 2))
@@ -126,7 +134,7 @@ class PokeEvent:
         for p, t in zip(self._pumpStates, self._pumpTimes):
             if p is PumpStates.On:
                 critical_time = t 
-        if critical_time is None or self.successfulPokes() > 1:
+        if critical_time is None or self.successfulPokes()[0] > 1:
             return self.totalPokes()
         else:
             beforeSuccessful = 0
@@ -184,9 +192,6 @@ class PokeEvent:
             print('Hits/Successful Pokes >> ', hits)
             misses[ri] = ri.appearances - hits
         return misses
-
-class SubPoke(PokeEvent):
-    pass
     
 class Image:
 
@@ -194,7 +199,7 @@ class Image:
         self.name = name
         assert isinstance(imageType, ImageTypes), 'use ImageType enum to assign images'
         self.imageType = imageType
-        self._appearances = 0
+        self._appearanceTimes = []
 
     def __eq__(self, other):
         return self.name == other.name and self.imageType == other.imageType
@@ -202,12 +207,15 @@ class Image:
     def __hash__(self):
         return hash(self.name)
 
-    def incrementAppearances(self):
-        self._appearances += 1
+    def incrementAppearances(self, time):
+        self._appearanceTimes.append(time)
 
     @property
     def appearances(self):
-        return self._appearances
+        return len(self._appearanceTimes)
+
+    def latestAppearance(self):
+        return self._appearanceTimes[-1]
     
 
 def cumulativeSuccess(poke_events):
@@ -226,7 +234,6 @@ def cumulativeSuccess(poke_events):
     plt.xlabel('Poke Events')
     plt.title('Poke Success Rate')
     plt.show()
-
 
 def rpmTimeLapse(rotation_intervals, hour=None):
     if hour is not None:
@@ -253,6 +260,14 @@ def rpmTimeLapse(rotation_intervals, hour=None):
     # plt.xlim(0, 500)
     plt.legend(handles=data)
     plt.show()
+
+def latencies(poke_events):
+    print('\nLatencies (sec):')
+    x = 0
+    for pe in poke_events:
+        if pe.latency is not None:
+            x += 1
+            print(pe.latency)
 
 def pokesPerHour(poke_events):
     hourlyPokes = {} #dictionary stores pokes for each hour
@@ -302,9 +317,13 @@ def pokeStatistics(poke_events, images, filename):
     i=0
     for pe in poke_events:
         i += 1
-        successful += pe.successfulPokes()
+        successful += pe.successfulPokes()[0]
         total += pe.totalPokesNoTimeout()
     rewardImgs = list(filter(lambda im: im.imageType is ImageTypes.Reward, images))
+    try:
+        rewardImgs.sort(key = lambda ri: float(re.findall(r"[-+]?[.]?[\d]+(?:,\d\d\d)*[\.]?\d*(?:[eE][-+]?\d+)?",ri.name)[0])) # sort images bycontrast level
+    except IndexError:
+        pass #image does not have contrast level specified
     misses = PokeEvent.missedRewards(poke_events, rewardImgs)
     # print("Successful Pokes {0}".format(successful))
     # print("Unsuccesful Pokes {0}".format(total - successful))
@@ -366,15 +385,20 @@ for filename in getFileNames('Data/'):  #['Results-TEST.txt']: #
         poke_events = []
         rotation_intervals = []
         skipLine = False
+        curImgName = None
         images = set(initializeImages(allInput, filename)) #convert to set to avoid accidental duplication
         for line in allInput:
             if 'starting' in line:
                 continue
             elif 'Image' in line and 'Name:' in line:
-                curImgName = line[line.find('Name:') + 5: line.find(',')].strip()
+                newImgName = line[line.find('Name:') + 5: line.find(',')].strip()
+                if curImgName == newImgName: #this is a bug
+                    continue
+                else:
+                    curImgName = newImgName
                 currentImg = next((img for img in images if img.name == curImgName), None)
                 assert currentImg is not None, 'Unrecognized image: {0}'.format(curImgName)
-                currentImg.incrementAppearances()
+                currentImg.incrementAppearances(float(re.search("Time: (.*)", line).group(1)))
             elif 'Wheel' in line:
                 if skipLine:
                     skipLine = False
@@ -425,6 +449,7 @@ for filename in getFileNames('Data/'):  #['Results-TEST.txt']: #
     # drinkLengths(poke_events)
     pokeStatistics(poke_events, images, filename)
     pokesPerHour(poke_events)
+    latencies(poke_events)
 
 
 
