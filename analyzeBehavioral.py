@@ -8,6 +8,8 @@ from enum import Enum, auto
 from itertools import groupby
 import math
 
+loc = 'Data/'
+
 class ImageTypes(Enum):
     Reward = "Reward"
     Control = "Control"
@@ -369,7 +371,7 @@ def initializeImages(allInput, filename):
             return images
 
 
-for filename in getFileNames('Data/'):  #['Results-TEST.txt']: #
+for filename in getFileNames(loc):
     with open(filename, 'r') as resultFile:
         allInput = resultFile.readlines()
         currentImg = None
