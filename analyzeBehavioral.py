@@ -370,7 +370,8 @@ def initializeImages(allInput, filename):
         elif "Start of experiment" in line:
             return images
 
-
+if not loc.endswith('/'):
+    loc += '/'
 for filename in getFileNames(loc):
     with open(filename, 'r') as resultFile:
         allInput = resultFile.readlines()
