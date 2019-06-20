@@ -265,11 +265,22 @@ def rpmTimeLapse(rotation_intervals, hour=None):
 
 def latencies(poke_events):
     print('\nLatencies (sec):')
-    x = 0
+    lat_by_image = {}
     for pe in poke_events:
         if pe.latency is not None:
-            x += 1
-            print(pe.latency)
+            if lat_by_image.get(pe.image, None) is not None:
+                lat_by_image[pe.image].append(pe.latency)
+            else:
+                lat_by_image[pe.image] = [pe.latency]
+    imgs = list(lat_by_image.keys())
+    try:
+        imgs.sort(key = lambda ri: float(re.findall(r"[-+]?[.]?[\d]+(?:,\d\d\d)*[\.]?\d*(?:[eE][-+]?\d+)?",ri.name)[0])) # sort images bycontrast level
+    except IndexError:
+        pass #image does not have contrast level specified
+    for k in imgs:
+        print('Latencies for {0}'.format(k.name))
+        for lat in lat_by_image[k]:
+            print(lat)            
 
 def pokesPerHour(poke_events):
     hourlyPokes = {} #dictionary stores pokes for each hour
