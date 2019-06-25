@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 import os
 import subprocess
 import re
@@ -103,10 +104,8 @@ class PokeEvent:
         s, t = self.successfulPokes()
         if s == 1:
             self.latency = t[0] - image.latestAppearance()
-            self.pokeTime = t[0]
         else:
             self.latency = None
-            self.pokeTime = None
 
 
     def isSuccess(self):
@@ -186,7 +185,6 @@ class PokeEvent:
     @staticmethod
     def missedRewards(poke_events, rewardImgs):
         misses = {}
-        outputCSV.write("Image Name, Appearances, Hits, Misses\n")
         for ri in rewardImgs:
             hits = 0
             for pe in poke_events:
@@ -195,7 +193,6 @@ class PokeEvent:
             print('Reward image appearances for {0} >> {1}'.format(ri.name, ri.appearances))
             print('Hits/Successful Pokes >> ', hits)
             misses[ri] = ri.appearances - hits
-            outputCSV.write('{0}, {1}, {2}, {3}\n'.format(ri.name, ri.appearances, hits, ri.appearances - hits))
         return misses
     
 class Image:
@@ -267,25 +264,23 @@ def rpmTimeLapse(rotation_intervals, hour=None):
     plt.show()
 
 def latencies(poke_events):
-    print('\nTime of poke and Latencies (sec):')
-    outputCSV.write('\nImage, Time of poke, Latencies (sec)\n')
-    pe_by_image = {}
+    print('\nLatencies (sec):')
+    lat_by_image = {}
     for pe in poke_events:
         if pe.latency is not None:
-            if pe_by_image.get(pe.image, None) is not None:
-                pe_by_image[pe.image].append(pe)
+            if lat_by_image.get(pe.image, None) is not None:
+                lat_by_image[pe.image].append(pe.latency)
             else:
-                pe_by_image[pe.image] = [pe]
-    imgs = list(pe_by_image.keys()) #convert dictionary keys to list
+                lat_by_image[pe.image] = [pe.latency]
+    imgs = list(lat_by_image.keys())
     try:
         imgs.sort(key = lambda ri: float(re.findall(r"[-+]?[.]?[\d]+(?:,\d\d\d)*[\.]?\d*(?:[eE][-+]?\d+)?",ri.name)[0])) # sort images bycontrast level
     except IndexError:
         pass #image does not have contrast level specified
     for k in imgs:
         print('Latencies for {0}'.format(k.name))
-        for pe in pe_by_image[k]:
-            print(pe.pokeTime, pe.latency)     
-            outputCSV.write('{0}, {1}, {2}\n'.format(k.name, pe.pokeTime, pe.latency))     
+        for lat in lat_by_image[k]:
+            print(lat)            
 
 def pokesPerHour(poke_events):
     hourlyPokes = {} #dictionary stores pokes for each hour
@@ -294,10 +289,8 @@ def pokesPerHour(poke_events):
             if s is PumpStates.On:
                 hr = int(t / 3600) + 1 #convert t to hours, round up for nth hour
                 hourlyPokes[hr] = hourlyPokes.get(hr, 0) + 1 #increment pokes for each hour, default value of 0 supplied to initialize
-    outputCSV.write('\nHour, # Successful Pokes\n')
     for k in range(1, 13):
         print("Successful pokes in hour #{0} >> {1}".format(k, hourlyPokes.get(k, 0)))
-        outputCSV.write('{0}, {1}\n'.format(k, hourlyPokes.get(k, 0)))
 
 def numPokes(poke_events):
     totalPokes = [pe.totalPokes() for pe in poke_events]
@@ -393,76 +386,76 @@ if not loc.endswith('/'):
 for filename in getFileNames(loc):
     with open(filename, 'r') as resultFile:
         allInput = resultFile.readlines()
+        print(allInput)
         print(filename)
-    outputCSV = open(filename.replace('.txt','.csv'), 'w')
-    currentImg = None
-    pokeImg = None
-    runImg = None
-    currentState = None
-    findFloat = re.compile("[+-]?([0-9]*[.])?[0-9]+") #regex to search for a number (float)
-    wheelHalfTimes = []
-    doorStates = []
-    doorTimes = []
-    pumpStates = []
-    pumpTimes = []
-    poke_events = []
-    rotation_intervals = []
-    skipLine = False
-    curImgName = None
-    images = set(initializeImages(allInput, filename)) #convert to set to avoid accidental duplication
-    for line in allInput:
-        if 'starting' in line:
-            continue
-        elif 'Image' in line and 'Name:' in line:
-            newImgName = line[line.find('Name:') + 5: line.find(',')].strip()
-            if curImgName == newImgName: #this is a bug
-                continue
-            else:
-                curImgName = newImgName
-            currentImg = next((img for img in images if img.name == curImgName), None)
-            assert currentImg is not None, 'Unrecognized image: {0}'.format(curImgName)
-            currentImg.incrementAppearances(float(re.search("Time: (.*)", line).group(1)))
-        elif 'Wheel' in line:
-            if skipLine:
-                skipLine = False
-                continue
-            if currentState is Activity.Poking:
-                endPoke(doorStates, doorTimes, pumpTimes, pumpStates, pokeImg, poke_events)
-                doorStates, doorTimes, pumpTimes, pumpStates = [], [], [], []
-            currentState = Activity.Running
-            if 'State:' in line:
-                wheelHalfTimes.append(float(findFloat.search(line).group(0))) #appends times
-            if 'revolution' in line:
-                #need to skip next data point because wheel state does not actually change; it appears to be a bug
-                skipLine = True
-                continue #do NOT reset skipLine boolean
-        elif 'Pump' in line:
-            if re.search("State: (.*), Time", line).group(1) == 'On':
-                pump_state = PumpStates.On 
-                pokeImg = currentImg #the poke event's image should be the image when the pump is on (ie reward image)
-                # if currentState is Activity.Running:
-                #     endRun(wheelHalfTimes, currentImg, rotation_intervals)
-                #     wheelHalfTimes = []
-                #     currentState = Activity.Poking
-            else:
-                pump_state = PumpStates.Off
-            pumpStates.append(pump_state) 
-            pumpTimes.append(float(findFloat.search(line).group(0)))
-        elif 'Door' in line:
-            if currentState is Activity.Running:
-                endRun(wheelHalfTimes, currentImg, rotation_intervals)
-                wheelHalfTimes = []
-            if currentState is not Activity.Poking:
-                pokeImg = currentImg #record image when poke event starts
-            currentState = Activity.Poking
-            door_state = DoorStates.High if re.search("State: (.*), Time", line).group(1) == 'High' else DoorStates.Low
-            doorStates.append(door_state)
-            doorTimes.append(float(findFloat.search(line).group(0)))
+        currentImg = None
+        pokeImg = None
+        runImg = None
+        currentState = None
+        findFloat = re.compile("[+-]?([0-9]*[.])?[0-9]+") #regex to search for a number (float)
+        wheelHalfTimes = []
+        doorStates = []
+        doorTimes = []
+        pumpStates = []
+        pumpTimes = []
+        poke_events = []
+        rotation_intervals = []
         skipLine = False
-    if currentState is Activity.Poking:
-        endPoke(doorStates, doorTimes, pumpTimes, pumpStates, pokeImg, poke_events)
-    else:
-        endRun(wheelHalfTimes, currentImg, rotation_intervals)
+        curImgName = None
+        images = set(initializeImages(allInput, filename)) #convert to set to avoid accidental duplication
+        for line in allInput:
+            if 'starting' in line:
+                continue
+            elif 'Image' in line and 'Name:' in line:
+                newImgName = line[line.find('Name:') + 5: line.find(',')].strip()
+                if curImgName == newImgName: #this is a bug
+                    continue
+                else:
+                    curImgName = newImgName
+                currentImg = next((img for img in images if img.name == curImgName), None)
+                assert currentImg is not None, 'Unrecognized image: {0}'.format(curImgName)
+                currentImg.incrementAppearances(float(re.search("Time: (.*)", line).group(1)))
+            elif 'Wheel' in line:
+                if skipLine:
+                    skipLine = False
+                    continue
+                if currentState is Activity.Poking:
+                    endPoke(doorStates, doorTimes, pumpTimes, pumpStates, pokeImg, poke_events)
+                    doorStates, doorTimes, pumpTimes, pumpStates = [], [], [], []
+                currentState = Activity.Running
+                if 'State:' in line:
+                    wheelHalfTimes.append(float(findFloat.search(line).group(0))) #appends times
+                if 'revolution' in line:
+                    #need to skip next data point because wheel state does not actually change; it appears to be a bug
+                    skipLine = True
+                    continue #do NOT reset skipLine boolean
+            elif 'Pump' in line:
+                if re.search("State: (.*), Time", line).group(1) == 'On':
+                    pump_state = PumpStates.On 
+                    pokeImg = currentImg #the poke event's image should be the image when the pump is on (ie reward image)
+                    # if currentState is Activity.Running:
+                    #     endRun(wheelHalfTimes, currentImg, rotation_intervals)
+                    #     wheelHalfTimes = []
+                    #     currentState = Activity.Poking
+                else:
+                    pump_state = PumpStates.Off
+                pumpStates.append(pump_state) 
+                pumpTimes.append(float(findFloat.search(line).group(0)))
+            elif 'Door' in line:
+                if currentState is Activity.Running:
+                    endRun(wheelHalfTimes, currentImg, rotation_intervals)
+                    wheelHalfTimes = []
+                if currentState is not Activity.Poking:
+                    pokeImg = currentImg #record image when poke event starts
+                currentState = Activity.Poking
+                door_state = DoorStates.High if re.search("State: (.*), Time", line).group(1) == 'High' else DoorStates.Low
+                doorStates.append(door_state)
+                doorTimes.append(float(findFloat.search(line).group(0)))
+            skipLine = False
+        if currentState is Activity.Poking:
+            endPoke(doorStates, doorTimes, pumpTimes, pumpStates, pokeImg, poke_events)
+        else:
+            endRun(wheelHalfTimes, currentImg, rotation_intervals)
     pruneRotationIntervals(rotation_intervals)
 
     ######### ANALYSIS FUNCTION CALLS BEGIN HERE; DO NOT EDIT ABOVE WHEN RUNNING ANALYSIS##############
@@ -473,8 +466,6 @@ for filename in getFileNames(loc):
     pokeStatistics(poke_events, images, filename)
     pokesPerHour(poke_events)
     latencies(poke_events)
-    outputCSV.close() #DO NOT delete this line or data may be corrupted (not just results! DATA!!)
-
 
 
 

@@ -1,0 +1,42 @@
+Image Name, Appearances, Hits, Misses
+Checkerboard.png, 183, 24, 159
+
+Hour, # Successful Pokes
+1, 6
+2, 0
+3, 2
+4, 0
+5, 4
+6, 3
+7, 0
+8, 3
+9, 1
+10, 2
+11, 2
+12, 1
+
+Image, Time of poke, Latencies (sec)
+Checkerboard.png, 221.969, 24.912000000000006
+Checkerboard.png, 1139.832, 11.563000000000102
+Checkerboard.png, 1219.079, 20.592999999999847
+Checkerboard.png, 1272.872, 8.272000000000162
+Checkerboard.png, 1392.304, 28.960000000000036
+Checkerboard.png, 1525.314, 26.12700000000018
+Checkerboard.png, 8420.196, 14.213999999999942
+Checkerboard.png, 8702.481, 11.050999999999476
+Checkerboard.png, 15836.701, 24.34899999999834
+Checkerboard.png, 16002.285, 29.738999999999578
+Checkerboard.png, 16101.684, 14.822000000000116
+Checkerboard.png, 16872.542, 14.184000000001106
+Checkerboard.png, 19842.657, 17.45100000000093
+Checkerboard.png, 20004.645, 14.83299999999872
+Checkerboard.png, 20106.177, 13.597999999998137
+Checkerboard.png, 26127.061, 9.909999999999854
+Checkerboard.png, 27253.221, 17.413000000000466
+Checkerboard.png, 28532.572, 24.98400000000038
+Checkerboard.png, 29773.8, 15.402999999998428
+Checkerboard.png, 32500.834, 14.325999999997293
+Checkerboard.png, 33113.54, 8.213000000003376
+Checkerboard.png, 37511.224, 23.47899999999936
+Checkerboard.png, 38847.242, 29.17199999999866
+Checkerboard.png, 39899.551, 10.048000000002503

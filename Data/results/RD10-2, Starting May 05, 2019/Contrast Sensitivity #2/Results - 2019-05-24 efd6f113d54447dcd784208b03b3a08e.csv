@@ -1,0 +1,33 @@
+Image Name, Appearances, Hits, Misses
+Checkerboard-contrast_1.png, 22, 1, 21
+Checkerboard-contrast_2.png, 19, 3, 16
+Checkerboard-contrast_4.png, 16, 1, 15
+Checkerboard-contrast_7.png, 14, 1, 13
+Checkerboard-contrast_14.png, 13, 2, 11
+Checkerboard-contrast_27.png, 10, 0, 10
+Checkerboard-contrast_52.png, 10, 0, 10
+Checkerboard-contrast_100.png, 10, 0, 10
+
+Hour, # Successful Pokes
+1, 8
+2, 0
+3, 0
+4, 0
+5, 0
+6, 0
+7, 0
+8, 0
+9, 0
+10, 0
+11, 0
+12, 0
+
+Image, Time of poke, Latencies (sec)
+Checkerboard-contrast_1.png, 2411.784, 5.64200000000028
+Checkerboard-contrast_2.png, 2135.825, 2.548999999999978
+Checkerboard-contrast_2.png, 2675.981, 14.025000000000091
+Checkerboard-contrast_2.png, 3514.185, 4.987999999999829
+Checkerboard-contrast_4.png, 1853.777, 1.1230000000000473
+Checkerboard-contrast_7.png, 3175.708, 6.83199999999988
+Checkerboard-contrast_14.png, 940.704, 5.3829999999999245
+Checkerboard-contrast_14.png, 2259.787, 7.80199999999968

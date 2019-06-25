@@ -1,0 +1,46 @@
+Image Name, Appearances, Hits, Misses
+Checkerboard-contrast_1.png, 40, 4, 36
+Checkerboard-contrast_2.png, 34, 0, 34
+Checkerboard-contrast_4.png, 32, 4, 28
+Checkerboard-contrast_7.png, 28, 2, 26
+Checkerboard-contrast_14.png, 26, 2, 24
+Checkerboard-contrast_27.png, 23, 3, 20
+Checkerboard-contrast_52.png, 20, 3, 17
+Checkerboard-contrast_100.png, 17, 3, 14
+
+Hour, # Successful Pokes
+1, 7
+2, 5
+3, 5
+4, 4
+5, 0
+6, 0
+7, 0
+8, 0
+9, 0
+10, 0
+11, 0
+12, 0
+
+Image, Time of poke, Latencies (sec)
+Checkerboard-contrast_1.png, 1683.136, 13.20900000000006
+Checkerboard-contrast_1.png, 3602.741, 3.6779999999998836
+Checkerboard-contrast_1.png, 4163.379, 9.13799999999992
+Checkerboard-contrast_1.png, 10912.682, 22.94000000000051
+Checkerboard-contrast_4.png, 10329.909, 4.9979999999995925
+Checkerboard-contrast_4.png, 10470.861, 6.855000000001382
+Checkerboard-contrast_4.png, 10620.688, 1.2330000000001746
+Checkerboard-contrast_4.png, 10834.471, 4.454999999999927
+Checkerboard-contrast_7.png, 3143.462, 6.585000000000036
+Checkerboard-contrast_7.png, 4773.135, 2.4700000000002547
+Checkerboard-contrast_14.png, 566.431, 11.668000000000006
+Checkerboard-contrast_14.png, 10182.093, 7.1820000000006985
+Checkerboard-contrast_27.png, 1183.717, 8.83400000000006
+Checkerboard-contrast_27.png, 2067.143, 9.925000000000182
+Checkerboard-contrast_27.png, 4532.71, 7.917999999999665
+Checkerboard-contrast_52.png, 1348.653, 23.02500000000009
+Checkerboard-contrast_52.png, 10070.788, 4.371000000001004
+Checkerboard-contrast_52.png, 12440.327, 7.805999999998676
+Checkerboard-contrast_100.png, 2626.778, 19.436999999999898
+Checkerboard-contrast_100.png, 3690.987, 4.666000000000167
+Checkerboard-contrast_100.png, 12175.919, 6.721999999999753

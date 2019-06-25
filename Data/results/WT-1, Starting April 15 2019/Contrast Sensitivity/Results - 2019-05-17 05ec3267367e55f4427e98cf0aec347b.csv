@@ -1,0 +1,56 @@
+Image Name, Appearances, Hits, Misses
+Checkerboard-contrast_1.png, 73, 2, 71
+Checkerboard-contrast_2.png, 71, 1, 70
+Checkerboard-contrast_4.png, 66, 1, 65
+Checkerboard-contrast_7.png, 63, 1, 62
+Checkerboard-contrast_14.png, 62, 3, 59
+Checkerboard-contrast_27.png, 57, 4, 53
+Checkerboard-contrast_52.png, 48, 4, 44
+Checkerboard-contrast_100.png, 38, 15, 23
+
+Hour, # Successful Pokes
+1, 8
+2, 9
+3, 10
+4, 4
+5, 0
+6, 0
+7, 0
+8, 0
+9, 0
+10, 0
+11, 0
+12, 0
+
+Image, Time of poke, Latencies (sec)
+Checkerboard-contrast_1.png, 3488.288, 4.3400000000001455
+Checkerboard-contrast_1.png, 9262.452, 18.759000000000015
+Checkerboard-contrast_2.png, 5948.757, 4.808999999999287
+Checkerboard-contrast_4.png, 4719.195, 8.893999999999323
+Checkerboard-contrast_7.png, 2496.509, 6.6909999999998035
+Checkerboard-contrast_14.png, 762.156, 5.291999999999916
+Checkerboard-contrast_14.png, 2776.294, 6.377999999999702
+Checkerboard-contrast_14.png, 2983.058, 6.974999999999909
+Checkerboard-contrast_27.png, 1553.69, 9.105999999999995
+Checkerboard-contrast_27.png, 8969.815, 3.7620000000006257
+Checkerboard-contrast_27.png, 10738.333, 5.944999999999709
+Checkerboard-contrast_27.png, 11064.6, 5.058000000000902
+Checkerboard-contrast_52.png, 4903.673, 9.404999999999745
+Checkerboard-contrast_52.png, 5885.852, 11.216999999999643
+Checkerboard-contrast_52.png, 7323.487, 7.7849999999998545
+Checkerboard-contrast_52.png, 9194.129, 8.269000000000233
+Checkerboard-contrast_100.png, 932.06, 6.156999999999925
+Checkerboard-contrast_100.png, 1502.719, 20.91800000000012
+Checkerboard-contrast_100.png, 3649.229, 3.8799999999996544
+Checkerboard-contrast_100.png, 4567.941, 6.537999999999556
+Checkerboard-contrast_100.png, 4660.149, 3.149000000000342
+Checkerboard-contrast_100.png, 5220.462, 11.632000000000517
+Checkerboard-contrast_100.png, 5815.549, 9.543999999999869
+Checkerboard-contrast_100.png, 7418.52, 27.394000000000233
+Checkerboard-contrast_100.png, 7719.896, 5.458999999999833
+Checkerboard-contrast_100.png, 7796.119, 5.237999999999374
+Checkerboard-contrast_100.png, 9645.74, 6.682999999999083
+Checkerboard-contrast_100.png, 10180.606, 6.376000000000204
+Checkerboard-contrast_100.png, 10823.413, 4.951000000000931
+Checkerboard-contrast_100.png, 11557.18, 12.915000000000873
+Checkerboard-contrast_100.png, 12805.824, 16.29700000000048
