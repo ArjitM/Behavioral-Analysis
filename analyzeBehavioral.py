@@ -2,7 +2,7 @@
 import os
 import subprocess
 import re
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 from enum import Enum, auto
 from itertools import groupby
 import math
@@ -100,9 +100,10 @@ class PokeEvent:
         self._pumpTimes = pumpTimes
         self._pumpStates = pumpStates
         self._image = image
+        self._imageAppearanceTime = image.latestAppearance()
         s, t = self.successfulPokes()
         if s == 1:
-            self.latency = t[0] - image.latestAppearance()
+            self.latency = t[0] -  self._imageAppearanceTime
             self.pokeTime = t[0]
         else:
             self.latency = None
@@ -122,13 +123,24 @@ class PokeEvent:
         for p, t in zip(self._pumpStates, self._pumpTimes):
             if p is PumpStates.On:
                 num += 1
+                times.append(t - 0.003) #Pump is activated 3 ms after poke occurs
+        return num, times
+
+    def allPokes(self):
+        num = 0
+        times = []
+        for p, t in zip(self._doorStates, self._doorTimes):
+            if p is DoorStates.Low:
+                num += 1
                 times.append(t)
         return num, times
 
-    def totalPokes(self):
-        return int(math.ceil(len(self._doorStates) / 2))
-        #two door states constitute a full poke
-        ##ceil necessary because only door opening documented before poke
+    def unsuccessfulPokes(self):
+        successfulPokes = set(self.successfulPokes()[1])
+        allPokes = set(self.allPokes()[1])
+        unsuccessful = list(allPokes - successfulPokes)
+        unsuccessful.sort()
+        return len(unsuccessful), unsuccessful
 
     def totalPokesNoTimeout(self, grace=30):
         #returns total number of pokes EXCLUDING those that are failed due to image timeout
@@ -138,7 +150,7 @@ class PokeEvent:
             if p is PumpStates.On:
                 critical_time = t 
         if critical_time is None or self.successfulPokes()[0] > 1:
-            return self.totalPokes()
+            return self.allPokes()[0]
         else:
             beforeSuccessful = 0
             for dt in self._doorTimes:
@@ -181,8 +193,11 @@ class PokeEvent:
     @property
     def pumpStates(self):
         return self._pumpStates
-    
 
+    @property
+    def imageAppearanceTime(self):
+        return self._imageAppearanceTime
+    
     @staticmethod
     def missedRewards(poke_events, rewardImgs):
         misses = {}
@@ -200,6 +215,8 @@ class PokeEvent:
     
 class Image:
 
+    appearanceLog = {}
+
     def __init__(self, name, imageType):
         self.name = name
         assert isinstance(imageType, ImageTypes), 'use ImageType enum to assign images'
@@ -214,13 +231,24 @@ class Image:
 
     def incrementAppearances(self, time):
         self._appearanceTimes.append(time)
+        Image.appearanceLog[time] = self
 
     @property
     def appearances(self):
         return len(self._appearanceTimes)
 
+    @property
+    def appearanceTimes(self):
+        return self._appearanceTimes
+    
+
     def latestAppearance(self):
         return self._appearanceTimes[-1]
+
+    @staticmethod
+    def imageAtTime(time):
+        appearances = list(Image.appearanceLog.keys())
+        return Image.appearanceLog[max(filter(lambda k: k < time, appearances))]
     
 
 def cumulativeSuccess(poke_events):
@@ -266,26 +294,40 @@ def rpmTimeLapse(rotation_intervals, hour=None):
     plt.legend(handles=data)
     plt.show()
 
-def latencies(poke_events):
-    print('\nTime of poke and Latencies (sec):')
-    outputCSV.write('\nImage, Time of poke, Latencies (sec)\n')
-    pe_by_image = {}
+def latencies(poke_events, images):
+    print('\nTime of reward, Image, Poke Time, and Latencies (sec):')
+    outputCSV.write('\nTime of reward, Image, Time of poke, Latencies (sec)\n')
+    pe_by_imageAppTime = {} #poke events per image appearance times
     for pe in poke_events:
         if pe.latency is not None:
-            if pe_by_image.get(pe.image, None) is not None:
-                pe_by_image[pe.image].append(pe)
-            else:
-                pe_by_image[pe.image] = [pe]
-    imgs = list(pe_by_image.keys()) #convert dictionary keys to list
-    try:
-        imgs.sort(key = lambda ri: float(re.findall(r"[-+]?[.]?[\d]+(?:,\d\d\d)*[\.]?\d*(?:[eE][-+]?\d+)?",ri.name)[0])) # sort images bycontrast level
-    except IndexError:
-        pass #image does not have contrast level specified
-    for k in imgs:
-        print('Latencies for {0}'.format(k.name))
-        for pe in pe_by_image[k]:
-            print(pe.pokeTime, pe.latency)     
-            outputCSV.write('{0}, {1}, {2}\n'.format(k.name, pe.pokeTime, pe.latency))     
+            pe_by_imageAppTime[pe.imageAppearanceTime] = pe
+    rewardImgs = list(filter(lambda im: im.imageType is ImageTypes.Reward, images))
+    rwdImgAppears = []
+    imgNames = []
+    for ri in rewardImgs:
+        rwdImgAppears.extend(ri.appearanceTimes)
+        imgNames.extend([ri.name] * ri.appearances)
+    rewards = list(zip(rwdImgAppears, imgNames))
+    rewards.sort(key=lambda r: r[0])
+    for ria, img in rewards:
+        pe = pe_by_imageAppTime.get(ria, None)
+        if pe is not None:
+            outputCSV.write('{0}, {1}, {2}, {3}\n'.format(ria, img, pe.pokeTime, pe.latency))
+            print('{0}, {1}, {2}, {3}'.format(ria, img, pe.pokeTime, pe.latency))
+        else:
+            outputCSV.write('{0}, {1}, TIMEOUT\n'.format(ria, img))
+            print('{0}, {1}, TIMEOUT'.format(ria, img))
+
+    # try:
+    #     imgs.sort(key = lambda ri: float(re.findall(r"[-+]?[.]?[\d]+(?:,\d\d\d)*[\.]?\d*(?:[eE][-+]?\d+)?",ri.name)[0])) # sort images bycontrast level
+    # except IndexError:
+    #     pass #image does not have contrast level specified
+    # for k in imgs:
+    #     print('Latencies for {0}'.format(k.name))
+    #     for pe in pe_by_image[k]:
+    #         print(pe.pokeTime, pe.latency)     
+    #         outputCSV.write('{0}, {1}, {2}\n'.format(k.name, pe.pokeTime, pe.latency))     
+
 
 def pokesPerHour(poke_events):
     hourlyPokes = {} #dictionary stores pokes for each hour
@@ -300,8 +342,8 @@ def pokesPerHour(poke_events):
         outputCSV.write('{0}, {1}\n'.format(k, hourlyPokes.get(k, 0)))
 
 def numPokes(poke_events):
-    totalPokes = [pe.totalPokes() for pe in poke_events]
-    plt.hist(totalPokes)
+    allPokes = [pe.allPokes()[0] for pe in poke_events]
+    plt.hist(allPokes)
     plt.xlabel("Number of pokes per poke event")
     plt.ylabel("Frequency")
     plt.show()
@@ -393,7 +435,6 @@ if not loc.endswith('/'):
 for filename in getFileNames(loc):
     with open(filename, 'r') as resultFile:
         allInput = resultFile.readlines()
-        print(filename)
     outputCSV = open(filename.replace('.txt','.csv'), 'w')
     currentImg = None
     pokeImg = None
@@ -410,6 +451,7 @@ for filename in getFileNames(loc):
     skipLine = False
     curImgName = None
     images = set(initializeImages(allInput, filename)) #convert to set to avoid accidental duplication
+    Image.images = images
     for line in allInput:
         if 'starting' in line:
             continue
@@ -472,7 +514,7 @@ for filename in getFileNames(loc):
     # drinkLengths(poke_events)
     pokeStatistics(poke_events, images, filename)
     pokesPerHour(poke_events)
-    latencies(poke_events)
+    latencies(poke_events, images)
     outputCSV.close() #DO NOT delete this line or data may be corrupted (not just results! DATA!!)
 
 
