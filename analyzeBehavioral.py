@@ -281,8 +281,6 @@ def rpmTimeLapse(rotation_intervals, hour=None):
     for rot_ints_eachImage in rot_ints_byImage:
         allSpeeds, allTimes = [], []
         for rot_int in rot_ints_eachImage:
-            # allSpeeds += rot_int.speeds
-            # allTimes += rot_int.halfTimes
             allSpeeds.append(rot_int.avgSpeed())
             allTimes.append(rot_int.midTime)
         img = rot_ints_eachImage[0].image
@@ -450,6 +448,7 @@ for filename in getFileNames(loc):
     rotation_intervals = []
     skipLine = False
     curImgName = None
+    pokeInProgress = False
     images = set(initializeImages(allInput, filename)) #convert to set to avoid accidental duplication
     Image.images = images
     for line in allInput:
@@ -482,19 +481,17 @@ for filename in getFileNames(loc):
             if re.search("State: (.*), Time", line).group(1) == 'On':
                 pump_state = PumpStates.On 
                 pokeImg = currentImg #the poke event's image should be the image when the pump is on (ie reward image)
-                # if currentState is Activity.Running:
-                #     endRun(wheelHalfTimes, currentImg, rotation_intervals)
-                #     wheelHalfTimes = []
-                #     currentState = Activity.Poking
+                pokeInProgress = True #ensure parameters don't change within poke duration
             else:
                 pump_state = PumpStates.Off
+                pokeInProgress = False
             pumpStates.append(pump_state) 
             pumpTimes.append(float(findFloat.search(line).group(0)))
         elif 'Door' in line:
             if currentState is Activity.Running:
                 endRun(wheelHalfTimes, currentImg, rotation_intervals)
                 wheelHalfTimes = []
-            if currentState is not Activity.Poking:
+            if currentState is not Activity.Poking and not pokeInProgress:
                 pokeImg = currentImg #record image when poke event starts
             currentState = Activity.Poking
             door_state = DoorStates.High if re.search("State: (.*), Time", line).group(1) == 'High' else DoorStates.Low

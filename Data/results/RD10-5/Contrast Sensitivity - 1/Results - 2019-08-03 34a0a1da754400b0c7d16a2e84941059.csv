@@ -1,0 +1,959 @@
+Image Name, Appearances, Hits, Misses
+Vertical_Stripes-contrast_1.png, 297, 52, 245
+Vertical_Stripes-contrast_2.png, 246, 54, 192
+Vertical_Stripes-contrast_4.png, 192, 51, 141
+Vertical_Stripes-contrast_7.png, 140, 89, 51
+Vertical_Stripes-contrast_14.png, 51, 41, 10
+Vertical_Stripes-contrast_27.png, 7, 4, 3
+Vertical_Stripes-contrast_52.png, 1, 0, 1
+Vertical_Stripes-contrast_100.png, 0, 0, 0
+
+Hour, # Successful Pokes
+1, 22
+2, 33
+3, 41
+4, 47
+5, 39
+6, 31
+7, 32
+8, 32
+9, 30
+10, 0
+11, 1
+12, 29
+
+Time of reward, Image, Time of poke, Latencies (sec)
+757.342, Vertical_Stripes-contrast_1.png, TIMEOUT
+763.883, Vertical_Stripes-contrast_2.png, TIMEOUT
+868.926, Vertical_Stripes-contrast_1.png, TIMEOUT
+876.379, Vertical_Stripes-contrast_2.png, 877.199, 0.8199999999999363
+978.5, Vertical_Stripes-contrast_1.png, TIMEOUT
+984.532, Vertical_Stripes-contrast_2.png, 988.996, 4.463999999999942
+1034.725, Vertical_Stripes-contrast_1.png, TIMEOUT
+1039.692, Vertical_Stripes-contrast_2.png, TIMEOUT
+1044.828, Vertical_Stripes-contrast_4.png, TIMEOUT
+1050.02, Vertical_Stripes-contrast_7.png, TIMEOUT
+1056.304, Vertical_Stripes-contrast_14.png, 1060.624, 4.319999999999936
+1158.534, Vertical_Stripes-contrast_1.png, 1160.721, 2.186999999999898
+1374.393, Vertical_Stripes-contrast_1.png, TIMEOUT
+1380.103, Vertical_Stripes-contrast_2.png, TIMEOUT
+1385.842, Vertical_Stripes-contrast_4.png, TIMEOUT
+1393.794, Vertical_Stripes-contrast_7.png, 1399.9830000000002, 6.189000000000078
+1449.746, Vertical_Stripes-contrast_1.png, 1455.2340000000002, 5.488000000000056
+1535.422, Vertical_Stripes-contrast_1.png, TIMEOUT
+1541.162, Vertical_Stripes-contrast_2.png, 1544.595, 3.4329999999999927
+1667.094, Vertical_Stripes-contrast_1.png, TIMEOUT
+1672.366, Vertical_Stripes-contrast_2.png, 1678.227, 5.861000000000104
+1679.003, Vertical_Stripes-contrast_4.png, TIMEOUT
+1936.812, Vertical_Stripes-contrast_1.png, TIMEOUT
+1942.191, Vertical_Stripes-contrast_2.png, TIMEOUT
+1947.209, Vertical_Stripes-contrast_4.png, TIMEOUT
+1952.828, Vertical_Stripes-contrast_7.png, 1956.0790000000002, 3.2510000000002037
+2178.616, Vertical_Stripes-contrast_1.png, TIMEOUT
+2184.011, Vertical_Stripes-contrast_2.png, TIMEOUT
+2190.146, Vertical_Stripes-contrast_4.png, 2192.3309999999997, 2.1849999999994907
+2303.33, Vertical_Stripes-contrast_1.png, TIMEOUT
+2309.011, Vertical_Stripes-contrast_2.png, TIMEOUT
+2314.485, Vertical_Stripes-contrast_4.png, 2316.3269999999998, 1.8419999999996435
+2352.564, Vertical_Stripes-contrast_1.png, TIMEOUT
+2357.675, Vertical_Stripes-contrast_2.png, TIMEOUT
+2363.61, Vertical_Stripes-contrast_4.png, 2365.111, 1.500999999999749
+2467.982, Vertical_Stripes-contrast_1.png, TIMEOUT
+2473.314, Vertical_Stripes-contrast_2.png, 2477.3329999999996, 4.018999999999778
+2511.46, Vertical_Stripes-contrast_1.png, 2513.5969999999998, 2.1369999999997162
+2620.837, Vertical_Stripes-contrast_1.png, TIMEOUT
+2757.792, Vertical_Stripes-contrast_1.png, 2759.5629999999996, 1.7709999999997308
+2804.586, Vertical_Stripes-contrast_1.png, TIMEOUT
+2810.078, Vertical_Stripes-contrast_2.png, 2813.165, 3.086999999999989
+3008.483, Vertical_Stripes-contrast_1.png, TIMEOUT
+3013.993, Vertical_Stripes-contrast_2.png, TIMEOUT
+3019.423, Vertical_Stripes-contrast_4.png, TIMEOUT
+3024.837, Vertical_Stripes-contrast_7.png, 3028.1639999999998, 3.326999999999771
+3123.235, Vertical_Stripes-contrast_1.png, TIMEOUT
+3130.184, Vertical_Stripes-contrast_2.png, 3134.066, 3.881999999999607
+3222.624, Vertical_Stripes-contrast_1.png, TIMEOUT
+3227.639, Vertical_Stripes-contrast_2.png, 3233.752, 6.112999999999829
+3268.95, Vertical_Stripes-contrast_1.png, TIMEOUT
+3274.411, Vertical_Stripes-contrast_2.png, 3276.437, 2.02599999999984
+3334.067, Vertical_Stripes-contrast_1.png, TIMEOUT
+3531.532, Vertical_Stripes-contrast_1.png, TIMEOUT
+3536.891, Vertical_Stripes-contrast_2.png, 3538.5539999999996, 1.6629999999995562
+3645.651, Vertical_Stripes-contrast_1.png, TIMEOUT
+3651.138, Vertical_Stripes-contrast_2.png, TIMEOUT
+3656.145, Vertical_Stripes-contrast_4.png, TIMEOUT
+3662.289, Vertical_Stripes-contrast_7.png, 3665.154, 2.8649999999997817
+3689.836, Vertical_Stripes-contrast_1.png, TIMEOUT
+3695.836, Vertical_Stripes-contrast_2.png, TIMEOUT
+3700.855, Vertical_Stripes-contrast_4.png, TIMEOUT
+3706.595, Vertical_Stripes-contrast_7.png, 3710.0319999999997, 3.436999999999898
+3860.954, Vertical_Stripes-contrast_1.png, 3863.5519999999997, 2.5979999999995016
+3933.493, Vertical_Stripes-contrast_1.png, TIMEOUT
+3939.913, Vertical_Stripes-contrast_2.png, 3940.4379999999996, 0.5249999999996362
+3975.34, Vertical_Stripes-contrast_1.png, TIMEOUT
+3980.376, Vertical_Stripes-contrast_2.png, 3985.669, 5.292999999999665
+4026.511, Vertical_Stripes-contrast_1.png, TIMEOUT
+4031.725, Vertical_Stripes-contrast_2.png, 4035.301, 3.576000000000022
+4063.606, Vertical_Stripes-contrast_1.png, 4064.757, 1.15099999999984
+4204.902, Vertical_Stripes-contrast_1.png, TIMEOUT
+4210.662, Vertical_Stripes-contrast_2.png, TIMEOUT
+4215.857, Vertical_Stripes-contrast_4.png, 4221.085, 5.2280000000000655
+4221.954, Vertical_Stripes-contrast_7.png, TIMEOUT
+4425.84, Vertical_Stripes-contrast_1.png, TIMEOUT
+4430.965, Vertical_Stripes-contrast_2.png, 4435.682000000001, 4.717000000000553
+4595.134, Vertical_Stripes-contrast_1.png, 4600.2210000000005, 5.087000000000444
+4742.481, Vertical_Stripes-contrast_1.png, TIMEOUT
+4747.822, Vertical_Stripes-contrast_2.png, TIMEOUT
+4753.44, Vertical_Stripes-contrast_4.png, TIMEOUT
+4758.868, Vertical_Stripes-contrast_7.png, 4763.099, 4.230999999999767
+4814.092, Vertical_Stripes-contrast_1.png, 4814.321, 0.2290000000002692
+4926.864, Vertical_Stripes-contrast_1.png, TIMEOUT
+4932.172, Vertical_Stripes-contrast_2.png, TIMEOUT
+4937.557, Vertical_Stripes-contrast_4.png, 4941.134, 3.5770000000002256
+5072.445, Vertical_Stripes-contrast_1.png, TIMEOUT
+5077.471, Vertical_Stripes-contrast_2.png, TIMEOUT
+5190.795, Vertical_Stripes-contrast_1.png, 5196.792, 5.997000000000298
+5238.665, Vertical_Stripes-contrast_1.png, TIMEOUT
+5243.698, Vertical_Stripes-contrast_2.png, 5245.195000000001, 1.4970000000002983
+5334.702, Vertical_Stripes-contrast_1.png, TIMEOUT
+5340.611, Vertical_Stripes-contrast_2.png, 5345.68, 5.069000000000415
+5527.552, Vertical_Stripes-contrast_1.png, 5535.107, 7.555000000000291
+5666.501, Vertical_Stripes-contrast_1.png, 5669.521000000001, 3.0200000000004366
+5782.034, Vertical_Stripes-contrast_1.png, TIMEOUT
+5787.513, Vertical_Stripes-contrast_2.png, TIMEOUT
+5792.78, Vertical_Stripes-contrast_4.png, 5795.127, 2.347000000000662
+5856.109, Vertical_Stripes-contrast_1.png, TIMEOUT
+5861.746, Vertical_Stripes-contrast_2.png, TIMEOUT
+5867.264, Vertical_Stripes-contrast_4.png, 5872.756, 5.492000000000189
+5954.176, Vertical_Stripes-contrast_1.png, TIMEOUT
+5959.425, Vertical_Stripes-contrast_2.png, 5964.233, 4.807999999999993
+5964.543, Vertical_Stripes-contrast_4.png, TIMEOUT
+6117.186, Vertical_Stripes-contrast_1.png, TIMEOUT
+6122.415, Vertical_Stripes-contrast_2.png, TIMEOUT
+6128.824, Vertical_Stripes-contrast_4.png, 6130.650000000001, 1.8260000000009313
+6200.856, Vertical_Stripes-contrast_1.png, TIMEOUT
+6205.983, Vertical_Stripes-contrast_2.png, TIMEOUT
+6212.504, Vertical_Stripes-contrast_4.png, 6214.405000000001, 1.9010000000007494
+6277.056, Vertical_Stripes-contrast_1.png, 6284.545, 7.4890000000004875
+6332.648, Vertical_Stripes-contrast_1.png, TIMEOUT
+6338.101, Vertical_Stripes-contrast_2.png, TIMEOUT
+6343.609, Vertical_Stripes-contrast_4.png, 6345.997, 2.38799999999992
+6422.638, Vertical_Stripes-contrast_1.png, TIMEOUT
+6427.967, Vertical_Stripes-contrast_2.png, TIMEOUT
+6433.509, Vertical_Stripes-contrast_4.png, 6436.243, 2.7340000000003783
+6573.911, Vertical_Stripes-contrast_1.png, TIMEOUT
+6580.112, Vertical_Stripes-contrast_2.png, 6581.9220000000005, 1.8100000000004002
+6629.954, Vertical_Stripes-contrast_1.png, TIMEOUT
+6635.86, Vertical_Stripes-contrast_2.png, TIMEOUT
+6641.373, Vertical_Stripes-contrast_4.png, TIMEOUT
+6647.819, Vertical_Stripes-contrast_7.png, 6650.287, 2.467999999999847
+6671.0, Vertical_Stripes-contrast_1.png, TIMEOUT
+6676.231, Vertical_Stripes-contrast_2.png, 6681.736, 5.505000000000109
+6682.674, Vertical_Stripes-contrast_4.png, TIMEOUT
+6688.199, Vertical_Stripes-contrast_7.png, TIMEOUT
+7047.889, Vertical_Stripes-contrast_1.png, TIMEOUT
+7053.323, Vertical_Stripes-contrast_2.png, 7059.793000000001, 6.470000000000255
+7080.089, Vertical_Stripes-contrast_1.png, TIMEOUT
+7085.131, Vertical_Stripes-contrast_2.png, TIMEOUT
+7090.682, Vertical_Stripes-contrast_4.png, TIMEOUT
+7098.448, Vertical_Stripes-contrast_7.png, 7100.378000000001, 1.930000000000291
+7142.831, Vertical_Stripes-contrast_1.png, TIMEOUT
+7149.963, Vertical_Stripes-contrast_2.png, TIMEOUT
+7155.154, Vertical_Stripes-contrast_4.png, 7158.156, 3.001999999999498
+7267.164, Vertical_Stripes-contrast_1.png, 7275.952, 8.788000000000466
+7363.578, Vertical_Stripes-contrast_1.png, 7366.0380000000005, 2.4600000000000364
+7435.769, Vertical_Stripes-contrast_1.png, TIMEOUT
+7440.977, Vertical_Stripes-contrast_2.png, TIMEOUT
+7446.582, Vertical_Stripes-contrast_4.png, 7449.694, 3.11200000000008
+7563.673, Vertical_Stripes-contrast_1.png, TIMEOUT
+7569.416, Vertical_Stripes-contrast_2.png, TIMEOUT
+7574.826, Vertical_Stripes-contrast_4.png, TIMEOUT
+7579.985, Vertical_Stripes-contrast_7.png, 7582.602, 2.617000000000189
+7614.134, Vertical_Stripes-contrast_1.png, TIMEOUT
+7619.63, Vertical_Stripes-contrast_2.png, TIMEOUT
+7625.108, Vertical_Stripes-contrast_4.png, 7630.497, 5.389000000000124
+7649.745, Vertical_Stripes-contrast_1.png, TIMEOUT
+7654.718, Vertical_Stripes-contrast_2.png, TIMEOUT
+7660.402, Vertical_Stripes-contrast_4.png, TIMEOUT
+7666.268, Vertical_Stripes-contrast_7.png, 7669.776000000001, 3.5080000000007203
+7754.363, Vertical_Stripes-contrast_1.png, TIMEOUT
+7759.57, Vertical_Stripes-contrast_2.png, TIMEOUT
+7765.309, Vertical_Stripes-contrast_4.png, 7770.072, 4.76299999999992
+7792.104, Vertical_Stripes-contrast_1.png, TIMEOUT
+7798.652, Vertical_Stripes-contrast_2.png, TIMEOUT
+7804.179, Vertical_Stripes-contrast_4.png, 7809.353, 5.173999999999978
+7985.971, Vertical_Stripes-contrast_1.png, TIMEOUT
+7991.7, Vertical_Stripes-contrast_2.png, 7995.76, 4.0600000000004
+8039.907, Vertical_Stripes-contrast_1.png, TIMEOUT
+8045.55, Vertical_Stripes-contrast_2.png, TIMEOUT
+8051.075, Vertical_Stripes-contrast_4.png, TIMEOUT
+8056.591, Vertical_Stripes-contrast_7.png, TIMEOUT
+8062.924, Vertical_Stripes-contrast_14.png, 8065.900000000001, 2.9760000000005675
+8149.262, Vertical_Stripes-contrast_1.png, TIMEOUT
+8154.627, Vertical_Stripes-contrast_2.png, TIMEOUT
+8159.687, Vertical_Stripes-contrast_4.png, TIMEOUT
+8164.812, Vertical_Stripes-contrast_7.png, 8170.084000000001, 5.272000000000844
+8244.565, Vertical_Stripes-contrast_1.png, 8249.705, 5.139999999999418
+8291.309, Vertical_Stripes-contrast_1.png, TIMEOUT
+8296.599, Vertical_Stripes-contrast_2.png, TIMEOUT
+8301.96, Vertical_Stripes-contrast_4.png, TIMEOUT
+8307.473, Vertical_Stripes-contrast_7.png, TIMEOUT
+8313.506, Vertical_Stripes-contrast_14.png, 8315.758, 2.2520000000004075
+8367.339, Vertical_Stripes-contrast_1.png, TIMEOUT
+8372.571, Vertical_Stripes-contrast_2.png, TIMEOUT
+8379.618, Vertical_Stripes-contrast_4.png, 8381.157, 1.5389999999988504
+8436.074, Vertical_Stripes-contrast_1.png, 8443.543, 7.468999999999141
+8588.841, Vertical_Stripes-contrast_1.png, TIMEOUT
+8594.645, Vertical_Stripes-contrast_2.png, TIMEOUT
+8604.191, Vertical_Stripes-contrast_4.png, TIMEOUT
+8610.517, Vertical_Stripes-contrast_7.png, 8612.519999999999, 2.002999999998792
+8640.599, Vertical_Stripes-contrast_1.png, TIMEOUT
+8645.995, Vertical_Stripes-contrast_2.png, TIMEOUT
+8651.43, Vertical_Stripes-contrast_4.png, TIMEOUT
+8656.454, Vertical_Stripes-contrast_7.png, TIMEOUT
+8661.698, Vertical_Stripes-contrast_14.png, 8664.251, 2.5529999999998836
+8760.626, Vertical_Stripes-contrast_1.png, 8763.779999999999, 3.153999999998632
+8820.775, Vertical_Stripes-contrast_1.png, TIMEOUT
+8826.125, Vertical_Stripes-contrast_2.png, TIMEOUT
+8831.861, Vertical_Stripes-contrast_4.png, TIMEOUT
+8839.111, Vertical_Stripes-contrast_7.png, 8845.747, 6.635999999998603
+8891.138, Vertical_Stripes-contrast_1.png, TIMEOUT
+8896.547, Vertical_Stripes-contrast_2.png, TIMEOUT
+8902.576, Vertical_Stripes-contrast_4.png, TIMEOUT
+8908.49, Vertical_Stripes-contrast_7.png, 8912.992999999999, 4.502999999998792
+8944.717, Vertical_Stripes-contrast_1.png, 8949.09, 4.3729999999995925
+9032.519, Vertical_Stripes-contrast_1.png, TIMEOUT
+9037.761, Vertical_Stripes-contrast_2.png, TIMEOUT
+9044.456, Vertical_Stripes-contrast_4.png, TIMEOUT
+9049.825, Vertical_Stripes-contrast_7.png, 9052.97, 3.1449999999986176
+9188.248, Vertical_Stripes-contrast_1.png, 9192.623, 4.375
+9467.855, Vertical_Stripes-contrast_1.png, TIMEOUT
+9472.904, Vertical_Stripes-contrast_2.png, TIMEOUT
+9478.132, Vertical_Stripes-contrast_4.png, TIMEOUT
+9483.82, Vertical_Stripes-contrast_7.png, 9487.625, 3.805000000000291
+9617.57, Vertical_Stripes-contrast_1.png, TIMEOUT
+9622.942, Vertical_Stripes-contrast_2.png, TIMEOUT
+9628.973, Vertical_Stripes-contrast_4.png, TIMEOUT
+9634.591, Vertical_Stripes-contrast_7.png, TIMEOUT
+9640.224, Vertical_Stripes-contrast_14.png, 9642.383, 2.1589999999996508
+9744.219, Vertical_Stripes-contrast_1.png, 9750.581, 6.3620000000009895
+9785.148, Vertical_Stripes-contrast_1.png, TIMEOUT
+9790.516, Vertical_Stripes-contrast_2.png, TIMEOUT
+9795.847, Vertical_Stripes-contrast_4.png, TIMEOUT
+9800.866, Vertical_Stripes-contrast_7.png, 9803.141, 2.274999999999636
+9829.406, Vertical_Stripes-contrast_1.png, 9835.278999999999, 5.872999999997774
+9904.225, Vertical_Stripes-contrast_1.png, TIMEOUT
+9909.838, Vertical_Stripes-contrast_2.png, 9917.121, 7.282999999999447
+9937.272, Vertical_Stripes-contrast_1.png, TIMEOUT
+9943.275, Vertical_Stripes-contrast_2.png, TIMEOUT
+9949.513, Vertical_Stripes-contrast_4.png, TIMEOUT
+9956.159, Vertical_Stripes-contrast_7.png, TIMEOUT
+9961.753, Vertical_Stripes-contrast_14.png, 9963.59, 1.8369999999995343
+10006.91, Vertical_Stripes-contrast_1.png, 10012.536, 5.626000000000204
+10176.487, Vertical_Stripes-contrast_1.png, 10177.668, 1.1810000000004948
+10205.207, Vertical_Stripes-contrast_1.png, TIMEOUT
+10210.451, Vertical_Stripes-contrast_2.png, TIMEOUT
+10215.599, Vertical_Stripes-contrast_4.png, TIMEOUT
+10221.632, Vertical_Stripes-contrast_7.png, 10224.026, 2.394000000000233
+10296.569, Vertical_Stripes-contrast_1.png, TIMEOUT
+10301.779, Vertical_Stripes-contrast_2.png, TIMEOUT
+10307.24, Vertical_Stripes-contrast_4.png, TIMEOUT
+10313.032, Vertical_Stripes-contrast_7.png, 10316.456, 3.4240000000008877
+10339.262, Vertical_Stripes-contrast_1.png, TIMEOUT
+10345.487, Vertical_Stripes-contrast_2.png, TIMEOUT
+10351.418, Vertical_Stripes-contrast_4.png, TIMEOUT
+10357.065, Vertical_Stripes-contrast_7.png, TIMEOUT
+10362.577, Vertical_Stripes-contrast_14.png, 10365.405999999999, 2.8289999999997235
+10426.502, Vertical_Stripes-contrast_1.png, TIMEOUT
+10432.712, Vertical_Stripes-contrast_2.png, TIMEOUT
+10441.443, Vertical_Stripes-contrast_4.png, 10444.955, 3.5120000000006257
+10479.707, Vertical_Stripes-contrast_1.png, TIMEOUT
+10485.273, Vertical_Stripes-contrast_2.png, TIMEOUT
+10491.454, Vertical_Stripes-contrast_4.png, TIMEOUT
+10497.291, Vertical_Stripes-contrast_7.png, TIMEOUT
+10503.23, Vertical_Stripes-contrast_14.png, 10505.393, 2.1630000000004657
+10542.654, Vertical_Stripes-contrast_1.png, TIMEOUT
+10548.723, Vertical_Stripes-contrast_2.png, 10551.006, 2.282999999999447
+10668.401, Vertical_Stripes-contrast_1.png, 10671.567, 3.165999999999258
+10704.86, Vertical_Stripes-contrast_1.png, TIMEOUT
+10710.862, Vertical_Stripes-contrast_2.png, TIMEOUT
+10715.978, Vertical_Stripes-contrast_4.png, 10720.517, 4.539000000000669
+10752.523, Vertical_Stripes-contrast_1.png, TIMEOUT
+10757.95, Vertical_Stripes-contrast_2.png, TIMEOUT
+10763.368, Vertical_Stripes-contrast_4.png, 10765.085, 1.716999999998734
+10824.83, Vertical_Stripes-contrast_1.png, TIMEOUT
+10830.144, Vertical_Stripes-contrast_2.png, 10833.957999999999, 3.8139999999984866
+10876.678, Vertical_Stripes-contrast_1.png, TIMEOUT
+10881.719, Vertical_Stripes-contrast_2.png, 10885.340999999999, 3.621999999999389
+10995.25, Vertical_Stripes-contrast_1.png, TIMEOUT
+11000.307, Vertical_Stripes-contrast_2.png, TIMEOUT
+11006.091, Vertical_Stripes-contrast_4.png, 11010.167, 4.075999999999112
+11047.849, Vertical_Stripes-contrast_1.png, TIMEOUT
+11053.898, Vertical_Stripes-contrast_2.png, TIMEOUT
+11059.808, Vertical_Stripes-contrast_4.png, TIMEOUT
+11065.338, Vertical_Stripes-contrast_7.png, TIMEOUT
+11070.45, Vertical_Stripes-contrast_14.png, 11074.289999999999, 3.8399999999983265
+11127.63, Vertical_Stripes-contrast_1.png, TIMEOUT
+11134.264, Vertical_Stripes-contrast_2.png, TIMEOUT
+11139.38, Vertical_Stripes-contrast_4.png, TIMEOUT
+11145.609, Vertical_Stripes-contrast_7.png, TIMEOUT
+11151.329, Vertical_Stripes-contrast_14.png, 11154.054, 2.725000000000364
+11189.068, Vertical_Stripes-contrast_1.png, TIMEOUT
+11194.495, Vertical_Stripes-contrast_2.png, 11199.042, 4.546999999998661
+11257.929, Vertical_Stripes-contrast_1.png, TIMEOUT
+11263.801, Vertical_Stripes-contrast_2.png, TIMEOUT
+11269.649, Vertical_Stripes-contrast_4.png, TIMEOUT
+11274.745, Vertical_Stripes-contrast_7.png, TIMEOUT
+11280.182, Vertical_Stripes-contrast_14.png, 11286.259, 6.076999999999316
+11334.189, Vertical_Stripes-contrast_1.png, TIMEOUT
+11339.649, Vertical_Stripes-contrast_2.png, TIMEOUT
+11344.923, Vertical_Stripes-contrast_4.png, TIMEOUT
+11350.087, Vertical_Stripes-contrast_7.png, 11355.598, 5.511000000000422
+11413.672, Vertical_Stripes-contrast_1.png, TIMEOUT
+11418.695, Vertical_Stripes-contrast_2.png, TIMEOUT
+11424.306, Vertical_Stripes-contrast_4.png, TIMEOUT
+11429.922, Vertical_Stripes-contrast_7.png, 11432.862, 2.9399999999986903
+11493.626, Vertical_Stripes-contrast_1.png, TIMEOUT
+11498.938, Vertical_Stripes-contrast_2.png, TIMEOUT
+11504.108, Vertical_Stripes-contrast_4.png, TIMEOUT
+11509.283, Vertical_Stripes-contrast_7.png, TIMEOUT
+11514.615, Vertical_Stripes-contrast_14.png, 11516.939999999999, 2.3249999999989086
+11590.795, Vertical_Stripes-contrast_1.png, 11595.706999999999, 4.911999999998443
+11638.388, Vertical_Stripes-contrast_1.png, TIMEOUT
+11643.593, Vertical_Stripes-contrast_2.png, TIMEOUT
+11648.945, Vertical_Stripes-contrast_4.png, TIMEOUT
+11654.143, Vertical_Stripes-contrast_7.png, 11657.046999999999, 2.903999999998632
+11678.439, Vertical_Stripes-contrast_1.png, TIMEOUT
+11684.314, Vertical_Stripes-contrast_2.png, TIMEOUT
+11691.457, Vertical_Stripes-contrast_4.png, TIMEOUT
+11696.772, Vertical_Stripes-contrast_7.png, 11699.760999999999, 2.988999999997759
+11723.467, Vertical_Stripes-contrast_1.png, TIMEOUT
+11729.289, Vertical_Stripes-contrast_2.png, TIMEOUT
+11734.334, Vertical_Stripes-contrast_4.png, TIMEOUT
+11739.861, Vertical_Stripes-contrast_7.png, 11746.517, 6.65599999999904
+11761.657, Vertical_Stripes-contrast_1.png, TIMEOUT
+11767.19, Vertical_Stripes-contrast_2.png, TIMEOUT
+11772.21, Vertical_Stripes-contrast_4.png, 11776.082999999999, 3.8729999999995925
+11814.603, Vertical_Stripes-contrast_1.png, TIMEOUT
+11820.039, Vertical_Stripes-contrast_2.png, TIMEOUT
+11825.836, Vertical_Stripes-contrast_4.png, TIMEOUT
+11831.479, Vertical_Stripes-contrast_7.png, TIMEOUT
+11837.254, Vertical_Stripes-contrast_14.png, 11839.98, 2.7259999999987485
+11976.733, Vertical_Stripes-contrast_1.png, TIMEOUT
+11982.695, Vertical_Stripes-contrast_2.png, TIMEOUT
+11988.091, Vertical_Stripes-contrast_4.png, TIMEOUT
+11994.03, Vertical_Stripes-contrast_7.png, 11997.983999999999, 3.9539999999979045
+12028.041, Vertical_Stripes-contrast_1.png, TIMEOUT
+12034.472, Vertical_Stripes-contrast_2.png, 12035.051, 0.5789999999997235
+12060.274, Vertical_Stripes-contrast_1.png, TIMEOUT
+12066.017, Vertical_Stripes-contrast_2.png, TIMEOUT
+12071.857, Vertical_Stripes-contrast_4.png, TIMEOUT
+12077.487, Vertical_Stripes-contrast_7.png, 12079.083999999999, 1.5969999999997526
+12129.11, Vertical_Stripes-contrast_1.png, TIMEOUT
+12134.462, Vertical_Stripes-contrast_2.png, TIMEOUT
+12139.988, Vertical_Stripes-contrast_4.png, 12143.940999999999, 3.95299999999952
+12293.878, Vertical_Stripes-contrast_1.png, TIMEOUT
+12299.419, Vertical_Stripes-contrast_2.png, TIMEOUT
+12305.449, Vertical_Stripes-contrast_4.png, TIMEOUT
+12311.568, Vertical_Stripes-contrast_7.png, 12316.667, 5.09900000000016
+12359.614, Vertical_Stripes-contrast_1.png, TIMEOUT
+12364.896, Vertical_Stripes-contrast_2.png, TIMEOUT
+12370.33, Vertical_Stripes-contrast_4.png, 12372.921, 2.5910000000003492
+12388.983, Vertical_Stripes-contrast_1.png, TIMEOUT
+12394.848, Vertical_Stripes-contrast_2.png, TIMEOUT
+12400.234, Vertical_Stripes-contrast_4.png, TIMEOUT
+12405.817, Vertical_Stripes-contrast_7.png, 12409.146999999999, 3.3299999999999272
+12422.674, Vertical_Stripes-contrast_1.png, TIMEOUT
+12428.105, Vertical_Stripes-contrast_2.png, TIMEOUT
+12433.337, Vertical_Stripes-contrast_4.png, TIMEOUT
+12438.761, Vertical_Stripes-contrast_7.png, 12443.297999999999, 4.536999999998443
+12521.694, Vertical_Stripes-contrast_1.png, TIMEOUT
+12527.536, Vertical_Stripes-contrast_2.png, 12532.231, 4.694999999999709
+12584.791, Vertical_Stripes-contrast_1.png, TIMEOUT
+12591.187, Vertical_Stripes-contrast_2.png, TIMEOUT
+12597.047, Vertical_Stripes-contrast_4.png, TIMEOUT
+12602.884, Vertical_Stripes-contrast_7.png, TIMEOUT
+12608.393, Vertical_Stripes-contrast_14.png, 12610.648, 2.2549999999991996
+12640.323, Vertical_Stripes-contrast_1.png, TIMEOUT
+12645.864, Vertical_Stripes-contrast_2.png, TIMEOUT
+12651.531, Vertical_Stripes-contrast_4.png, TIMEOUT
+12656.654, Vertical_Stripes-contrast_7.png, TIMEOUT
+12663.833, Vertical_Stripes-contrast_14.png, 12668.466999999999, 4.633999999998196
+12693.92, Vertical_Stripes-contrast_1.png, TIMEOUT
+12698.953, Vertical_Stripes-contrast_2.png, TIMEOUT
+12705.181, Vertical_Stripes-contrast_4.png, 12711.095, 5.91399999999885
+12766.563, Vertical_Stripes-contrast_1.png, TIMEOUT
+12772.237, Vertical_Stripes-contrast_2.png, TIMEOUT
+12777.469, Vertical_Stripes-contrast_4.png, TIMEOUT
+12782.887, Vertical_Stripes-contrast_7.png, 12785.599999999999, 2.712999999997919
+13154.167, Vertical_Stripes-contrast_1.png, TIMEOUT
+13159.373, Vertical_Stripes-contrast_2.png, TIMEOUT
+13164.844, Vertical_Stripes-contrast_4.png, TIMEOUT
+13170.477, Vertical_Stripes-contrast_7.png, TIMEOUT
+13176.271, Vertical_Stripes-contrast_14.png, 13178.505, 2.2339999999985594
+13276.686, Vertical_Stripes-contrast_1.png, TIMEOUT
+13282.13, Vertical_Stripes-contrast_2.png, TIMEOUT
+13287.893, Vertical_Stripes-contrast_4.png, 13290.588, 2.694999999999709
+13329.582, Vertical_Stripes-contrast_1.png, TIMEOUT
+13334.807, Vertical_Stripes-contrast_2.png, TIMEOUT
+13340.204, Vertical_Stripes-contrast_4.png, TIMEOUT
+13345.644, Vertical_Stripes-contrast_7.png, TIMEOUT
+13351.267, Vertical_Stripes-contrast_14.png, 13354.643, 3.3760000000002037
+13407.911, Vertical_Stripes-contrast_1.png, 13410.894, 2.9830000000001746
+13441.354, Vertical_Stripes-contrast_1.png, 13447.520999999999, 6.166999999999462
+13465.778, Vertical_Stripes-contrast_1.png, TIMEOUT
+13471.24, Vertical_Stripes-contrast_2.png, TIMEOUT
+13476.73, Vertical_Stripes-contrast_4.png, TIMEOUT
+13482.433, Vertical_Stripes-contrast_7.png, 13485.179, 2.745999999999185
+13508.996, Vertical_Stripes-contrast_1.png, TIMEOUT
+13514.623, Vertical_Stripes-contrast_2.png, TIMEOUT
+13520.232, Vertical_Stripes-contrast_4.png, 13523.846, 3.613999999999578
+13579.422, Vertical_Stripes-contrast_1.png, 13584.226999999999, 4.804999999998472
+13622.37, Vertical_Stripes-contrast_1.png, TIMEOUT
+13627.396, Vertical_Stripes-contrast_2.png, TIMEOUT
+13632.48, Vertical_Stripes-contrast_4.png, TIMEOUT
+13638.6, Vertical_Stripes-contrast_7.png, 13638.795, 0.19499999999970896
+13657.346, Vertical_Stripes-contrast_1.png, TIMEOUT
+13664.067, Vertical_Stripes-contrast_2.png, TIMEOUT
+13669.462, Vertical_Stripes-contrast_4.png, TIMEOUT
+13675.24, Vertical_Stripes-contrast_7.png, 13677.458999999999, 2.2189999999991414
+13725.275, Vertical_Stripes-contrast_1.png, TIMEOUT
+13731.026, Vertical_Stripes-contrast_2.png, 13734.802, 3.77599999999984
+13751.613, Vertical_Stripes-contrast_1.png, TIMEOUT
+13757.122, Vertical_Stripes-contrast_2.png, TIMEOUT
+13762.228, Vertical_Stripes-contrast_4.png, TIMEOUT
+13767.994, Vertical_Stripes-contrast_7.png, 13768.998, 1.003999999998996
+13822.551, Vertical_Stripes-contrast_1.png, 13823.84, 1.2890000000006694
+13875.851, Vertical_Stripes-contrast_1.png, TIMEOUT
+13880.963, Vertical_Stripes-contrast_2.png, TIMEOUT
+13886.388, Vertical_Stripes-contrast_4.png, TIMEOUT
+13891.867, Vertical_Stripes-contrast_7.png, 13895.581, 3.713999999999942
+13952.264, Vertical_Stripes-contrast_1.png, 13958.438999999998, 6.174999999999272
+13959.227, Vertical_Stripes-contrast_2.png, TIMEOUT
+14114.304, Vertical_Stripes-contrast_1.png, TIMEOUT
+14119.524, Vertical_Stripes-contrast_2.png, TIMEOUT
+14125.504, Vertical_Stripes-contrast_4.png, 14129.654999999999, 4.150999999998021
+14158.328, Vertical_Stripes-contrast_1.png, TIMEOUT
+14164.169, Vertical_Stripes-contrast_2.png, TIMEOUT
+14169.308, Vertical_Stripes-contrast_4.png, TIMEOUT
+14175.534, Vertical_Stripes-contrast_7.png, 14178.154999999999, 2.620999999999185
+14226.012, Vertical_Stripes-contrast_1.png, TIMEOUT
+14234.592, Vertical_Stripes-contrast_2.png, TIMEOUT
+14443.097, Vertical_Stripes-contrast_1.png, TIMEOUT
+14449.036, Vertical_Stripes-contrast_2.png, TIMEOUT
+14454.148, Vertical_Stripes-contrast_4.png, TIMEOUT
+14459.466, Vertical_Stripes-contrast_7.png, TIMEOUT
+14468.095, Vertical_Stripes-contrast_14.png, 14471.399, 3.3040000000000873
+14516.063, Vertical_Stripes-contrast_1.png, TIMEOUT
+14521.757, Vertical_Stripes-contrast_2.png, TIMEOUT
+14528.362, Vertical_Stripes-contrast_4.png, TIMEOUT
+14534.607, Vertical_Stripes-contrast_7.png, TIMEOUT
+14539.718, Vertical_Stripes-contrast_14.png, 14542.713, 2.9949999999989814
+14621.266, Vertical_Stripes-contrast_1.png, TIMEOUT
+14626.663, Vertical_Stripes-contrast_2.png, TIMEOUT
+14632.046, Vertical_Stripes-contrast_4.png, TIMEOUT
+14637.356, Vertical_Stripes-contrast_7.png, 14640.115, 2.7590000000000146
+14692.397, Vertical_Stripes-contrast_1.png, 14693.579, 1.1819999999988795
+14712.773, Vertical_Stripes-contrast_1.png, TIMEOUT
+14718.208, Vertical_Stripes-contrast_2.png, TIMEOUT
+14724.921, Vertical_Stripes-contrast_4.png, TIMEOUT
+14730.942, Vertical_Stripes-contrast_7.png, TIMEOUT
+14736.385, Vertical_Stripes-contrast_14.png, 14738.589, 2.2039999999997235
+14881.769, Vertical_Stripes-contrast_1.png, TIMEOUT
+14888.48, Vertical_Stripes-contrast_2.png, TIMEOUT
+14894.944, Vertical_Stripes-contrast_4.png, TIMEOUT
+14900.728, Vertical_Stripes-contrast_7.png, TIMEOUT
+14905.943, Vertical_Stripes-contrast_14.png, 14908.925, 2.981999999999971
+14989.197, Vertical_Stripes-contrast_1.png, TIMEOUT
+14994.914, Vertical_Stripes-contrast_2.png, TIMEOUT
+15000.322, Vertical_Stripes-contrast_4.png, TIMEOUT
+15005.382, Vertical_Stripes-contrast_7.png, TIMEOUT
+15011.595, Vertical_Stripes-contrast_14.png, TIMEOUT
+15017.501, Vertical_Stripes-contrast_27.png, 15019.856, 2.3549999999995634
+15146.082, Vertical_Stripes-contrast_1.png, TIMEOUT
+15152.198, Vertical_Stripes-contrast_2.png, 15155.822999999999, 3.624999999998181
+15277.314, Vertical_Stripes-contrast_1.png, TIMEOUT
+15282.446, Vertical_Stripes-contrast_2.png, TIMEOUT
+15287.569, Vertical_Stripes-contrast_4.png, 15289.831999999999, 2.2629999999990105
+15357.355, Vertical_Stripes-contrast_1.png, TIMEOUT
+15363.021, Vertical_Stripes-contrast_2.png, TIMEOUT
+15368.825, Vertical_Stripes-contrast_4.png, TIMEOUT
+15374.475, Vertical_Stripes-contrast_7.png, TIMEOUT
+15379.683, Vertical_Stripes-contrast_14.png, 15382.585, 2.9019999999982247
+15432.065, Vertical_Stripes-contrast_1.png, TIMEOUT
+15437.188, Vertical_Stripes-contrast_2.png, TIMEOUT
+15442.433, Vertical_Stripes-contrast_4.png, TIMEOUT
+15448.111, Vertical_Stripes-contrast_7.png, TIMEOUT
+15453.58, Vertical_Stripes-contrast_14.png, 15456.652, 3.0720000000001164
+15474.88, Vertical_Stripes-contrast_1.png, TIMEOUT
+15481.0, Vertical_Stripes-contrast_2.png, 15484.604, 3.6039999999993597
+15529.674, Vertical_Stripes-contrast_1.png, TIMEOUT
+15534.943, Vertical_Stripes-contrast_2.png, TIMEOUT
+15540.162, Vertical_Stripes-contrast_4.png, TIMEOUT
+15545.676, Vertical_Stripes-contrast_7.png, 15548.528999999999, 2.852999999999156
+15649.407, Vertical_Stripes-contrast_1.png, TIMEOUT
+15654.707, Vertical_Stripes-contrast_2.png, TIMEOUT
+15660.257, Vertical_Stripes-contrast_4.png, TIMEOUT
+15666.124, Vertical_Stripes-contrast_7.png, 15669.144, 3.0200000000004366
+15719.117, Vertical_Stripes-contrast_1.png, TIMEOUT
+15724.859, Vertical_Stripes-contrast_2.png, TIMEOUT
+15730.496, Vertical_Stripes-contrast_4.png, TIMEOUT
+15735.902, Vertical_Stripes-contrast_7.png, 15739.88, 3.977999999999156
+15787.533, Vertical_Stripes-contrast_1.png, TIMEOUT
+15792.686, Vertical_Stripes-contrast_2.png, TIMEOUT
+15798.249, Vertical_Stripes-contrast_4.png, TIMEOUT
+15803.578, Vertical_Stripes-contrast_7.png, 15805.474999999999, 1.896999999999025
+15865.516, Vertical_Stripes-contrast_1.png, TIMEOUT
+15870.962, Vertical_Stripes-contrast_2.png, TIMEOUT
+15876.354, Vertical_Stripes-contrast_4.png, 15879.119999999999, 2.7659999999996217
+15906.985, Vertical_Stripes-contrast_1.png, TIMEOUT
+15913.279, Vertical_Stripes-contrast_2.png, TIMEOUT
+15918.931, Vertical_Stripes-contrast_4.png, TIMEOUT
+15924.615, Vertical_Stripes-contrast_7.png, TIMEOUT
+15931.718, Vertical_Stripes-contrast_14.png, 15933.962, 2.2439999999987776
+16034.187, Vertical_Stripes-contrast_1.png, TIMEOUT
+16041.342, Vertical_Stripes-contrast_2.png, TIMEOUT
+16047.272, Vertical_Stripes-contrast_4.png, TIMEOUT
+16053.407, Vertical_Stripes-contrast_7.png, TIMEOUT
+16058.93, Vertical_Stripes-contrast_14.png, 16061.734999999999, 2.804999999998472
+16081.553, Vertical_Stripes-contrast_1.png, TIMEOUT
+16087.141, Vertical_Stripes-contrast_2.png, TIMEOUT
+16092.576, Vertical_Stripes-contrast_4.png, TIMEOUT
+16098.599, Vertical_Stripes-contrast_7.png, 16102.366, 3.7669999999998254
+16145.789, Vertical_Stripes-contrast_1.png, TIMEOUT
+16151.115, Vertical_Stripes-contrast_2.png, TIMEOUT
+16156.551, Vertical_Stripes-contrast_4.png, 16160.973, 4.42200000000048
+16317.41, Vertical_Stripes-contrast_1.png, TIMEOUT
+16324.739, Vertical_Stripes-contrast_2.png, TIMEOUT
+16329.755, Vertical_Stripes-contrast_4.png, TIMEOUT
+16334.989, Vertical_Stripes-contrast_7.png, 16338.398, 3.4089999999996508
+16369.127, Vertical_Stripes-contrast_1.png, TIMEOUT
+16374.41, Vertical_Stripes-contrast_2.png, TIMEOUT
+16380.079, Vertical_Stripes-contrast_4.png, TIMEOUT
+16385.916, Vertical_Stripes-contrast_7.png, TIMEOUT
+16391.543, Vertical_Stripes-contrast_14.png, 16393.488999999998, 1.9459999999962747
+16450.898, Vertical_Stripes-contrast_1.png, TIMEOUT
+16456.184, Vertical_Stripes-contrast_2.png, TIMEOUT
+16461.816, Vertical_Stripes-contrast_4.png, TIMEOUT
+16466.929, Vertical_Stripes-contrast_7.png, TIMEOUT
+16471.932, Vertical_Stripes-contrast_14.png, 16474.18, 2.2479999999995925
+16530.257, Vertical_Stripes-contrast_1.png, TIMEOUT
+16535.292, Vertical_Stripes-contrast_2.png, TIMEOUT
+16540.936, Vertical_Stripes-contrast_4.png, TIMEOUT
+16546.046, Vertical_Stripes-contrast_7.png, 16549.367, 3.3209999999999127
+16578.375, Vertical_Stripes-contrast_1.png, TIMEOUT
+16583.71, Vertical_Stripes-contrast_2.png, TIMEOUT
+16589.443, Vertical_Stripes-contrast_4.png, 16594.065, 4.621999999999389
+16594.849, Vertical_Stripes-contrast_7.png, TIMEOUT
+16841.726, Vertical_Stripes-contrast_1.png, TIMEOUT
+16847.071, Vertical_Stripes-contrast_2.png, TIMEOUT
+16852.388, Vertical_Stripes-contrast_4.png, TIMEOUT
+16857.916, Vertical_Stripes-contrast_7.png, 16860.631999999998, 2.7159999999967113
+16917.074, Vertical_Stripes-contrast_1.png, TIMEOUT
+16922.445, Vertical_Stripes-contrast_2.png, 16923.307, 0.8620000000009895
+16950.995, Vertical_Stripes-contrast_1.png, TIMEOUT
+16956.552, Vertical_Stripes-contrast_2.png, TIMEOUT
+16961.666, Vertical_Stripes-contrast_4.png, TIMEOUT
+16966.778, Vertical_Stripes-contrast_7.png, TIMEOUT
+16971.827, Vertical_Stripes-contrast_14.png, 16973.777, 1.9499999999970896
+17109.101, Vertical_Stripes-contrast_1.png, TIMEOUT
+17114.596, Vertical_Stripes-contrast_2.png, TIMEOUT
+17120.373, Vertical_Stripes-contrast_4.png, TIMEOUT
+17125.761, Vertical_Stripes-contrast_7.png, 17128.242, 2.480999999999767
+17159.312, Vertical_Stripes-contrast_1.png, TIMEOUT
+17164.675, Vertical_Stripes-contrast_2.png, TIMEOUT
+17170.501, Vertical_Stripes-contrast_4.png, TIMEOUT
+17175.525, Vertical_Stripes-contrast_7.png, 17179.015, 3.4899999999979627
+17217.504, Vertical_Stripes-contrast_1.png, TIMEOUT
+17224.563, Vertical_Stripes-contrast_2.png, TIMEOUT
+17230.258, Vertical_Stripes-contrast_4.png, TIMEOUT
+17235.71, Vertical_Stripes-contrast_7.png, 17240.964, 5.254000000000815
+17289.918, Vertical_Stripes-contrast_1.png, 17293.047, 3.128999999997177
+17367.992, Vertical_Stripes-contrast_1.png, 17375.378, 7.386000000002241
+17553.066, Vertical_Stripes-contrast_1.png, TIMEOUT
+17559.69, Vertical_Stripes-contrast_2.png, TIMEOUT
+17565.708, Vertical_Stripes-contrast_4.png, TIMEOUT
+17571.246, Vertical_Stripes-contrast_7.png, 17575.732, 4.486000000000786
+17648.258, Vertical_Stripes-contrast_1.png, TIMEOUT
+17653.372, Vertical_Stripes-contrast_2.png, TIMEOUT
+17659.088, Vertical_Stripes-contrast_4.png, TIMEOUT
+17665.129, Vertical_Stripes-contrast_7.png, TIMEOUT
+17670.365, Vertical_Stripes-contrast_14.png, 17671.948, 1.5829999999987194
+17713.756, Vertical_Stripes-contrast_1.png, TIMEOUT
+17719.284, Vertical_Stripes-contrast_2.png, 17721.668999999998, 2.3849999999983993
+17893.518, Vertical_Stripes-contrast_1.png, 17897.547, 4.028999999998632
+17948.998, Vertical_Stripes-contrast_1.png, TIMEOUT
+17954.894, Vertical_Stripes-contrast_2.png, TIMEOUT
+17960.023, Vertical_Stripes-contrast_4.png, 17962.625, 2.6019999999989523
+17982.647, Vertical_Stripes-contrast_1.png, TIMEOUT
+17988.237, Vertical_Stripes-contrast_2.png, TIMEOUT
+17993.508, Vertical_Stripes-contrast_4.png, TIMEOUT
+17999.234, Vertical_Stripes-contrast_7.png, 18002.953999999998, 3.719999999997526
+18022.137, Vertical_Stripes-contrast_1.png, TIMEOUT
+18027.66, Vertical_Stripes-contrast_2.png, TIMEOUT
+18033.51, Vertical_Stripes-contrast_4.png, TIMEOUT
+18038.83, Vertical_Stripes-contrast_7.png, 18040.8, 1.9699999999975262
+18068.264, Vertical_Stripes-contrast_1.png, TIMEOUT
+18074.185, Vertical_Stripes-contrast_2.png, TIMEOUT
+18080.439, Vertical_Stripes-contrast_4.png, TIMEOUT
+18085.68, Vertical_Stripes-contrast_7.png, 18091.415, 5.735000000000582
+18092.397, Vertical_Stripes-contrast_14.png, TIMEOUT
+18098.424, Vertical_Stripes-contrast_27.png, TIMEOUT
+18561.502, Vertical_Stripes-contrast_1.png, TIMEOUT
+18567.816, Vertical_Stripes-contrast_2.png, TIMEOUT
+18573.572, Vertical_Stripes-contrast_4.png, TIMEOUT
+18579.27, Vertical_Stripes-contrast_7.png, TIMEOUT
+18584.879, Vertical_Stripes-contrast_14.png, TIMEOUT
+18590.843, Vertical_Stripes-contrast_27.png, 18592.952999999998, 2.109999999996944
+18625.157, Vertical_Stripes-contrast_1.png, TIMEOUT
+18633.711, Vertical_Stripes-contrast_2.png, TIMEOUT
+18638.802, Vertical_Stripes-contrast_4.png, TIMEOUT
+18644.078, Vertical_Stripes-contrast_7.png, TIMEOUT
+18649.588, Vertical_Stripes-contrast_14.png, TIMEOUT
+18732.353, Vertical_Stripes-contrast_1.png, TIMEOUT
+18738.659, Vertical_Stripes-contrast_2.png, TIMEOUT
+18745.29, Vertical_Stripes-contrast_4.png, TIMEOUT
+18751.082, Vertical_Stripes-contrast_7.png, 18755.373, 4.291000000001077
+18978.681, Vertical_Stripes-contrast_1.png, TIMEOUT
+18984.067, Vertical_Stripes-contrast_2.png, TIMEOUT
+18989.697, Vertical_Stripes-contrast_4.png, TIMEOUT
+18994.743, Vertical_Stripes-contrast_7.png, TIMEOUT
+19000.388, Vertical_Stripes-contrast_14.png, TIMEOUT
+19006.211, Vertical_Stripes-contrast_27.png, 19008.192, 1.9809999999997672
+19035.252, Vertical_Stripes-contrast_1.png, TIMEOUT
+19041.193, Vertical_Stripes-contrast_2.png, TIMEOUT
+19046.497, Vertical_Stripes-contrast_4.png, TIMEOUT
+19051.871, Vertical_Stripes-contrast_7.png, TIMEOUT
+19057.352, Vertical_Stripes-contrast_14.png, 19062.299, 4.947000000000116
+19195.01, Vertical_Stripes-contrast_1.png, TIMEOUT
+19200.578, Vertical_Stripes-contrast_2.png, TIMEOUT
+19205.789, Vertical_Stripes-contrast_4.png, TIMEOUT
+19211.031, Vertical_Stripes-contrast_7.png, TIMEOUT
+19216.138, Vertical_Stripes-contrast_14.png, 19218.076, 1.9380000000019209
+19244.958, Vertical_Stripes-contrast_1.png, 19247.904, 2.9459999999999127
+19305.922, Vertical_Stripes-contrast_1.png, TIMEOUT
+19311.266, Vertical_Stripes-contrast_2.png, TIMEOUT
+19316.688, Vertical_Stripes-contrast_4.png, TIMEOUT
+19322.727, Vertical_Stripes-contrast_7.png, 19329.211, 6.484000000000378
+19366.65, Vertical_Stripes-contrast_1.png, TIMEOUT
+19371.95, Vertical_Stripes-contrast_2.png, 19376.072, 4.121999999999389
+19419.208, Vertical_Stripes-contrast_1.png, TIMEOUT
+19425.014, Vertical_Stripes-contrast_2.png, TIMEOUT
+19430.141, Vertical_Stripes-contrast_4.png, TIMEOUT
+19435.569, Vertical_Stripes-contrast_7.png, 19438.716, 3.147000000000844
+19518.955, Vertical_Stripes-contrast_1.png, TIMEOUT
+19524.487, Vertical_Stripes-contrast_2.png, 19529.333, 4.84599999999773
+19659.901, Vertical_Stripes-contrast_1.png, TIMEOUT
+19665.628, Vertical_Stripes-contrast_2.png, TIMEOUT
+19671.475, Vertical_Stripes-contrast_4.png, TIMEOUT
+19676.698, Vertical_Stripes-contrast_7.png, TIMEOUT
+19682.184, Vertical_Stripes-contrast_14.png, 19685.134, 2.9499999999970896
+19817.445, Vertical_Stripes-contrast_1.png, 19817.655, 0.20999999999912689
+19944.236, Vertical_Stripes-contrast_1.png, TIMEOUT
+19950.057, Vertical_Stripes-contrast_2.png, TIMEOUT
+19955.26, Vertical_Stripes-contrast_4.png, TIMEOUT
+19960.812, Vertical_Stripes-contrast_7.png, 19964.742, 3.929999999996653
+20063.598, Vertical_Stripes-contrast_1.png, TIMEOUT
+20068.889, Vertical_Stripes-contrast_2.png, TIMEOUT
+20074.935, Vertical_Stripes-contrast_4.png, 20075.012, 0.07699999999749707
+20103.137, Vertical_Stripes-contrast_1.png, TIMEOUT
+20108.98, Vertical_Stripes-contrast_2.png, TIMEOUT
+20114.192, Vertical_Stripes-contrast_4.png, TIMEOUT
+20119.702, Vertical_Stripes-contrast_7.png, TIMEOUT
+20125.144, Vertical_Stripes-contrast_14.png, 20126.865999999998, 1.7219999999979336
+20158.206, Vertical_Stripes-contrast_1.png, TIMEOUT
+20163.232, Vertical_Stripes-contrast_2.png, TIMEOUT
+20169.03, Vertical_Stripes-contrast_4.png, TIMEOUT
+20174.798, Vertical_Stripes-contrast_7.png, 20177.297, 2.4989999999997963
+20203.684, Vertical_Stripes-contrast_1.png, TIMEOUT
+20208.698, Vertical_Stripes-contrast_2.png, TIMEOUT
+20214.15, Vertical_Stripes-contrast_4.png, TIMEOUT
+20219.469, Vertical_Stripes-contrast_7.png, 20223.153, 3.683999999997468
+20242.377, Vertical_Stripes-contrast_1.png, TIMEOUT
+20248.121, Vertical_Stripes-contrast_2.png, TIMEOUT
+20255.866, Vertical_Stripes-contrast_4.png, TIMEOUT
+20261.765, Vertical_Stripes-contrast_7.png, 20262.908, 1.143000000000029
+20355.61, Vertical_Stripes-contrast_1.png, 20356.632999999998, 1.0229999999974098
+20376.021, Vertical_Stripes-contrast_1.png, TIMEOUT
+20382.76, Vertical_Stripes-contrast_2.png, TIMEOUT
+20388.696, Vertical_Stripes-contrast_4.png, 20394.805, 6.109000000000378
+20522.772, Vertical_Stripes-contrast_1.png, TIMEOUT
+20528.796, Vertical_Stripes-contrast_2.png, TIMEOUT
+20534.031, Vertical_Stripes-contrast_4.png, TIMEOUT
+20539.75, Vertical_Stripes-contrast_7.png, 20541.374, 1.6239999999997963
+20583.349, Vertical_Stripes-contrast_1.png, TIMEOUT
+20589.095, Vertical_Stripes-contrast_2.png, 20591.503, 2.407999999999447
+20632.521, Vertical_Stripes-contrast_1.png, TIMEOUT
+20637.517, Vertical_Stripes-contrast_2.png, TIMEOUT
+20642.752, Vertical_Stripes-contrast_4.png, TIMEOUT
+20647.849, Vertical_Stripes-contrast_7.png, 20653.613999999998, 5.764999999999418
+20654.334, Vertical_Stripes-contrast_14.png, TIMEOUT
+20660.323, Vertical_Stripes-contrast_27.png, TIMEOUT
+20667.478, Vertical_Stripes-contrast_52.png, TIMEOUT
+20879.319, Vertical_Stripes-contrast_1.png, TIMEOUT
+20885.188, Vertical_Stripes-contrast_2.png, TIMEOUT
+20891.018, Vertical_Stripes-contrast_4.png, TIMEOUT
+20896.115, Vertical_Stripes-contrast_7.png, 20898.859, 2.7439999999987776
+20935.321, Vertical_Stripes-contrast_1.png, TIMEOUT
+20940.669, Vertical_Stripes-contrast_2.png, TIMEOUT
+20946.024, Vertical_Stripes-contrast_4.png, TIMEOUT
+20951.608, Vertical_Stripes-contrast_7.png, 20954.557, 2.949000000000524
+20976.71, Vertical_Stripes-contrast_1.png, 20981.367, 4.656999999999243
+21022.011, Vertical_Stripes-contrast_1.png, 21025.375, 3.364000000001397
+21045.03, Vertical_Stripes-contrast_1.png, TIMEOUT
+21050.332, Vertical_Stripes-contrast_2.png, TIMEOUT
+21055.685, Vertical_Stripes-contrast_4.png, 21061.63, 5.944999999999709
+21061.766, Vertical_Stripes-contrast_7.png, TIMEOUT
+21068.006, Vertical_Stripes-contrast_14.png, TIMEOUT
+21074.425, Vertical_Stripes-contrast_27.png, TIMEOUT
+21700.698, Vertical_Stripes-contrast_1.png, TIMEOUT
+21706.359, Vertical_Stripes-contrast_2.png, TIMEOUT
+21712.548, Vertical_Stripes-contrast_4.png, TIMEOUT
+21718.575, Vertical_Stripes-contrast_7.png, TIMEOUT
+21724.4, Vertical_Stripes-contrast_14.png, TIMEOUT
+21730.289, Vertical_Stripes-contrast_27.png, 21731.539, 1.25
+21853.672, Vertical_Stripes-contrast_1.png, TIMEOUT
+21859.376, Vertical_Stripes-contrast_2.png, TIMEOUT
+21865.323, Vertical_Stripes-contrast_4.png, TIMEOUT
+21870.931, Vertical_Stripes-contrast_7.png, 21876.763, 5.831999999998516
+21912.354, Vertical_Stripes-contrast_1.png, TIMEOUT
+21917.605, Vertical_Stripes-contrast_2.png, TIMEOUT
+21922.739, Vertical_Stripes-contrast_4.png, TIMEOUT
+21928.899, Vertical_Stripes-contrast_7.png, TIMEOUT
+21934.601, Vertical_Stripes-contrast_14.png, 21937.72, 3.1190000000024156
+22012.133, Vertical_Stripes-contrast_1.png, TIMEOUT
+22018.041, Vertical_Stripes-contrast_2.png, TIMEOUT
+22025.577, Vertical_Stripes-contrast_4.png, 22027.384, 1.8069999999970605
+22058.638, Vertical_Stripes-contrast_1.png, TIMEOUT
+22063.936, Vertical_Stripes-contrast_2.png, TIMEOUT
+22069.681, Vertical_Stripes-contrast_4.png, TIMEOUT
+22075.438, Vertical_Stripes-contrast_7.png, 22078.556, 3.118000000002212
+22260.711, Vertical_Stripes-contrast_1.png, TIMEOUT
+22265.913, Vertical_Stripes-contrast_2.png, TIMEOUT
+22271.278, Vertical_Stripes-contrast_4.png, TIMEOUT
+22276.717, Vertical_Stripes-contrast_7.png, 22280.004, 3.287000000000262
+22361.424, Vertical_Stripes-contrast_1.png, TIMEOUT
+22367.117, Vertical_Stripes-contrast_2.png, TIMEOUT
+22372.239, Vertical_Stripes-contrast_4.png, TIMEOUT
+22377.781, Vertical_Stripes-contrast_7.png, TIMEOUT
+22383.648, Vertical_Stripes-contrast_14.png, 22386.388, 2.7399999999979627
+22689.522, Vertical_Stripes-contrast_1.png, TIMEOUT
+22697.181, Vertical_Stripes-contrast_2.png, 22702.048, 4.86699999999837
+22867.03, Vertical_Stripes-contrast_1.png, TIMEOUT
+22872.217, Vertical_Stripes-contrast_2.png, TIMEOUT
+22878.074, Vertical_Stripes-contrast_4.png, TIMEOUT
+22883.842, Vertical_Stripes-contrast_7.png, TIMEOUT
+22888.885, Vertical_Stripes-contrast_14.png, 22891.0, 2.1150000000016007
+22969.971, Vertical_Stripes-contrast_1.png, TIMEOUT
+22975.602, Vertical_Stripes-contrast_2.png, TIMEOUT
+22981.032, Vertical_Stripes-contrast_4.png, TIMEOUT
+22987.042, Vertical_Stripes-contrast_7.png, TIMEOUT
+22992.483, Vertical_Stripes-contrast_14.png, 22996.692, 4.208999999998923
+23011.746, Vertical_Stripes-contrast_1.png, TIMEOUT
+23017.175, Vertical_Stripes-contrast_2.png, TIMEOUT
+23022.43, Vertical_Stripes-contrast_4.png, TIMEOUT
+23027.893, Vertical_Stripes-contrast_7.png, 23030.974, 3.080999999998312
+23185.448, Vertical_Stripes-contrast_1.png, TIMEOUT
+23192.085, Vertical_Stripes-contrast_2.png, 23193.048, 0.9629999999997381
+23273.719, Vertical_Stripes-contrast_1.png, TIMEOUT
+23279.552, Vertical_Stripes-contrast_2.png, TIMEOUT
+23285.381, Vertical_Stripes-contrast_4.png, TIMEOUT
+23290.721, Vertical_Stripes-contrast_7.png, 23292.974, 2.252999999996973
+23350.376, Vertical_Stripes-contrast_1.png, TIMEOUT
+23355.431, Vertical_Stripes-contrast_2.png, TIMEOUT
+23360.653, Vertical_Stripes-contrast_4.png, TIMEOUT
+23366.564, Vertical_Stripes-contrast_7.png, 23368.48, 1.9160000000010768
+23390.459, Vertical_Stripes-contrast_1.png, TIMEOUT
+23395.635, Vertical_Stripes-contrast_2.png, TIMEOUT
+23400.859, Vertical_Stripes-contrast_4.png, TIMEOUT
+23406.53, Vertical_Stripes-contrast_7.png, 23408.72, 2.1900000000023283
+23450.769, Vertical_Stripes-contrast_1.png, TIMEOUT
+23456.114, Vertical_Stripes-contrast_2.png, 23459.97, 3.855999999999767
+23549.859, Vertical_Stripes-contrast_1.png, 23552.875, 3.0159999999996217
+23577.265, Vertical_Stripes-contrast_1.png, TIMEOUT
+23583.19, Vertical_Stripes-contrast_2.png, TIMEOUT
+23588.849, Vertical_Stripes-contrast_4.png, TIMEOUT
+23594.075, Vertical_Stripes-contrast_7.png, 23597.946, 3.870999999999185
+23656.865, Vertical_Stripes-contrast_1.png, TIMEOUT
+23662.638, Vertical_Stripes-contrast_2.png, 23667.166, 4.528000000002066
+23741.256, Vertical_Stripes-contrast_1.png, 23746.273, 5.016999999999825
+23830.461, Vertical_Stripes-contrast_1.png, TIMEOUT
+23835.498, Vertical_Stripes-contrast_2.png, TIMEOUT
+23840.946, Vertical_Stripes-contrast_4.png, TIMEOUT
+23846.567, Vertical_Stripes-contrast_7.png, 23850.576, 4.0090000000018335
+23918.229, Vertical_Stripes-contrast_1.png, TIMEOUT
+23923.283, Vertical_Stripes-contrast_2.png, 23926.912, 3.629000000000815
+23960.649, Vertical_Stripes-contrast_1.png, TIMEOUT
+23967.053, Vertical_Stripes-contrast_2.png, 23967.317, 0.2639999999992142
+24000.265, Vertical_Stripes-contrast_1.png, TIMEOUT
+24006.376, Vertical_Stripes-contrast_2.png, 24007.224, 0.8479999999981374
+24057.775, Vertical_Stripes-contrast_1.png, 24060.067, 2.2919999999976426
+24178.873, Vertical_Stripes-contrast_1.png, TIMEOUT
+24183.921, Vertical_Stripes-contrast_2.png, TIMEOUT
+24189.112, Vertical_Stripes-contrast_4.png, 24192.182, 3.069999999999709
+24348.765, Vertical_Stripes-contrast_1.png, TIMEOUT
+24354.537, Vertical_Stripes-contrast_2.png, TIMEOUT
+24360.075, Vertical_Stripes-contrast_4.png, TIMEOUT
+24366.088, Vertical_Stripes-contrast_7.png, 24372.128, 6.040000000000873
+24372.147, Vertical_Stripes-contrast_14.png, TIMEOUT
+24464.132, Vertical_Stripes-contrast_1.png, TIMEOUT
+24469.761, Vertical_Stripes-contrast_2.png, TIMEOUT
+24475.644, Vertical_Stripes-contrast_4.png, TIMEOUT
+24481.303, Vertical_Stripes-contrast_7.png, 24485.898999999998, 4.59599999999773
+24518.431, Vertical_Stripes-contrast_1.png, 24521.445, 3.013999999999214
+24762.285, Vertical_Stripes-contrast_1.png, 24767.608, 5.32300000000032
+24826.666, Vertical_Stripes-contrast_1.png, TIMEOUT
+24832.512, Vertical_Stripes-contrast_2.png, TIMEOUT
+24838.317, Vertical_Stripes-contrast_4.png, 24843.22, 4.903000000002066
+24901.251, Vertical_Stripes-contrast_1.png, 24907.11, 5.859000000000378
+24907.517, Vertical_Stripes-contrast_2.png, TIMEOUT
+24915.088, Vertical_Stripes-contrast_4.png, TIMEOUT
+25188.73, Vertical_Stripes-contrast_1.png, TIMEOUT
+25194.603, Vertical_Stripes-contrast_2.png, TIMEOUT
+25200.18, Vertical_Stripes-contrast_4.png, TIMEOUT
+25205.258, Vertical_Stripes-contrast_7.png, 25209.256999999998, 3.9989999999961583
+25248.265, Vertical_Stripes-contrast_1.png, TIMEOUT
+25254.044, Vertical_Stripes-contrast_2.png, TIMEOUT
+25259.876, Vertical_Stripes-contrast_4.png, TIMEOUT
+25265.382, Vertical_Stripes-contrast_7.png, 25267.354, 1.9719999999979336
+25462.556, Vertical_Stripes-contrast_1.png, TIMEOUT
+25468.38, Vertical_Stripes-contrast_2.png, TIMEOUT
+25474.359, Vertical_Stripes-contrast_4.png, TIMEOUT
+25479.711, Vertical_Stripes-contrast_7.png, TIMEOUT
+25485.956, Vertical_Stripes-contrast_14.png, 25487.248, 1.2920000000012806
+25570.908, Vertical_Stripes-contrast_1.png, TIMEOUT
+25575.868, Vertical_Stripes-contrast_2.png, TIMEOUT
+25581.026, Vertical_Stripes-contrast_4.png, TIMEOUT
+25586.909, Vertical_Stripes-contrast_7.png, 25590.928, 4.019000000000233
+25611.861, Vertical_Stripes-contrast_1.png, TIMEOUT
+25617.357, Vertical_Stripes-contrast_2.png, TIMEOUT
+25623.58, Vertical_Stripes-contrast_4.png, TIMEOUT
+25630.003, Vertical_Stripes-contrast_7.png, TIMEOUT
+25635.733, Vertical_Stripes-contrast_14.png, 25638.094, 2.361000000000786
+25672.906, Vertical_Stripes-contrast_1.png, TIMEOUT
+25680.376, Vertical_Stripes-contrast_2.png, TIMEOUT
+25685.555, Vertical_Stripes-contrast_4.png, TIMEOUT
+25690.609, Vertical_Stripes-contrast_7.png, 25693.771, 3.162000000000262
+25751.263, Vertical_Stripes-contrast_1.png, TIMEOUT
+25756.409, Vertical_Stripes-contrast_2.png, 25761.635, 5.2259999999987485
+25873.068, Vertical_Stripes-contrast_1.png, TIMEOUT
+25878.878, Vertical_Stripes-contrast_2.png, 25883.404, 4.525999999998021
+25939.485, Vertical_Stripes-contrast_1.png, TIMEOUT
+25944.62, Vertical_Stripes-contrast_2.png, TIMEOUT
+25950.538, Vertical_Stripes-contrast_4.png, TIMEOUT
+25955.988, Vertical_Stripes-contrast_7.png, TIMEOUT
+25963.511, Vertical_Stripes-contrast_14.png, 25965.852, 2.3410000000003492
+26030.808, Vertical_Stripes-contrast_1.png, TIMEOUT
+26036.096, Vertical_Stripes-contrast_2.png, TIMEOUT
+26041.452, Vertical_Stripes-contrast_4.png, 26046.619, 5.166999999997643
+26098.597, Vertical_Stripes-contrast_1.png, 26100.119, 1.521999999997206
+26183.939, Vertical_Stripes-contrast_1.png, TIMEOUT
+26189.754, Vertical_Stripes-contrast_2.png, TIMEOUT
+26195.583, Vertical_Stripes-contrast_4.png, 26201.248, 5.665000000000873
+26234.081, Vertical_Stripes-contrast_1.png, TIMEOUT
+26242.55, Vertical_Stripes-contrast_2.png, TIMEOUT
+26247.716, Vertical_Stripes-contrast_4.png, TIMEOUT
+26253.626, Vertical_Stripes-contrast_7.png, 26255.93, 2.3040000000000873
+26270.618, Vertical_Stripes-contrast_1.png, TIMEOUT
+26276.449, Vertical_Stripes-contrast_2.png, TIMEOUT
+26283.394, Vertical_Stripes-contrast_4.png, TIMEOUT
+26289.149, Vertical_Stripes-contrast_7.png, 26292.808, 3.6589999999996508
+26326.313, Vertical_Stripes-contrast_1.png, TIMEOUT
+26332.046, Vertical_Stripes-contrast_2.png, 26338.352, 6.306000000000495
+26338.861, Vertical_Stripes-contrast_4.png, TIMEOUT
+26348.502, Vertical_Stripes-contrast_7.png, TIMEOUT
+26882.572, Vertical_Stripes-contrast_1.png, 26888.724, 6.151999999998225
+26941.573, Vertical_Stripes-contrast_1.png, TIMEOUT
+26947.343, Vertical_Stripes-contrast_2.png, TIMEOUT
+26954.703, Vertical_Stripes-contrast_4.png, TIMEOUT
+26961.366, Vertical_Stripes-contrast_7.png, TIMEOUT
+26967.696, Vertical_Stripes-contrast_14.png, 26967.927, 0.23099999999976717
+27005.902, Vertical_Stripes-contrast_1.png, TIMEOUT
+27011.662, Vertical_Stripes-contrast_2.png, TIMEOUT
+27017.276, Vertical_Stripes-contrast_4.png, 27019.589, 2.312999999998283
+27217.552, Vertical_Stripes-contrast_1.png, TIMEOUT
+27222.784, Vertical_Stripes-contrast_2.png, TIMEOUT
+27228.376, Vertical_Stripes-contrast_4.png, 27233.533, 5.156999999999243
+27266.078, Vertical_Stripes-contrast_1.png, 27271.799, 5.72099999999773
+27330.626, Vertical_Stripes-contrast_1.png, TIMEOUT
+27336.478, Vertical_Stripes-contrast_2.png, 27340.863, 4.385000000002037
+27490.273, Vertical_Stripes-contrast_1.png, TIMEOUT
+27496.169, Vertical_Stripes-contrast_2.png, 27498.639, 2.469999999997526
+27542.831, Vertical_Stripes-contrast_1.png, TIMEOUT
+27549.26, Vertical_Stripes-contrast_2.png, TIMEOUT
+27554.692, Vertical_Stripes-contrast_4.png, TIMEOUT
+27560.109, Vertical_Stripes-contrast_7.png, 27562.783, 2.6739999999990687
+27616.206, Vertical_Stripes-contrast_1.png, TIMEOUT
+27621.897, Vertical_Stripes-contrast_2.png, 27625.433, 3.536000000000058
+28015.655, Vertical_Stripes-contrast_1.png, TIMEOUT
+28021.528, Vertical_Stripes-contrast_2.png, TIMEOUT
+28026.821, Vertical_Stripes-contrast_4.png, 28028.756999999998, 1.9359999999978754
+28099.715, Vertical_Stripes-contrast_1.png, 28102.926, 3.2109999999993306
+28134.766, Vertical_Stripes-contrast_1.png, TIMEOUT
+28139.898, Vertical_Stripes-contrast_2.png, TIMEOUT
+28145.329, Vertical_Stripes-contrast_4.png, TIMEOUT
+28150.831, Vertical_Stripes-contrast_7.png, 28153.002, 2.1710000000020955
+28290.944, Vertical_Stripes-contrast_1.png, 28293.849, 2.904999999998836
+28320.238, Vertical_Stripes-contrast_1.png, TIMEOUT
+28325.594, Vertical_Stripes-contrast_2.png, TIMEOUT
+28331.027, Vertical_Stripes-contrast_4.png, 28333.68, 2.6530000000020664
+28361.673, Vertical_Stripes-contrast_1.png, TIMEOUT
+28367.568, Vertical_Stripes-contrast_2.png, 28372.957, 5.388999999999214
+28373.358, Vertical_Stripes-contrast_4.png, TIMEOUT
+28746.536, Vertical_Stripes-contrast_1.png, TIMEOUT
+28752.058, Vertical_Stripes-contrast_2.png, TIMEOUT
+28757.251, Vertical_Stripes-contrast_4.png, 28760.245, 2.9939999999987776
+28782.18, Vertical_Stripes-contrast_1.png, TIMEOUT
+28787.638, Vertical_Stripes-contrast_2.png, 28792.022, 4.3840000000018335
+28856.574, Vertical_Stripes-contrast_1.png, TIMEOUT
+28866.216, Vertical_Stripes-contrast_2.png, TIMEOUT
+28871.521, Vertical_Stripes-contrast_4.png, 28874.681, 3.1599999999998545
+28923.372, Vertical_Stripes-contrast_1.png, TIMEOUT
+28928.473, Vertical_Stripes-contrast_2.png, TIMEOUT
+28934.024, Vertical_Stripes-contrast_4.png, TIMEOUT
+28939.862, Vertical_Stripes-contrast_7.png, 28943.2, 3.337999999999738
+28992.956, Vertical_Stripes-contrast_1.png, TIMEOUT
+28998.599, Vertical_Stripes-contrast_2.png, TIMEOUT
+29003.888, Vertical_Stripes-contrast_4.png, 29009.586, 5.69800000000032
+29037.572, Vertical_Stripes-contrast_1.png, TIMEOUT
+29042.802, Vertical_Stripes-contrast_2.png, TIMEOUT
+29048.378, Vertical_Stripes-contrast_4.png, 29051.509, 3.1309999999975844
+29100.39, Vertical_Stripes-contrast_1.png, TIMEOUT
+29106.654, Vertical_Stripes-contrast_2.png, TIMEOUT
+29111.814, Vertical_Stripes-contrast_4.png, TIMEOUT
+29116.945, Vertical_Stripes-contrast_7.png, 29120.318, 3.3729999999995925
+29166.536, Vertical_Stripes-contrast_1.png, TIMEOUT
+29171.816, Vertical_Stripes-contrast_2.png, TIMEOUT
+29177.693, Vertical_Stripes-contrast_4.png, 29178.402, 0.7089999999989232
+29201.221, Vertical_Stripes-contrast_1.png, TIMEOUT
+29207.123, Vertical_Stripes-contrast_2.png, 29210.334, 3.2109999999993306
+29299.744, Vertical_Stripes-contrast_1.png, TIMEOUT
+29305.598, Vertical_Stripes-contrast_2.png, TIMEOUT
+29311.199, Vertical_Stripes-contrast_4.png, 29313.889, 2.6899999999986903
+29371.062, Vertical_Stripes-contrast_1.png, TIMEOUT
+29376.571, Vertical_Stripes-contrast_2.png, TIMEOUT
+29381.937, Vertical_Stripes-contrast_4.png, TIMEOUT
+29387.741, Vertical_Stripes-contrast_7.png, 29393.878, 6.136999999998807
+29507.859, Vertical_Stripes-contrast_1.png, TIMEOUT
+29513.921, Vertical_Stripes-contrast_2.png, TIMEOUT
+29519.547, Vertical_Stripes-contrast_4.png, TIMEOUT
+29524.57, Vertical_Stripes-contrast_7.png, 29527.577999999998, 3.007999999997992
+29610.506, Vertical_Stripes-contrast_1.png, TIMEOUT
+29616.181, Vertical_Stripes-contrast_2.png, TIMEOUT
+29622.196, Vertical_Stripes-contrast_4.png, TIMEOUT
+29628.133, Vertical_Stripes-contrast_7.png, 29631.211, 3.077999999997701
+29668.376, Vertical_Stripes-contrast_1.png, TIMEOUT
+29673.825, Vertical_Stripes-contrast_2.png, 29678.286, 4.460999999999331
+29714.796, Vertical_Stripes-contrast_1.png, TIMEOUT
+29720.562, Vertical_Stripes-contrast_2.png, 29722.925, 2.3629999999975553
+29759.546, Vertical_Stripes-contrast_1.png, TIMEOUT
+29765.098, Vertical_Stripes-contrast_2.png, TIMEOUT
+29770.877, Vertical_Stripes-contrast_4.png, TIMEOUT
+29776.167, Vertical_Stripes-contrast_7.png, 29779.623, 3.455999999998312
+29824.177, Vertical_Stripes-contrast_1.png, 29825.847999999998, 1.6709999999984575
+29954.684, Vertical_Stripes-contrast_1.png, TIMEOUT
+29960.69, Vertical_Stripes-contrast_2.png, TIMEOUT
+29965.855, Vertical_Stripes-contrast_4.png, TIMEOUT
+29971.9, Vertical_Stripes-contrast_7.png, 29976.736, 4.835999999999331
+29977.759, Vertical_Stripes-contrast_14.png, TIMEOUT
+43022.923, Vertical_Stripes-contrast_1.png, 43027.855, 4.9320000000006985
+43028.858, Vertical_Stripes-contrast_2.png, TIMEOUT

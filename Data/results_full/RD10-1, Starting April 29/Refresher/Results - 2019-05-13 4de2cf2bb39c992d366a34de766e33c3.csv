@@ -1,0 +1,275 @@
+Image Name, Appearances, Hits, Misses
+Checkerboard.png, 257, 99, 158
+
+Hour, # Successful Pokes
+1, 4
+2, 7
+3, 7
+4, 6
+5, 10
+6, 8
+7, 12
+8, 9
+9, 13
+10, 17
+11, 5
+12, 1
+
+Time of reward, Image, Time of poke, Latencies (sec)
+420.262, Checkerboard.png, 426.235, 5.973000000000013
+526.546, Checkerboard.png, TIMEOUT
+635.713, Checkerboard.png, TIMEOUT
+677.62, Checkerboard.png, TIMEOUT
+985.268, Checkerboard.png, TIMEOUT
+1661.047, Checkerboard.png, 1676.583, 15.536000000000058
+2843.508, Checkerboard.png, 2862.37, 18.86200000000008
+2926.725, Checkerboard.png, TIMEOUT
+3446.779, Checkerboard.png, 3451.85, 5.070999999999913
+3695.254, Checkerboard.png, 3702.95, 7.695999999999913
+3868.594, Checkerboard.png, 3870.2729999999997, 1.6789999999996326
+4039.002, Checkerboard.png, TIMEOUT
+4407.445, Checkerboard.png, TIMEOUT
+4904.679, Checkerboard.png, 4907.203, 2.524000000000342
+5172.866, Checkerboard.png, TIMEOUT
+5227.409, Checkerboard.png, TIMEOUT
+5327.019, Checkerboard.png, TIMEOUT
+5390.074, Checkerboard.png, TIMEOUT
+5475.666, Checkerboard.png, TIMEOUT
+6006.33, Checkerboard.png, TIMEOUT
+6217.127, Checkerboard.png, TIMEOUT
+6483.113, Checkerboard.png, 6493.227, 10.113999999999578
+6657.863, Checkerboard.png, 6678.977, 21.113999999999578
+6734.919, Checkerboard.png, 6749.737, 14.818000000000211
+6802.558, Checkerboard.png, TIMEOUT
+6890.751, Checkerboard.png, TIMEOUT
+7000.11, Checkerboard.png, 7007.693, 7.583000000000538
+7065.127, Checkerboard.png, TIMEOUT
+7287.043, Checkerboard.png, TIMEOUT
+7468.241, Checkerboard.png, TIMEOUT
+7524.023, Checkerboard.png, TIMEOUT
+7648.769, Checkerboard.png, TIMEOUT
+7837.654, Checkerboard.png, TIMEOUT
+7899.048, Checkerboard.png, TIMEOUT
+8031.464, Checkerboard.png, TIMEOUT
+8321.512, Checkerboard.png, TIMEOUT
+8533.88, Checkerboard.png, 8558.392, 24.512000000000626
+8820.508, Checkerboard.png, TIMEOUT
+8905.128, Checkerboard.png, TIMEOUT
+9069.459, Checkerboard.png, 9086.336, 16.87699999999859
+9546.293, Checkerboard.png, 9550.845, 4.55199999999968
+9666.5, Checkerboard.png, 9696.127999999999, 29.627999999998792
+9733.223, Checkerboard.png, 9754.237, 21.013999999999214
+9854.325, Checkerboard.png, TIMEOUT
+9938.219, Checkerboard.png, TIMEOUT
+9986.205, Checkerboard.png, TIMEOUT
+10110.621, Checkerboard.png, TIMEOUT
+10201.019, Checkerboard.png, TIMEOUT
+10285.341, Checkerboard.png, TIMEOUT
+10423.477, Checkerboard.png, 10431.869999999999, 8.39299999999821
+10503.97, Checkerboard.png, TIMEOUT
+10643.524, Checkerboard.png, 10658.577, 15.052999999999884
+10747.561, Checkerboard.png, TIMEOUT
+10796.226, Checkerboard.png, 10811.907, 15.680999999998676
+10825.957, Checkerboard.png, TIMEOUT
+10875.583, Checkerboard.png, TIMEOUT
+10970.101, Checkerboard.png, TIMEOUT
+11062.61, Checkerboard.png, TIMEOUT
+11124.939, Checkerboard.png, TIMEOUT
+11414.472, Checkerboard.png, TIMEOUT
+11478.011, Checkerboard.png, 11503.306999999999, 25.295999999998457
+11535.625, Checkerboard.png, TIMEOUT
+11612.543, Checkerboard.png, TIMEOUT
+11707.954, Checkerboard.png, TIMEOUT
+11984.87, Checkerboard.png, 12004.485999999999, 19.615999999998166
+12053.175, Checkerboard.png, TIMEOUT
+12111.639, Checkerboard.png, TIMEOUT
+12288.13, Checkerboard.png, 12301.547999999999, 13.417999999999665
+12361.7, Checkerboard.png, TIMEOUT
+12470.023, Checkerboard.png, TIMEOUT
+12546.21, Checkerboard.png, TIMEOUT
+12598.726, Checkerboard.png, TIMEOUT
+12710.046, Checkerboard.png, TIMEOUT
+12751.199, Checkerboard.png, TIMEOUT
+12801.972, Checkerboard.png, TIMEOUT
+13051.618, Checkerboard.png, TIMEOUT
+13247.283, Checkerboard.png, 13261.817, 14.53399999999965
+13454.987, Checkerboard.png, TIMEOUT
+13494.668, Checkerboard.png, 13499.008, 4.3400000000001455
+13538.501, Checkerboard.png, TIMEOUT
+13741.394, Checkerboard.png, TIMEOUT
+14195.816, Checkerboard.png, TIMEOUT
+14400.478, Checkerboard.png, TIMEOUT
+14583.652, Checkerboard.png, TIMEOUT
+14879.687, Checkerboard.png, 14894.038999999999, 14.351999999998952
+15061.42, Checkerboard.png, 15085.201, 23.78099999999904
+15289.871, Checkerboard.png, 15293.957999999999, 4.086999999999534
+15425.135, Checkerboard.png, 15437.32, 12.18499999999949
+15579.518, Checkerboard.png, TIMEOUT
+15698.573, Checkerboard.png, 15703.14, 4.566999999999098
+15931.029, Checkerboard.png, TIMEOUT
+15995.439, Checkerboard.png, TIMEOUT
+16041.651, Checkerboard.png, 16055.828, 14.17699999999968
+16383.384, Checkerboard.png, 16392.721999999998, 9.337999999997919
+16579.3, Checkerboard.png, 16593.911, 14.611000000000786
+17170.078, Checkerboard.png, 17181.997, 11.91899999999805
+17270.518, Checkerboard.png, TIMEOUT
+17445.348, Checkerboard.png, TIMEOUT
+17583.162, Checkerboard.png, TIMEOUT
+17626.632, Checkerboard.png, TIMEOUT
+17691.632, Checkerboard.png, 17694.287, 2.654999999998836
+17843.557, Checkerboard.png, TIMEOUT
+17924.423, Checkerboard.png, TIMEOUT
+18057.604, Checkerboard.png, TIMEOUT
+18099.709, Checkerboard.png, TIMEOUT
+18153.039, Checkerboard.png, 18159.082, 6.042999999997846
+18421.431, Checkerboard.png, TIMEOUT
+18551.062, Checkerboard.png, TIMEOUT
+18595.008, Checkerboard.png, TIMEOUT
+18705.023, Checkerboard.png, TIMEOUT
+18773.476, Checkerboard.png, 18780.283, 6.8070000000006985
+18859.779, Checkerboard.png, TIMEOUT
+18935.313, Checkerboard.png, TIMEOUT
+19236.797, Checkerboard.png, 19244.893, 8.096000000001368
+19438.025, Checkerboard.png, 19444.857, 6.831999999998516
+19619.895, Checkerboard.png, 19643.196, 23.300999999999476
+19945.647, Checkerboard.png, TIMEOUT
+20042.026, Checkerboard.png, TIMEOUT
+20103.712, Checkerboard.png, 20107.52, 3.808000000000902
+20352.713, Checkerboard.png, 20366.768, 14.055000000000291
+20595.04, Checkerboard.png, TIMEOUT
+20703.028, Checkerboard.png, TIMEOUT
+20743.221, Checkerboard.png, TIMEOUT
+20836.768, Checkerboard.png, 20840.400999999998, 3.632999999997992
+20913.642, Checkerboard.png, TIMEOUT
+20992.611, Checkerboard.png, TIMEOUT
+21071.578, Checkerboard.png, TIMEOUT
+21609.21, Checkerboard.png, 21639.078999999998, 29.868999999998778
+21695.733, Checkerboard.png, 21701.740999999998, 6.007999999997992
+21808.313, Checkerboard.png, 21811.754, 3.441000000002532
+21926.754, Checkerboard.png, 21931.635, 4.880999999997584
+21974.954, Checkerboard.png, 21982.531, 7.576999999997497
+22059.653, Checkerboard.png, TIMEOUT
+22125.87, Checkerboard.png, TIMEOUT
+22422.572, Checkerboard.png, TIMEOUT
+22634.251, Checkerboard.png, TIMEOUT
+22793.333, Checkerboard.png, TIMEOUT
+22896.407, Checkerboard.png, TIMEOUT
+23176.922, Checkerboard.png, 23188.234, 11.312000000001717
+23250.84, Checkerboard.png, 23267.273999999998, 16.433999999997468
+23344.642, Checkerboard.png, 23366.833, 22.190999999998894
+23394.836, Checkerboard.png, TIMEOUT
+23571.518, Checkerboard.png, TIMEOUT
+23638.907, Checkerboard.png, TIMEOUT
+23850.895, Checkerboard.png, TIMEOUT
+23892.386, Checkerboard.png, TIMEOUT
+24011.436, Checkerboard.png, TIMEOUT
+24198.348, Checkerboard.png, TIMEOUT
+24350.052, Checkerboard.png, 24352.063, 2.010999999998603
+24433.224, Checkerboard.png, 24435.345999999998, 2.121999999999389
+24612.726, Checkerboard.png, TIMEOUT
+24733.857, Checkerboard.png, 24740.179, 6.322000000000116
+24819.739, Checkerboard.png, 24837.095999999998, 17.356999999996333
+24916.373, Checkerboard.png, TIMEOUT
+24986.842, Checkerboard.png, TIMEOUT
+25028.207, Checkerboard.png, TIMEOUT
+25098.405, Checkerboard.png, TIMEOUT
+25218.657, Checkerboard.png, TIMEOUT
+25334.511, Checkerboard.png, TIMEOUT
+25419.393, Checkerboard.png, TIMEOUT
+25527.296, Checkerboard.png, TIMEOUT
+25620.828, Checkerboard.png, TIMEOUT
+25677.554, Checkerboard.png, TIMEOUT
+25732.406, Checkerboard.png, TIMEOUT
+25807.822, Checkerboard.png, TIMEOUT
+25932.886, Checkerboard.png, TIMEOUT
+25976.623, Checkerboard.png, TIMEOUT
+26081.315, Checkerboard.png, TIMEOUT
+26248.021, Checkerboard.png, 26255.166, 7.145000000000437
+26350.84, Checkerboard.png, TIMEOUT
+26444.196, Checkerboard.png, 26468.297, 24.10099999999875
+26531.578, Checkerboard.png, 26546.894, 15.315999999998894
+26761.801, Checkerboard.png, 26769.352, 7.550999999999476
+26815.035, Checkerboard.png, 26818.198, 3.1630000000004657
+26908.13, Checkerboard.png, TIMEOUT
+27100.826, Checkerboard.png, TIMEOUT
+27183.803, Checkerboard.png, 27202.542999999998, 18.739999999997963
+27329.555, Checkerboard.png, 27333.207, 3.6519999999982247
+27509.343, Checkerboard.png, 27519.226, 9.882999999997992
+27559.932, Checkerboard.png, TIMEOUT
+27684.131, Checkerboard.png, TIMEOUT
+27802.25, Checkerboard.png, TIMEOUT
+28023.865, Checkerboard.png, TIMEOUT
+28120.716, Checkerboard.png, TIMEOUT
+28285.223, Checkerboard.png, TIMEOUT
+28430.376, Checkerboard.png, TIMEOUT
+28493.897, Checkerboard.png, TIMEOUT
+28597.122, Checkerboard.png, 28607.043999999998, 9.921999999998661
+28814.312, Checkerboard.png, 28829.398, 15.08599999999933
+28989.287, Checkerboard.png, 28998.95, 9.663000000000466
+29101.923, Checkerboard.png, TIMEOUT
+29157.99, Checkerboard.png, TIMEOUT
+29222.399, Checkerboard.png, TIMEOUT
+29270.213, Checkerboard.png, TIMEOUT
+29424.518, Checkerboard.png, 29429.076, 4.558000000000902
+29466.807, Checkerboard.png, TIMEOUT
+29541.443, Checkerboard.png, TIMEOUT
+29590.673, Checkerboard.png, 29599.262, 8.588999999999942
+29713.268, Checkerboard.png, 29725.105, 11.836999999999534
+29843.781, Checkerboard.png, 29844.233, 0.45200000000113505
+29913.385, Checkerboard.png, TIMEOUT
+29969.066, Checkerboard.png, TIMEOUT
+30070.885, Checkerboard.png, TIMEOUT
+30399.237, Checkerboard.png, TIMEOUT
+30512.721, Checkerboard.png, 30527.438, 14.716999999996915
+30746.292, Checkerboard.png, 30749.111, 2.8189999999995052
+30786.138, Checkerboard.png, TIMEOUT
+30829.938, Checkerboard.png, 30842.429, 12.491000000001804
+30978.933, Checkerboard.png, TIMEOUT
+31038.601, Checkerboard.png, 31057.736, 19.135000000002037
+31182.739, Checkerboard.png, TIMEOUT
+31267.457, Checkerboard.png, TIMEOUT
+31343.317, Checkerboard.png, 31359.188, 15.870999999999185
+31529.18, Checkerboard.png, TIMEOUT
+31588.612, Checkerboard.png, TIMEOUT
+31972.484, Checkerboard.png, 31980.498, 8.013999999999214
+32282.145, Checkerboard.png, TIMEOUT
+32334.359, Checkerboard.png, 32350.504, 16.145000000000437
+32414.608, Checkerboard.png, 32434.346999999998, 19.73899999999776
+32498.721, Checkerboard.png, 32523.274999999998, 24.55399999999645
+32556.545, Checkerboard.png, TIMEOUT
+32596.165, Checkerboard.png, TIMEOUT
+32677.546, Checkerboard.png, TIMEOUT
+32799.434, Checkerboard.png, TIMEOUT
+32851.973, Checkerboard.png, TIMEOUT
+33037.645, Checkerboard.png, TIMEOUT
+33159.417, Checkerboard.png, 33170.057, 10.639999999999418
+33316.794, Checkerboard.png, TIMEOUT
+33571.819, Checkerboard.png, 33592.599, 20.779999999998836
+33676.352, Checkerboard.png, TIMEOUT
+33720.162, Checkerboard.png, TIMEOUT
+34346.28, Checkerboard.png, 34360.515, 14.235000000000582
+34525.18, Checkerboard.png, 34537.869000000006, 12.689000000005763
+34634.901, Checkerboard.png, 34644.306000000004, 9.405000000006112
+34722.471, Checkerboard.png, 34733.776000000005, 11.305000000007567
+34768.112, Checkerboard.png, 34776.249, 8.137000000002445
+34831.081, Checkerboard.png, 34836.146, 5.065000000002328
+34905.161, Checkerboard.png, 34922.904, 17.743000000002212
+35158.939, Checkerboard.png, TIMEOUT
+35274.321, Checkerboard.png, TIMEOUT
+35353.701, Checkerboard.png, 35358.612, 4.911000000000058
+35453.404, Checkerboard.png, 35467.463, 14.059000000001106
+35533.927, Checkerboard.png, 35556.57, 22.64299999999639
+35577.77, Checkerboard.png, 35578.796, 1.026000000005297
+35628.484, Checkerboard.png, 35639.084, 10.60000000000582
+35652.404, Checkerboard.png, 35677.54, 25.135999999998603
+36009.669, Checkerboard.png, 36015.153000000006, 5.484000000004016
+36321.721, Checkerboard.png, 36334.047000000006, 12.326000000008207
+36652.577, Checkerboard.png, 36664.385, 11.80800000000454
+36700.58, Checkerboard.png, 36706.49600000001, 5.916000000004715
+36779.663, Checkerboard.png, 36785.04, 5.3770000000004075
+36874.208, Checkerboard.png, TIMEOUT
+36932.856, Checkerboard.png, TIMEOUT
+37026.77, Checkerboard.png, TIMEOUT
+37318.654, Checkerboard.png, TIMEOUT
+39202.197, Checkerboard.png, TIMEOUT
+40108.696, Checkerboard.png, 40118.577000000005, 9.881000000001222

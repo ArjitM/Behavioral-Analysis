@@ -1,0 +1,19 @@
+Image Name, Appearances, Hits, Misses
+Vertical_Stripes.png, 1, 51, -50
+
+Hour, # Successful Pokes
+1, 62
+2, 88
+3, 76
+4, 65
+5, 41
+6, 43
+7, 97
+8, 114
+9, 88
+10, 57
+11, 11
+12, 20
+
+Time of reward, Image, Time of poke, Latencies (sec)
+0.223, Vertical_Stripes.png, 24703.181, 24702.958

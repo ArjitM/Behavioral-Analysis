@@ -1,0 +1,19 @@
+Image Name, Appearances, Hits, Misses
+Checkerboard.png, 1, 88, -87
+
+Hour, # Successful Pokes
+1, 38
+2, 38
+3, 42
+4, 38
+5, 51
+6, 98
+7, 120
+8, 101
+9, 100
+10, 41
+11, 81
+12, 125
+
+Time of reward, Image, Time of poke, Latencies (sec)
+0.224, Checkerboard.png, 41435.244000000006, 41435.020000000004

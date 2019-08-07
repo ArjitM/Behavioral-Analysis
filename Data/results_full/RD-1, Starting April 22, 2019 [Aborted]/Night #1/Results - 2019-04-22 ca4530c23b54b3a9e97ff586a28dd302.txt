@@ -1,0 +1,103 @@
+Date: 2019-04-22 18:53:47.172877
+Experiment preset: Day #1
+USB drive ID: CAGE 3A
+Control image set: []
+Reward image set: [Checkerboard.png]
+Minimum wheel revolutions for reward: 0.0
+Maximum wheel revolutions for reward: 0.0
+Maximum duration of reward state (seconds): 43200.0
+Duration of pump "on" state (seconds): 3.0
+Maximum time between wheel events (seconds): 43200.0
+Total duration of the experiment (hours): 12.0
+Pattern frequency for images: 16.0
+Duration of each reward frame (seconds): 43200.0
+Metadata: Type metadata here...
+Protocol hash: ca4530c23b54b3a9e97ff586a28dd302
+Image hashes: 
+Checkerboard.png - c7ef3652d905b84f028e8d3bac85b83b
+
+-------------------------------Start of experiment-----------------------------------------------
+
+Image starting at: 0.015
+Door starting at: 0.015
+Wheel starting at: 0.022
+Image - Name: Checkerboard.png, Hash: c7ef3652d905b84f028e8d3bac85b83b, Time: 1.461
+Wheel - State: High, Time: 40.476
+Wheel - State: Low, Time: 40.500
+Wheel - State: High, Time: 72.075
+Wheel - State: Low, Time: 72.098
+Wheel - State: High, Time: 90.478
+Wheel - State: Low, Time: 90.501
+Wheel - State: High, Time: 128.946
+Wheel - State: Low, Time: 128.969
+Wheel - State: High, Time: 129.704
+Wheel - State: Low, Time: 129.727
+Wheel - State: High, Time: 130.503
+Wheel - State: Low, Time: 130.525
+Wheel - State: High, Time: 131.350
+Wheel - State: Low, Time: 131.373
+Wheel - State: High, Time: 132.254
+Wheel - State: Low, Time: 132.277
+Wheel - State: High, Time: 133.398
+Wheel - State: Low, Time: 133.421
+Wheel - State: High, Time: 134.839
+Wheel - State: Low, Time: 134.861
+Wheel - State: High, Time: 136.932
+Wheel - State: Low, Time: 136.955
+Wheel - State: High, Time: 141.544
+Wheel - State: Low, Time: 141.566
+Door - State: Low, Time: 173.806
+Pump - State: On, Time: 173.809
+Door - State: High, Time: 173.906
+Pump - State: Off, Time: 173.909
+Wheel - State: High, Time: 514.597
+Wheel - State: Low, Time: 514.620
+Wheel - State: High, Time: 527.586
+Wheel - State: Low, Time: 527.609
+Wheel - State: High, Time: 534.489
+Wheel - State: Low, Time: 534.512
+Wheel - State: High, Time: 576.078
+Wheel - State: Low, Time: 576.101
+Wheel - State: High, Time: 581.575
+Wheel - State: Low, Time: 581.598
+Wheel - State: High, Time: 907.424
+Wheel - State: Low, Time: 907.447
+Wheel - State: High, Time: 979.123
+Wheel - State: Low, Time: 979.145
+Wheel - State: High, Time: 1005.952
+Wheel - State: Low, Time: 1005.975
+Wheel - State: High, Time: 4798.685
+Wheel - State: Low, Time: 4798.708
+Wheel - State: High, Time: 6196.667
+Wheel - State: Low, Time: 6196.690
+Wheel - State: High, Time: 16685.882
+Wheel - State: Low, Time: 16685.904
+Wheel - State: High, Time: 25605.291
+Wheel - State: Low, Time: 25605.314
+Wheel - State: High, Time: 30481.391
+Wheel - State: Low, Time: 30481.414
+Wheel - State: High, Time: 31078.353
+Wheel - State: Low, Time: 31078.376
+Wheel - State: High, Time: 31392.387
+Wheel - State: Low, Time: 31392.410
+Wheel - State: High, Time: 31433.388
+Wheel - State: Low, Time: 31433.411
+Wheel - State: High, Time: 31454.408
+Wheel - State: Low, Time: 31454.431
+Wheel - State: High, Time: 31536.114
+Wheel - State: Low, Time: 31536.137
+Wheel - State: High, Time: 31575.718
+Wheel - State: Low, Time: 31575.741
+Wheel - State: High, Time: 31593.893
+Wheel - State: Low, Time: 31593.916
+Wheel - State: High, Time: 31630.891
+Wheel - State: Low, Time: 31630.914
+Wheel - State: High, Time: 31717.461
+Wheel - State: Low, Time: 31717.484
+Wheel - State: High, Time: 37547.994
+Wheel - State: Low, Time: 37548.016
+Wheel - State: High, Time: 37614.498
+Wheel - State: Low, Time: 37614.521
+Wheel - State: High, Time: 37628.401
+Wheel - State: Low, Time: 37628.424
+Successful termination at: 43202.47843790054

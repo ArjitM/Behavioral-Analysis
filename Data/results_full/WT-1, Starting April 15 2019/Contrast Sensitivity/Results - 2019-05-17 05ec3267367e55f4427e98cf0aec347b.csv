@@ -1,0 +1,503 @@
+Image Name, Appearances, Hits, Misses
+Checkerboard-contrast_1.png, 73, 2, 71
+Checkerboard-contrast_2.png, 71, 1, 70
+Checkerboard-contrast_4.png, 66, 1, 65
+Checkerboard-contrast_7.png, 63, 1, 62
+Checkerboard-contrast_14.png, 62, 3, 59
+Checkerboard-contrast_27.png, 57, 4, 53
+Checkerboard-contrast_52.png, 48, 4, 44
+Checkerboard-contrast_100.png, 38, 15, 23
+
+Hour, # Successful Pokes
+1, 8
+2, 9
+3, 10
+4, 4
+5, 0
+6, 0
+7, 0
+8, 0
+9, 0
+10, 0
+11, 0
+12, 0
+
+Time of reward, Image, Time of poke, Latencies (sec)
+598.646, Checkerboard-contrast_1.png, TIMEOUT
+604.364, Checkerboard-contrast_2.png, TIMEOUT
+609.604, Checkerboard-contrast_4.png, TIMEOUT
+620.358, Checkerboard-contrast_7.png, TIMEOUT
+626.286, Checkerboard-contrast_14.png, TIMEOUT
+632.218, Checkerboard-contrast_27.png, TIMEOUT
+637.821, Checkerboard-contrast_52.png, TIMEOUT
+643.239, Checkerboard-contrast_100.png, TIMEOUT
+734.448, Checkerboard-contrast_1.png, TIMEOUT
+739.943, Checkerboard-contrast_2.png, TIMEOUT
+745.037, Checkerboard-contrast_4.png, TIMEOUT
+750.639, Checkerboard-contrast_7.png, TIMEOUT
+756.864, Checkerboard-contrast_14.png, 762.1529999999999, 5.288999999999874
+883.861, Checkerboard-contrast_1.png, TIMEOUT
+889.482, Checkerboard-contrast_2.png, TIMEOUT
+897.232, Checkerboard-contrast_4.png, TIMEOUT
+903.084, Checkerboard-contrast_7.png, TIMEOUT
+909.043, Checkerboard-contrast_14.png, TIMEOUT
+914.74, Checkerboard-contrast_27.png, TIMEOUT
+920.361, Checkerboard-contrast_52.png, TIMEOUT
+925.903, Checkerboard-contrast_100.png, 932.0569999999999, 6.153999999999883
+987.73, Checkerboard-contrast_1.png, TIMEOUT
+993.47, Checkerboard-contrast_2.png, TIMEOUT
+998.551, Checkerboard-contrast_4.png, TIMEOUT
+1004.191, Checkerboard-contrast_7.png, TIMEOUT
+1010.448, Checkerboard-contrast_14.png, TIMEOUT
+1073.023, Checkerboard-contrast_1.png, TIMEOUT
+1078.147, Checkerboard-contrast_2.png, TIMEOUT
+1083.684, Checkerboard-contrast_4.png, TIMEOUT
+1090.008, Checkerboard-contrast_7.png, TIMEOUT
+1095.431, Checkerboard-contrast_14.png, TIMEOUT
+1100.843, Checkerboard-contrast_27.png, TIMEOUT
+1221.994, Checkerboard-contrast_1.png, TIMEOUT
+1233.924, Checkerboard-contrast_2.png, TIMEOUT
+1239.18, Checkerboard-contrast_4.png, TIMEOUT
+1244.552, Checkerboard-contrast_7.png, TIMEOUT
+1250.319, Checkerboard-contrast_14.png, TIMEOUT
+1256.725, Checkerboard-contrast_27.png, TIMEOUT
+1439.671, Checkerboard-contrast_1.png, TIMEOUT
+1444.868, Checkerboard-contrast_2.png, TIMEOUT
+1452.02, Checkerboard-contrast_4.png, TIMEOUT
+1457.058, Checkerboard-contrast_7.png, TIMEOUT
+1462.445, Checkerboard-contrast_14.png, TIMEOUT
+1468.326, Checkerboard-contrast_27.png, TIMEOUT
+1475.878, Checkerboard-contrast_52.png, TIMEOUT
+1481.801, Checkerboard-contrast_100.png, 1502.7160000000001, 20.91500000000019
+1517.071, Checkerboard-contrast_1.png, TIMEOUT
+1522.512, Checkerboard-contrast_2.png, TIMEOUT
+1528.423, Checkerboard-contrast_4.png, TIMEOUT
+1533.66, Checkerboard-contrast_7.png, TIMEOUT
+1539.45, Checkerboard-contrast_14.png, TIMEOUT
+1544.584, Checkerboard-contrast_27.png, 1553.6870000000001, 9.103000000000065
+1744.925, Checkerboard-contrast_1.png, TIMEOUT
+1752.03, Checkerboard-contrast_2.png, TIMEOUT
+2123.475, Checkerboard-contrast_1.png, TIMEOUT
+2128.829, Checkerboard-contrast_2.png, TIMEOUT
+2134.157, Checkerboard-contrast_4.png, TIMEOUT
+2255.307, Checkerboard-contrast_1.png, TIMEOUT
+2265.101, Checkerboard-contrast_2.png, TIMEOUT
+2270.621, Checkerboard-contrast_4.png, TIMEOUT
+2276.566, Checkerboard-contrast_7.png, TIMEOUT
+2281.661, Checkerboard-contrast_14.png, TIMEOUT
+2287.07, Checkerboard-contrast_27.png, TIMEOUT
+2314.737, Checkerboard-contrast_52.png, TIMEOUT
+2473.277, Checkerboard-contrast_1.png, TIMEOUT
+2478.568, Checkerboard-contrast_2.png, TIMEOUT
+2484.494, Checkerboard-contrast_4.png, TIMEOUT
+2489.818, Checkerboard-contrast_7.png, 2496.506, 6.687999999999647
+2660.457, Checkerboard-contrast_1.png, TIMEOUT
+2666.307, Checkerboard-contrast_2.png, TIMEOUT
+2748.443, Checkerboard-contrast_1.png, TIMEOUT
+2753.993, Checkerboard-contrast_2.png, TIMEOUT
+2759.121, Checkerboard-contrast_4.png, TIMEOUT
+2764.669, Checkerboard-contrast_7.png, TIMEOUT
+2769.916, Checkerboard-contrast_14.png, 2776.2909999999997, 6.374999999999545
+2814.011, Checkerboard-contrast_1.png, TIMEOUT
+2820.035, Checkerboard-contrast_2.png, TIMEOUT
+2937.243, Checkerboard-contrast_1.png, TIMEOUT
+2942.369, Checkerboard-contrast_2.png, TIMEOUT
+2956.203, Checkerboard-contrast_4.png, TIMEOUT
+2969.637, Checkerboard-contrast_7.png, TIMEOUT
+2976.083, Checkerboard-contrast_14.png, 2983.055, 6.971999999999753
+3116.951, Checkerboard-contrast_1.png, TIMEOUT
+3145.481, Checkerboard-contrast_2.png, TIMEOUT
+3152.771, Checkerboard-contrast_4.png, TIMEOUT
+3160.428, Checkerboard-contrast_7.png, TIMEOUT
+3172.098, Checkerboard-contrast_14.png, TIMEOUT
+3177.605, Checkerboard-contrast_27.png, TIMEOUT
+3183.612, Checkerboard-contrast_52.png, TIMEOUT
+3189.96, Checkerboard-contrast_100.png, TIMEOUT
+3293.798, Checkerboard-contrast_1.png, TIMEOUT
+3299.348, Checkerboard-contrast_2.png, TIMEOUT
+3304.517, Checkerboard-contrast_4.png, TIMEOUT
+3310.167, Checkerboard-contrast_7.png, TIMEOUT
+3322.32, Checkerboard-contrast_14.png, TIMEOUT
+3327.535, Checkerboard-contrast_27.png, TIMEOUT
+3352.928, Checkerboard-contrast_52.png, TIMEOUT
+3483.948, Checkerboard-contrast_1.png, 3488.285, 4.336999999999989
+3605.661, Checkerboard-contrast_1.png, TIMEOUT
+3610.765, Checkerboard-contrast_2.png, TIMEOUT
+3616.979, Checkerboard-contrast_4.png, TIMEOUT
+3622.29, Checkerboard-contrast_7.png, TIMEOUT
+3627.618, Checkerboard-contrast_14.png, TIMEOUT
+3634.658, Checkerboard-contrast_27.png, TIMEOUT
+3640.059, Checkerboard-contrast_52.png, TIMEOUT
+3645.349, Checkerboard-contrast_100.png, 3649.2259999999997, 3.876999999999498
+3703.49, Checkerboard-contrast_1.png, TIMEOUT
+3708.847, Checkerboard-contrast_2.png, TIMEOUT
+3714.57, Checkerboard-contrast_4.png, TIMEOUT
+3720.424, Checkerboard-contrast_7.png, TIMEOUT
+3725.609, Checkerboard-contrast_14.png, TIMEOUT
+3926.799, Checkerboard-contrast_1.png, TIMEOUT
+3932.054, Checkerboard-contrast_2.png, TIMEOUT
+3937.464, Checkerboard-contrast_4.png, TIMEOUT
+3942.811, Checkerboard-contrast_7.png, TIMEOUT
+3948.747, Checkerboard-contrast_14.png, TIMEOUT
+3955.143, Checkerboard-contrast_27.png, TIMEOUT
+3960.703, Checkerboard-contrast_52.png, TIMEOUT
+3965.922, Checkerboard-contrast_100.png, TIMEOUT
+4226.111, Checkerboard-contrast_1.png, TIMEOUT
+4232.925, Checkerboard-contrast_2.png, TIMEOUT
+4251.732, Checkerboard-contrast_4.png, TIMEOUT
+4257.04, Checkerboard-contrast_7.png, TIMEOUT
+4262.1, Checkerboard-contrast_14.png, TIMEOUT
+4267.307, Checkerboard-contrast_27.png, TIMEOUT
+4272.933, Checkerboard-contrast_52.png, TIMEOUT
+4278.068, Checkerboard-contrast_100.png, TIMEOUT
+4361.528, Checkerboard-contrast_1.png, TIMEOUT
+4367.126, Checkerboard-contrast_2.png, TIMEOUT
+4372.334, Checkerboard-contrast_4.png, TIMEOUT
+4378.061, Checkerboard-contrast_7.png, TIMEOUT
+4383.51, Checkerboard-contrast_14.png, TIMEOUT
+4389.61, Checkerboard-contrast_27.png, TIMEOUT
+4500.599, Checkerboard-contrast_1.png, TIMEOUT
+4517.796, Checkerboard-contrast_2.png, TIMEOUT
+4523.504, Checkerboard-contrast_4.png, TIMEOUT
+4529.291, Checkerboard-contrast_7.png, TIMEOUT
+4535.18, Checkerboard-contrast_14.png, TIMEOUT
+4550.042, Checkerboard-contrast_27.png, TIMEOUT
+4555.849, Checkerboard-contrast_52.png, TIMEOUT
+4561.403, Checkerboard-contrast_100.png, 4567.938, 6.5349999999998545
+4618.816, Checkerboard-contrast_1.png, TIMEOUT
+4623.927, Checkerboard-contrast_2.png, TIMEOUT
+4628.97, Checkerboard-contrast_4.png, TIMEOUT
+4635.191, Checkerboard-contrast_7.png, TIMEOUT
+4640.694, Checkerboard-contrast_14.png, TIMEOUT
+4646.395, Checkerboard-contrast_27.png, TIMEOUT
+4651.954, Checkerboard-contrast_52.png, TIMEOUT
+4657.0, Checkerboard-contrast_100.png, 4660.146000000001, 3.1460000000006403
+4699.658, Checkerboard-contrast_1.png, TIMEOUT
+4705.227, Checkerboard-contrast_2.png, TIMEOUT
+4710.301, Checkerboard-contrast_4.png, 4719.192, 8.890999999999622
+4858.441, Checkerboard-contrast_1.png, TIMEOUT
+4863.851, Checkerboard-contrast_2.png, TIMEOUT
+4871.864, Checkerboard-contrast_4.png, TIMEOUT
+4877.413, Checkerboard-contrast_7.png, TIMEOUT
+4882.442, Checkerboard-contrast_14.png, TIMEOUT
+4888.868, Checkerboard-contrast_27.png, TIMEOUT
+4894.268, Checkerboard-contrast_52.png, 4903.67, 9.402000000000044
+4946.331, Checkerboard-contrast_1.png, TIMEOUT
+4951.865, Checkerboard-contrast_2.png, TIMEOUT
+4957.71, Checkerboard-contrast_4.png, TIMEOUT
+4963.186, Checkerboard-contrast_7.png, TIMEOUT
+4969.002, Checkerboard-contrast_14.png, TIMEOUT
+4974.211, Checkerboard-contrast_27.png, TIMEOUT
+4979.785, Checkerboard-contrast_52.png, TIMEOUT
+4985.133, Checkerboard-contrast_100.png, TIMEOUT
+5168.834, Checkerboard-contrast_1.png, TIMEOUT
+5174.27, Checkerboard-contrast_2.png, TIMEOUT
+5180.785, Checkerboard-contrast_4.png, TIMEOUT
+5185.916, Checkerboard-contrast_7.png, TIMEOUT
+5191.862, Checkerboard-contrast_14.png, TIMEOUT
+5197.963, Checkerboard-contrast_27.png, TIMEOUT
+5203.215, Checkerboard-contrast_52.png, TIMEOUT
+5208.83, Checkerboard-contrast_100.png, 5220.459000000001, 11.629000000000815
+5309.558, Checkerboard-contrast_1.png, TIMEOUT
+5316.088, Checkerboard-contrast_2.png, TIMEOUT
+5321.308, Checkerboard-contrast_4.png, TIMEOUT
+5327.131, Checkerboard-contrast_7.png, TIMEOUT
+5332.787, Checkerboard-contrast_14.png, TIMEOUT
+5338.594, Checkerboard-contrast_27.png, TIMEOUT
+5344.223, Checkerboard-contrast_52.png, TIMEOUT
+5350.063, Checkerboard-contrast_100.png, TIMEOUT
+5398.777, Checkerboard-contrast_1.png, TIMEOUT
+5404.4, Checkerboard-contrast_2.png, TIMEOUT
+5409.481, Checkerboard-contrast_4.png, TIMEOUT
+5414.498, Checkerboard-contrast_7.png, TIMEOUT
+5420.559, Checkerboard-contrast_14.png, TIMEOUT
+5426.293, Checkerboard-contrast_27.png, TIMEOUT
+5432.025, Checkerboard-contrast_52.png, TIMEOUT
+5440.249, Checkerboard-contrast_100.png, TIMEOUT
+5524.189, Checkerboard-contrast_1.png, TIMEOUT
+5529.927, Checkerboard-contrast_2.png, TIMEOUT
+5535.221, Checkerboard-contrast_4.png, TIMEOUT
+5544.039, Checkerboard-contrast_7.png, TIMEOUT
+5550.031, Checkerboard-contrast_14.png, TIMEOUT
+5555.465, Checkerboard-contrast_27.png, TIMEOUT
+5561.305, Checkerboard-contrast_52.png, TIMEOUT
+5571.026, Checkerboard-contrast_100.png, TIMEOUT
+5767.43, Checkerboard-contrast_1.png, TIMEOUT
+5773.116, Checkerboard-contrast_2.png, TIMEOUT
+5779.258, Checkerboard-contrast_4.png, TIMEOUT
+5785.197, Checkerboard-contrast_7.png, TIMEOUT
+5790.338, Checkerboard-contrast_14.png, TIMEOUT
+5795.425, Checkerboard-contrast_27.png, TIMEOUT
+5800.458, Checkerboard-contrast_52.png, TIMEOUT
+5806.005, Checkerboard-contrast_100.png, 5815.546, 9.541000000000167
+5841.138, Checkerboard-contrast_1.png, TIMEOUT
+5846.368, Checkerboard-contrast_2.png, TIMEOUT
+5851.971, Checkerboard-contrast_4.png, TIMEOUT
+5858.157, Checkerboard-contrast_7.png, TIMEOUT
+5864.268, Checkerboard-contrast_14.png, TIMEOUT
+5869.496, Checkerboard-contrast_27.png, TIMEOUT
+5874.635, Checkerboard-contrast_52.png, 5885.849, 11.213999999999942
+5937.275, Checkerboard-contrast_1.png, TIMEOUT
+5943.948, Checkerboard-contrast_2.png, 5948.754, 4.805999999999585
+6259.532, Checkerboard-contrast_1.png, TIMEOUT
+6265.261, Checkerboard-contrast_2.png, TIMEOUT
+6272.185, Checkerboard-contrast_4.png, TIMEOUT
+6278.919, Checkerboard-contrast_7.png, TIMEOUT
+6284.1, Checkerboard-contrast_14.png, TIMEOUT
+6290.47, Checkerboard-contrast_27.png, TIMEOUT
+6296.414, Checkerboard-contrast_52.png, TIMEOUT
+6315.401, Checkerboard-contrast_100.png, TIMEOUT
+6426.203, Checkerboard-contrast_1.png, TIMEOUT
+6431.501, Checkerboard-contrast_2.png, TIMEOUT
+6438.157, Checkerboard-contrast_4.png, TIMEOUT
+6444.698, Checkerboard-contrast_7.png, TIMEOUT
+6451.612, Checkerboard-contrast_14.png, TIMEOUT
+6456.646, Checkerboard-contrast_27.png, TIMEOUT
+6462.479, Checkerboard-contrast_52.png, TIMEOUT
+6483.148, Checkerboard-contrast_100.png, TIMEOUT
+6697.434, Checkerboard-contrast_1.png, TIMEOUT
+6715.297, Checkerboard-contrast_2.png, TIMEOUT
+6721.361, Checkerboard-contrast_4.png, TIMEOUT
+6726.391, Checkerboard-contrast_7.png, TIMEOUT
+6732.609, Checkerboard-contrast_14.png, TIMEOUT
+6744.28, Checkerboard-contrast_27.png, TIMEOUT
+6751.224, Checkerboard-contrast_52.png, TIMEOUT
+6764.867, Checkerboard-contrast_100.png, TIMEOUT
+6816.437, Checkerboard-contrast_1.png, TIMEOUT
+6823.978, Checkerboard-contrast_2.png, TIMEOUT
+6830.679, Checkerboard-contrast_4.png, TIMEOUT
+6838.919, Checkerboard-contrast_7.png, TIMEOUT
+6848.755, Checkerboard-contrast_14.png, TIMEOUT
+6854.317, Checkerboard-contrast_27.png, TIMEOUT
+6860.022, Checkerboard-contrast_52.png, TIMEOUT
+6867.377, Checkerboard-contrast_100.png, TIMEOUT
+6950.202, Checkerboard-contrast_1.png, TIMEOUT
+6955.776, Checkerboard-contrast_2.png, TIMEOUT
+6961.343, Checkerboard-contrast_4.png, TIMEOUT
+6966.704, Checkerboard-contrast_7.png, TIMEOUT
+6971.969, Checkerboard-contrast_14.png, TIMEOUT
+6977.837, Checkerboard-contrast_27.png, TIMEOUT
+6985.489, Checkerboard-contrast_52.png, TIMEOUT
+6991.364, Checkerboard-contrast_100.png, TIMEOUT
+7164.641, Checkerboard-contrast_1.png, TIMEOUT
+7170.578, Checkerboard-contrast_2.png, TIMEOUT
+7177.321, Checkerboard-contrast_4.png, TIMEOUT
+7183.101, Checkerboard-contrast_7.png, TIMEOUT
+7188.47, Checkerboard-contrast_14.png, TIMEOUT
+7194.177, Checkerboard-contrast_27.png, TIMEOUT
+7199.513, Checkerboard-contrast_52.png, TIMEOUT
+7280.553, Checkerboard-contrast_1.png, TIMEOUT
+7286.584, Checkerboard-contrast_2.png, TIMEOUT
+7291.687, Checkerboard-contrast_4.png, TIMEOUT
+7297.3, Checkerboard-contrast_7.png, TIMEOUT
+7303.399, Checkerboard-contrast_14.png, TIMEOUT
+7308.943, Checkerboard-contrast_27.png, TIMEOUT
+7315.702, Checkerboard-contrast_52.png, 7323.484, 7.782000000000153
+7350.757, Checkerboard-contrast_1.png, TIMEOUT
+7356.142, Checkerboard-contrast_2.png, TIMEOUT
+7361.601, Checkerboard-contrast_4.png, TIMEOUT
+7367.393, Checkerboard-contrast_7.png, TIMEOUT
+7374.313, Checkerboard-contrast_14.png, TIMEOUT
+7380.044, Checkerboard-contrast_27.png, TIMEOUT
+7385.871, Checkerboard-contrast_52.png, TIMEOUT
+7391.126, Checkerboard-contrast_100.png, 7418.517000000001, 27.39100000000053
+7466.702, Checkerboard-contrast_1.png, TIMEOUT
+7472.555, Checkerboard-contrast_2.png, TIMEOUT
+7478.264, Checkerboard-contrast_4.png, TIMEOUT
+7484.037, Checkerboard-contrast_7.png, TIMEOUT
+7489.323, Checkerboard-contrast_14.png, TIMEOUT
+7495.019, Checkerboard-contrast_27.png, TIMEOUT
+7501.216, Checkerboard-contrast_52.png, TIMEOUT
+7506.871, Checkerboard-contrast_100.png, TIMEOUT
+7676.188, Checkerboard-contrast_1.png, TIMEOUT
+7681.787, Checkerboard-contrast_2.png, TIMEOUT
+7687.006, Checkerboard-contrast_4.png, TIMEOUT
+7692.426, Checkerboard-contrast_7.png, TIMEOUT
+7698.254, Checkerboard-contrast_14.png, TIMEOUT
+7703.356, Checkerboard-contrast_27.png, TIMEOUT
+7709.005, Checkerboard-contrast_52.png, TIMEOUT
+7714.437, Checkerboard-contrast_100.png, 7719.893, 5.456000000000131
+7751.864, Checkerboard-contrast_1.png, TIMEOUT
+7757.406, Checkerboard-contrast_2.png, TIMEOUT
+7763.35, Checkerboard-contrast_4.png, TIMEOUT
+7768.755, Checkerboard-contrast_7.png, TIMEOUT
+7774.502, Checkerboard-contrast_14.png, TIMEOUT
+7780.232, Checkerboard-contrast_27.png, TIMEOUT
+7785.546, Checkerboard-contrast_52.png, TIMEOUT
+7790.881, Checkerboard-contrast_100.png, 7796.116, 5.234999999999673
+8042.403, Checkerboard-contrast_1.png, TIMEOUT
+8048.98, Checkerboard-contrast_2.png, TIMEOUT
+8056.344, Checkerboard-contrast_4.png, TIMEOUT
+8079.742, Checkerboard-contrast_7.png, TIMEOUT
+8090.111, Checkerboard-contrast_14.png, TIMEOUT
+8096.005, Checkerboard-contrast_27.png, TIMEOUT
+8101.162, Checkerboard-contrast_52.png, TIMEOUT
+8115.23, Checkerboard-contrast_100.png, TIMEOUT
+8464.059, Checkerboard-contrast_1.png, TIMEOUT
+8469.464, Checkerboard-contrast_2.png, TIMEOUT
+8474.498, Checkerboard-contrast_4.png, TIMEOUT
+8480.51, Checkerboard-contrast_7.png, TIMEOUT
+8486.838, Checkerboard-contrast_14.png, TIMEOUT
+8493.261, Checkerboard-contrast_27.png, TIMEOUT
+8499.686, Checkerboard-contrast_52.png, TIMEOUT
+8698.518, Checkerboard-contrast_1.png, TIMEOUT
+8704.137, Checkerboard-contrast_2.png, TIMEOUT
+8711.683, Checkerboard-contrast_4.png, TIMEOUT
+8717.969, Checkerboard-contrast_7.png, TIMEOUT
+8723.042, Checkerboard-contrast_14.png, TIMEOUT
+8728.346, Checkerboard-contrast_27.png, TIMEOUT
+8734.328, Checkerboard-contrast_52.png, TIMEOUT
+8809.069, Checkerboard-contrast_1.png, TIMEOUT
+8820.122, Checkerboard-contrast_2.png, TIMEOUT
+8825.499, Checkerboard-contrast_4.png, TIMEOUT
+8924.748, Checkerboard-contrast_1.png, TIMEOUT
+8930.098, Checkerboard-contrast_2.png, TIMEOUT
+8935.184, Checkerboard-contrast_4.png, TIMEOUT
+8942.339, Checkerboard-contrast_7.png, TIMEOUT
+8947.362, Checkerboard-contrast_14.png, TIMEOUT
+8966.053, Checkerboard-contrast_27.png, 8969.812, 3.7590000000000146
+9019.971, Checkerboard-contrast_1.png, TIMEOUT
+9025.009, Checkerboard-contrast_2.png, TIMEOUT
+9031.329, Checkerboard-contrast_4.png, TIMEOUT
+9037.389, Checkerboard-contrast_7.png, TIMEOUT
+9042.803, Checkerboard-contrast_14.png, TIMEOUT
+9048.279, Checkerboard-contrast_27.png, TIMEOUT
+9149.477, Checkerboard-contrast_1.png, TIMEOUT
+9154.559, Checkerboard-contrast_2.png, TIMEOUT
+9159.651, Checkerboard-contrast_4.png, TIMEOUT
+9167.647, Checkerboard-contrast_7.png, TIMEOUT
+9173.281, Checkerboard-contrast_14.png, TIMEOUT
+9180.418, Checkerboard-contrast_27.png, TIMEOUT
+9185.86, Checkerboard-contrast_52.png, 9194.126, 8.265999999999622
+9243.693, Checkerboard-contrast_1.png, 9262.448999999999, 18.755999999999403
+9467.919, Checkerboard-contrast_1.png, TIMEOUT
+9473.432, Checkerboard-contrast_2.png, TIMEOUT
+9478.953, Checkerboard-contrast_4.png, TIMEOUT
+9490.844, Checkerboard-contrast_7.png, TIMEOUT
+9495.946, Checkerboard-contrast_14.png, TIMEOUT
+9503.307, Checkerboard-contrast_27.png, TIMEOUT
+9519.872, Checkerboard-contrast_52.png, TIMEOUT
+9530.611, Checkerboard-contrast_100.png, TIMEOUT
+9580.964, Checkerboard-contrast_1.png, TIMEOUT
+9605.724, Checkerboard-contrast_2.png, TIMEOUT
+9610.916, Checkerboard-contrast_4.png, TIMEOUT
+9616.682, Checkerboard-contrast_7.png, TIMEOUT
+9621.906, Checkerboard-contrast_14.png, TIMEOUT
+9627.548, Checkerboard-contrast_27.png, TIMEOUT
+9633.552, Checkerboard-contrast_52.png, TIMEOUT
+9639.057, Checkerboard-contrast_100.png, 9645.737, 6.679999999998472
+9677.003, Checkerboard-contrast_1.png, TIMEOUT
+9686.551, Checkerboard-contrast_2.png, TIMEOUT
+9691.887, Checkerboard-contrast_4.png, TIMEOUT
+9696.909, Checkerboard-contrast_7.png, TIMEOUT
+9701.932, Checkerboard-contrast_14.png, TIMEOUT
+9707.812, Checkerboard-contrast_27.png, TIMEOUT
+9713.199, Checkerboard-contrast_52.png, TIMEOUT
+9719.103, Checkerboard-contrast_100.png, TIMEOUT
+10047.722, Checkerboard-contrast_1.png, TIMEOUT
+10053.159, Checkerboard-contrast_2.png, TIMEOUT
+10060.478, Checkerboard-contrast_4.png, TIMEOUT
+10065.496, Checkerboard-contrast_7.png, TIMEOUT
+10070.528, Checkerboard-contrast_14.png, TIMEOUT
+10075.724, Checkerboard-contrast_27.png, TIMEOUT
+10081.676, Checkerboard-contrast_52.png, TIMEOUT
+10086.869, Checkerboard-contrast_100.png, TIMEOUT
+10134.018, Checkerboard-contrast_1.png, TIMEOUT
+10139.411, Checkerboard-contrast_2.png, TIMEOUT
+10145.378, Checkerboard-contrast_4.png, TIMEOUT
+10151.662, Checkerboard-contrast_7.png, TIMEOUT
+10158.281, Checkerboard-contrast_14.png, TIMEOUT
+10163.356, Checkerboard-contrast_27.png, TIMEOUT
+10168.503, Checkerboard-contrast_52.png, TIMEOUT
+10174.23, Checkerboard-contrast_100.png, 10180.603, 6.3729999999995925
+10206.663, Checkerboard-contrast_1.png, TIMEOUT
+10212.393, Checkerboard-contrast_2.png, TIMEOUT
+10217.714, Checkerboard-contrast_4.png, TIMEOUT
+10223.63, Checkerboard-contrast_7.png, TIMEOUT
+10228.849, Checkerboard-contrast_14.png, TIMEOUT
+10234.52, Checkerboard-contrast_27.png, TIMEOUT
+10240.534, Checkerboard-contrast_52.png, TIMEOUT
+10436.837, Checkerboard-contrast_1.png, TIMEOUT
+10442.18, Checkerboard-contrast_2.png, TIMEOUT
+10448.178, Checkerboard-contrast_4.png, TIMEOUT
+10455.724, Checkerboard-contrast_7.png, TIMEOUT
+10461.37, Checkerboard-contrast_14.png, TIMEOUT
+10466.667, Checkerboard-contrast_27.png, TIMEOUT
+10472.641, Checkerboard-contrast_52.png, TIMEOUT
+10478.974, Checkerboard-contrast_100.png, TIMEOUT
+10576.474, Checkerboard-contrast_1.png, TIMEOUT
+10582.198, Checkerboard-contrast_2.png, TIMEOUT
+10587.656, Checkerboard-contrast_4.png, TIMEOUT
+10593.132, Checkerboard-contrast_7.png, TIMEOUT
+10598.831, Checkerboard-contrast_14.png, TIMEOUT
+10604.515, Checkerboard-contrast_27.png, TIMEOUT
+10609.621, Checkerboard-contrast_52.png, TIMEOUT
+10614.736, Checkerboard-contrast_100.png, TIMEOUT
+10702.929, Checkerboard-contrast_1.png, TIMEOUT
+10708.953, Checkerboard-contrast_2.png, TIMEOUT
+10714.9, Checkerboard-contrast_4.png, TIMEOUT
+10720.984, Checkerboard-contrast_7.png, TIMEOUT
+10726.925, Checkerboard-contrast_14.png, TIMEOUT
+10732.388, Checkerboard-contrast_27.png, 10738.33, 5.941999999999098
+10778.373, Checkerboard-contrast_1.png, TIMEOUT
+10784.373, Checkerboard-contrast_2.png, TIMEOUT
+10790.309, Checkerboard-contrast_4.png, TIMEOUT
+10795.736, Checkerboard-contrast_7.png, TIMEOUT
+10801.475, Checkerboard-contrast_14.png, TIMEOUT
+10807.785, Checkerboard-contrast_27.png, TIMEOUT
+10813.473, Checkerboard-contrast_52.png, TIMEOUT
+10818.462, Checkerboard-contrast_100.png, 10823.41, 4.94800000000032
+11021.952, Checkerboard-contrast_1.png, TIMEOUT
+11027.99, Checkerboard-contrast_2.png, TIMEOUT
+11032.987, Checkerboard-contrast_4.png, TIMEOUT
+11038.846, Checkerboard-contrast_7.png, TIMEOUT
+11054.234, Checkerboard-contrast_14.png, TIMEOUT
+11059.542, Checkerboard-contrast_27.png, 11064.597, 5.055000000000291
+11203.935, Checkerboard-contrast_1.png, TIMEOUT
+11209.472, Checkerboard-contrast_2.png, TIMEOUT
+11214.588, Checkerboard-contrast_4.png, TIMEOUT
+11219.901, Checkerboard-contrast_7.png, TIMEOUT
+11225.302, Checkerboard-contrast_14.png, TIMEOUT
+11230.791, Checkerboard-contrast_27.png, TIMEOUT
+11499.968, Checkerboard-contrast_1.png, TIMEOUT
+11505.808, Checkerboard-contrast_2.png, TIMEOUT
+11515.639, Checkerboard-contrast_4.png, TIMEOUT
+11521.877, Checkerboard-contrast_7.png, TIMEOUT
+11527.289, Checkerboard-contrast_14.png, TIMEOUT
+11532.441, Checkerboard-contrast_27.png, TIMEOUT
+11538.116, Checkerboard-contrast_52.png, TIMEOUT
+11544.265, Checkerboard-contrast_100.png, 11557.177, 12.912000000000262
+11820.528, Checkerboard-contrast_1.png, TIMEOUT
+11826.13, Checkerboard-contrast_2.png, TIMEOUT
+11832.677, Checkerboard-contrast_4.png, TIMEOUT
+11837.895, Checkerboard-contrast_7.png, TIMEOUT
+11844.152, Checkerboard-contrast_14.png, TIMEOUT
+11849.267, Checkerboard-contrast_27.png, TIMEOUT
+11854.897, Checkerboard-contrast_52.png, TIMEOUT
+11860.757, Checkerboard-contrast_100.png, TIMEOUT
+12102.076, Checkerboard-contrast_1.png, TIMEOUT
+12108.2, Checkerboard-contrast_2.png, TIMEOUT
+12113.674, Checkerboard-contrast_4.png, TIMEOUT
+12119.262, Checkerboard-contrast_7.png, TIMEOUT
+12124.572, Checkerboard-contrast_14.png, TIMEOUT
+12129.918, Checkerboard-contrast_27.png, TIMEOUT
+12135.714, Checkerboard-contrast_52.png, TIMEOUT
+12141.432, Checkerboard-contrast_100.png, TIMEOUT
+12244.731, Checkerboard-contrast_1.png, TIMEOUT
+12249.907, Checkerboard-contrast_2.png, TIMEOUT
+12255.227, Checkerboard-contrast_4.png, TIMEOUT
+12260.651, Checkerboard-contrast_7.png, TIMEOUT
+12266.599, Checkerboard-contrast_14.png, TIMEOUT
+12272.539, Checkerboard-contrast_27.png, TIMEOUT
+12286.496, Checkerboard-contrast_52.png, TIMEOUT
+12291.738, Checkerboard-contrast_100.png, TIMEOUT
+12748.537, Checkerboard-contrast_1.png, TIMEOUT
+12755.053, Checkerboard-contrast_2.png, TIMEOUT
+12760.492, Checkerboard-contrast_4.png, TIMEOUT
+12766.441, Checkerboard-contrast_7.png, TIMEOUT
+12772.32, Checkerboard-contrast_14.png, TIMEOUT
+12778.048, Checkerboard-contrast_27.png, TIMEOUT
+12783.51, Checkerboard-contrast_52.png, TIMEOUT
+12789.527, Checkerboard-contrast_100.png, 12805.821, 16.29399999999987
+12840.853, Checkerboard-contrast_1.png, TIMEOUT
+12846.501, Checkerboard-contrast_2.png, TIMEOUT
