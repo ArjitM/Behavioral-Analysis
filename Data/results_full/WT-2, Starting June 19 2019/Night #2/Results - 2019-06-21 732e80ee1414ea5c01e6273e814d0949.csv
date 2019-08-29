@@ -1,5 +1,7 @@
-Image Name, Appearances, Hits, Misses
-Vertical_Stripes.png, 94, 93, 1
+
+Time of reward, Image, Time of poke, Latencies (sec)
+Image Name, Appearances, Hits, Misses, Success Rate %, Latency Mean, Latency SEM
+Vertical_Stripes.png, 94, 93, 1, 98.93617021276596, 290.80710752688157, 36.343734128075575
 
 Hour, # Successful Pokes
 1, 12
@@ -14,15 +16,19 @@ Hour, # Successful Pokes
 10, 1
 11, 6
 12, 7
-
-Time of reward, Image, Time of poke, Latencies (sec)
 134.421, Vertical_Stripes.png, 185.65300000000002, 51.23200000000003
+188.71, Solid.png, TIMEOUT
+188.71, Solid.png, TIMEOUT
 435.763, Vertical_Stripes.png, 520.2139999999999, 84.45099999999996
+523.324, Solid.png, TIMEOUT
+523.324, Solid.png, TIMEOUT
 851.365, Vertical_Stripes.png, 1073.011, 221.64599999999996
 1150.514, Vertical_Stripes.png, 1223.4250000000002, 72.91100000000029
+1226.521, Solid.png, TIMEOUT
 1293.7, Vertical_Stripes.png, 1343.453, 49.75299999999993
 1501.299, Vertical_Stripes.png, 1553.9260000000002, 52.62700000000018
 1603.128, Vertical_Stripes.png, 1710.9160000000002, 107.78800000000024
+1714.027, Solid.png, TIMEOUT
 1797.347, Vertical_Stripes.png, 1911.893, 114.54600000000005
 1977.975, Vertical_Stripes.png, 2237.6969999999997, 259.72199999999975
 2292.388, Vertical_Stripes.png, 2537.249, 244.86099999999988
@@ -43,6 +49,8 @@ Time of reward, Image, Time of poke, Latencies (sec)
 8275.228, Vertical_Stripes.png, 8429.107, 153.87900000000081
 8461.16, Vertical_Stripes.png, 8861.909, 400.7489999999998
 8893.05, Vertical_Stripes.png, 12133.392, 3240.3420000000006
+12136.505, Solid.png, TIMEOUT
+12136.505, Solid.png, TIMEOUT
 12406.126, Vertical_Stripes.png, 12443.661, 37.534999999999854
 12503.177, Vertical_Stripes.png, 12580.043, 76.86599999999999
 12641.891, Vertical_Stripes.png, 12738.601999999999, 96.71099999999933
@@ -55,6 +63,7 @@ Time of reward, Image, Time of poke, Latencies (sec)
 15283.477, Vertical_Stripes.png, 15405.403999999999, 121.92699999999786
 15523.244, Vertical_Stripes.png, 15873.788999999999, 350.54499999999825
 15920.589, Vertical_Stripes.png, 16059.588, 138.9989999999998
+16062.637, Solid.png, TIMEOUT
 16473.191, Vertical_Stripes.png, 16576.988, 103.7970000000023
 16611.79, Vertical_Stripes.png, 16748.817, 137.02699999999822
 16794.416, Vertical_Stripes.png, 17312.186999999998, 517.770999999997
@@ -82,6 +91,7 @@ Time of reward, Image, Time of poke, Latencies (sec)
 25146.756, Vertical_Stripes.png, 25638.957, 492.2009999999973
 25691.112, Vertical_Stripes.png, 25728.426, 37.31399999999849
 25753.761, Vertical_Stripes.png, 26256.47, 502.70900000000256
+26259.588, Solid.png, TIMEOUT
 27102.559, Vertical_Stripes.png, 27185.822, 83.26299999999901
 27230.789, Vertical_Stripes.png, 27298.84, 68.05099999999948
 27333.999, Vertical_Stripes.png, 27766.264, 432.2649999999994
@@ -109,4 +119,3 @@ Time of reward, Image, Time of poke, Latencies (sec)
 41126.75, Vertical_Stripes.png, 41725.745, 598.9950000000026
 41955.108, Vertical_Stripes.png, 42403.807, 448.6990000000005
 42498.126, Vertical_Stripes.png, 42968.195, 470.06900000000314
-43017.844, Vertical_Stripes.png, TIMEOUT

@@ -1,5 +1,7 @@
-Image Name, Appearances, Hits, Misses
-Vertical_Stripes.png, 1, 8, -7
+
+Time of reward, Image, Time of poke, Latencies (sec)
+Image Name, Appearances, Hits, Misses, Success Rate %, Latency Mean, Latency SEM
+Vertical_Stripes.png, 1, 8, -7, 800.0, 431.072, nan
 
 Hour, # Successful Pokes
 1, 1
@@ -14,6 +16,11 @@ Hour, # Successful Pokes
 10, 28
 11, 0
 12, 19
-
-Time of reward, Image, Time of poke, Latencies (sec)
 0.232, Vertical_Stripes.png, 431.30400000000003, 431.072
+0.232, Vertical_Stripes.png, TIMEOUT
+0.232, Vertical_Stripes.png, TIMEOUT
+0.232, Vertical_Stripes.png, TIMEOUT
+0.232, Vertical_Stripes.png, TIMEOUT
+0.232, Vertical_Stripes.png, TIMEOUT
+0.232, Vertical_Stripes.png, TIMEOUT
+0.232, Vertical_Stripes.png, TIMEOUT

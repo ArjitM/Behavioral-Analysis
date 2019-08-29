@@ -1,5 +1,7 @@
-Image Name, Appearances, Hits, Misses
-Checkerboard.png, 1, 0, 1
+
+Time of reward, Image, Time of poke, Latencies (sec)
+Image Name, Appearances, Hits, Misses, Success Rate %, Latency Mean, Latency SEM
+Checkerboard.png, 1, 0, 1, 0.0, nan, nan
 
 Hour, # Successful Pokes
 1, 0
@@ -14,6 +16,3 @@ Hour, # Successful Pokes
 10, 0
 11, 0
 12, 0
-
-Time of reward, Image, Time of poke, Latencies (sec)
-174.941, Checkerboard.png, TIMEOUT

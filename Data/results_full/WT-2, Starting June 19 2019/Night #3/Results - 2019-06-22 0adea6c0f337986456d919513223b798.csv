@@ -1,5 +1,7 @@
-Image Name, Appearances, Hits, Misses
-Vertical_Stripes.png, 230, 125, 105
+
+Time of reward, Image, Time of poke, Latencies (sec)
+Image Name, Appearances, Hits, Misses, Success Rate %, Latency Mean, Latency SEM
+Vertical_Stripes.png, 230, 125, 105, 54.34782608695652, 11.953767999999966, 0.6777406026892876
 
 Hour, # Successful Pokes
 1, 17
@@ -14,235 +16,233 @@ Hour, # Successful Pokes
 10, 2
 11, 0
 12, 12
-
-Time of reward, Image, Time of poke, Latencies (sec)
 45.425, Vertical_Stripes.png, 70.907, 25.482
-396.733, Vertical_Stripes.png, TIMEOUT
+74.019, Solid.png, TIMEOUT
+74.019, Solid.png, TIMEOUT
+426.702, Solid.png, TIMEOUT
 540.202, Vertical_Stripes.png, 549.242, 9.039999999999964
+552.291, Solid.png, TIMEOUT
+552.291, Solid.png, TIMEOUT
 834.573, Vertical_Stripes.png, 853.4799999999999, 18.906999999999925
-1038.099, Vertical_Stripes.png, TIMEOUT
-1265.461, Vertical_Stripes.png, TIMEOUT
+1068.111, Solid.png, TIMEOUT
+1068.111, Solid.png, TIMEOUT
+1068.111, Solid.png, TIMEOUT
+1068.111, Solid.png, TIMEOUT
+1068.111, Solid.png, TIMEOUT
 1327.203, Vertical_Stripes.png, 1343.132, 15.929000000000087
+1346.204, Solid.png, TIMEOUT
+1346.204, Solid.png, TIMEOUT
 1450.052, Vertical_Stripes.png, 1461.843, 11.791000000000167
+1464.93, Solid.png, TIMEOUT
+1464.93, Solid.png, TIMEOUT
 1548.054, Vertical_Stripes.png, 1555.7160000000001, 7.662000000000035
+1558.818, Solid.png, TIMEOUT
 1672.333, Vertical_Stripes.png, 1679.8020000000001, 7.469000000000051
+1682.851, Solid.png, TIMEOUT
 1759.305, Vertical_Stripes.png, 1767.1480000000001, 7.843000000000075
 1850.421, Vertical_Stripes.png, 1861.317, 10.895999999999958
-2130.638, Vertical_Stripes.png, TIMEOUT
-2198.047, Vertical_Stripes.png, TIMEOUT
+1864.427, Solid.png, TIMEOUT
+1864.427, Solid.png, TIMEOUT
+1864.427, Solid.png, TIMEOUT
+1864.427, Solid.png, TIMEOUT
+2160.663, Solid.png, TIMEOUT
+2228.073, Solid.png, TIMEOUT
 2277.802, Vertical_Stripes.png, 2303.694, 25.891999999999825
+2306.808, Solid.png, TIMEOUT
+2306.808, Solid.png, TIMEOUT
 2419.928, Vertical_Stripes.png, 2439.7149999999997, 19.786999999999807
-2484.61, Vertical_Stripes.png, TIMEOUT
-2669.778, Vertical_Stripes.png, TIMEOUT
-2730.832, Vertical_Stripes.png, TIMEOUT
+2514.627, Solid.png, TIMEOUT
+2514.627, Solid.png, TIMEOUT
+2760.79, Solid.png, TIMEOUT
 2818.251, Vertical_Stripes.png, 2840.6389999999997, 22.387999999999465
+2843.739, Solid.png, TIMEOUT
+2843.739, Solid.png, TIMEOUT
 2999.696, Vertical_Stripes.png, 3003.12, 3.423999999999978
 3049.651, Vertical_Stripes.png, 3062.5029999999997, 12.851999999999862
+3065.582, Solid.png, TIMEOUT
 3151.15, Vertical_Stripes.png, 3154.99, 3.8399999999996908
+3158.069, Solid.png, TIMEOUT
+3158.069, Solid.png, TIMEOUT
 3385.713, Vertical_Stripes.png, 3408.245, 22.531999999999698
+3411.335, Solid.png, TIMEOUT
+3411.335, Solid.png, TIMEOUT
+3411.335, Solid.png, TIMEOUT
 3568.214, Vertical_Stripes.png, 3582.1479999999997, 13.933999999999742
+3585.219, Solid.png, TIMEOUT
 3658.996, Vertical_Stripes.png, 3678.044, 19.047999999999774
+3681.156, Solid.png, TIMEOUT
+3681.156, Solid.png, TIMEOUT
 3847.152, Vertical_Stripes.png, 3860.857, 13.704999999999927
 3903.404, Vertical_Stripes.png, 3914.4139999999998, 11.009999999999764
 3989.095, Vertical_Stripes.png, 3997.328, 8.233000000000175
+4000.439, Solid.png, TIMEOUT
+4000.439, Solid.png, TIMEOUT
 4101.548, Vertical_Stripes.png, 4112.112, 10.564000000000306
 4157.208, Vertical_Stripes.png, 4181.398, 24.19000000000051
 4219.264, Vertical_Stripes.png, 4236.711, 17.447000000000116
-4280.442, Vertical_Stripes.png, TIMEOUT
-4410.049, Vertical_Stripes.png, TIMEOUT
-4477.132, Vertical_Stripes.png, TIMEOUT
+4310.472, Solid.png, TIMEOUT
+4507.132, Solid.png, TIMEOUT
+4507.132, Solid.png, TIMEOUT
 4597.545, Vertical_Stripes.png, 4610.606000000001, 13.061000000000604
-4786.234, Vertical_Stripes.png, TIMEOUT
 4869.737, Vertical_Stripes.png, 4877.197, 7.460000000000036
 4954.547, Vertical_Stripes.png, 4957.692, 3.1450000000004366
 5005.758, Vertical_Stripes.png, 5022.936000000001, 17.178000000000793
-5239.121, Vertical_Stripes.png, TIMEOUT
+5269.081, Solid.png, TIMEOUT
+5269.081, Solid.png, TIMEOUT
 5922.178, Vertical_Stripes.png, 5930.42, 8.24200000000019
+5933.543, Solid.png, TIMEOUT
+5933.543, Solid.png, TIMEOUT
 15515.369, Vertical_Stripes.png, 15517.125, 1.7559999999994034
+15520.212, Solid.png, TIMEOUT
+15520.212, Solid.png, TIMEOUT
+15520.212, Solid.png, TIMEOUT
 15662.677, Vertical_Stripes.png, 15667.569, 4.891999999999825
+15670.661, Solid.png, TIMEOUT
+15670.661, Solid.png, TIMEOUT
+15670.661, Solid.png, TIMEOUT
+15670.661, Solid.png, TIMEOUT
+15670.661, Solid.png, TIMEOUT
 15909.152, Vertical_Stripes.png, 15913.732, 4.579999999999927
+15916.847, Solid.png, TIMEOUT
+15916.847, Solid.png, TIMEOUT
+15916.847, Solid.png, TIMEOUT
+15916.847, Solid.png, TIMEOUT
 16139.374, Vertical_Stripes.png, 16144.134, 4.760000000000218
 16211.327, Vertical_Stripes.png, 16218.658, 7.331000000000131
 16257.943, Vertical_Stripes.png, 16261.884, 3.941000000000713
 16304.664, Vertical_Stripes.png, 16308.692, 4.027999999998428
+16311.799, Solid.png, TIMEOUT
+16311.799, Solid.png, TIMEOUT
+16311.799, Solid.png, TIMEOUT
 16442.522, Vertical_Stripes.png, 16451.602, 9.079999999998108
 16516.815, Vertical_Stripes.png, 16519.207, 2.3919999999998254
 16571.524, Vertical_Stripes.png, 16575.964, 4.43999999999869
 16626.261, Vertical_Stripes.png, 16632.015, 5.754000000000815
+16635.101, Solid.png, TIMEOUT
+16635.101, Solid.png, TIMEOUT
 16827.261, Vertical_Stripes.png, 16833.785, 6.5240000000012515
 16948.556, Vertical_Stripes.png, 16951.543999999998, 2.9879999999975553
 17002.726, Vertical_Stripes.png, 17024.226, 21.5
-17067.261, Vertical_Stripes.png, TIMEOUT
-17149.041, Vertical_Stripes.png, TIMEOUT
-17272.001, Vertical_Stripes.png, TIMEOUT
+17179.007, Solid.png, TIMEOUT
 17333.903, Vertical_Stripes.png, 17341.928, 8.025000000001455
 17408.685, Vertical_Stripes.png, 17421.765, 13.079999999998108
 17470.742, Vertical_Stripes.png, 17479.904, 9.162000000000262
-17632.827, Vertical_Stripes.png, TIMEOUT
-17696.324, Vertical_Stripes.png, TIMEOUT
-17759.323, Vertical_Stripes.png, TIMEOUT
-17821.038, Vertical_Stripes.png, TIMEOUT
+17662.799, Solid.png, TIMEOUT
 17879.627, Vertical_Stripes.png, 17891.457, 11.829999999998108
-17935.761, Vertical_Stripes.png, TIMEOUT
-17993.982, Vertical_Stripes.png, TIMEOUT
 18061.55, Vertical_Stripes.png, 18081.435999999998, 19.885999999998603
-18116.916, Vertical_Stripes.png, TIMEOUT
-18179.113, Vertical_Stripes.png, TIMEOUT
-18306.359, Vertical_Stripes.png, TIMEOUT
 18368.437, Vertical_Stripes.png, 18377.135, 8.697999999996682
-18421.678, Vertical_Stripes.png, TIMEOUT
+18451.702, Solid.png, TIMEOUT
+18451.702, Solid.png, TIMEOUT
+18451.702, Solid.png, TIMEOUT
+18451.702, Solid.png, TIMEOUT
 18911.824, Vertical_Stripes.png, 18915.62, 3.7959999999984575
 18958.768, Vertical_Stripes.png, 18969.063, 10.294999999998254
 19046.019, Vertical_Stripes.png, 19049.802, 3.782999999999447
 19093.066, Vertical_Stripes.png, 19098.094, 5.028000000002066
 19153.01, Vertical_Stripes.png, 19160.538, 7.528000000002066
-19200.731, Vertical_Stripes.png, TIMEOUT
-19256.678, Vertical_Stripes.png, TIMEOUT
-19318.04, Vertical_Stripes.png, TIMEOUT
 19380.485, Vertical_Stripes.png, 19406.244, 25.758999999998196
-19513.818, Vertical_Stripes.png, TIMEOUT
 19574.714, Vertical_Stripes.png, 19595.555, 20.84100000000035
-19729.89, Vertical_Stripes.png, TIMEOUT
-19790.503, Vertical_Stripes.png, TIMEOUT
-20011.541, Vertical_Stripes.png, TIMEOUT
 20074.732, Vertical_Stripes.png, 20094.377, 19.645000000000437
 20141.628, Vertical_Stripes.png, 20149.954999999998, 8.326999999997497
 20204.302, Vertical_Stripes.png, 20213.23, 8.927999999999884
 20286.185, Vertical_Stripes.png, 20306.594, 20.40899999999965
-20349.725, Vertical_Stripes.png, TIMEOUT
-20408.878, Vertical_Stripes.png, TIMEOUT
-20469.443, Vertical_Stripes.png, TIMEOUT
 20539.874, Vertical_Stripes.png, 20547.517, 7.643000000000029
-20665.007, Vertical_Stripes.png, TIMEOUT
-20730.745, Vertical_Stripes.png, TIMEOUT
+20695.023, Solid.png, TIMEOUT
+20760.764, Solid.png, TIMEOUT
 20886.277, Vertical_Stripes.png, 20894.8, 8.523000000001048
 20992.605, Vertical_Stripes.png, 20998.516, 5.911000000000058
 21044.959, Vertical_Stripes.png, 21054.621, 9.662000000000262
 21153.051, Vertical_Stripes.png, 21170.494, 17.4429999999993
-21205.997, Vertical_Stripes.png, TIMEOUT
-21300.616, Vertical_Stripes.png, TIMEOUT
-21393.282, Vertical_Stripes.png, TIMEOUT
-21456.965, Vertical_Stripes.png, TIMEOUT
+21330.648, Solid.png, TIMEOUT
+21423.246, Solid.png, TIMEOUT
 21514.284, Vertical_Stripes.png, 21533.528, 19.243999999998778
 21652.208, Vertical_Stripes.png, 21657.735, 5.527000000001863
 21701.458, Vertical_Stripes.png, 21709.581, 8.122999999999593
 21778.646, Vertical_Stripes.png, 21781.039, 2.393000000000029
 21992.812, Vertical_Stripes.png, 22009.6, 16.787999999996828
 22063.264, Vertical_Stripes.png, 22070.978, 7.713999999999942
-22121.519, Vertical_Stripes.png, TIMEOUT
-22186.016, Vertical_Stripes.png, TIMEOUT
-22243.271, Vertical_Stripes.png, TIMEOUT
 22303.122, Vertical_Stripes.png, 22331.849, 28.726999999998952
-22429.159, Vertical_Stripes.png, TIMEOUT
-22488.585, Vertical_Stripes.png, TIMEOUT
+22518.629, Solid.png, TIMEOUT
 22687.081, Vertical_Stripes.png, 22699.244, 12.163000000000466
-22738.602, Vertical_Stripes.png, TIMEOUT
-22796.236, Vertical_Stripes.png, TIMEOUT
-22859.235, Vertical_Stripes.png, TIMEOUT
+22889.266, Solid.png, TIMEOUT
 22981.7, Vertical_Stripes.png, 22984.657, 2.9569999999985157
 23025.362, Vertical_Stripes.png, 23050.422, 25.05999999999767
 23171.665, Vertical_Stripes.png, 23186.864999999998, 15.19999999999709
 23319.635, Vertical_Stripes.png, 23336.725, 17.090000000000146
 23377.4, Vertical_Stripes.png, 23393.558, 16.157999999999447
-23558.491, Vertical_Stripes.png, TIMEOUT
 23620.813, Vertical_Stripes.png, 23639.867, 19.054000000000087
-23688.04, Vertical_Stripes.png, TIMEOUT
-23746.985, Vertical_Stripes.png, TIMEOUT
 23802.466, Vertical_Stripes.png, 23826.727, 24.260999999998603
 24083.884, Vertical_Stripes.png, 24090.457, 6.57300000000032
+24093.544, Solid.png, TIMEOUT
 24338.328, Vertical_Stripes.png, 24365.587, 27.258999999998196
 24545.528, Vertical_Stripes.png, 24550.837, 5.309000000001106
-24591.354, Vertical_Stripes.png, TIMEOUT
-24715.088, Vertical_Stripes.png, TIMEOUT
+24621.387, Solid.png, TIMEOUT
 24773.821, Vertical_Stripes.png, 24787.083, 13.261999999998807
 24944.081, Vertical_Stripes.png, 24953.027, 8.945999999999913
-25000.845, Vertical_Stripes.png, TIMEOUT
-25056.938, Vertical_Stripes.png, TIMEOUT
-25140.7, Vertical_Stripes.png, TIMEOUT
+25086.966, Solid.png, TIMEOUT
 25227.619, Vertical_Stripes.png, 25236.087, 8.468000000000757
 25354.772, Vertical_Stripes.png, 25366.906, 12.133999999998196
-25408.242, Vertical_Stripes.png, TIMEOUT
-25468.461, Vertical_Stripes.png, TIMEOUT
+25498.472, Solid.png, TIMEOUT
 25565.088, Vertical_Stripes.png, 25594.513, 29.424999999999272
 25769.558, Vertical_Stripes.png, 25771.799, 2.2409999999981665
-25815.503, Vertical_Stripes.png, TIMEOUT
+25845.505, Solid.png, TIMEOUT
 25892.249, Vertical_Stripes.png, 25920.39, 28.14099999999962
-26066.874, Vertical_Stripes.png, TIMEOUT
-26124.76, Vertical_Stripes.png, TIMEOUT
-26187.511, Vertical_Stripes.png, TIMEOUT
+26217.517, Solid.png, TIMEOUT
 26267.499, Vertical_Stripes.png, 26276.204999999998, 8.705999999998312
-26388.768, Vertical_Stripes.png, TIMEOUT
-26510.754, Vertical_Stripes.png, TIMEOUT
-26574.465, Vertical_Stripes.png, TIMEOUT
+26604.486, Solid.png, TIMEOUT
 26657.336, Vertical_Stripes.png, 26668.004, 10.668000000001484
 26712.511, Vertical_Stripes.png, 26720.1, 7.588999999999942
 26763.223, Vertical_Stripes.png, 26785.841, 22.617999999998574
-26836.631, Vertical_Stripes.png, TIMEOUT
-26897.218, Vertical_Stripes.png, TIMEOUT
-26958.606, Vertical_Stripes.png, TIMEOUT
-27078.855, Vertical_Stripes.png, TIMEOUT
+26988.586, Solid.png, TIMEOUT
 27147.161, Vertical_Stripes.png, 27174.896, 27.735000000000582
 27263.108, Vertical_Stripes.png, 27273.558, 10.450000000000728
 27330.638, Vertical_Stripes.png, 27358.452, 27.814000000002125
-27430.755, Vertical_Stripes.png, TIMEOUT
-27491.847, Vertical_Stripes.png, TIMEOUT
-27551.958, Vertical_Stripes.png, TIMEOUT
-27611.757, Vertical_Stripes.png, TIMEOUT
-27724.977, Vertical_Stripes.png, TIMEOUT
-27785.758, Vertical_Stripes.png, TIMEOUT
+27641.725, Solid.png, TIMEOUT
 27847.534, Vertical_Stripes.png, 27870.344, 22.81000000000131
 27971.409, Vertical_Stripes.png, 27988.069, 16.659999999999854
-28041.584, Vertical_Stripes.png, TIMEOUT
 28351.157, Vertical_Stripes.png, 28365.135, 13.977999999999156
-28404.472, Vertical_Stripes.png, TIMEOUT
-28517.348, Vertical_Stripes.png, TIMEOUT
-28586.433, Vertical_Stripes.png, TIMEOUT
-28644.964, Vertical_Stripes.png, TIMEOUT
-28708.207, Vertical_Stripes.png, TIMEOUT
-28840.114, Vertical_Stripes.png, TIMEOUT
+28870.087, Solid.png, TIMEOUT
 28919.258, Vertical_Stripes.png, 28943.015, 23.756999999997788
 29113.521, Vertical_Stripes.png, 29117.499, 3.977999999999156
-29241.488, Vertical_Stripes.png, TIMEOUT
+29120.613, Solid.png, TIMEOUT
+29271.451, Solid.png, TIMEOUT
 29377.84, Vertical_Stripes.png, 29386.548, 8.70799999999872
 29471.518, Vertical_Stripes.png, 29476.675, 5.156999999999243
 29526.889, Vertical_Stripes.png, 29531.199, 4.31000000000131
-29637.55, Vertical_Stripes.png, TIMEOUT
+29534.298, Solid.png, TIMEOUT
+29667.57, Solid.png, TIMEOUT
 29713.382, Vertical_Stripes.png, 29722.347999999998, 8.965999999996711
-29793.617, Vertical_Stripes.png, TIMEOUT
-29850.293, Vertical_Stripes.png, TIMEOUT
-29907.625, Vertical_Stripes.png, TIMEOUT
-29970.261, Vertical_Stripes.png, TIMEOUT
 30029.543, Vertical_Stripes.png, 30052.388, 22.844999999997526
-30133.745, Vertical_Stripes.png, TIMEOUT
-30202.715, Vertical_Stripes.png, TIMEOUT
-30263.585, Vertical_Stripes.png, TIMEOUT
-30595.848, Vertical_Stripes.png, TIMEOUT
-30686.761, Vertical_Stripes.png, TIMEOUT
-30748.27, Vertical_Stripes.png, TIMEOUT
 30805.109, Vertical_Stripes.png, 30818.757999999998, 13.648999999997613
 30887.141, Vertical_Stripes.png, 30895.827999999998, 8.68699999999808
 30939.356, Vertical_Stripes.png, 30950.535, 11.179000000000087
 31005.668, Vertical_Stripes.png, 31016.684999999998, 11.016999999996187
-31127.067, Vertical_Stripes.png, TIMEOUT
-31212.859, Vertical_Stripes.png, TIMEOUT
-31274.704, Vertical_Stripes.png, TIMEOUT
-32063.324, Vertical_Stripes.png, TIMEOUT
-32240.928, Vertical_Stripes.png, TIMEOUT
-32303.823, Vertical_Stripes.png, TIMEOUT
-32363.982, Vertical_Stripes.png, TIMEOUT
+31304.676, Solid.png, TIMEOUT
+32393.961, Solid.png, TIMEOUT
 32479.958, Vertical_Stripes.png, 32507.316, 27.358000000000175
+32510.366, Solid.png, TIMEOUT
 33149.955, Vertical_Stripes.png, 33152.975000000006, 3.0200000000040745
-41925.306, Vertical_Stripes.png, TIMEOUT
+33156.069, Solid.png, TIMEOUT
+33156.069, Solid.png, TIMEOUT
+33156.069, Solid.png, TIMEOUT
 41992.296, Vertical_Stripes.png, 41997.89, 5.5939999999973224
+42000.971, Solid.png, TIMEOUT
+42000.971, Solid.png, TIMEOUT
 42144.79, Vertical_Stripes.png, 42155.24600000001, 10.456000000005588
+42158.321, Solid.png, TIMEOUT
 42264.733, Vertical_Stripes.png, 42267.324, 2.5910000000003492
 42322.389, Vertical_Stripes.png, 42332.173, 9.78399999999965
+42335.292, Solid.png, TIMEOUT
+42335.292, Solid.png, TIMEOUT
+42335.292, Solid.png, TIMEOUT
 42454.872, Vertical_Stripes.png, 42461.524000000005, 6.652000000001863
+42464.613, Solid.png, TIMEOUT
 42527.388, Vertical_Stripes.png, 42531.849, 4.461000000002969
+42534.934, Solid.png, TIMEOUT
 42603.593, Vertical_Stripes.png, 42607.132000000005, 3.5390000000043074
 42690.483, Vertical_Stripes.png, 42693.292, 2.809000000001106
 42746.505, Vertical_Stripes.png, 42764.308000000005, 17.80300000000716
 42812.291, Vertical_Stripes.png, 42821.74600000001, 9.455000000009022
-42886.134, Vertical_Stripes.png, TIMEOUT
+42916.164, Solid.png, TIMEOUT
 42973.221, Vertical_Stripes.png, 42976.525, 3.3040000000037253
 43160.74, Vertical_Stripes.png, 43163.518000000004, 2.7780000000057044
