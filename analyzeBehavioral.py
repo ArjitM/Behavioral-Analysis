@@ -6,6 +6,9 @@ import re
 from enum import Enum, auto
 from itertools import groupby
 import math
+from collections import OrderedDict
+from scipy import stats
+import numpy
 
 loc = 'Data/'
 
@@ -199,9 +202,8 @@ class PokeEvent:
         return self._imageAppearanceTime
     
     @staticmethod
-    def missedRewards(poke_events, rewardImgs):
-        misses = {}
-        outputCSV.write("Image Name, Appearances, Hits, Misses\n")
+    def imagePerformance(poke_events, rewardImgs):
+        outputCSV.write("Image Name, Appearances, Hits, Misses, Success Rate %, Latency Mean, Latency SEM\n")
         for ri in rewardImgs:
             hits = 0
             for pe in poke_events:
@@ -209,9 +211,8 @@ class PokeEvent:
                     hits += 1 #poke events that occured in the presence of the reward image
             print('Reward image appearances for {0} >> {1}'.format(ri.name, ri.appearances))
             print('Hits/Successful Pokes >> ', hits)
-            misses[ri] = ri.appearances - hits
-            outputCSV.write('{0}, {1}, {2}, {3}\n'.format(ri.name, ri.appearances, hits, ri.appearances - hits))
-        return misses
+            success_rate = hits * 100.0 / ri.appearances if ri.appearances else 'N/A'
+            outputCSV.write('{0}, {1}, {2}, {3}, {4}, {5}, {6}\n'.format(ri.name, ri.appearances, hits, ri.appearances - hits, success_rate, ri.avg_latency, ri.SEM_latency))
     
 class Image:
 
@@ -222,6 +223,9 @@ class Image:
         assert isinstance(imageType, ImageTypes), 'use ImageType enum to assign images'
         self.imageType = imageType
         self._appearanceTimes = []
+        if imageType == ImageTypes.Reward:
+            self.avg_latency = None
+            self.SEM_latency = None
 
     def __eq__(self, other):
         return self.name == other.name and self.imageType == other.imageType
@@ -292,7 +296,7 @@ def rpmTimeLapse(rotation_intervals, hour=None):
     plt.legend(handles=data)
     plt.show()
 
-def latencies(poke_events, images):
+def setImageLatencies(poke_events, images):
     print('\nTime of reward, Image, Poke Time, and Latencies (sec):')
     outputCSV.write('\nTime of reward, Image, Time of poke, Latencies (sec)\n')
     pe_by_imageAppTime = {} #poke events per image appearance times
@@ -300,31 +304,22 @@ def latencies(poke_events, images):
         if pe.latency is not None:
             pe_by_imageAppTime[pe.imageAppearanceTime] = pe
     rewardImgs = list(filter(lambda im: im.imageType is ImageTypes.Reward, images))
-    rwdImgAppears = []
-    imgNames = []
+    rewardImgs.sort(key=lambda ri: ri.name)
     for ri in rewardImgs:
-        rwdImgAppears.extend(ri.appearanceTimes)
-        imgNames.extend([ri.name] * ri.appearances)
-    rewards = list(zip(rwdImgAppears, imgNames))
-    rewards.sort(key=lambda r: r[0])
-    for ria, img in rewards:
-        pe = pe_by_imageAppTime.get(ria, None)
-        if pe is not None:
-            outputCSV.write('{0}, {1}, {2}, {3}\n'.format(ria, img, pe.pokeTime, pe.latency))
-            print('{0}, {1}, {2}, {3}'.format(ria, img, pe.pokeTime, pe.latency))
-        else:
-            outputCSV.write('{0}, {1}, TIMEOUT\n'.format(ria, img))
-            print('{0}, {1}, TIMEOUT'.format(ria, img))
+        img_latencies = []
+        for img_app_time in ri.appearanceTimes:
+            pe = pe_by_imageAppTime.get(img_app_time, None)
+            if pe is not None:
+                img_latencies.append(pe.latency)
+        ri.avg_latency = numpy.mean(img_latencies)
+        ri.SEM_latency = stats.sem(img_latencies)
 
-    # try:
-    #     imgs.sort(key = lambda ri: float(re.findall(r"[-+]?[.]?[\d]+(?:,\d\d\d)*[\.]?\d*(?:[eE][-+]?\d+)?",ri.name)[0])) # sort images bycontrast level
-    # except IndexError:
-    #     pass #image does not have contrast level specified
-    # for k in imgs:
-    #     print('Latencies for {0}'.format(k.name))
-    #     for pe in pe_by_image[k]:
-    #         print(pe.pokeTime, pe.latency)     
-    #         outputCSV.write('{0}, {1}, {2}\n'.format(k.name, pe.pokeTime, pe.latency))     
+def pokeLatencies(poke_events, images):
+    for pe in poke_events:
+        if pe.latency is not None:
+            outputCSV.write('{0}, {1}, {2}, {3}\n'.format(pe.imageAppearanceTime, pe.image.name, pe.pokeTime, pe.latency))
+        else:
+            outputCSV.write('{0}, {1}, TIMEOUT\n'.format(pe.imageAppearanceTime, pe.image.name))
 
 
 def pokesPerHour(poke_events):
@@ -384,15 +379,10 @@ def pokeStatistics(poke_events, images, filename):
         rewardImgs.sort(key = lambda ri: float(re.findall(r"[-+]?[.]?[\d]+(?:,\d\d\d)*[\.]?\d*(?:[eE][-+]?\d+)?",ri.name)[0])) # sort images bycontrast level
     except IndexError:
         pass #image does not have contrast level specified
-    misses = PokeEvent.missedRewards(poke_events, rewardImgs)
-    # print("Successful Pokes {0}".format(successful))
-    # print("Unsuccesful Pokes {0}".format(total - successful))
-    # print("Total {0}".format(total))
+    PokeEvent.imagePerformance(poke_events, rewardImgs)
     if 'Night #1' in filename or 'Night 1' in filename:
         print('\n')
         return
-    for ri in rewardImgs:
-        print("Missed Reward Pokes for image: {0} are {1}".format(ri.name, misses[ri]))
     print('\n')
     
 def getFileNames(location):
@@ -434,18 +424,9 @@ for filename in getFileNames(loc):
     with open(filename, 'r') as resultFile:
         allInput = resultFile.readlines()
     outputCSV = open(filename.replace('.txt','.csv'), 'w')
-    currentImg = None
-    pokeImg = None
-    runImg = None
-    currentState = None
+    currentImg, pokeImg, runImg, currentState = None, None, None, None
     findFloat = re.compile("[+-]?([0-9]*[.])?[0-9]+") #regex to search for a number (float)
-    wheelHalfTimes = []
-    doorStates = []
-    doorTimes = []
-    pumpStates = []
-    pumpTimes = []
-    poke_events = []
-    rotation_intervals = []
+    wheelHalfTimes, doorStates, doorTimes, pumpStates, pumpTimes, poke_events, rotation_intervals = [], [], [], [], [], [], []
     skipLine = False
     curImgName = None
     pokeInProgress = False
@@ -509,9 +490,10 @@ for filename in getFileNames(loc):
     # rpmTimeLapse(rotation_intervals)
     # numPokes(poke_events)
     # drinkLengths(poke_events)
+    setImageLatencies(poke_events, images)
     pokeStatistics(poke_events, images, filename)
     pokesPerHour(poke_events)
-    latencies(poke_events, images)
+    pokeLatencies(poke_events, images)
     outputCSV.close() #DO NOT delete this line or data may be corrupted (not just results! DATA!!)
 
 
