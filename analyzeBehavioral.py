@@ -433,7 +433,7 @@ for filename in getFileNames(loc):
     images, identifier = initialize(allInput, filename, findFloat)
     images = set(images) #convert to set to avoid accidental duplication
     Image.images = images
-    outputCSV = open(filename.replace(filename[filename.rfind('/')+1:], identifier + '.txt'), 'w')
+    outputCSV = open(filename.replace(filename[filename.rfind('/')+1:], identifier + '.csv'), 'w')
     for line in allInput:
         if 'starting' in line:
             continue
