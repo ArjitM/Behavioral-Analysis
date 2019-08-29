@@ -402,13 +402,14 @@ def getFileNames(location):
     fileNames.sort()
     return fileNames
 
-def initializeImages(allInput, filename):
+def initialize(allInput, filename, findFloat):
     images = []
     for line in allInput:
         if 'USB drive ID: ' in line:
             print("\n***********************************\n")
             print(filename)
             print(line)
+            mouseNum = int(findFloat.search(line).group(0))
         elif 'Control image set:' in line:
             for img in line[line.find('[')+1:line.rfind(']')].split(','):
                 images.append(Image(img.strip(), ImageTypes.Control))
@@ -416,22 +417,23 @@ def initializeImages(allInput, filename):
             for img in line[line.find('[')+1:line.rfind(']')].split(','):
                 images.append(Image(img.strip(), ImageTypes.Reward))
         elif "Start of experiment" in line:
-            return images
+            return images, "Mouse_{0}".format(mouseNum)
 
 if not loc.endswith('/'):
     loc += '/'
 for filename in getFileNames(loc):
     with open(filename, 'r') as resultFile:
         allInput = resultFile.readlines()
-    outputCSV = open(filename.replace('.txt','.csv'), 'w')
     currentImg, pokeImg, runImg, currentState = None, None, None, None
     findFloat = re.compile("[+-]?([0-9]*[.])?[0-9]+") #regex to search for a number (float)
     wheelHalfTimes, doorStates, doorTimes, pumpStates, pumpTimes, poke_events, rotation_intervals = [], [], [], [], [], [], []
     skipLine = False
     curImgName = None
     pokeInProgress = False
-    images = set(initializeImages(allInput, filename)) #convert to set to avoid accidental duplication
+    images, identifier = initialize(allInput, filename, findFloat)
+    images = set(images) #convert to set to avoid accidental duplication
     Image.images = images
+    outputCSV = open(filename.replace(filename[filename.rfind('/')+1:], identifier + '.txt'), 'w')
     for line in allInput:
         if 'starting' in line:
             continue
