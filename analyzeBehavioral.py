@@ -457,6 +457,7 @@ def initialize(allInput, filename, findFloat):
 if not loc.endswith('/'):
     loc += '/'
 for filename in getFileNames(loc):
+    Image.appearanceLog = OrderedDict(); #reset appearances
     with open(filename, 'r') as resultFile:
         allInput = resultFile.readlines()
     findFloat = re.compile("[+-]?([0-9]*[.])?[0-9]+") #regex to search for a number (float)
