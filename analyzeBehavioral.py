@@ -353,9 +353,11 @@ def pokeLatencies(poke_events, images):
             for pe in ap.poke_events:
                 if pe.latency is not None:
                     outputCSV.write('{0}, {1}, {2}, {3}\n'.format(pe.imageAppearanceTime, pe.image.name, pe.pokeTime, pe.latency))
-                else:
-                    outputCSV.write('{0}, {1}, TIMEOUT\n'.format(pe.imageAppearanceTime, pe.image.name))
-
+                # NOTE that a poke event has a LATENCY of NONE iff the poke was unsucessful. 
+                # Because latencies are considered only for rewrad images and reward images are
+                # reset upon the first poke ceases, such a case shall not be encountered, unless 
+                # an erroneous wheel rotation causes event switching and falsely creates two events
+                # one successful and the other unsuccessful.
 
 def pokesPerHour(poke_events):
     hourlyPokes = {} #dictionary stores pokes for each hour
@@ -495,7 +497,7 @@ for filename in getFileNames(loc):
             assert currentImg is not None, 'Unrecognized image: {0}'.format(curImgName)
             currentImg.incrementAppearances(float(re.search("Time: (.*)", line).group(1)))
 
-        elif 'Wheel' in line:
+        elif 'Wheel' in line and not pokeInProgress:
             if skipLine:
                 skipLine = False
                 continue
