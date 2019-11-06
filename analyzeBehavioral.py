@@ -422,7 +422,7 @@ def pokeStatistics(poke_events, images, filename, outputCSV, preset):
 
     rewardImgs.sort(key=lambda ri: [tryint(c) for c in re.split('([0-9]+)', ri.name)])
     imagePerformance(poke_events, rewardImgs, outputCSV)
-    if 'contrast' in preset.lower():
+    if 'contrast' in preset.lower() or 'spatial' in preset.lower():
         imagePerformanceFirst(poke_events, rewardImgs, outputCSV)
     print('\n')
 
