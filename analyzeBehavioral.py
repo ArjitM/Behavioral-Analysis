@@ -9,7 +9,7 @@ from collections import OrderedDict
 from scipy import stats
 import numpy
 
-loc = 'Data/results/'
+loc = 'Data/testing/'
 
 
 class ImageTypes(Enum):
@@ -212,6 +212,7 @@ class PokeEvent:
     def imageAppearance(self):
         return self._imageAppearance
 
+
 class Appearance:
 
     def __init__(self, image, time, old_img):
@@ -310,16 +311,20 @@ def setImageLatencies(poke_events, images):
     for pe in poke_events:
         if pe.latency is not None:
             pe_by_imageAppTime[pe.imageAppearanceTime] = pe
-    rewardImgs = list(filter(lambda im: im.imageType is ImageTypes.REWARD, images))
-    rewardImgs.sort(key=lambda ri: ri.name)
+    rewardImgs = filter(lambda im: im.imageType is ImageTypes.REWARD, images)
     for ri in rewardImgs:
         img_latencies = []
+        img_latencies_1st = []
         for img_app_time in ri.appearanceTimes:
             pe = pe_by_imageAppTime.get(img_app_time, None)
             if pe is not None:
                 img_latencies.append(pe.latency)
+                if ri.appearances.get(img_app_time).rewardSeqNum == 1:
+                    img_latencies_1st.append(pe.latency)
         ri.avg_latency = numpy.mean(img_latencies)
+        ri.avg_latency_1st = numpy.mean(img_latencies_1st)
         ri.SEM_latency = stats.sem(img_latencies)
+        ri.SEM_latency_1st = stats.sem(img_latencies_1st)
 
 
 def pokeLatencies(outputCSV):
@@ -336,7 +341,7 @@ def pokeLatencies(outputCSV):
                     outputCSV.write(
                         '{0}, {1}, {2}, {3}\n'.format(pe.imageAppearanceTime, pe.image.name, pe.pokeTime, pe.latency))
                 # NOTE that a poke event has a LATENCY of NONE iff the poke was unsucessful. 
-                # Because latencies are considered only for rewrad images and REWARD images are
+                # Because latencies are considered only for reward images and REWARD images are
                 # reset upon the first poke ceases, such a case shall not be encountered, unless 
                 # an erroneous wheel rotation causes event switching and falsely creates two events
                 # one successful and the other unsuccessful.
@@ -402,6 +407,7 @@ def pokeStatistics(poke_events, images, filename, outputCSV, preset):
         successful += pe.successfulPokes()[0]
         total += pe.totalPokesNoTimeout()
     rewardImgs = list(filter(lambda im: im.imageType is ImageTypes.REWARD, images))
+
     # try:
     #     rewardImgs.sort();
     #     rewardImgs.sort(key=lambda ri: float(re.findall(r"\w*_\d*", ri.name)[0]))  # sort images bycontrast level
@@ -441,20 +447,25 @@ def imagePerformanceFirst(poke_events, rewardImgs, outputCSV):
     for ri in rewardImgs:
         hits = 0
         firstAppearances = 0
-        for pe in poke_events:
-            if pe.image == ri and pe.imageAppearance.rewardSeqNum == 1:
-                if pe.isSuccess():
-                    hits += 1  # poke events that occurred in the presence of the REWARD image
+        other = 0
+        for ap in ri.appearances.values():
+            if ap.rewardSeqNum == 1:
+                for pe in ap.poke_events:
+                    if pe.isSuccess():
+                        hits += 1  # poke events that occurred in the presence of the REWARD image
+                        break
                 firstAppearances += 1
 
         print('FIRST ONLY REWARD image appearances for {0} >> {1}'.format(ri.name, firstAppearances))
         print('Hits/Successful Pokes >> ', hits)
+        print("OTHER >>> ", other)
         success_rate = hits * 100.0 / firstAppearances if firstAppearances else 'N/A'
-        outputCSV.write('{0}, {1}, {2}, {3}, {4}, {5}, {6}\n'.format(ri.name, firstAppearances, hits, firstAppearances - hits, success_rate, ri.avg_latency, ri.SEM_latency))
+        outputCSV.write(
+            '{0}, {1}, {2}, {3}, {4}, {5}, {6}\n'.format(ri.name, firstAppearances, hits, firstAppearances - hits,
+                                                              success_rate, ri.avg_latency_1st, ri.SEM_latency_1st))
 
 
 def getFileNames(location):
-
     fileNames = []
 
     def recursiveDirectories(loc):
@@ -476,6 +487,7 @@ def getFileNames(location):
 def initialize(allInput, filename, findFloat):
     images = []
     preset = ''
+    mouseNum = 0
     for line in allInput:
         if 'USB drive ID: ' in line:
             print("\n***********************************\n")
@@ -495,12 +507,11 @@ def initialize(allInput, filename, findFloat):
 
 
 def analyze():
-
     global loc
     if not loc.endswith('/'):
         loc += '/'
     for filename in getFileNames(loc):
-        Image.appearanceLog = OrderedDict();  # reset appearances
+        Image.appearanceLog = OrderedDict()  # reset appearances
         with open(filename, 'r') as resultFile:
             allInput = resultFile.readlines()
         findFloat = re.compile("[+-]?([0-9]*[.])?[0-9]+")  # regex to search for a number (float)
@@ -571,7 +582,8 @@ def analyze():
                 if currentState is not Activity.Poking and not pokeInProgress:
                     pokeImg = currentImg  # record image when poke event starts
                 currentState = Activity.Poking
-                door_state = DoorStates.High if re.search("State: (.*), Time", line).group(1) == 'High' else DoorStates.Low
+                door_state = DoorStates.High if re.search("State: (.*), Time", line).group(
+                    1) == 'High' else DoorStates.Low
                 doorStates.append(door_state)
                 doorTimes.append(float(findFloat.search(line).group(0)))
 
@@ -590,7 +602,6 @@ analysisFuncs METHOD BELOW.'''
 
 
 def analysisFuncs(poke_events, images, filename, outputCSV, preset):
-
     setImageLatencies(poke_events, images)  # must be called FIRST
     pokeStatistics(poke_events, images, filename, outputCSV, preset)
     pokesPerHour(poke_events, outputCSV)
