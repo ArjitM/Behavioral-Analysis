@@ -9,7 +9,19 @@ from collections import OrderedDict
 from scipy import stats
 import numpy
 
-loc = 'Data/testing/'
+'''Directory wherein all experimental data is stored. Can be recursively organized.'''
+LOCALDIR = 'Data/'
+
+class Presets(Enum):
+    NIGHT_1 = auto()
+    NIGHT_2 = auto()
+    NIGHT_3 = auto()
+    NIGHT_4 = auto()
+    CONTRAST = auto()
+    SPATIAL = auto()
+
+
+TIMEOUTS = {Presets.NIGHT_3: 30, Presets.NIGHT_4: 10, Presets.CONTRAST: 10, Presets.SPATIAL: 10}
 
 
 class ImageTypes(Enum):
@@ -340,9 +352,9 @@ def pokeLatencies(outputCSV):
                 if pe.latency is not None:
                     outputCSV.write(
                         '{0}, {1}, {2}, {3}\n'.format(pe.imageAppearanceTime, pe.image.name, pe.pokeTime, pe.latency))
-                # NOTE that a poke event has a LATENCY of NONE iff the poke was unsucessful. 
+                # NOTE that a poke event has a LATENCY of NONE iff the poke was unsuccessful.
                 # Because latencies are considered only for reward images and REWARD images are
-                # reset upon the first poke ceases, such a case shall not be encountered, unless 
+                # reset once the first poke ceases, such a case shall not be encountered unless
                 # an erroneous wheel rotation causes event switching and falsely creates two events
                 # one successful and the other unsuccessful.
 
@@ -507,10 +519,10 @@ def initialize(allInput, filename, findFloat):
 
 
 def analyze():
-    global loc
-    if not loc.endswith('/'):
-        loc += '/'
-    for filename in getFileNames(loc):
+    global LOCALDIR
+    if not LOCALDIR.endswith('/'):
+        LOCALDIR += '/'
+    for filename in getFileNames(LOCALDIR):
         Image.appearanceLog = OrderedDict()  # reset appearances
         with open(filename, 'r') as resultFile:
             allInput = resultFile.readlines()

@@ -8,7 +8,7 @@ from enum import Enum, auto
 from itertools import groupby
 import math
 
-loc = 'Data/'
+LOCALDIR = 'Data/'
 
 class ImageTypes(Enum):
     Reward = "Reward"
@@ -381,9 +381,9 @@ def initializeImages(allInput, filename):
         elif "Start of experiment" in line:
             return images
 
-if not loc.endswith('/'):
-    loc += '/'
-for filename in getFileNames(loc):
+if not LOCALDIR.endswith('/'):
+    LOCALDIR += '/'
+for filename in getFileNames(LOCALDIR):
     with open(filename, 'r') as resultFile:
         allInput = resultFile.readlines()
         print(allInput)
