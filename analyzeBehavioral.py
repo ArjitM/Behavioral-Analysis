@@ -1,16 +1,26 @@
 #!/usr/bin/env python3
 import os
 import re
-# import matplotlib.pyplot as plt
 from enum import Enum, auto
 from itertools import groupby
+from itertools import zip_longest
 import math
 from collections import OrderedDict
 from scipy import stats
-import numpy
+import numpy as np
+from openpyxl import Workbook
 
-'''Directory wherein all experimental data is stored. Can be recursively organized.'''
+"""
+Directory wherein all experimental data is stored. Can be recursively organized.
+"""
 LOCALDIR = 'Data/'
+
+
+"""
+Bin size for latency frequency distributions.
+"""
+LATENCYSTEP = 0.1
+
 
 class Presets(Enum):
     NIGHT_1 = auto()
@@ -258,6 +268,10 @@ class Appearance:
 
 
 class Image:
+
+    """
+    Log of image appearances by time.
+    """
     appearanceLog = OrderedDict()
 
     def __init__(self, name, imageType):
@@ -333,30 +347,68 @@ def setImageLatencies(poke_events, images):
                 img_latencies.append(pe.latency)
                 if ri.appearances.get(img_app_time).rewardSeqNum == 1:
                     img_latencies_1st.append(pe.latency)
-        ri.avg_latency = numpy.mean(img_latencies)
-        ri.avg_latency_1st = numpy.mean(img_latencies_1st)
+        ri.avg_latency = np.mean(img_latencies)
+        ri.avg_latency_1st = np.mean(img_latencies_1st)
         ri.SEM_latency = stats.sem(img_latencies)
         ri.SEM_latency_1st = stats.sem(img_latencies_1st)
 
 
-def pokeLatencies(outputCSV):
-    print('\nTime of REWARD, Image, Poke Time, and Latencies (sec):')
-    outputCSV.write('\nTime of REWARD, Image, Time of poke, Latencies (sec)\n')
+def pokeLatencies(outputCSV, preset):
+    allLatencies = []
+    trueLatencies = []
+    rewardTimes = []
+    imageWiseLatencies = {}
+    outputCSV.append(['Time of REWARD', 'Image', 'Time of poke', 'Latencies (sec)'])
     for ap in Image.appearanceLog.values():
         if ap.image.imageType != ImageTypes.REWARD:
             continue
         if not ap.poke_events:
-            outputCSV.write('{0}, {1}, TIMEOUT\n'.format(ap.time, ap.image.name))
+            outputCSV.append([ap.time, ap.image.name, "TIMEOUT"])
+            allLatencies.append(TIMEOUTS.get(preset))
+            rewardTimes.append(ap.time)
         else:
+            if imageWiseLatencies.get(ap.image) is None:
+                imageWiseLatencies[ap.image] = []
             for pe in ap.poke_events:
                 if pe.latency is not None:
-                    outputCSV.write(
-                        '{0}, {1}, {2}, {3}\n'.format(pe.imageAppearanceTime, pe.image.name, pe.pokeTime, pe.latency))
+                    outputCSV.append([pe.imageAppearanceTime, pe.image.name, pe.pokeTime, pe.latency])
+                    allLatencies.append(pe.latency)
+                    trueLatencies.append(pe.latency)
+                    rewardTimes.append(pe.imageAppearanceTime)
+                    imageWiseLatencies[ap.image].append(pe.latency)
                 # NOTE that a poke event has a LATENCY of NONE iff the poke was unsuccessful.
                 # Because latencies are considered only for reward images and REWARD images are
                 # reset once the first poke ceases, such a case shall not be encountered unless
                 # an erroneous wheel rotation causes event switching and falsely creates two events
                 # one successful and the other unsuccessful.
+
+    if len(trueLatencies) == 0:
+        return
+
+    headings = ["Time", "Latency", ""]
+    sheetData = [rewardTimes, allLatencies, []]
+
+    for im in imageWiseLatencies.keys():
+        headings.append(im.name + " latencies")
+        headings.append("")
+        sheetData.append(imageWiseLatencies.get(im))
+        sheetData.append([])
+
+    headings.extend(["Bin", "Frequency"])
+    freq, hbin = np.histogram(trueLatencies, bins=np.arange(0, max(trueLatencies) + LATENCYSTEP, LATENCYSTEP))
+    sheetData.append(hbin)
+    sheetData.append(freq)
+    #sheetData = list(map(lambda arr: list(map(lambda k: str(k), arr)), sheetData))
+
+    outputCSV.append([])
+    outputCSV.append(headings)
+    for row in zip_longest(*sheetData, fillvalue=""):
+        try:
+            outputCSV.append(row)
+        except ValueError:
+            print(row)
+            pass
+            #outputCSV.append(row[0])
 
 
 def pokesPerHour(poke_events, outputCSV):
@@ -367,10 +419,11 @@ def pokesPerHour(poke_events, outputCSV):
                 hr = int(t / 3600) + 1  # convert t to hours, round up for nth hour
                 hourlyPokes[hr] = hourlyPokes.get(hr,
                                                   0) + 1  # increment pokes for each hour, default value of 0 supplied to initialize
-    outputCSV.write('\nHour, # Successful Pokes\n')
+    outputCSV.append([])
+    outputCSV.append(['Hour', '# Successful Pokes'])
     for k in range(1, 13):
         print("Successful pokes in hour #{0} >> {1}".format(k, hourlyPokes.get(k, 0)))
-        outputCSV.write('{0}, {1}\n'.format(k, hourlyPokes.get(k, 0)))
+        outputCSV.append([k, hourlyPokes.get(k, 0)])
 
 
 # def numPokes(poke_events):
@@ -434,13 +487,13 @@ def pokeStatistics(poke_events, images, filename, outputCSV, preset):
 
     rewardImgs.sort(key=lambda ri: [tryint(c) for c in re.split('([0-9]+)', ri.name)])
     imagePerformance(poke_events, rewardImgs, outputCSV)
-    if 'contrast' in preset.lower() or 'spatial' in preset.lower():
+    if preset is Presets.SPATIAL or preset is Presets.CONTRAST:
         imagePerformanceFirst(poke_events, rewardImgs, outputCSV)
     print('\n')
 
 
 def imagePerformance(poke_events, rewardImgs, outputCSV):
-    outputCSV.write("Image Name, Appearances, Hits, Misses, Success Rate %, Latency Mean, Latency SEM\n")
+    outputCSV.append(["Image Name", "Appearances", "Hits", "Misses", "Success Rate %", "Latency Mean", "Latency SEM"])
     for ri in rewardImgs:
         hits = 0
         for pe in poke_events:
@@ -449,13 +502,13 @@ def imagePerformance(poke_events, rewardImgs, outputCSV):
         print('REWARD image appearances for {0} >> {1}'.format(ri.name, ri.numAppearances))
         print('Hits/Successful Pokes >> ', hits)
         success_rate = hits * 100.0 / ri.numAppearances if ri.numAppearances else 'N/A'
-        outputCSV.write(
-            '{0}, {1}, {2}, {3}, {4}, {5}, {6}\n'.format(ri.name, ri.numAppearances, hits, ri.numAppearances - hits,
-                                                         success_rate, ri.avg_latency, ri.SEM_latency))
+        outputCSV.append([ri.name, ri.numAppearances, hits, ri.numAppearances - hits,
+                                                         success_rate, ri.avg_latency, ri.SEM_latency])
 
 
 def imagePerformanceFirst(poke_events, rewardImgs, outputCSV):
-    outputCSV.write("\nImage Name, First Appearances, Hits, Misses, Success Rate %, Latency Mean, Latency SEM\n")
+    outputCSV.append([])
+    outputCSV.append(["Image Name", "First Appearances", "Hits", "Misses", "Success Rate %", "Latency Mean", "Latency SEM"])
     for ri in rewardImgs:
         hits = 0
         firstAppearances = 0
@@ -472,9 +525,8 @@ def imagePerformanceFirst(poke_events, rewardImgs, outputCSV):
         print('Hits/Successful Pokes >> ', hits)
         print("OTHER >>> ", other)
         success_rate = hits * 100.0 / firstAppearances if firstAppearances else 'N/A'
-        outputCSV.write(
-            '{0}, {1}, {2}, {3}, {4}, {5}, {6}\n'.format(ri.name, firstAppearances, hits, firstAppearances - hits,
-                                                              success_rate, ri.avg_latency_1st, ri.SEM_latency_1st))
+        outputCSV.append([ri.name, firstAppearances, hits, firstAppearances - hits,
+                                                              success_rate, ri.avg_latency_1st, ri.SEM_latency_1st])
 
 
 def getFileNames(location):
@@ -514,6 +566,19 @@ def initialize(allInput, filename, findFloat):
                 images.append(Image(img.strip(), ImageTypes.REWARD))
         elif 'preset: ' in line:
             preset = line.split('preset: ')[1]
+            if 'contrast' in preset.lower():
+                preset = Presets.CONTRAST
+            elif 'spatial' in preset.lower():
+                preset = Presets.SPATIAL
+            elif '1' in preset:
+                preset = Presets.NIGHT_1
+            elif '2' in preset:
+                preset = Presets.NIGHT_2
+            elif '3' in preset:
+                preset = Presets.NIGHT_3
+            elif '4' in preset:
+                preset = Presets.NIGHT_4
+
         elif "Start of experiment" in line:
             return images, "Mouse_{0}".format(mouseNum), preset
 
@@ -534,12 +599,14 @@ def analyze():
         images, identifier, preset = initialize(allInput, filename, findFloat)
         images = set(images)  # convert to set to avoid accidental duplication
         Image.images = images
-        outputCSV = open(filename.replace(filename[filename.rfind('/') + 1:], identifier + '.csv'), 'w')
+
+        wb = Workbook()  #open(filename.replace(filename[filename.rfind('/') + 1:], identifier + '.csv'), 'w')
+        outputCSV = wb.active
         try:
             controlImgStart = [im for im in images if im.imageType == ImageTypes.CONTROL][0]
         except IndexError:
             print("Warning: No CONTROL Images")
-            outputCSV.write("WARNING: no CONTROL images defined")
+            outputCSV.append(["WARNING: no CONTROL images defined"])
             controlImgStart = [im for im in images][0]
         # ControlImgStart defined in case wheel or door activity is documented prior to first image appearance
         # documentation. This occurs rarely and is a bug in the results file generation protocol.
@@ -607,6 +674,7 @@ def analyze():
         pruneRotationIntervals(rotation_intervals)
 
         analysisFuncs(poke_events, images, filename, outputCSV, preset)
+        wb.save(filename.replace(filename[filename.rfind('/') + 1:], identifier + '.xlsx'))
 
 
 '''ANALYSIS FUNCTION CALLS BEGIN HERE; DO NOT EDIT ABOVE WHEN RUNNING ANALYSIS. CHANGES SHOULD BE MADE ONLY TO 
@@ -617,8 +685,8 @@ def analysisFuncs(poke_events, images, filename, outputCSV, preset):
     setImageLatencies(poke_events, images)  # must be called FIRST
     pokeStatistics(poke_events, images, filename, outputCSV, preset)
     pokesPerHour(poke_events, outputCSV)
-    pokeLatencies(outputCSV)
-    outputCSV.close()  # DO NOT delete this line or data may be corrupted (not just results! DATA!!)
+    pokeLatencies(outputCSV, preset)
+    #outputCSV.close()  # DO NOT delete this line or data may be corrupted (not just results! DATA!!)
 
 
 analyze()
