@@ -354,6 +354,10 @@ def setImageLatencies(poke_events, images):
 
 
 def getContrast(image):
+
+    if "negative" in image.name.lower():
+        return 0
+
     try:
         contrastVals = [int(s) for s in image.name if s.isdigit()]
         contrastVal = int(''.join(str(digit) for digit in contrastVals))
@@ -422,8 +426,8 @@ def pokeLatencies(wb, preset):
         headings.extend(["Image Contrast", "Latency"])
         headings.append("")
         latencies = imageWiseLatencies.get(im)
-        sheetData.append([getContrast(im)] * len(latencies))
-        sheetData.append(latencies)
+        sheetData.append([getContrast(im)] * len(latencies) + ["", "MEAN", "SEM"])
+        sheetData.append(latencies + ["", im.avg_latency, im.SEM_latency])
         sheetData.append([])
     ws3.append(headings)
     for row in zip_longest(*sheetData, fillvalue=""):
@@ -438,11 +442,14 @@ def pokeLatencies(wb, preset):
     for im in sorted(imageWiseLatencies.keys(), key=getContrast):
         headings.extend(["Contrast", "Bin", "Count", "Rel. Frequency", ""])
         latencies = imageWiseLatencies.get(im)
-        count, hbin = np.histogram(latencies, bins=np.arange(0, max(latencies) + LATENCYSTEP, LATENCYSTEP))
+        count, hbin = np.histogram(latencies, bins=np.arange(0, TIMEOUTS.get(preset, 10) + LATENCYSTEP, LATENCYSTEP))
+        count = list(count)
+        hbin = list(hbin)
         sheetData.append([getContrast(im)] * len(hbin))
-        sheetData.append(hbin)
-        sheetData.append(count)
-        sheetData.append([c * 100 / len(latencies) for c in count])  # relative frequencies as %
+        sheetData.append(hbin + ["", "Total"])
+        sheetData.append(count + ["", "", sum(count)])
+        percents = [c * 100 / len(latencies) for c in count]
+        sheetData.append(percents + ["", "", sum(percents)])  # relative frequencies as %
         sheetData.append([])
         # sheetData = list(map(lambda arr: list(map(lambda k: str(k), arr)), sheetData))
     ws4.append(headings)
