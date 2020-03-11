@@ -9,6 +9,7 @@ from collections import OrderedDict
 from scipy import stats
 import numpy as np
 from openpyxl import Workbook
+import numbers
 
 """
 Directory wherein all experimental data is stored. Can be recursively organized.
@@ -280,9 +281,6 @@ class Image:
         self.imageType = imageType
         self._appearanceTimes = []
         self._appearances = {}
-        if imageType == ImageTypes.REWARD:
-            self.avg_latency = None
-            self.SEM_latency = None
 
     def __eq__(self, other):
         return self.name == other.name and self.imageType == other.imageType
@@ -333,28 +331,30 @@ class Image:
 #     plt.show()
 
 def setImageLatencies(poke_events, images):
-    pe_by_imageAppTime = {}  # poke events per image appearance times
-    for pe in poke_events:
-        if pe.latency is not None:
-            pe_by_imageAppTime[pe.imageAppearanceTime] = pe
-    rewardImgs = filter(lambda im: im.imageType is ImageTypes.REWARD, images)
-    for ri in rewardImgs:
-        img_latencies = []
-        img_latencies_1st = []
-        for img_app_time in ri.appearanceTimes:
-            pe = pe_by_imageAppTime.get(img_app_time, None)
-            if pe is not None:
-                img_latencies.append(pe.latency)
-                if ri.appearances.get(img_app_time).rewardSeqNum == 1:
-                    img_latencies_1st.append(pe.latency)
-        ri.avg_latency = np.mean(img_latencies)
-        ri.avg_latency_1st = np.mean(img_latencies_1st)
-        ri.SEM_latency = stats.sem(img_latencies)
-        ri.SEM_latency_1st = stats.sem(img_latencies_1st)
+    return
+
+
+#     pe_by_imageAppTime = {}  # poke events per image appearance times
+#     for pe in poke_events:
+#         if pe.latency is not None:
+#             pe_by_imageAppTime[pe.imageAppearanceTime] = pe
+#     rewardImgs = filter(lambda im: im.imageType is ImageTypes.REWARD, images)
+#     for ri in rewardImgs:
+#         img_latencies = []
+#         img_latencies_1st = []
+#         for img_app_time in ri.appearanceTimes:
+#             pe = pe_by_imageAppTime.get(img_app_time, None)
+#             if pe is not None:
+#                 img_latencies.append(pe.latency)
+#                 if ri.appearances.get(img_app_time).rewardSeqNum == 1:
+#                     img_latencies_1st.append(pe.latency)
+#         ri.avg_latency = np.mean(img_latencies)
+#         ri.avg_latency_1st = np.mean(img_latencies_1st)
+#         ri.SEM_latency = stats.sem(img_latencies)
+#         ri.SEM_latency_1st = stats.sem(img_latencies_1st)
 
 
 def getContrast(image):
-
     if "negative" in image.name.lower():
         return 0
 
@@ -371,40 +371,119 @@ def pokeLatencies(wb, preset):
     allLatencies = []
     trueLatencies = []
     rewardTimes = []
-    imageWiseLatencies = {}
-    outputCSV.append([])
-    outputCSV.append(['Time of REWARD', 'Image Contrast Level', 'Latencies (sec)'])
+    imageWiseTrueLatencies = {}
+    imageWiseAllLatencies = {}
+    imageWiseTrueLatencies_1st = {}
+    imageWiseAllLatencies_1st = {}
+    outProxy = [[], ['Time of REWARD', 'Image Contrast Level', 'Latencies (sec)']]
 
-    ## contrast instead of name
-    ### add time in hours
+    # contrast instead of name
+    # add time in hours
     for ap in Image.appearanceLog.values():
         if ap.image.imageType != ImageTypes.REWARD:
             continue
-        elif ap.rewardSeqNum != 1:  # only first appearances should be considered
-            continue
+        # elif ap.rewardSeqNum != 1:  # only first appearances should be considered
+        #     continue
 
         contrastLevel = getContrast(ap.image)
 
         if not ap.poke_events:
-            outputCSV.append([ap.time, contrastLevel, TIMEOUTS.get(preset)])
+            if imageWiseAllLatencies.get(ap.image) is None:
+                imageWiseAllLatencies[ap.image] = []
+            if imageWiseAllLatencies_1st.get(ap.image) is None:
+                imageWiseAllLatencies_1st[ap.image] = []
+            if TIMEOUTS.get(preset) is None:
+                continue
+            outProxy.append([ap.time, contrastLevel, TIMEOUTS.get(preset)])
             allLatencies.append(TIMEOUTS.get(preset))
+            imageWiseAllLatencies[ap.image].append(TIMEOUTS.get(preset))
             rewardTimes.append(ap.time)
+            if ap.rewardSeqNum == 1:
+                imageWiseAllLatencies_1st[ap.image].append(TIMEOUTS.get(preset))
 
         else:
-            if imageWiseLatencies.get(ap.image) is None:
-                imageWiseLatencies[ap.image] = []
+            if imageWiseTrueLatencies.get(ap.image) is None:
+                imageWiseTrueLatencies[ap.image] = []
+            if imageWiseAllLatencies.get(ap.image) is None:
+                imageWiseAllLatencies[ap.image] = []
+            if imageWiseTrueLatencies_1st.get(ap.image) is None:
+                imageWiseTrueLatencies_1st[ap.image] = []
+            if imageWiseAllLatencies_1st.get(ap.image) is None:
+                imageWiseAllLatencies_1st[ap.image] = []
             for pe in ap.poke_events:
                 if pe.latency is not None:
-                    outputCSV.append([pe.imageAppearanceTime, contrastLevel, pe.latency])
+                    outProxy.append([pe.imageAppearanceTime, contrastLevel, pe.latency])
                     allLatencies.append(pe.latency)
                     trueLatencies.append(pe.latency)
                     rewardTimes.append(pe.imageAppearanceTime)
-                    imageWiseLatencies[ap.image].append(pe.latency)
+                    imageWiseTrueLatencies[ap.image].append(pe.latency)
+                    imageWiseAllLatencies[ap.image].append(pe.latency)
+                    if ap.rewardSeqNum == 1:
+                        imageWiseTrueLatencies_1st[ap.image].append(pe.latency)
+                        imageWiseAllLatencies_1st[ap.image].append(pe.latency)
                 # NOTE that a poke event has a LATENCY of NONE iff the poke was unsuccessful.
                 # Because latencies are considered only for reward images and REWARD images are
-                # reset once the first poke ceases, such a case shall not be encountered unless
+                # reset once the first poke ceases, such a case is not encountered unless
                 # an erroneous wheel rotation causes event switching and falsely creates two events
                 # one successful and the other unsuccessful.
+                else:
+                    thisisbad = 5
+                    # print("********", pe.imageAppearanceTime)
+
+    rewardImgs = set(filter(lambda im: im.imageType is ImageTypes.REWARD,
+                            [ap.image for ap in Image.appearanceLog.values()]))
+    for ri in rewardImgs:
+
+        ri.true_latencies = imageWiseTrueLatencies.get(ri)
+        ri.all_latencies = imageWiseAllLatencies.get(ri)
+
+        # length of all latencies should be equal to numAppearances
+        # but discrepancy may exist owing to unsuccessful pokes
+
+        ri.true_latencies_1st = imageWiseTrueLatencies_1st.get(ri)
+        ri.all_latencies_1st = imageWiseAllLatencies_1st.get(ri)
+
+        if ri.true_latencies:
+            ri.true_avg_latency = np.mean(imageWiseTrueLatencies.get(ri))
+            ri.true_SEM_latency = stats.sem(imageWiseTrueLatencies.get(ri))
+            ri.true_SD_latency = np.std(imageWiseTrueLatencies.get(ri))
+        else:
+            ri.true_avg_latency = 'N/A'
+            ri.true_SEM_latency = 'N/A'
+            ri.true_SD_latency = 'N/A'
+
+        if ri.true_latencies_1st:
+            ri.true_avg_latency_1st = np.mean(imageWiseTrueLatencies_1st.get(ri))
+            ri.true_SEM_latency_1st = stats.sem(imageWiseTrueLatencies_1st.get(ri))
+            ri.true_SD_latency_1st = np.std(imageWiseTrueLatencies_1st.get(ri))
+        else:
+            ri.true_avg_latency_1st = 'N/A'
+            ri.true_SEM_latency_1st = 'N/A'
+            ri.true_SD_latency_1st = 'N/A'
+
+        if ri.all_latencies:
+            ri.all_avg_latency = np.mean(imageWiseAllLatencies.get(ri))
+            ri.all_SEM_latency = stats.sem(imageWiseAllLatencies.get(ri))
+            ri.all_SD_latency = np.std(imageWiseAllLatencies.get(ri))
+        else:
+            ri.all_avg_latency = 'N/A'
+            ri.all_SEM_latency = 'N/A'
+            ri.all_SD_latency = 'N/A'
+
+        if ri.all_latencies_1st:
+            ri.all_avg_latency_1st = np.mean(imageWiseAllLatencies_1st.get(ri))
+            ri.all_SEM_latency_1st = stats.sem(imageWiseAllLatencies_1st.get(ri))
+            ri.all_SD_latency_1st = np.std(imageWiseAllLatencies_1st.get(ri))
+        else:
+            ri.all_avg_latency_1st = 'N/A'
+            ri.all_SEM_latency_1st = 'N/A'
+            ri.all_SD_latency_1st = 'N/A'
+
+    outputCSV.append([])
+    pokeStatistics(rewardImgs, outputCSV, preset)
+
+    for line in outProxy:
+        outputCSV.append(line)  # send latency documentation to output
 
     if len(trueLatencies) == 0:
         return
@@ -422,12 +501,12 @@ def pokeLatencies(wb, preset):
     sheetData = []
     headings = []
     ws3 = wb.create_sheet(title='Image-wise')
-    for im in sorted(imageWiseLatencies.keys(), key=getContrast):
+    for im in sorted(imageWiseTrueLatencies.keys(), key=getContrast):
         headings.extend(["Image Contrast", "Latency"])
         headings.append("")
-        latencies = imageWiseLatencies.get(im)
-        sheetData.append([getContrast(im)] * len(latencies) + ["", "MEAN", "SEM"])
-        sheetData.append(latencies + ["", im.avg_latency, im.SEM_latency])
+        latencies = imageWiseTrueLatencies.get(im)
+        sheetData.append([getContrast(im)] * len(latencies) + ["", "MEAN", "SEM", "STD DEV"])
+        sheetData.append(latencies + ["", im.true_avg_latency, im.true_SEM_latency, im.true_SD_latency])
         sheetData.append([])
     ws3.append(headings)
     for row in zip_longest(*sheetData, fillvalue=""):
@@ -439,9 +518,9 @@ def pokeLatencies(wb, preset):
     sheetData = []
     headings = []
     ws4 = wb.create_sheet(title='Distributions')
-    for im in sorted(imageWiseLatencies.keys(), key=getContrast):
+    for im in sorted(imageWiseTrueLatencies.keys(), key=getContrast):
         headings.extend(["Contrast", "Bin", "Count", "Rel. Frequency", ""])
-        latencies = imageWiseLatencies.get(im)
+        latencies = imageWiseTrueLatencies.get(im)
         count, hbin = np.histogram(latencies, bins=np.arange(0, TIMEOUTS.get(preset, 10) + LATENCYSTEP, LATENCYSTEP))
         count = list(count)
         hbin = list(hbin)
@@ -468,7 +547,6 @@ def pokesPerHour(poke_events, outputCSV):
                 hr = int(t / 3600) + 1  # convert t to hours, round up for nth hour
                 hourlyPokes[hr] = hourlyPokes.get(hr,
                                                   0) + 1  # increment pokes for each hour, default value of 0 supplied to initialize
-    outputCSV.append([])
     outputCSV.append(['Hour', '# Successful Pokes'])
     for k in range(1, 13):
         print("Successful pokes in hour #{0} >> {1}".format(k, hourlyPokes.get(k, 0)))
@@ -512,14 +590,7 @@ def pruneRotationIntervals(rotation_intervals):
         rotation_intervals.remove(ri)
 
 
-def pokeStatistics(poke_events, images, filename, outputCSV, preset):
-    successful = 0
-    total = 0
-    i = 0
-    for pe in poke_events:
-        i += 1
-        successful += pe.successfulPokes()[0]
-        total += pe.totalPokesNoTimeout()
+def pokeStatistics(images, outputCSV, preset):
     rewardImgs = list(filter(lambda im: im.imageType is ImageTypes.REWARD, images))
 
     # sort images bycontrast level
@@ -530,48 +601,87 @@ def pokeStatistics(poke_events, images, filename, outputCSV, preset):
             return x
 
     rewardImgs.sort(key=lambda ri: [tryint(c) for c in re.split('([0-9]+)', ri.name)])
-    imagePerformance(poke_events, rewardImgs, outputCSV)
+    imagePerformance(rewardImgs, outputCSV, preset)
     if preset is Presets.SPATIAL or preset is Presets.CONTRAST:
-        imagePerformanceFirst(poke_events, rewardImgs, outputCSV)
+        imagePerformanceFirst(rewardImgs, outputCSV, preset)
     print('\n')
 
 
-def imagePerformance(poke_events, rewardImgs, outputCSV):
-    outputCSV.append(["Image Name", "Contrast", "Appearances", "Hits", "Misses", "Success Rate %", "Latency Mean", "Latency SEM"])
+def imagePerformance(rewardImgs, outputCSV, preset):
+    if preset is Presets.SPATIAL or preset is Presets.CONTRAST:
+        outputCSV.append(["Image Name", "Contrast", "Appearances", "Hits", "Misses", "Success Rate %",
+                          "Hits Latency Mean", "Hits Latency SEM", "Hits Latency SD", "Hits RI", "", "All Latency Mean",
+                          "All Latency SEM", "All Latency SD", "All RI"])
+    else:
+        outputCSV.append(["Image Name", "Appearances", "Hits", "Misses", "Success Rate %",
+                          "Hits Latency Mean", "Hits Latency SEM", "Hits Latency SD", "", "All Latency Mean",
+                          "All Latency SEM", "All Latency SD"])
+    zero_cont_mean = None
     for ri in rewardImgs:
-        hits = 0
-        for pe in poke_events:
-            if pe.image == ri and pe.isSuccess():
-                hits += 1  # poke events that occurred in the presence of the REWARD image
-        print('REWARD image appearances for {0} >> {1}'.format(ri.name, ri.numAppearances))
+        hits = len(ri.true_latencies) if ri.true_latencies else 0
+        numAppearances = len(ri.all_latencies)
+
+        print('REWARD image appearances for {0} >> {1}'.format(ri.name, numAppearances))
         print('Hits/Successful Pokes >> ', hits)
-        success_rate = hits * 100.0 / ri.numAppearances if ri.numAppearances else 'N/A'
-        outputCSV.append([ri.name, getContrast(ri), ri.numAppearances, hits, ri.numAppearances - hits,
-                          success_rate, ri.avg_latency, ri.SEM_latency])
+        success_rate = hits * 100.0 / numAppearances if numAppearances else 'N/A'
+
+        contrast = getContrast(ri)
+
+        if preset is Presets.SPATIAL or preset is Presets.CONTRAST:
+            if zero_cont_mean is None and contrast != 0:
+                raise ValueError('reward images out of order, need 0 contrast')
+            elif contrast == 0:
+                zero_cont_mean = ri.true_avg_latency, ri.all_avg_latency
+
+            outputCSV.append([ri.name, contrast, numAppearances, hits, numAppearances - hits,
+                              success_rate, ri.true_avg_latency, ri.true_SEM_latency, ri.true_SD_latency,
+                              1 - zero_cont_mean[0] / ri.true_avg_latency, "", ri.all_avg_latency,
+                              ri.all_SEM_latency, ri.all_SD_latency, 1 - zero_cont_mean[1] / ri.true_avg_latency])
+
+        else:
+            outputCSV.append([ri.name, numAppearances, hits, numAppearances - hits,
+                              success_rate, ri.true_avg_latency, ri.true_SEM_latency, ri.true_SD_latency, "",
+                              ri.all_avg_latency, ri.all_SEM_latency, ri.all_SD_latency])
 
 
-def imagePerformanceFirst(poke_events, rewardImgs, outputCSV):
+def imagePerformanceFirst(rewardImgs, outputCSV, preset):
     outputCSV.append([])
-    outputCSV.append(
-        ["Image Name", "Contrast", "First Appearances", "Hits", "Misses", "Success Rate %", "Latency Mean", "Latency SEM"])
+    outputCSV.append(["FIRST APPEARANCES ONLY"])
+    if preset is Presets.SPATIAL or preset is Presets.CONTRAST:
+        outputCSV.append(["Image Name", "Contrast", "Appearances", "Hits", "Misses", "Success Rate %",
+                          "Hits Latency Mean", "Hits Latency SEM", "Hits Latency SD", "Hits RI", "", "All Latency Mean",
+                          "All Latency SEM", "All Latency SD", "All RI"])
+    else:
+        outputCSV.append(["Image Name", "Appearances", "Hits", "Misses", "Success Rate %",
+                          "Hits Latency Mean", "Hits Latency SEM", "Hits Latency SD", "", "All Latency Mean",
+                          "All Latency SEM", "All Latency SD"])
+    zero_cont_mean = None
     for ri in rewardImgs:
-        hits = 0
-        firstAppearances = 0
-        other = 0
-        for ap in ri.appearances.values():
-            if ap.rewardSeqNum == 1:
-                for pe in ap.poke_events:
-                    if pe.isSuccess():
-                        hits += 1  # poke events that occurred in the presence of the REWARD image
-                        break
-                firstAppearances += 1
-
+        hits = len(ri.true_latencies_1st)
+        firstAppearances = len(ri.all_latencies_1st)
         print('FIRST ONLY REWARD image appearances for {0} >> {1}'.format(ri.name, firstAppearances))
         print('Hits/Successful Pokes >> ', hits)
-        print("OTHER >>> ", other)
         success_rate = hits * 100.0 / firstAppearances if firstAppearances else 'N/A'
-        outputCSV.append([ri.name, getContrast(ri), firstAppearances, hits, firstAppearances - hits,
-                          success_rate, ri.avg_latency_1st, ri.SEM_latency_1st])
+
+        contrast = getContrast(ri)
+
+        if preset is Presets.SPATIAL or preset is Presets.CONTRAST:
+            if zero_cont_mean is None and contrast != 0:
+                raise ValueError('reward images out of order, need 0 contrast')
+            elif contrast == 0:
+                zero_cont_mean = ri.true_avg_latency, ri.all_avg_latency
+
+            outputCSV.append([ri.name, getContrast(ri), firstAppearances, hits, firstAppearances - hits,
+                              success_rate, ri.true_avg_latency_1st, ri.true_SEM_latency_1st, ri.true_SD_latency_1st,
+                              1 - zero_cont_mean[0] / ri.true_avg_latency_1st if isinstance(
+                                  ri.true_avg_latency_1st, numbers.Number) else "N/A",
+                              "", ri.all_avg_latency_1st, ri.all_SEM_latency_1st, ri.all_SD_latency_1st,
+                              1 - zero_cont_mean[1] / ri.all_avg_latency_1st if isinstance(
+                                  ri.true_avg_latency_1st, numbers.Number) else "N/A"])
+        else:
+            outputCSV.append([ri.name, firstAppearances, hits, firstAppearances - hits,
+                              success_rate, ri.true_avg_latency, ri.true_SEM_latency, ri.true_SD_latency, "",
+                              ri.all_avg_latency, ri.all_SEM_latency, ri.all_SD_latency])
 
 
 def getFileNames(location):
@@ -728,11 +838,9 @@ analysisFuncs METHOD BELOW.'''
 
 def analysisFuncs(poke_events, images, filename, wb, preset):
     outputCSV = wb.active
-    setImageLatencies(poke_events, images)  # must be called FIRST
-    pokeStatistics(poke_events, images, filename, outputCSV, preset)
-    pokesPerHour(poke_events, outputCSV)
     pokeLatencies(wb, preset)
-    # outputCSV.close()  # DO NOT delete this line or data may be corrupted (not just results! DATA!!)
+    pokesPerHour(poke_events, outputCSV)
+
 
 
 analyze()
