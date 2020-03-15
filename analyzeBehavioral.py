@@ -330,29 +330,6 @@ class Image:
 #     plt.title('Poke Success Rate')
 #     plt.show()
 
-def setImageLatencies(poke_events, images):
-    return
-
-
-#     pe_by_imageAppTime = {}  # poke events per image appearance times
-#     for pe in poke_events:
-#         if pe.latency is not None:
-#             pe_by_imageAppTime[pe.imageAppearanceTime] = pe
-#     rewardImgs = filter(lambda im: im.imageType is ImageTypes.REWARD, images)
-#     for ri in rewardImgs:
-#         img_latencies = []
-#         img_latencies_1st = []
-#         for img_app_time in ri.appearanceTimes:
-#             pe = pe_by_imageAppTime.get(img_app_time, None)
-#             if pe is not None:
-#                 img_latencies.append(pe.latency)
-#                 if ri.appearances.get(img_app_time).rewardSeqNum == 1:
-#                     img_latencies_1st.append(pe.latency)
-#         ri.avg_latency = np.mean(img_latencies)
-#         ri.avg_latency_1st = np.mean(img_latencies_1st)
-#         ri.SEM_latency = stats.sem(img_latencies)
-#         ri.SEM_latency_1st = stats.sem(img_latencies_1st)
-
 
 def getContrast(image):
     if "negative" in image.name.lower():
@@ -426,9 +403,6 @@ def pokeLatencies(wb, preset):
                 # reset once the first poke ceases, such a case is not encountered unless
                 # an erroneous wheel rotation causes event switching and falsely creates two events
                 # one successful and the other unsuccessful.
-                else:
-                    thisisbad = 5
-                    # print("********", pe.imageAppearanceTime)
 
     rewardImgs = set(filter(lambda im: im.imageType is ImageTypes.REWARD,
                             [ap.image for ap in Image.appearanceLog.values()]))
@@ -751,7 +725,11 @@ def analyze():
         skipLine = False
         curImgName = None
         pokeInProgress = False
-        images, identifier, preset = initialize(allInput, filename, findFloat)
+        try:
+            images, identifier, preset = initialize(allInput, filename, findFloat)
+        except TypeError as e:
+            print(e.__traceback__)
+            continue
         images = set(images)  # convert to set to avoid accidental duplication
         Image.images = images
 
