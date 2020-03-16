@@ -607,10 +607,14 @@ def imagePerformance(rewardImgs, outputCSV, preset):
             elif contrast == 0:
                 zero_cont_mean = ri.true_avg_latency, ri.all_avg_latency
 
+
             outputCSV.append([ri.name, contrast, numAppearances, hits, numAppearances - hits,
                               success_rate, ri.true_avg_latency, ri.true_SEM_latency, ri.true_SD_latency,
-                              1 - zero_cont_mean[0] / ri.true_avg_latency, "", ri.all_avg_latency,
-                              ri.all_SEM_latency, ri.all_SD_latency, 1 - zero_cont_mean[1] / ri.true_avg_latency])
+                              1 - zero_cont_mean[0] / ri.true_avg_latency if isinstance(
+                                  ri.true_avg_latency, numbers.Number) else "N/A", "", ri.all_avg_latency,
+                              ri.all_SEM_latency, ri.all_SD_latency,
+                              1 - zero_cont_mean[1] / ri.all_avg_latency if isinstance(
+                                  ri.all_avg_latency, numbers.Number) else "N/A"])
 
         else:
             outputCSV.append([ri.name, numAppearances, hits, numAppearances - hits,
@@ -631,7 +635,7 @@ def imagePerformanceFirst(rewardImgs, outputCSV, preset):
                           "All Latency SEM", "All Latency SD"])
     zero_cont_mean = None
     for ri in rewardImgs:
-        hits = len(ri.true_latencies_1st)
+        hits = len(ri.true_latencies_1st) if ri.true_latencies_1st else 0
         firstAppearances = len(ri.all_latencies_1st)
         print('FIRST ONLY REWARD image appearances for {0} >> {1}'.format(ri.name, firstAppearances))
         print('Hits/Successful Pokes >> ', hits)
@@ -651,7 +655,7 @@ def imagePerformanceFirst(rewardImgs, outputCSV, preset):
                                   ri.true_avg_latency_1st, numbers.Number) else "N/A",
                               "", ri.all_avg_latency_1st, ri.all_SEM_latency_1st, ri.all_SD_latency_1st,
                               1 - zero_cont_mean[1] / ri.all_avg_latency_1st if isinstance(
-                                  ri.true_avg_latency_1st, numbers.Number) else "N/A"])
+                                  ri.all_avg_latency_1st, numbers.Number) else "N/A"])
         else:
             outputCSV.append([ri.name, firstAppearances, hits, firstAppearances - hits,
                               success_rate, ri.true_avg_latency, ri.true_SEM_latency, ri.true_SD_latency, "",
