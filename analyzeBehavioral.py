@@ -78,12 +78,15 @@ class RotationInterval:
         self.viable = True
         self._rpms = []  # instantaneous speeds in rotations per minute
         raw_rpms = []  # prone to error, will be refined
+
         for i in range(1, len(halfTimes) - 1):
+            # instantaneous speeds btwn beginning and end of rotation event
             raw_rpms.append(60 / (halfTimes[i + 1] - halfTimes[i - 1]))
-            # instantaneous speeds at beginning and end of rotation event
+
+        # instantaneous speeds at beginning and end of rotation event
         raw_rpms.insert(0, 30 / (halfTimes[1] - halfTimes[0]))
-        raw_rpms.append(
-            30 / (halfTimes[-1] - halfTimes[-2]))  # instantaneous speeds at beginning and end of rotation event
+        raw_rpms.append(30 / (halfTimes[-1] - halfTimes[-2]))
+
         erratic = []
         for i in range(1, len(halfTimes) - 1):
             if raw_rpms[i] > 200:
@@ -95,9 +98,13 @@ class RotationInterval:
         if len(self._halfTimes) < 2:
             self.viable = False
 
+    def __hash__(self):
+        return self.startTime.__hash__()
+
     def numRotations(self):
         return len(self._halfTimes) // 2
 
+    @property
     def avgSpeed(self):
         # average speed in RPM
         return self.numRotations() * 60 / (self._halfTimes[-1] - self._halfTimes[0])
@@ -344,6 +351,13 @@ def getContrast(image):
 
 
 def pokeLatencies(wb, preset):
+    """
+    Find latencies and associated statistics image-wise for all poke-events. True latencies represent latencies for
+    successful pokes following a reward image appearance, whereas All latencies include missed reward images, using
+    the image reset time as a placeholder estimate.
+    This function produces 4 excel workbooks per worksheet.
+    """
+
     outputCSV = wb.active
     allLatencies = []
     trueLatencies = []
@@ -519,22 +533,14 @@ def pokesPerHour(poke_events, outputCSV):
         for t, s in zip(pe.pumpTimes, pe.pumpStates):
             if s is PumpStates.On:
                 hr = int(t / 3600) + 1  # convert t to hours, round up for nth hour
-                hourlyPokes[hr] = hourlyPokes.get(hr,
-                                                  0) + 1  # increment pokes for each hour, default value of 0 supplied to initialize
+                # increment pokes for each hour, default value of 0 supplied to initialize
+                hourlyPokes[hr] = hourlyPokes.get(hr, 0) + 1
     outputCSV.append(['Hour', '# Successful Pokes'])
     for k in range(1, 13):
         print("Successful pokes in hour #{0} >> {1}".format(k, hourlyPokes.get(k, 0)))
         outputCSV.append([k, hourlyPokes.get(k, 0)])
 
 
-# def numPokes(poke_events):
-#     allPokes = [pe.allPokes()[0] for pe in poke_events]
-#     plt.hist(allPokes)
-#     plt.xlabel("Number of pokes per poke event")
-#     plt.ylabel("Frequency")
-#     plt.show()
-#
-#
 # def drinkLengths(poke_events):
 #     lengths = []
 #     for pe in poke_events:
@@ -660,6 +666,43 @@ def imagePerformanceFirst(rewardImgs, outputCSV, preset):
             outputCSV.append([ri.name, firstAppearances, hits, firstAppearances - hits,
                               success_rate, ri.true_avg_latency, ri.true_SEM_latency, ri.true_SD_latency, "",
                               ri.all_avg_latency, ri.all_SEM_latency, ri.all_SD_latency])
+
+
+def analyzeRotations(rotation_intervals, wb):
+    #imageWiseRPMs
+    rot_ints_byImage = {}
+    for im, g in groupby(rotation_intervals, key=lambda ri: ri.image):
+        if rot_ints_byImage.get(im, None) is None:
+            rot_ints_byImage[im] = []
+        rot_ints_byImage[im].extend(list(g))
+
+    ws = wb.create_sheet(title='RPMs')
+    headings = []
+    sheetData = []
+
+    for im in sorted(rot_ints_byImage.keys(), key=getContrast):
+        headings.extend(["Image Contrast", "RPM", "Time"])
+        headings.append("")
+        rpms = rot_ints_byImage.get(im)
+        sheetData.append([getContrast(im)] * len(rpms) + ["", "MEAN", "SEM", "STD DEV"])
+        speedAvgs = [ri.avgSpeed for ri in rot_ints_byImage.get(im)]
+        sheetData.append(speedAvgs + ["", np.mean(speedAvgs), stats.sem(speedAvgs), np.std(speedAvgs)])
+        sheetData.append([ri.startTime for ri in rot_ints_byImage.get(im)])
+        sheetData.append([])
+
+    try:
+        sheetData.append(["", "Global Mean RPM", "Global RPM SEM", "Global RPM STD"])
+        globalAvgs = [ri.avgSpeed for ri in rotation_intervals]
+        sheetData.append(["", np.mean(globalAvgs), stats.sem(globalAvgs), np.std(globalAvgs)])
+    except ValueError:
+        pass  # this error can only be encountered if there are no rotation intervals
+
+    ws.append(headings)
+    for row in zip_longest(*sheetData, fillvalue=""):
+        try:
+            ws.append(row)
+        except ValueError:
+            pass
 
 
 def getFileNames(location):
@@ -810,7 +853,7 @@ def analyze():
             endRun(wheelHalfTimes, currentImg, rotation_intervals)
         pruneRotationIntervals(rotation_intervals)
 
-        analysisFuncs(poke_events, images, filename, wb, preset)
+        analysisFuncs(poke_events, rotation_intervals, wb, preset)
         wb.save(filename.replace(filename[filename.rfind('/') + 1:], identifier + '.xlsx'))
 
 
@@ -818,11 +861,11 @@ def analyze():
 analysisFuncs METHOD BELOW.'''
 
 
-def analysisFuncs(poke_events, images, filename, wb, preset):
+def analysisFuncs(poke_events, rotation_intervals, wb, preset):
     outputCSV = wb.active
     pokeLatencies(wb, preset)
-    pokesPerHour(poke_events, outputCSV)
-
+    pokesPerHour(poke_events, outputCSV)  # Note that 'outputCSV' is the first sheet in the workbook 'wb'.
+    analyzeRotations(rotation_intervals, wb)
 
 
 analyze()
