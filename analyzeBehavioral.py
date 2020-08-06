@@ -14,7 +14,7 @@ import numbers
 """
 Directory wherein all experimental data is stored. Can be recursively organized.
 """
-LOCALDIR = 'Data/'
+LOCALDIR = 'Data/testing'
 
 """
 Bin size for latency frequency distributions.
@@ -613,14 +613,15 @@ def imagePerformance(rewardImgs, outputCSV, preset):
             elif contrast == 0:
                 zero_cont_mean = ri.true_avg_latency, ri.all_avg_latency
 
+            isNumber = lambda x: isinstance(x, numbers.Number)
 
             outputCSV.append([ri.name, contrast, numAppearances, hits, numAppearances - hits,
                               success_rate, ri.true_avg_latency, ri.true_SEM_latency, ri.true_SD_latency,
-                              1 - zero_cont_mean[0] / ri.true_avg_latency if isinstance(
-                                  ri.true_avg_latency, numbers.Number) else "N/A", "", ri.all_avg_latency,
+                              1 - zero_cont_mean[0] / ri.true_avg_latency if isNumber(zero_cont_mean[0]) and
+                              isNumber(ri.true_avg_latency) else "N/A", "", ri.all_avg_latency,
                               ri.all_SEM_latency, ri.all_SD_latency,
-                              1 - zero_cont_mean[1] / ri.all_avg_latency if isinstance(
-                                  ri.all_avg_latency, numbers.Number) else "N/A"])
+                              1 - zero_cont_mean[1] / ri.all_avg_latency if isNumber(ri.all_avg_latency) and
+                                                                            isNumber(zero_cont_mean[1]) else "N/A"])
 
         else:
             outputCSV.append([ri.name, numAppearances, hits, numAppearances - hits,
@@ -655,13 +656,15 @@ def imagePerformanceFirst(rewardImgs, outputCSV, preset):
             elif contrast == 0:
                 zero_cont_mean = ri.true_avg_latency, ri.all_avg_latency
 
+            isNumber = lambda x: isinstance(x, numbers.Number)
+
             outputCSV.append([ri.name, getContrast(ri), firstAppearances, hits, firstAppearances - hits,
                               success_rate, ri.true_avg_latency_1st, ri.true_SEM_latency_1st, ri.true_SD_latency_1st,
-                              1 - zero_cont_mean[0] / ri.true_avg_latency_1st if isinstance(
-                                  ri.true_avg_latency_1st, numbers.Number) else "N/A",
+                              1 - zero_cont_mean[0] / ri.true_avg_latency_1st if isNumber(ri.true_avg_latency_1st) and
+                              isNumber(zero_cont_mean[0]) else "N/A",
                               "", ri.all_avg_latency_1st, ri.all_SEM_latency_1st, ri.all_SD_latency_1st,
-                              1 - zero_cont_mean[1] / ri.all_avg_latency_1st if isinstance(
-                                  ri.all_avg_latency_1st, numbers.Number) else "N/A"])
+                              1 - zero_cont_mean[1] / ri.all_avg_latency_1st if isNumber(ri.all_avg_latency_1st) and
+                              isNumber(zero_cont_mean[1]) else "N/A"])
         else:
             outputCSV.append([ri.name, firstAppearances, hits, firstAppearances - hits,
                               success_rate, ri.true_avg_latency, ri.true_SEM_latency, ri.true_SD_latency, "",
