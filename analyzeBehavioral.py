@@ -14,7 +14,7 @@ import numbers
 """
 Directory wherein all experimental data is stored. Can be recursively organized.
 """
-LOCALDIR = 'Data/testing'
+LOCALDIR = 'Data/'
 
 """
 Bin size for latency frequency distributions.
@@ -355,7 +355,7 @@ def pokeLatencies(wb, preset):
     Find latencies and associated statistics image-wise for all poke-events. True latencies represent latencies for
     successful pokes following a reward image appearance, whereas All latencies include missed reward images, using
     the image reset time as a placeholder estimate.
-    This function produces 4 excel workbooks per worksheet.
+    This function produces 5 excel workbooks per worksheet.
     """
 
     outputCSV = wb.active
@@ -488,7 +488,7 @@ def pokeLatencies(wb, preset):
 
     sheetData = []
     headings = []
-    ws3 = wb.create_sheet(title='Image-wise')
+    ws3 = wb.create_sheet(title='Image-wise latency')
     for im in sorted(imageWiseTrueLatencies.keys(), key=getContrast):
         headings.extend(["Image Contrast", "Latency"])
         headings.append("")
@@ -500,6 +500,27 @@ def pokeLatencies(wb, preset):
     for row in zip_longest(*sheetData, fillvalue=""):
         try:
             ws3.append(row)
+        except ValueError:
+            pass
+
+    sheetData = []
+    headings = []
+    ws32 = wb.create_sheet(title='Sensitivity')
+    headings.extend(["Contrast", "d' sensitivity"])
+    for im in sorted(imageWiseTrueLatencies.keys(), key=getContrast):
+        latencies = imageWiseTrueLatencies.get(im)
+        try:
+            z1 = (im.true_avg_latency - im.all_avg_latency) / im.all_SD_latency
+            z2 = (TIMEOUTS.get(preset) - im.all_avg_latency) / im.all_SD_latency
+            d = z2 - z1  #(TIMEOUTS.get(preset) - im.true_avg_latency) / (0.25 * im.true_SD_latency)
+
+        except TypeError:
+            d = "N/A"
+        sheetData.append([getContrast(im), d])
+    ws32.append(headings)
+    for row in sheetData:
+        try:
+            ws32.append(row)
         except ValueError:
             pass
 
@@ -870,5 +891,5 @@ def analysisFuncs(poke_events, rotation_intervals, wb, preset):
     pokesPerHour(poke_events, outputCSV)  # Note that 'outputCSV' is the first sheet in the workbook 'wb'.
     analyzeRotations(rotation_intervals, wb)
 
-
-analyze()
+if __name__ == "__main__":
+    analyze()
