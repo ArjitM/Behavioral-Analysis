@@ -4,7 +4,12 @@ from analyzeBehavioral import *
 vehicleFile = ""
 drugFile = ""
 
+_, _, presetV = analyze([vehicleFile], False)
+imageWiseAllLatenciesV, _, imageWiseAllLatencies_1stV, _ = pokeLatencies(presetV, None)
 
+
+_, _, presetD = analyze([drugFile], False)
+imageWiseAllLatenciesD, _, imageWiseAllLatencies_1stD, _ = pokeLatencies(presetD, None)
 
 
 '''

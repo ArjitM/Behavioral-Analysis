@@ -350,15 +350,15 @@ def getContrast(image):
     return CONTRAST_LVLS.get(contrastVal, contrastVal)
 
 
-def pokeLatencies(wb, preset):
+def pokeLatencies(preset, wb=None):
     """
     Find latencies and associated statistics image-wise for all poke-events. True latencies represent latencies for
     successful pokes following a reward image appearance, whereas All latencies include missed reward images, using
     the image reset time as a placeholder estimate.
+    If WB (workbook) is specified, latencies are written to the worksheet. If left as none, no output is generated.
     This function produces 4 excel workbooks per worksheet.
     """
 
-    outputCSV = wb.active
     allLatencies = []
     trueLatencies = []
     rewardTimes = []
@@ -467,11 +467,25 @@ def pokeLatencies(wb, preset):
             ri.all_SEM_latency_1st = 'N/A'
             ri.all_SD_latency_1st = 'N/A'
 
-    outputCSV.append([])
-    pokeStatistics(rewardImgs, outputCSV, preset)
+    if wb is not None:
+        generateOutput(preset, wb, outProxy, imageWiseTrueLatencies, rewardTimes, allLatencies, trueLatencies)
+
+    return imageWiseAllLatencies, imageWiseTrueLatencies, imageWiseAllLatencies_1st, imageWiseTrueLatencies_1st
+
+
+"""
+Helper method to write relevant data to worksheet.
+"""
+def generateOutput(preset, wb, outProxy, imageWiseTrueLatencies, rewardTimes, allLatencies, trueLatencies):
+
+    ws1 = wb.active
+    ws1.append([])
+    rewardImgs = set(filter(lambda im: im.imageType is ImageTypes.REWARD,
+                            [ap.image for ap in Image.appearanceLog.values()]))
+    pokeStatistics(rewardImgs, ws1, preset)
 
     for line in outProxy:
-        outputCSV.append(line)  # send latency documentation to output
+        ws1.append(line)  # send latency documentation to output
 
     if len(trueLatencies) == 0:
         return
@@ -503,8 +517,6 @@ def pokeLatencies(wb, preset):
         except ValueError:
             pass
 
-
-
     sheetData = []
     headings = []
     ws4 = wb.create_sheet(title='Distributions')
@@ -527,7 +539,6 @@ def pokeLatencies(wb, preset):
             ws4.append(row)
         except ValueError:
             pass
-    return imageWiseAllLatencies, imageWiseTrueLatencies, imageWiseAllLatencies_1st, imageWiseTrueLatencies_1st
 
 
 
@@ -870,9 +881,9 @@ analysisFuncs METHOD BELOW.'''
 
 
 def analysisFuncs(poke_events, rotation_intervals, wb, preset):
-    outputCSV = wb.active
-    pokeLatencies(wb, preset)
-    pokesPerHour(poke_events, outputCSV)  # Note that 'outputCSV' is the first sheet in the workbook 'wb'.
+    ws = wb.active
+    pokeLatencies(preset, wb)
+    pokesPerHour(poke_events, ws)  # Note that 'ws' is the first sheet in the workbook 'wb'.
     analyzeRotations(rotation_intervals, wb)
 
 if __name__ == "__main__":
