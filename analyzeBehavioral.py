@@ -355,7 +355,7 @@ def pokeLatencies(wb, preset):
     Find latencies and associated statistics image-wise for all poke-events. True latencies represent latencies for
     successful pokes following a reward image appearance, whereas All latencies include missed reward images, using
     the image reset time as a placeholder estimate.
-    This function produces 5 excel workbooks per worksheet.
+    This function produces 4 excel workbooks per worksheet.
     """
 
     outputCSV = wb.active
@@ -503,26 +503,7 @@ def pokeLatencies(wb, preset):
         except ValueError:
             pass
 
-    sheetData = []
-    headings = []
-    ws32 = wb.create_sheet(title='Sensitivity')
-    headings.extend(["Contrast", "d' sensitivity"])
-    for im in sorted(imageWiseTrueLatencies.keys(), key=getContrast):
-        latencies = imageWiseTrueLatencies.get(im)
-        try:
-            z1 = (im.true_avg_latency - im.all_avg_latency) / im.all_SD_latency
-            z2 = (TIMEOUTS.get(preset) - im.all_avg_latency) / im.all_SD_latency
-            d = z2 - z1  #(TIMEOUTS.get(preset) - im.true_avg_latency) / (0.25 * im.true_SD_latency)
 
-        except TypeError:
-            d = "N/A"
-        sheetData.append([getContrast(im), d])
-    ws32.append(headings)
-    for row in sheetData:
-        try:
-            ws32.append(row)
-        except ValueError:
-            pass
 
     sheetData = []
     headings = []
@@ -546,6 +527,8 @@ def pokeLatencies(wb, preset):
             ws4.append(row)
         except ValueError:
             pass
+    return imageWiseAllLatencies, imageWiseTrueLatencies, imageWiseAllLatencies_1st, imageWiseTrueLatencies_1st
+
 
 
 def pokesPerHour(poke_events, outputCSV):
@@ -560,6 +543,7 @@ def pokesPerHour(poke_events, outputCSV):
     for k in range(1, 13):
         print("Successful pokes in hour #{0} >> {1}".format(k, hourlyPokes.get(k, 0)))
         outputCSV.append([k, hourlyPokes.get(k, 0)])
+    return hourlyPokes
 
 
 # def drinkLengths(poke_events):
@@ -594,7 +578,7 @@ def pruneRotationIntervals(rotation_intervals):
 def pokeStatistics(images, outputCSV, preset):
     rewardImgs = list(filter(lambda im: im.imageType is ImageTypes.REWARD, images))
 
-    # sort images bycontrast level
+    # sort images by contrast level
     def tryint(x):
         try:
             return int(x)
@@ -783,11 +767,8 @@ def initialize(allInput, filename, findFloat):
             return images, "Mouse_{0}".format(mouseNum), preset
 
 
-def analyze():
-    global LOCALDIR
-    if not LOCALDIR.endswith('/'):
-        LOCALDIR += '/'
-    for filename in getFileNames(LOCALDIR):
+def analyze(fileList, genOutput=True):
+    for filename in fileList:
         Image.appearanceLog = OrderedDict()  # reset appearances
         with open(filename, 'r') as resultFile:
             allInput = resultFile.readlines()
@@ -804,7 +785,7 @@ def analyze():
         images = set(images)  # convert to set to avoid accidental duplication
         Image.images = images
 
-        wb = Workbook()  # open(filename.replace(filename[filename.rfind('/') + 1:], identifier + '.csv'), 'w')
+        wb = Workbook()
         outputCSV = wb.active
         try:
             controlImgStart = [im for im in images if im.imageType == ImageTypes.CONTROL][0]
@@ -877,8 +858,11 @@ def analyze():
             endRun(wheelHalfTimes, currentImg, rotation_intervals)
         pruneRotationIntervals(rotation_intervals)
 
-        analysisFuncs(poke_events, rotation_intervals, wb, preset)
-        wb.save(filename.replace(filename[filename.rfind('/') + 1:], identifier + '.xlsx'))
+        if genOutput:
+            analysisFuncs(poke_events, rotation_intervals, wb, preset)
+            wb.save(filename.replace(filename[filename.rfind('/') + 1:], identifier + '.xlsx'))
+
+        return poke_events, rotation_intervals, preset
 
 
 '''ANALYSIS FUNCTION CALLS BEGIN HERE; DO NOT EDIT ABOVE WHEN RUNNING ANALYSIS. CHANGES SHOULD BE MADE ONLY TO 
@@ -892,4 +876,7 @@ def analysisFuncs(poke_events, rotation_intervals, wb, preset):
     analyzeRotations(rotation_intervals, wb)
 
 if __name__ == "__main__":
-    analyze()
+    global LOCALDIR
+    if not LOCALDIR.endswith('/'):
+        LOCALDIR += '/'
+    analyze(getFileNames(LOCALDIR))
