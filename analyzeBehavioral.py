@@ -887,7 +887,6 @@ def analysisFuncs(poke_events, rotation_intervals, wb, preset):
     analyzeRotations(rotation_intervals, wb)
 
 if __name__ == "__main__":
-    global LOCALDIR
     if not LOCALDIR.endswith('/'):
         LOCALDIR += '/'
     analyze(getFileNames(LOCALDIR))
