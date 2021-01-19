@@ -6,13 +6,14 @@ Bin size for latency frequency distributions.
 LATENCYSTEP = 0.25
 
 
+
 vehicleFile = "/Users/arjitmisra/Documents/Kramer_Lab/Behavioral-Analysis/Dprime/RD10-N-2 Raw Data.txt"
 drugFile = "/Users/arjitmisra/Documents/Kramer_Lab/Behavioral-Analysis/Dprime/RD10-T-3 Raw Data.txt"
 
-_, _, presetV = analyze([vehicleFile], False)
+_, _, presetV, imagesV = analyze([vehicleFile], False)
 imageWiseAllLatenciesV, _, imageWiseAllLatencies_1stV, _ = pokeLatencies(presetV, None)
 
-_, _, presetD = analyze([drugFile], False)
+_, _, presetD, imagesD = analyze([drugFile], False)
 imageWiseAllLatenciesD, _, imageWiseAllLatencies_1stD, _ = pokeLatencies(presetD, None)
 
 if set(imageWiseAllLatenciesV) != set(imageWiseAllLatenciesD) or \
@@ -55,6 +56,14 @@ for row in zip_longest(*sheetData, fillvalue=""):
         ws.append(row)
     except ValueError:
         pass
+
+
+ws2 = wb.create_sheet(title='Drug')
+pokeStatistics(imagesD, ws2, presetD)
+
+ws3 = wb.create_sheet(title='Vehicle')
+pokeStatistics(imagesV, ws3, presetV)
+
 
 wb.save('/Users/arjitmisra/Documents/Kramer_Lab/Behavioral-Analysis/Dprime/dprimetry.xlsx')
 

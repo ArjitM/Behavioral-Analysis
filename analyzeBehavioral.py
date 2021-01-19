@@ -873,7 +873,7 @@ def analyze(fileList, genOutput=True):
             analysisFuncs(poke_events, rotation_intervals, wb, preset)
             wb.save(filename.replace(filename[filename.rfind('/') + 1:], identifier + '.xlsx'))
 
-        return poke_events, rotation_intervals, preset
+        return poke_events, rotation_intervals, preset, images
 
 
 '''ANALYSIS FUNCTION CALLS BEGIN HERE; DO NOT EDIT ABOVE WHEN RUNNING ANALYSIS. CHANGES SHOULD BE MADE ONLY TO 
